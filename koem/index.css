@@ -4840,6 +4840,9 @@ body {
     > span {
     font-size: 14px;
     display: block;
+        border:1px solid red;
+        height:100%;
+        text-align: center;
 }
 
 .footer

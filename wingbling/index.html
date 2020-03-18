@@ -1,0 +1,2221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WingBling 모작사이트</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./index.css">
+    
+</head>
+
+<body>
+    <div class="header">
+        <div class="top-bar-1">
+            <div class="inner con">
+                <div class="logo-box cell"></div>
+                <ul class="row cell-right">
+                    <ul class="row cell">
+                        <li class="cell"><a href="#">Logout</a></li>
+                        <li class="cell join">
+                            <a href="#">Join</a>
+                            <div class="balloon">
+                                <div class="img-box"></div>
+                                <div class="text">총 3만원 혜택</div>
+                            </div>
+                        </li>
+                        <li class="cell"><a href="#">Cart</a></li>
+                        <li class="cell"><a href="#">Order</a></li>
+                        <li class="cell"><a href="#">My page</a></li>
+                    </ul>
+                    <ul class="row cell">
+                        <li class="cell">
+                            <form action="">
+                                <input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" class="inputTypeText" placeholder="" onmousedown="SEARCH_BANNER.clickSearchForm(this)" value="" type="text">
+                                <input type="image" src="./img/index.img/btn_search1.png" alt="검색" onclick="SEARCH_BANNER.submitSearchBanner(this); return false;">
+                            </form>
+                        </li>
+                        <li class="cell">
+                            <img src="./img/index.img/cart_menu.png" border="0" alt="장바구니">
+                        </li>
+                        <li class="cell">
+                            <img src="./img/index.img/2mXxRlUeXm.png" border="0" alt="wingbling global site">
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <div class="top-bar-2">
+            <div class="contents-box">
+                <div class="inner con">
+                    <div class="contents-1 row">
+                        <div class="title cell">방구석할인 ></div>
+                        <ul class="menu-list cell">
+                        </ul>
+                        <div class="img-bn row cell">
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/909c0092db4513d9daa210dd1d68b980.jpg" alt="">
+                                </div>
+                                <div class="text">최대70%</div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/675c109446bf453e4196163fbec2d94b.jpg" alt="">
+                                </div>
+                                <div class="text">방구석할인</div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/a3428bfff6a3b79ed4b766e5623669d9.jpg" alt="">
+                                </div>
+                                <div class="text">놓치지마세요!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contents-2 row">
+                        <div class="title cell">best50 ></div>
+                        <ul class="menu-list cell">
+                        </ul>
+                        <div class="img-bn row cell">
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/23f8375ba7cf89771379627bf1d182ac.jpg" alt="">
+                                </div>
+                                <div class="text">★925실버제작!★BEST 화이트문 야광팔찌</div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/413f7be36e99907c6f21a91ba211992f.jpg" alt="">
+                                </div>
+                                <div class="text">★장미수정★사랑의 수호석 장미수정 뮤즈반지</div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/afaeee496095d737d12c828813b2d19a.jpg" alt="">
+                                </div>
+                                <div class="text">★행운의12탄생석★별 탄생석과 영롱보스 초승달 팔찌!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contents-3 row">
+                        <div class="title cell">new5% ></div>
+                        <ul class="menu-list cell">
+
+                        </ul>
+                        <div class="img-bn row cell">
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/3dcea903a62a57ec1b7aa3e7a90bdad5.png" alt="">
+                                </div>
+                                <div class="text">클래식 에든버러</div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/c9a6b1440aa8b5df9120a699aa0608cf.png" alt="">
+                                </div>
+                                <div class="text">제니퍼</div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/a3dc6c42047ebafd452db866a6a54d77.png" alt="">
+                                </div>
+                                <div class="text">벨르</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contents-4 row">
+                        <div class="title cell">귀걸이 ></div>
+                        <ul class="menu-list cell">
+                            <li><a href="#">패션귀걸이</a></li>
+                            <li><a href="#">실버침</a></li>
+                            <li><a href="#">투웨이귀걸이</a></li>
+                            <li><a href="#">핸드메이드 귀걸이</a></li>
+                            <li><a href="#">ALL 925실버</a></li>
+                            <li><a href="#">롱귀걸이</a></li>
+                            <li><a href="#">러블리</a></li>
+                            <li><a href="#">유니크</a></li>
+                            <li><a href="#">심플/베이직</a></li>
+                        </ul>
+                        <div class="img-bn row cell">
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/ca6678e0e57edd1dbabcb8c1f090a145.jpg" alt="">
+                                </div>
+                                <div class="text">★스와로브스키★각도에 따라 영롱함이 남다른!</div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/0dbf59958577cf991eab764893ff6866.jpg" alt="">
+                                </div>
+                                <div class="text">★실버침★너에게 주는 화사함, 델라earring</div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/78298fb2e143059006ea65964a48bd27.jpg" alt="">
+                                </div>
+                                <div class="text">★장미수정★윙블링BEST1 귀걸이 등극! </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contents-5 row">
+                        <div class="title cell">귀찌 ></div>
+                        <ul class="menu-list cell">
+
+                        </ul>
+                        <div class="img-bn row cell">
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/7466531fe7b79a8c10bf9c525427d2f3.jpg" alt="">
+                                </div>
+                                <div class="text">스테파니</div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/0266ff19dc85e7fdfcc42c23f76b8ac1.jpg" alt="">
+                                </div>
+                                <div class="text">인피니티 루나</div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/29403c8c2a3e05c0d8da2a0fb92d26c3.jpg" alt="">
+                                </div>
+                                <div class="text">꽃의 속삭임</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contents-6 row">
+                        <div class="title cell">목걸이 ></div>
+                        <ul class="menu-list cell">
+
+                        </ul>
+                        <div class="img-bn row cell">
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/060e99226daae0bb404cc3d368ff60ae.gif" alt="">
+                                </div>
+                                <div class="text">★스와로브스키★영롱함이 남다른! 하트컷 목걸이</div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/8f776f7b1d483f9ac5f673799d0abb5f.jpg" alt="">
+                                </div>
+                                <div class="text">★BEST★밤 하늘의 빛나는 모든것을 담다! </div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/cdbd290ddbbae39e0d308877a4cc6f19.jpg" alt="">
+                                </div>
+                                <div class="text">★장미수정★올리자마자 BEST! 뮤즈목걸이</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contents-7 row">
+                        <div class="title cell">반지 ></div>
+                        <ul class="menu-list cell">
+
+                        </ul>
+                        <div class="img-bn row cell">
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/39c9cd5fa68275c0e9f9ef2cc22188ee.jpg" alt="">
+                                </div>
+                                <div class="text">★925실버★ONLY윙블링! 무지개빛 야광반지!</div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/24bde9513c32718c52ad53bb7c488860.jpg" alt="">
+                                </div>
+                                <div class="text">★핸드메이드★영롱한 우주안에 초승달~반지</div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/e1b767ce548f7d1297fc0ed729aa22cb.jpg" alt="">
+                                </div>
+                                <div class="text">★레이어드★다양하게 매치가능한 데일리 반지!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contents-8 row">
+                        <div class="title cell">이어커프 ></div>
+                        <ul class="menu-list cell">
+                        </ul>
+                        <div class="img-bn row cell">
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/56ed3c632f45dbce80c4370cbccb6303.gif" alt="">
+                                </div>
+                                <div class="text">★스와로브스키★달라진다~다각도에서 매력UP!</div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/4b10c5779ea66520a50637709abf21eb.jpg" alt="">
+                                </div>
+                                <div class="text">★8개1세트★여기에 이어커프 무려 3개나 있음!</div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/3376bf1f40e27aaa4a0e14e6c918fbfd.jpg" alt="">
+                                </div>
+                                <div class="text">큐트하고 스윗한 무드의 메이릴리 earcuff~!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contents-9 row">
+                        <div class="title cell">팔찌&시계 ></div>
+                        <ul class="menu-list cell">
+                        </ul>
+                        <div class="img-bn row cell">
+                            <div class="cell">
+                                <div class="img-box">
+
+                                </div>
+                                <div class="text"></div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+
+                                </div>
+                                <div class="text"></div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+
+                                </div>
+                                <div class="text"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contents-10 row">
+                        <div class="title cell">데일리 ></div>
+                        <ul class="menu-list cell">
+                        </ul>
+                        <div class="img-bn row cell">
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/9e81f66ad3c4792fa805445608e281ab.gif" alt="">
+                                </div>
+                                <div class="text">문스톤티어스</div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/f8fa3f21cd048f7754854fb6991735bd.jpg" alt="">
+                                </div>
+                                <div class="text">데이레이스</div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/f0503e5199c5ae74601bd489f5ff794f.jpg" alt="">
+                                </div>
+                                <div class="text">록스</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contents-11 row">
+                        <div class="title cell">셀럽아이템 ></div>
+                        <ul class="menu-list cell">
+                        </ul>
+                        <div class="img-bn row cell">
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/fc5376ad71a584b3aa546b2715b497a5.jpg" alt="">
+                                </div>
+                                <div class="text">꽃이피는날</div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/f446134494f82c1d204b0148ba24c09d.jpg" alt="">
+                                </div>
+                                <div class="text">설렘주의보</div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/a71b806f5adf4241528da26880d6cccc.jpg" alt="">
+                                </div>
+                                <div class="text">화이트문 팔찌</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contents-12 row">
+                        <div class="title cell">선물박스&기타 ></div>
+                        <ul class="menu-list cell">
+                        </ul>
+                        <div class="img-bn row cell">
+                            <div class="cell">
+                                <div class="img-box">
+
+                                </div>
+                                <div class="text"></div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+
+                                </div>
+                                <div class="text"></div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+
+                                </div>
+                                <div class="text"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contents-13 row">
+                        <div class="title cell">홀리데이 ></div>
+                        <ul class="menu-list cell">
+
+                        </ul>
+                        <div class="img-bn row cell">
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/7466531fe7b79a8c10bf9c525427d2f3.jpg" alt="">
+                                </div>
+                                <div class="text">스테파니</div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/0266ff19dc85e7fdfcc42c23f76b8ac1.jpg" alt="">
+                                </div>
+                                <div class="text">인피니티 루나</div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/29403c8c2a3e05c0d8da2a0fb92d26c3.jpg" alt="">
+                                </div>
+                                <div class="text">꽃의 속삭임</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contents-14 row">
+                        <div class="title cell">땡스그린 ></div>
+                        <ul class="menu-list cell">
+
+                        </ul>
+                        <div class="img-bn row cell">
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/8d358c2a21cfef85b38e1ba3dd5c7752.jpg" alt="">
+                                </div>
+                                <div class="text">안녕팬더</div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/128a23284412b7cef442d6155adbe893.jpg" alt="">
+                                </div>
+                                <div class="text">빙하의눈물</div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box">
+                                    <img src="./img/index.img/5181d62f8ce3d809b9f86098ee4ea28b.jpg" alt="">
+                                </div>
+                                <div class="text">스노우 레오파드</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contents-15 row">
+                        <div class="title cell">coummunity ></div>
+                        <ul class="menu-list cell">
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">문의사항</a></li>
+                            <li><a href="#">자주묻는 질문</a></li>
+                            <li><a href="#">포토후기</a></li>
+                            <li><a href="#">개인결제창</a></li>
+                            <li><a href="#" style="color:transparent;">빈칸</a></li>
+                            <li><a href="#">▶ 윙블링 해외몰</a></li>
+                            <li><a href="#">▶ 윙블링 인스타그램</a></li>
+                            <li><a href="#">▶ 윙블링 페이스북</a></li>
+                        </ul>
+                        <div class="img-bn row cell">
+                            <div class="cell">
+                                <div class="img-box"></div>
+                                <div class="text"></div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box"></div>
+                                <div class="text"></div>
+                            </div>
+                            <div class="cell">
+                                <div class="img-box"></div>
+                                <div class="text"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner con">
+                <ul class="row">
+                    <li class="cell"><a href="#">방구석할인</a></li>
+                    <li class="cell blue"><a href="#">BEST50</a></li>
+                    <li class="cell"><a href="#">NEW5%</a></li>
+                    <li class="cell"><a href="#">귀걸이</a></li>
+                    <li class="cell blue"><a href="#">귀찌</a></li>
+                    <li class="cell"><a href="#">목걸이</a></li>
+                    <li class="cell"><a href="#">반지</a></li>
+                    <li class="cell"><a href="#">이어커프</a></li>
+                    <li class="cell"><a href="#">팔찌&시계</a></li>
+                    <li class="cell"><a href="#">데일리</a></li>
+                    <li class="cell blue"><a href="#">셀럽아이템</a></li>
+                    <li class="cell"><a href="#">선물박스&기타</a></li>
+                    <li class="cell blue"><a href="#">홀리데이</a></li>
+                    <li class="cell"><a href="#">땡스그린</a></li>
+                    <li class="cell-right"><a href="#"><img src="./img/index.img/menu_options.png">community</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bn-box-1">
+        <div class="inner con row">
+            <div class="cell">
+                <div class="img-box">
+                    <img src="./img/index.img/9878df85b8aa5381712b954c6c8e00d1.png" alt="">
+                </div>
+                <div class="img-box">
+                    <img src="./img/index.img/0439777e3d70dc1392d39660a7987890.jpg" alt="">
+                </div>
+            </div>
+            <div class="cell">
+                <div class="slider-box">
+                    <div class="slider relative slider-k height-full" data-autoplay="Y" data-autoplay-dir="left" data-autoplay-interval="3000" data-play-stop-button="Y">
+                        <div class="slides">
+                            <div class="slide-1 img-box">
+                                <img src="./img/index.img/f4b29cd1c4bdee37a88beef2eb11f30f.jpg" alt="">
+                            </div>
+                            <div class="slide-2 img-box">
+                                <img src="./img/index.img/73d137df57c9341313206832edae27a7.png" alt="">
+                            </div>
+                            <div class="slide-3 img-box active">
+                                <img src="./img/index.img/85dd217fdff9dcf1ab4e98d93549fb03.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="side-btns">
+                            <div>
+                                <div class="ico img-box"></div>
+                            </div>
+                            <div>
+                                <div class="ico img-box"></div>
+                            </div>
+                        </div>
+                        <div class="page-nav-box"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="img-box">
+                    <img src="./img/index.img/e9ee95e11642d9e115f8a8118638057a.png" alt="">
+                </div>
+                <div class="img-box">
+                    <img src="./img/index.img/937bc528220ebb7fe11faab5d1161596.jpg" alt="">
+                </div>
+                <div class="img-box">
+                    <img src="./img/index.img/0344958dc82921ff123a352a9337e623.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bn-box-2 bn-box">
+        <div class="inner con">
+            <div class="top-bn">
+                <div class="img-box">
+                    <img src="./img/index.img/0mqwb4TsQi.gif" alt="">
+                </div>
+            </div>
+            <ul class="row">
+                <li class="cell sale70">
+                    <div class="img-box">
+                        <img src="./img/index.img/863bf80941706eba7bf5d82d9523799c.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">♡퓨어블라썸 귀걸이</div>
+                        <div class="text-2">18,800원</div>
+                        <div class="text-3">방구석할인가 : 5,600원</div>
+                        <div class="text-4">할인율 : 70%</div>
+                        <div class="text-5">리뷰 : 11</div>
+                    </div>
+                </li>
+                <li class="cell sale70">
+                    <div class="img-box">
+                        <img src="./img/index.img/d566a628584030d15a3c1f509d1b54b4.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">♡퓨어블라썸 목걸이</div>
+                        <div class="text-2">13,500원</div>
+                        <div class="text-3">방구석할인가 : 4,000원</div>
+                        <div class="text-4">할인율 : 70%</div>
+                        <div class="text-5">리뷰 : 6</div>
+                    </div>
+                </li>
+                <li class="cell sale70">
+                    <div class="img-box">
+                        <img src="./img/index.img/c6d3d811862518f6a89bf5d708d2cfef.jpg" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">♡퓨어블라썸 팔찌</div>
+                        <div class="text-2">16,400원</div>
+                        <div class="text-3">방구석할인가 : 4,900원</div>
+                        <div class="text-4">할인율 : 70%</div>
+                        <div class="text-5">리뷰 : 0</div>
+                    </div>
+                </li>
+                <li class="cell sale30">
+                    <div class="img-box">
+                        <img src="./img/index.img/af769bf283e36949eedee1587cb5c1f9.jpg" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">♡사랑의 장미수정 뮤즈 반지</div>
+                        <div class="text-2">13,500원</div>
+                        <div class="text-3">방구석할인가 : 9,400원</div>
+                        <div class="text-4">할인율 : 30%</div>
+                        <div class="text-5">리뷰 : 425</div>
+                    </div>
+                </li>
+                <li class="cell sale30">
+                    <div class="img-box">
+                        <img src="./img/index.img/1036_shop1_387040.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">♡925실버 클래식 플라워 necklace</div>
+                        <div class="text-2">15,500원</div>
+                        <div class="text-3">방구석할인가 : 10,800원</div>
+                        <div class="text-4">할인율 : 30%</div>
+                        <div class="text-5">리뷰 : 20</div>
+                    </div>
+                </li>
+                <li class="cell sale25">
+                    <div class="img-box">
+                        <img src="./img/index.img/181a5d4f8a29e9453e1000b332bf3a1f.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">♡사랑의 장미수정 뮤즈 목걸이</div>
+                        <div class="text-2">13,000원</div>
+                        <div class="text-3">방구석할인가 : 9,700원</div>
+                        <div class="text-4">할인율 : 25%</div>
+                        <div class="text-5">리뷰 : 320</div>
+                    </div>
+                </li>
+                <li class="cell sale20">
+                    <div class="img-box">
+                        <img src="./img/index.img/ca0d6790e34d5b937eb64fb5816480ff.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">♡시크릿나잇 귀걸이/귀찌</div>
+                        <div class="text-2">15,000원</div>
+                        <div class="text-3">방구석할인가 : 12,000원</div>
+                        <div class="text-4">할인율 : 20%</div>
+                        <div class="text-5">리뷰 : 33</div>
+                    </div>
+                </li>
+                <li class="cell sale20">
+                    <div class="img-box">
+                        <img src="./img/index.img/d824a77b0dfe5998cfd5982721579692.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">♡사랑의 장미수정 뮤즈 귀걸이</div>
+                        <div class="text-2">11,500원</div>
+                        <div class="text-3">방구석할인가 : 9,200원</div>
+                        <div class="text-4">할인율 : 20%</div>
+                        <div class="text-5">리뷰 : 347</div>
+                    </div>
+                </li>
+                <li class="cell sale15">
+                    <div class="img-box">
+                        <img src="./img/index.img/5223f01222ede339b3c8ccf7ae85f675.jpg" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">♡아스테르 귀걸이/귀찌</div>
+                        <div class="text-2">21,500원</div>
+                        <div class="text-3">방구석할인가 : 18,300원</div>
+                        <div class="text-4">할인율 : 15%</div>
+                        <div class="text-5">리뷰 : 36</div>
+                    </div>
+                </li>
+                <li class="cell sale10">
+                    <div class="img-box">
+                        <img src="./img/index.img/60a60278985528e0ab89f9b8be5d862a.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">♡쁘띠드레스 귀걸이/귀찌</div>
+                        <div class="text-2">13,500원</div>
+                        <div class="text-3">방구석할인가 : 12,100원</div>
+                        <div class="text-4">할인율 : 10%</div>
+                        <div class="text-5">리뷰 : 1,136</div>
+                    </div>
+                </li>
+                <li class="cell sale10">
+                    <div class="img-box">
+                        <img src="./img/index.img/ed5f8fd56132ec18d1aa98ccdf297a21.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">♡사랑의요정,엘 귀걸이/귀찌</div>
+                        <div class="text-2">18,500원</div>
+                        <div class="text-3">방구석할인가 : 16,600원</div>
+                        <div class="text-4">할인율 : 10%</div>
+                        <div class="text-5">리뷰 : 123</div>
+                    </div>
+                </li>
+                <li class="cell sale10 celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/31d8632a42de8fe93bafd548b5c80dd2.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">♡꽃잎흩날리며 귀걸이/귀찌</div>
+                        <div class="text-2">19,600원</div>
+                        <div class="text-3">방구석할인가 : 17,600원</div>
+                        <div class="text-4">할인율 : 10%</div>
+                        <div class="text-5">리뷰 : 23</div>
+                    </div>
+                </li>
+                <li class="cell sale10 celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/e2c407cf2691fc95a59045a045f77a32.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">♡골드레이디 귀걸이/귀찌</div>
+                        <div class="text-2">14,400원</div>
+                        <div class="text-3">방구석할인가 : 13,000원</div>
+                        <div class="text-4">할인율 : 10%</div>
+                        <div class="text-5">리뷰 : 16</div>
+                    </div>
+                </li>
+                <li class="cell sale10 celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/cf9fd84b9cb06504fb67513cde05fbbc.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">♡비밀의정원 귀걸이/귀찌</div>
+                        <div class="text-2">15,000원</div>
+                        <div class="text-3">방구석할인가 : 13,500원</div>
+                        <div class="text-4">할인율 : 10%</div>
+                        <div class="text-5">리뷰 : 929</div>
+                    </div>
+                </li>
+                <li class="cell sale10">
+                    <div class="img-box">
+                        <img src="./img/index.img/42bdba9ff850c53e74c12de321d09840.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">♡비밀의정원 귀걸이/귀찌</div>
+                        <div class="text-2">15,000원</div>
+                        <div class="text-3">방구석할인가 : 13,500원</div>
+                        <div class="text-4">할인율 : 10%</div>
+                        <div class="text-5">리뷰 : 929</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bn-box-3 bn-box">
+        <div class="inner con">
+            <div class="title">
+                <div>실시간 BEST</div>
+                <div>지금 난리난 인기폭발 아이템!</div>
+            </div>
+            <ul class="row">
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/ffb726e88dafc50c1587d1d97dd902ce.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">아르떼 귀걸이/귀찌</div>
+                        <div class="text-2">13,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 532</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/63638cf5a566844c96709014658b4e96.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[아이유착용] 꽃이피는날 귀걸이/귀찌♥</div>
+                        <div class="text-2">15,000원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 529</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/631db29dd52d33d4ff78c2b7d725bbea.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">매직스퀘어 귀걸이 [스와로브스키]</div>
+                        <div class="text-2">8,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 230</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/5808fc2ba253df83462ffadd02e1e0aa.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[아이유착용]로맨틱드림 귀걸이/귀찌♥</div>
+                        <div class="text-2">18,000원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 290</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/cfc8f87eeb7533f07960a2c1d990cfb8.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[아이유착용]포르투나 귀걸이/귀찌♥</div>
+                        <div class="text-2">14,000원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 174</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/742_shop1_554591.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[Silver925]어두운곳에서 빛나는 화이트문 목걸이</div>
+                        <div class="text-2">24,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 1,622</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/733278161d99f941795d9a86e06d0ea1.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">쁘띠드레스 목걸이</div>
+                        <div class="text-2">12,000원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 83</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/d838c929f5619e187206e9a110b8fbf5.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">레이밍 귀걸이/귀찌</div>
+                        <div class="text-2">8,500원</div>
+                        <div class="text-3">신상특별가 : 13,100원</div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 3</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/ec68c50cebc99370c749476543497e70.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">러브엔젤라 귀걸이/귀찌</div>
+                        <div class="text-2">17,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 62</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/79edd7546625137cd7e50bf6a4d63387.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[마지막입고!!][천연문스톤]낭만 고양이 귀걸이/귀찌</div>
+                        <div class="text-2">31,400원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 15</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="bn-box-4 bn-box">
+        <div class="inner con">
+            <div class="title">
+                <div>NEW ITEM</div>
+                <div>따끈따끈 신상 5% 특별할인</div>
+            </div>
+            <ul class="row">
+                <li class="cell new-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/44bad07069d6dafcb602033f9df7d298.jpg" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">러브 하모니 귀걸이</div>
+                        <div class="text-2">16,200원</div>
+                        <div class="text-3">신상특별가 : 15,400원</div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 0</div>
+                    </div>
+                </li>
+                <li class="cell new-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/f08fe412b067ab628ef71f04cb11b8f2.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[28일오후3시까지 얼리버드15%할인]엘린 귀걸이/귀찌</div>
+                        <div class="text-2">16,700원</div>
+                        <div class="text-3">신상특별가 : 13,900원</div>
+                        <div class="text-4">★단독주문시 3월4일부터 순차출고됩니다!</div>
+                        <div class="text-5">
+                            리뷰 : 0</div>
+                    </div>
+                </li>
+                <li class="cell new-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/33194e1be8bd2ab9d40f03d852ad4ec4.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">홀리 귀걸이</div>
+                        <div class="text-2">15,900원</div>
+                        <div class="text-3">신상특별가 : 15,100원</div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 0</div>
+                    </div>
+                </li>
+                <li class="cell new-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/be8f904234161f6ad033089b9f8b0400.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">에쉬르 귀걸이/귀찌</div>
+                        <div class="text-2">21,500원</div>
+                        <div class="text-3">신상특별가 : 20,400원</div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 0</div>
+                    </div>
+                </li>
+                <li class="cell new-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/85e43991adeedcc7f6c6d024748df924.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">블리앙 귀걸이/귀찌</div>
+                        <div class="text-2">17,900원</div>
+                        <div class="text-3">신상특별가 : 17,000원</div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 0</div>
+                    </div>
+                </li>
+                <li class="cell new-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/d46c1ade9ac1ee18f8cf0f5529a97aab.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[925실버]루프리텔캄 귀걸이</div>
+                        <div class="text-2">18,000원</div>
+                        <div class="text-3">신상특별가 : 17,100원</div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 0</div>
+                    </div>
+                </li>
+                <li class="cell new-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/ac839dd20b016b51fc6559884848e40b.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[925실버]루프리텔캄 목걸이</div>
+                        <div class="text-2">23,500원</div>
+                        <div class="text-3">신상특별가 : 22,300원</div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 0</div>
+                    </div>
+                </li>
+                <li class="cell new-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/d838c929f5619e187206e9a110b8fbf5.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">레이밍 귀걸이/귀찌</div>
+                        <div class="text-2">8,500원</div>
+                        <div class="text-3">신상특별가 : 13,100원</div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 3</div>
+                    </div>
+                </li>
+                <li class="cell new-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/380474e62a9ffb15e9a10e7a7a888557.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">샤비아 귀걸이</div>
+                        <div class="text-2">25,500원</div>
+                        <div class="text-3">신상특별가 : 24,200원</div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 0</div>
+                    </div>
+                </li>
+                <li class="cell new-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/0d56060e8873a89550271a5cd3a4a812.jpg" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">케샤 목걸이</div>
+                        <div class="text-2">13,000원</div>
+                        <div class="text-3">신상특별가 : 12,300원</div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 0</div>
+                    </div>
+                </li>
+                <li class="cell new-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/e19b19f2c7812aadb4c9c50573cb7769.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">케샤 귀걸이/귀찌</div>
+                        <div class="text-2">17,500원</div>
+                        <div class="text-3">신상특별가 : 16,600원</div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 0</div>
+                    </div>
+                </li>
+                <li class="cell new-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/89c002e0a733625a7d88e55b6e48b0dd.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">알리시아 귀걸이/귀찌</div>
+                        <div class="text-2">14,000원</div>
+                        <div class="text-3">신상특별가 : 13,300원</div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 2</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="bn-box-5 bn-box">
+        <div class="inner con">
+            <div class="top-bn">
+                <div class="img-box">
+                    <img src="./img/index.img/b6b0efcb43ce90c41521cd6e51e2f9b7.png" alt="">
+                </div>
+            </div>
+            <ul class="row">
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/cfc8f87eeb7533f07960a2c1d990cfb8.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[아이유착용]포르투나 귀걸이/귀찌♥</div>
+                        <div class="text-2">14,000원</div>
+                        <div class="text-3">착용연예인 : 아이유</div>
+                        <div class="text-4"></div>
+                        <div class="text-5">리뷰 : 174</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/733278161d99f941795d9a86e06d0ea1.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">쁘띠드레스 목걸이</div>
+                        <div class="text-2">12,000원</div>
+                        <div class="text-3">착용연예인 : CLC 예은, 에이프릴 나은</div>
+                        <div class="text-4"></div>
+                        <div class="text-5">리뷰 : 83</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/63638cf5a566844c96709014658b4e96.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[아이유착용] 꽃이피는날 귀걸이/귀찌♥</div>
+                        <div class="text-2">15,000원</div>
+                        <div class="text-3">착용연예인 : 아이유</div>
+                        <div class="text-4"></div>
+                        <div class="text-5">리뷰 : 529</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/67560460cae56fba90ecea20651c0deb.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">루나이펙트 귀걸이/귀찌</div>
+                        <div class="text-2">29,500원</div>
+                        <div class="text-3">착용연예인 : 트와이스 다현, 에이프릴 나은</div>
+                        <div class="text-4"></div>
+                        <div class="text-5">리뷰 : 508</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/eaa35aa6d4d470dfa873fa1334267006.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[아이유착용]플로스 귀걸이/귀찌♥</div>
+                        <div class="text-2">16,500원</div>
+                        <div class="text-3">착용연예인 : 아이유</div>
+                        <div class="text-4"></div>
+                        <div class="text-5">리뷰 : 112</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/5808fc2ba253df83462ffadd02e1e0aa.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[아이유착용]로맨틱드림 귀걸이/귀찌♥</div>
+                        <div class="text-2">18,000원</div>
+                        <div class="text-3">착용연예인 : 아이유, 트와이스 다현</div>
+                        <div class="text-4"></div>
+                        <div class="text-5">리뷰 : 290</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/86ca45616c64ee0a378eb65a44b9cd33.jpg" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[은침] 로망스윗 귀걸이/귀찌</div>
+                        <div class="text-2">11,500원</div>
+                        <div class="text-3">착용연예인 : 오마이걸 승희</div>
+                        <div class="text-4"></div>
+                        <div class="text-5">리뷰 : 58</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/ad8eca5291d26e472aba131d413bb81f.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[아이유착용] 셀리아나 귀걸이/귀찌</div>
+                        <div class="text-2">17,000원</div>
+                        <div class="text-3">착용연예인 : 아이유, 김유정</div>
+                        <div class="text-4"></div>
+                        <div class="text-5">리뷰 : 644</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/a0edc4f72542213f4836ba0c277816a9.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[아이유착용]꿈처럼다가와 귀걸이/귀찌</div>
+                        <div class="text-2">16,500원</div>
+                        <div class="text-3">착용연예인 : 아이유, 트와이스 미나</div>
+                        <div class="text-4"></div>
+                        <div class="text-5">리뷰 : 156</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/92bf8134c64d859b43bb901819c0ec89.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">눈부신하루 귀걸이/귀찌</div>
+                        <div class="text-2">14,000원</div>
+                        <div class="text-3">착용연예인 : CLC은빈, 아이즈원 김민주</div>
+                        <div class="text-4"></div>
+                        <div class="text-5">리뷰 : 446</div>
+                    </div>
+                </li>
+            </ul>
+            <div class="more-btn img-box">
+                <img src="./img/index.img/123.gif" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="bn-box-6 bn-box">
+        <div class="inner con">
+            <div class="top-bn">
+                <div class="img-box">
+                    <img src="./img/index.img/e576bb88ab6cbe633ca3ae4b57e522fb.jpg" alt="">
+                </div>
+            </div>
+            <div class="title">
+                <div>WINGBLING BEST</div>
+                <div>가장 많은 사랑을 받은 베스트아이템</div>
+            </div>
+            <ul class="row">
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/ffb726e88dafc50c1587d1d97dd902ce.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">아르떼 귀걸이/귀찌</div>
+                        <div class="text-2">13,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 532</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/63638cf5a566844c96709014658b4e96.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[아이유착용] 꽃이피는날 귀걸이/귀찌♥</div>
+                        <div class="text-2">15,000원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">리뷰 : 529</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/ad8eca5291d26e472aba131d413bb81f.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[아이유착용] 셀리아나 귀걸이/귀찌</div>
+                        <div class="text-2">17,000원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">리뷰 : 644</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/a9f6cf4ca12d192cd49ef08178d10f60.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">제니퍼 귀걸이♥</div>
+                        <div class="text-2">11,000원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">리뷰 : 314</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/7aedd83699a5bba00fd1e84ab90ee86c.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[누적판매1위]달의여신루나 귀걸이</div>
+                        <div class="text-2">[손예진 착용]<br>14,000원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">리뷰 : 3,525</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/b591c1043b6a420a9d2f9022e7b5bf8d.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[은침]라벤더블룸 귀걸이/귀찌</div>
+                        <div class="text-2">아이유<br>16,700원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">리뷰 : 326</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/67560460cae56fba90ecea20651c0deb.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">루나이펙트 귀걸이/귀찌</div>
+                        <div class="text-2">[초승달][은침]<br>29,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">리뷰 : 508</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/d6634670c22552dff4820ad3d0442af5.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[천연문스톤][데이블링] 문스톤티어스 귀걸이</div>
+                        <div class="text-2">23,000원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">리뷰 : 304</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/59c1158c4ad7c3e6df56c0437e0fcce2.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[주문폭주] 사계 귀걸이/귀찌</div>
+                        <div class="text-2">17,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">리뷰 : 177</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/92bf8134c64d859b43bb901819c0ec89.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">눈부신하루 귀걸이/귀찌</div>
+                        <div class="text-2">[은침]<br>14,000원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">리뷰 : 446</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/770_shop1_454692.jpg" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[925실버]이엘로 반지</div>
+                        <div class="text-2">All 925실버로 제작된 크리스탈 컷팅 실반지/레이어드 반지 특가</div>
+                        <div class="text-3">10,000원</div>
+                        <div class="text-4">신상특별가 : 4,900원</div>
+                        <div class="text-5">리뷰 : 2178</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/631db29dd52d33d4ff78c2b7d725bbea.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">매직스퀘어 귀걸이 [스와로브스키]</div>
+                        <div class="text-2">각도에 따라 달라지는 이어링<br>8,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 230</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/2591476950bd447f415860a236a9c6de.jpg" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">플로렌스 귀걸이/귀찌</div>
+                        <div class="text-2">22,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 833</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/742_shop1_554591.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[Silver925]어두운곳에서 빛나는 화이트문 목걸이</div>
+                        <div class="text-2">[야광달][실버925]<br>24,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">리뷰 : 1,622</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/5808fc2ba253df83462ffadd02e1e0aa.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[아이유착용]로맨틱드림 귀걸이/귀찌♥</div>
+                        <div class="text-2">[은침]<br>18,000원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">리뷰 : 290</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/1330_shop1_783926.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">예뻐서그래 귀걸이/ 귀찌</div>
+                        <div class="text-2">[베스트셀러]<br>13,000원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 2,982</div>
+                    </div>
+                </li>
+                <li class="cell sale10">
+                    <div class="img-box">
+                        <img src="./img/index.img/60a60278985528e0ab89f9b8be5d862a.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">♡쁘띠드레스 귀걸이/귀찌</div>
+                        <div class="text-2">13,500원</div>
+                        <div class="text-3">방구석할인가 : 12,100원</div>
+                        <div class="text-4">할인율 : 10%</div>
+                        <div class="text-5">리뷰 : 1,136</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/1317_shop1_481255.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">사랑에빠져 귀걸이/귀찌</div>
+                        <div class="text-2">[티타늄침][트와이스 채영/다현 착용]<br>14,000원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 2,159/div>
+                        </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/733278161d99f941795d9a86e06d0ea1.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">쁘띠드레스 목걸이</div>
+                        <div class="text-2">12,000원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 83</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/cfc8f87eeb7533f07960a2c1d990cfb8.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[아이유착용]포르투나 귀걸이/귀찌♥</div>
+                        <div class="text-2">[은침}<br>14,000원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 174</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/1385_shop1_369716.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">뮤토 귀걸이/귀찌</div>
+                        <div class="text-2">[은침}<br>13,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 1,853</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/79edd7546625137cd7e50bf6a4d63387.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[마지막입고!!][천연문스톤]낭만 고양이 귀걸이/귀찌</div>
+                        <div class="text-2">[마지막입고][리미티드] 품절시 재입고예정 없으며 단<br>종될 예정입니다.<br>31,400원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 16</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/265bb7114f7d9d36153cdfa209e4f76f.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">아이린 귀걸이</div>
+                        <div class="text-2">14,000원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 85</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/67962c4431efe95555f76a0280eba49b.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[데이블링] 록스 귀걸이</div>
+                        <div class="text-2">22,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 214</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/1467_shop1_15324262816037.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">홀리데이 헤이즈 귀걸이/귀찌</div>
+                        <div class="text-2">16,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 1,174</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/a4f01a8e84cfb690df49d7ed559fd0d6.jpg" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">루아의 정원 귀걸이/귀찌</div>
+                        <div class="text-2">15,900원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 415</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/e4d5e0323d11b17006b5a29e17bdd388.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">문스톤티어스 반지</div>
+                        <div class="text-2">19,000원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 113</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/21f0b8ee9a7fcb93c63254c12ab1a798.jpg" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">★3월3일부터배송★[천연문스톤]낭만 고양이 목걸이</div>
+                        <div class="text-2">21,800원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 24</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/6caf04a966d9848d6086e7bf3d8cbf3e.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">설렘주의보 귀걸이/귀찌</div>
+                        <div class="text-2">9,900원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 138</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/595_shop1_656195.jpg" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[은침] 고급스럽고 세련된 라인의 나뭇잎모티프 투웨이 이어링<br>14,900원</div>
+                        <div class="text-2">21,800원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 154</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/7bf401faca6ecbf4ebbe8430b77275d1.jpg" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">미드나잇 로맨스 귀걸이/귀찌</div>
+                        <div class="text-2">19,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 569</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/79edd7546625137cd7e50bf6a4d63387.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[마지막입고!!][천연문스톤]낭만 고양이 귀걸이/귀찌</div>
+                        <div class="text-2">[마지막입고][리미티드] 품절시 재입고예정 없으며 단종될 예정입니다.<br>33,000원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 17</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/548f3337d4d62bf24a27c08eb6143846.jpg" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">마리안느 귀걸이/귀찌</div>
+                        <div class="text-2">[무니켈침][담수진주][링귀걸이]<br>19,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 195</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/eaa35aa6d4d470dfa873fa1334267006.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[아이유착용]플로스 귀걸이/귀찌♥</div>
+                        <div class="text-2">16,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 112</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/1229_shop1_989708.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">앨리 탄생화 귀걸이/귀찌</div>
+                        <div class="text-2">[은침][탄생화][투웨이][장미수정]<br>13,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 2,767</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/f2bc2bd2aff2245ad578bb4caf5c6b8f.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[주문폭주] 아리엘루나 귀걸이/귀찌</div>
+                        <div class="text-2">26,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 67</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/1388_shop1_522123.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">보니따 귀걸이/귀찌</div>
+                        <div class="text-2">[은침][에이프릴/트와이스 착용]<br>
+                            15,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 1,085</div>
+                    </div>
+                </li>
+                <li class="cell new-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/e35336a4885e213ffddddd8ed94f7f34.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[925실버]델리나 귀걸이</div>
+                        <div class="text-2">19,800원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4">신상특별가 : 18,800원</div>
+                        <div class="text-5">
+                            리뷰 : 4</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/551ffac8e42486cc0ccc36e4a5b5ce38.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[천연문스톤] 빅토리아 목걸이</div>
+                        <div class="text-2">38,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 44</div>
+                    </div>
+                </li>
+                <li class="cell new-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/3302818d5f799595572004eb453968aa.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">헤일리 목걸이</div>
+                        <div class="text-2">12,000원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4">신상특별가 : 11,400원</div>
+                        <div class="text-5">
+                            리뷰 : 8</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/edfccfdf4e64edaf09647c7c08deb429.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[서울모티브]드로잉 서울 귀걸이/귀찌</div>
+                        <div class="text-2">25,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 142</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/ea276fe4839f19987b2eca032aa4edc5.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">겨울안에서 귀걸이/귀찌</div>
+                        <div class="text-2">12,300원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 148</div>
+                    </div>
+                </li>
+                <li class="cell new-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/d838c929f5619e187206e9a110b8fbf5.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">레이밍 귀걸이/귀찌</div>
+                        <div class="text-2">8,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4">신상특별가 : 13,100원</div>
+                        <div class="text-5">
+                            리뷰 : 3</div>
+                    </div>
+                </li>
+                <li class="cell new-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/89c002e0a733625a7d88e55b6e48b0dd.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">알리시아 귀걸이/귀찌</div>
+                        <div class="text-2">14,000원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4">신상특별가 : 13,300원</div>
+                        <div class="text-5">
+                            리뷰 : 2</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/0bae0ccf07923567c1b97e67f41b22d2.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[데이블링] 코델리아 귀걸이</div>
+                        <div class="text-2">14,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 172</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/761ff1b9477e0b976c8077675cc10c92.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[데이블링] 데이레이스 귀걸이</div>
+                        <div class="text-2">15,000원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 218</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/1430_shop1_15282958710329.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">허니비드림 귀걸이/귀찌</div>
+                        <div class="text-2">[은침][이주우/트와이스 착용]<br>25,900원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 558</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/ec68c50cebc99370c749476543497e70.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">러브엔젤라 귀걸이/귀찌</div>
+                        <div class="text-2">[우주소녀 루다착용][은침][장미수정]<br>
+                            17,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 62</div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="bn-box-7 bn-box">
+        <div class="inner con">
+            <div class="title">
+                <div>daybling</div>
+                <div>평범한 일상을 반짝이게! 데일리라인</div>
+            </div>
+            <ul class="row">
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/e4d5e0323d11b17006b5a29e17bdd388.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">문스톤티어스 반지</div>
+                        <div class="text-2">19,000원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 113</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/d6634670c22552dff4820ad3d0442af5.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[천연문스톤][데이블링] 문스톤티어스 귀걸이</div>
+                        <div class="text-2">23,000원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 304</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/471dfeb6e490bdcaa68061b265e5f7e2.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[925실버]안달루시아의 보석 귀걸이</div>
+                        <div class="text-2">24,300원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4">[All silver925]</div>
+                        <div class="text-5">
+                            리뷰 : 16</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/fd9c57d994e93c4e6a292fa16b463f06.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[데이블링] 꿈의조각 귀걸이</div>
+                        <div class="text-2">13,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4">[All silver925]</div>
+                        <div class="text-5">
+                            리뷰 : 142</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/67962c4431efe95555f76a0280eba49b.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[데이블링] 록스 귀걸이</div>
+                        <div class="text-2">22,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 214</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/9024741c039a4c5d4010b928df216a5a.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[데이블링] 나스르 귀걸이</div>
+                        <div class="text-2">14,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 99</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/0bae0ccf07923567c1b97e67f41b22d2.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[데이블링] 코델리아 귀걸이</div>
+                        <div class="text-2">14,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 172</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/511040db868233f0710e58c9e6ae0e2b.webp" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[925실버]그라나다의 추억 귀걸이</div>
+                        <div class="text-2">24,300원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4">[All silver925]</div>
+                        <div class="text-5">
+                            리뷰 : 8</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="bn-box-8 bn-box">
+        <div class="inner con">
+            <div class="title">
+                <div>겨울여신 프로젝트</div>
+                <div>당신의 겨울을 더 아름답게 만들어줄 Item</div>
+            </div>
+            <ul class="row">
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/a0ed8ce6f7cace107c7f9a9e89f92bc5.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">사계_겨울 귀걸이/귀찌</div>
+                        <div class="text-2">17,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 45</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/ed70bacd10dbc1b436b4f86a3ec4fa75.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">눈꽃처럼 귀걸이/귀찌</div>
+                        <div class="text-2">15,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 474</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/9b1e2d1061399c645dadbf34a69baf94.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[북극곰][후원반지] 빙하의눈물1 반지</div>
+                        <div class="text-2">16,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 737</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/a1744d3c80ca6e3b52d24ce31a0301c1.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">비쥬플뢰르 귀걸이/귀찌</div>
+                        <div class="text-2">15,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 44</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/cf46d542d2e9179dec8ad77c77a2e794.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">샤인윈터 귀걸이/귀찌</div>
+                        <div class="text-2">주문폭주(2차_긴급제작 완료!)<br>
+                            15,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 87</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/1335_shop1_140276.jpg" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[북극곰][후원목걸이] 빙하의눈물1 목걸이</div>
+                        <div class="text-2">[북극곰][후원목걸이]<br>
+                            18,800원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 466</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/1337_shop1_700315.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[북극곰][후원귀걸이] 빙하의눈물1 귀걸이/귀찌</div>
+                        <div class="text-2">[은침][북극곰][후원귀걸이]<br>
+                            18,800원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 635</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/7bf401faca6ecbf4ebbe8430b77275d1.jpg" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">미드나잇 로맨스 귀걸이/귀찌</div>
+                        <div class="text-2">19,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 569</div>
+                    </div>
+                </li>
+                <li class="cell celeb-item">
+                    <div class="img-box">
+                        <img src="./img/index.img/92bf8134c64d859b43bb901819c0ec89.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">눈부신하루 귀걸이/귀찌</div>
+                        <div class="text-2">[은침]<br>14,000원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 446</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/ee7bf079558190bc5a34d1d61cdf16b9.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">루미에르 귀걸이/귀찌</div>
+                        <div class="text-2">[은침][해와 달 모티브]<br>
+                            19,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 260</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/b3e02acef0291703fd16bed82b63d7fe.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">[시즌한정]눈꽃이슬 귀걸이/귀찌</div>
+                        <div class="text-2">[은침]<br>
+                            18,000원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 74</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box">
+                        <img src="./img/index.img/3370ab161b692f13efd66ebf843bd11e.gif" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-1">루나이펙트 목걸이</div>
+                        <div class="text-2">18,500원</div>
+                        <div class="text-3"></div>
+                        <div class="text-4"></div>
+                        <div class="text-5">
+                            리뷰 : 45</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="inner con">
+            <div class="bar-1">
+                <div class="menu-list-1">
+                    <div><a href="#">HOME</a></div>
+                    <div>/</div>
+                    <div><a href="#">협업제안 및 도매 (B2B)</a></div>
+                    <div>/</div>
+                    <div><a href="#">COMPANY</a></div>
+                    <div>/</div>
+                    <div><a href="#">AGREEMENT</a></div>
+                    <div>/</div>
+                    <div><a href="#">PRIVACY POLICY</a></div>
+                    <div>/</div>
+                    <div><a href="#">WINGBLING GLOBAL SITE</a></div>
+                </div>
+            </div>
+            <div class="bar-2 row">
+                <div class="cell">
+                    <div class="title">Callcenter</div>
+                    <div class="row">
+                        <div class="cell img-box">
+                            <img src="./img/index.img/phone.png" alt="">
+                        </div>
+                        <div class="text-box cell">
+                            <div class="tel">1522-5373</div>
+                            <div>Open / 11:00 - 17:00</div>
+                            <div>Lunch / 13:00 - 14:00</div>
+                            <div class="font-weight-bold">lunch monday / 12:30 - 14:00</div>
+                            <div>Sat, Sun, Holiday Closed</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cell">
+                    <div class="title">Bank account</div>
+                    <div class="text-box">
+                        <div>농협 355-0043-4365-13</div>
+                        <div>기업 537-042334-01-017</div>
+                        <div>국민 088201-04-177534</div>
+                        <div>우리 1005-403-034655</div>
+                        <div>예금주 : 주식회사 윙블링</div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="title">Company info</div>
+                    <div class="text-box">
+                        <div>COMPANY : (주)윙블링</div>
+                        <div>Co-CEO : 최재영, 신유정</div>
+                        <div>TEL : 1522-5373</div>
+                        <div>개인정보관리책임자 : <span class="hover-under-line">신혜인 (hyein@wingbling.co.kr)</span></div>
+                        <div>BUSINESS LICENSE : 415-81-56933</div>
+                        <div>ONLINE BUSINESS LICENSE : 2016-서울서초-1170 <span class="padding-left hover-under-line">[사업자정보확인]</span></div>
+                        <div>ADDRESS : 06665 서울특별시 서초구 효령로33길 23 (방배동) 3층 윙블링 물류센터</div>
+                        <div>HOSTING BY SIMPLEX INTERNET</div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="title">Delivery</div>
+                    <div class="text-box">
+                        <div>CJ 대한통운 : 1588-1255</div>
+                    </div>
+                    <div class="title">Return address</div>
+                    <div class="text-box">
+                        <div>서울특별시 서초구 효령로33길 23</div>
+                        <div>3층 윙블링 물류센터</div>
+                        <div class="red">(반품전 반드시 고객센터로 연락주세요)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="bar-3">
+                <div class="copyright cell">COPYRIGHT © wingbling. ALL RIGHT RESERVED.</div>
+                <div class="mark img-box cell-right">
+                    <img src="./img/index.img/escrow_43x43_gray.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="side-bar active">
+        <div class="menu-box">
+            <ul>
+                <li>
+                    <div class="1">Event</div>
+                </li>
+                <li>
+                    <div class="2">Notice</div>
+                </li>
+                <li>
+                    <div class="3">Q & A</div>
+                </li>
+                <li>
+                    <div class="4">Wish list</div>
+                </li>
+                <li>
+                    <div class="5">Bookmark</div>
+                </li>
+                <li>
+                    <div class="6">STORE</div>
+                </li>
+            </ul>
+        </div>
+        <div class="slider-box">
+            <div class="title">TODAY VIEW</div>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide img-box active">1
+                        <img src="./img/index.img/e576bb88ab6cbe633ca3ae4b57e522fb.jpg" alt=""></div>
+                    <div class="slide img-box">2
+                        <img src="./img/index.img/89c002e0a733625a7d88e55b6e48b0dd.webp" alt=""></div>
+                    <div class="slide img-box">3
+                        <img src="./img/index.img/44bad07069d6dafcb602033f9df7d298.jpg" alt=""></div>
+                    <div class="slide img-box">4
+                        <img src="./img/index.img/9878df85b8aa5381712b954c6c8e00d1.png" alt=""></div>
+                    <div class="slide img-box">5
+                        <img src="./img/index.img/85dd217fdff9dcf1ab4e98d93549fb03.jpg" alt=""></div>
+                </div>
+                <div class="side-btns">
+                    <div><img src="./img/index.img/btn_recent_prev.png" alt=""></div>
+                    <div><img src="./img/index.img/btn_recent_next.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="side-bar-tag">
+            <div class="img-box"><img src="./img/index.img/rmenu_btn.jpg" alt=""></div>
+        </div>
+    </div>
+
+    <div class="sns-ico-box row">
+        <div class="kakao cell img-box">
+            <img src="./img/index.img/0mnpk37r56.png" alt="">
+        </div>
+        <div class="naver cell img-box">
+            <img src="./img/index.img/37BkVNVMb0.png" alt="">
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+
+</html>

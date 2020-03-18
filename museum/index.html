@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>국립중앙박물관 모작페이지</title>
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- owl 캐러셀 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+
+    <!-- 스크롤리 파이 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+
+    <div class="pagination-box">
+        <a href="#page-0" class="top-btn"></a>
+        <ul class="pagination">
+            <li><a class="active" href="#page-1">특별전시</a></li>
+            <li><a class="" href="#page-2">이용안내</a></li>
+            <li><a class="" href="#page-3">일정안내</a></li>
+            <li><a class="" href="#page-4">알림</a></li>
+            <li><a class="" href="#page-5">교육</a></li>
+            <li><a class="" href="#page-6">공연·행사</a></li>
+            <li><a class="" href="#page-7">추천소장품</a></li>
+        </ul>
+        <a href="#page-8" class="bottom-btn"></a>
+    </div>
+
+    <div class="header relative">
+        <div class="top_bar_1 relative">
+            <div class="top_bar_1_inner con">
+                <section class="row">
+                    <div class="menu-1 cell"><a href="#">어린이박물관</a></div>
+                    <div class="menu-2 cell"><a href="#">박물관탐방</a></div>
+                    <div class="menu-3 cell"><a href="#">학예사 자격증</a></div>
+                    <div class="menu-4 cell"><a href="#">e뮤지엄</a></div>
+                    <div class="menu-5 cell"><a href="#">이러닝</a></div>
+                    <div class="menu-6 cell"><a href="#">박물관신문</a></div>
+                    <div class="menu-7 cell"><a href="#">문화상품점</a></div>
+                    <div class="menu-8 cell">
+                        <a href="#">소속박물관 바로가기</a>
+                        <section>
+                            <div class="2st-menu-1"><a href="#">국립경주박물관</a></div>
+                            <div class="2st-menu-2"><a href="#">국립광주박물관</a></div>
+                            <div class="2st-menu-3"><a href="#">국립전주박물관</a></div>
+                            <div class="2st-menu-4"><a href="#">국립대구박물관</a></div>
+                            <div class="2st-menu-5"><a href="#">국립부여박물관</a></div>
+                            <div class="2st-menu-6"><a href="#">국립공주박물관</a></div>
+                            <div class="2st-menu-7"><a href="#">국립진주박물관</a></div>
+                            <div class="2st-menu-8"><a href="#">국립청주박물관</a></div>
+                            <div class="2st-menu-9"><a href="#">국립김해박물관</a></div>
+                            <div class="2st-menu-10"><a href="#">국립제주박물관</a></div>
+                            <div class="2st-menu-11"><a href="#">국립춘천박물관</a></div>
+                            <div class="2st-menu-12"><a href="#">국립나주박물관</a></div>
+                            <div class="2st-menu-13"><a href="#">국립익산박물관</a></div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="top_bar_2 relative">
+            <div class="top_bar_2_inner con row">
+                <div class="logo-box cell"><a href="#"></a></div>
+                <div class="right-menu-box cell-right row">
+                    <div class="sns-ico-box cell">
+                        <div class="sns-n cell"><a href="#"></a></div>
+                        <div class="sns-t cell"><a href="#"></a></div>
+                        <div class="sns-f cell"><a href="#"></a></div>
+                        <div class="sns-i cell"><a href="#"></a></div>
+                        <div class="sns-u cell"><a href="#"></a></div>
+                        <div class="sns-ac cell"><a href="#"></a></div>
+                    </div>
+                    <div class="center-box cell row">
+                        <div class="cell"><a href="#">로그인</a></div>
+                        <div class="cell"><a href="#">회원가입</a></div>
+                        <div class="cell">
+                            <span href="#">Language</span>
+                            <div class="lang-menu-box">
+                                <div><a href="#">English</a></div>
+                                <div><a href="#">日本語</a></div>
+                                <div><a href="#">中文</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="search-box cell row">
+                        <input type="text">
+                        <button type="submit" value="" style="">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="top_bar_3 relative">
+            <div class="top_bar_3_inner con">
+                <section class="row">
+                    <div class="cell">
+                        <a href="#">관람 정보</a>
+                        <section>
+                            <div><a href="#">전시 관람</a></div>
+                            <div><a href="#">전시 해설</a></div>
+                            <div><a href="#">예약하기</a></div>
+                            <div><a href="#">관람편의시설</a></div>
+                            <div><a href="#">오시는 길</a></div>
+                            <div><a href="#">자주 하는 질문</a></div>
+                        </section>
+                    </div>
+                    <div class="cell">
+                        <a href="#">전시</a>
+                        <section>
+                            <div><a href="#">상설 전시</a></div>
+                            <div><a href="#">특별 전시</a></div>
+                            <div><a href="#">우리문화재 국외 전시</a></div>
+                            <div><a href="#">소속 국립박물관 전시</a></div>
+                            <div><a href="#">전시도록</a></div>
+                            <div><a href="#">외국박물관 소장 한국문화재</a></div>
+                        </section>
+                    </div>
+                    <div class="cell">
+                        <a href="#">교육·행사</a>
+                        <section>
+                            <div><a href="#">교육 신청</a></div>
+                            <div><a href="#">교육 자료</a></div>
+                            <div><a href="#">교육 소식</a></div>
+                            <div><a href="#">이러닝</a></div>
+                            <div><a href="#">문화 행사</a></div>
+                            <div><a href="#">학술 행사</a></div>
+                        </section>
+                    </div>
+                    <div class="cell">
+                        <a href="#">소장품</a>
+                        <section>
+                            <div><a href="#">큐레이터 추천 소장품</a></div>
+                            <div><a href="#">소장품 검색</a></div>
+                            <div><a href="#">국보 보물 검색</a></div>
+                            <div><a href="#">디지털 탑본</a></div>
+                            <div><a href="#">소장품 3D 보기</a></div>
+                            <div><a href="#">수어 동영상</a></div>
+                            <div><a href="#">소장품 열람 복제</a></div>
+                            <div><a href="#">문화재 기증 안내</a></div>
+                        </section>
+                    </div>
+                    <div class="cell">
+                        <a href="#">학술·출판</a>
+                        <section>
+                            <div><a href="#">정기간행물</a></div>
+                            <div><a href="#">고고학</a></div>
+                            <div><a href="#">역사학</a></div>
+                            <div><a href="#">미술사학</a></div>
+                            <div><a href="#">아시아학</a></div>
+                            <div><a href="#">보존과학</a></div>
+                            <div><a href="#">외규장각 의궤 원문</a></div>
+                            <div><a href="#">일제 강점기 조사 자료</a></div>
+                            <div><a href="#">도서관</a></div>
+                            <div><a href="#">기타</a></div>
+                        </section>
+                    </div>
+                    <div class="cell">
+                        <a href="#">소식·참여</a>
+                        <section>
+                            <div><a href="#">소식</a></div>
+                            <div><a href="#">자원봉사안내</a></div>
+                            <div><a href="#">학예사 자격증 안내</a></div>
+                            <div><a href="#">전자 민원</a></div>
+                            <div><a href="#">정보공개</a></div>
+                        </section>
+                    </div>
+                    <div class="cell">
+                        <a href="#">박물관 소개</a>
+                        <section>
+                            <div><a href="#">인사말</a></div>
+                            <div><a href="#">발자취</a></div>
+                            <div><a href="#">조직 및 업무</a></div>
+                            <div><a href="#">시설 소개</a></div>
+                            <div><a href="#">수장고</a></div>
+                            <div><a href="#">박물관 관련 자료</a></div>
+                            <div><a href="#">문화유산 표준관리시스템</a></div>
+                        </section>
+                    </div>
+                </section>
+                <div class="_2st_menu_box"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" data-section-name="page-0">
+        <div>page-1</div>
+        <div class="main-slider-box">
+            <div class="main-slider slider-k height-full" data-autoplay="Y" data-autoplay-dir="right" data-autoplay-interval="5000" data-play-stop-button="Y">
+                <div class="slides">
+                    <div class="slide-1 active"></div>
+                    <div class="slide-2">
+                        <div class="text-box">
+                            <div class="text-1 row"><span class="cell">현재전시</span><span class="cell">특별전시</span></div>
+                            <div class="text-2">가야본성-칼(劍)과 현(絃)</div>
+                            <div class="text-3">기획전시실 / 2019.12.03 - 2020.03.01</div>
+                        </div>
+                    </div>
+                    <div class="slide-3"></div>
+                    <div class="slide-4"></div>
+                    <div class="slide-5">
+                        <div class="text-box">
+                            <div class="text-1 row"><span class="cell">현재전시</span><span class="cell">특별전시</span></div>
+                            <div class="text-2">인간, 물질 그리고 변형-핀란드 디자인 10 000년</div>
+                            <div class="text-3">상설전시관 1층 특별전시실 / 2019.12.21 - 2020.04.05</div>
+                        </div>
+                    </div>
+                    <div class="slide-6"></div>
+                    <div class="slide-7">
+                        <div class="text-box">
+                            <div class="text-1 row"><span class="cell">예정전시</span><span class="cell">특별전시</span></div>
+                            <div class="text-2">꽃비 내리다 - 영천 은해사 괘불</div>
+                            <div class="text-3">서화관 불교회화실 / 2020.04.01 - 2020.10.11</div>
+                        </div>
+                    </div>
+                    <div class="slide-8">
+                        <div class="text-box">
+                            <div class="text-1 row"><span class="cell">현재전시</span><span class="cell">특별전시</span></div>
+                            <div class="text-2">손세기·손창근 기증 명품서화전3</div>
+                            <div class="text-3">상설전시관 2층 서화실 / 2019.11.12 - 2020.03.15</div>
+                        </div>
+                    </div>
+                    <div class="slide-9">
+                        <div class="text-box">
+                            <div class="text-1 row"><span class="cell">현재전시</span><span class="cell">특별전시</span></div>
+                            <div class="text-2">베트남 국립역사박물관 소장품展</div>
+                            <div class="text-3">기증관 가네코 가즈게시실(상설전시관 2층) / 2019.03.27 ~ 2020.11.01</div>
+                        </div>
+
+                    </div>
+                    <div class="slide-10">
+
+                    </div>
+                    <div class="slide-11">
+                        <div class="text-box">
+                            <div class="text-2">경주 감은사 삼층석탑 출토(금동전각형사리기)</div>
+                            <div class="text-3">통일신라 | 높이 30.2cm | 보물 제1359호</div>
+                        </div>
+                    </div>
+                    <div class="slide-12">
+                        <div class="text-box">
+                            <div class="text-2">금동반가사유상</div>
+                            <div class="text-3">상설전시실 3층 불교조각실<br>삼국시대 7세기 전반 | 국보 제83호</div>
+                        </div>
+                    </div>
+                    <div class="slide-13">
+                        <div class="text-box">
+                            <div class="text-2">외규장각 의궤</div>
+                            <div class="text-3">숙종의 일상과 의궤 | 조선실</div>
+                        </div>
+                    </div>
+                    <div class="slide-14">
+                        <div class="searchBox">
+                            <div class="e_search">
+                                <h2 class="searchTitle"></h2>
+                                <div class="inputField">
+
+                                    <input type="text" class="fsearchInput" title="소장품 정보를 입력" placeholder="소장품 정보를 입력해 주세요" autocomplete="off" onkeyup="enterkey(); return false;">
+                                    <button type="button" class="btn_emuseumSearch"></button>
+
+                                </div>
+                                <p class="searchDesc">
+                                    <span class="colorHi">전국의 박물관 · 미술관</span>
+                                    들이 소장하고 있는 다양한
+                                    <span class="colorHi">문화유산정보</span>
+                                    를 한자리에서
+                                    <span class="colorHi">통합 검색</span>
+                                    할 수 있는
+                                    <span class="colorHi">e뮤지엄 사이트</span>입니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="side-btns">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down-btn">
+            <div class="ico"></div>
+            <div class="text">scroll down</div>
+        </div>
+    </div>
+
+    <div class="page-1 page" data-section-name="page-1">
+        <div>page-2</div>
+        <div class="slider-2-box box relative">
+            <div class="title">특별전시</div>
+            <div class="slider slider-2 slider-k" data-autoplay="Y" data-autoplay-dir="right" data-autoplay-interval="5000" data-play-stop-button="Y">
+                <div class="slides">
+                    <div class="slide slide-1 active">
+                        <div class="main-img-box"></div>
+                        <div class="data-box">
+                            <div class="ico now">현재전시</div>
+                            <div class="title">인간, 물질 그리고 변형-핀란드 디자인 10 000년</div>
+                            <div class="text-box-1">
+                                <div class="date"><span>기간</span><span>2019-12-21 ~ 2020-04-05</span></div>
+                                <div class="place"><span>장소</span><span>상설전시관 1층 특별전시실</span></div>
+                            </div>
+                            <div class="text-box-2">
+                                우리는 '과거-현재-미래'처럼 단선적으로 생각하는 것에 익숙합니다. 만약 이러한 단순한 사고에서 벗어나, 새로운 관점에서 세계를 바라보면 어떠할까요? 국립중앙박물관과
+                                핀란드국립박물관이 함께 마련한 이번 특별...
+                            </div>
+                            <div class="more-btn"><a href="#">특별전시 목록보기</a> </div>
+                        </div>
+                    </div>
+                    <div class="slide slide-2" style="">
+                        <div class="main-img-box"></div>
+                        <div class="data-box">
+                            <div class="ico now">현재전시</div>
+                            <div class="title">세계문화관 개관(상설전시관 3층)</div>
+                            <div class="text-box-1">
+                                <div class="date"><span>기간</span><span>2019-12-16 ~ 2021-12-15</span></div>
+                                <div class="place"><span>장소</span><span>상설전시관 3층</span></div>
+                            </div>
+                            <div class="text-box-2">
+                                아시아에서 세계로 시선을 확장해 더욱 다양한 문화를 선보이기 위해 국립중앙박물관 아시아관이 "세계문화관"으로 거듭납니다. 새롭게 신설되는 이집트실은 미국 브루클린박물관에서 오는 미라와 관, 석상과 부장품 등...
+                            </div>
+                            <div class="more-btn"><a href="#">특별전시 목록보기</a> </div>
+                        </div>
+                    </div>
+                    <div class="slide slide-3" style="">
+                        <div class="main-img-box"></div>
+                        <div class="data-box">
+                            <div class="ico now">현재전시</div>
+                            <div class="title">가야본성-칼(劒)과 현(絃)</div>
+                            <div class="text-box-1">
+                                <div class="date"><span>기간</span><span>2019-12-03~2020-03-01</span></div>
+                                <div class="place"><span>장소</span><span>기획전시실</span></div>
+                            </div>
+                            <div class="text-box-2">
+                                가야 바로 알기 Q&A 다운로드 □ 전시개요 ◦ 전시명 : 가야본성-칼(劒)과 현(絃) ◦ 기간 : 2019. 12. 3.(화) - 2020. 3. 1.(일) ◦ 장소 : 국립중앙박물관 기획전시실 ◦...
+                            </div>
+                            <div class="more-btn"><a href="#">특별전시 목록보기</a> </div>
+                        </div>
+                    </div>
+                    <div class="slide slide-4" style="">
+                        <div class="main-img-box"></div>
+                        <div class="data-box">
+                            <div class="ico now">현재전시</div>
+                            <div class="title">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</div>
+                            <div class="text-box-1">
+                                <div class="date"><span>기간</span><span>2019-11-12~2020-03-15</span></div>
+                                <div class="place"><span>장소</span><span>상설전시관 2층 서화실</span></div>
+                            </div>
+                            <div class="text-box-2">
+                                국립중앙박물관은 손창근 님이 2018년 11월 부친 고故 손세기 님과 대를 이어 수집한 문화재 202건 304점을 기증한 것을 기념하며 세 번째 특별전, “안복眼福을 나누다”를 개최합니다. 안복은 아름다운 서화...
+                            </div>
+                            <div class="more-btn"><a href="#">특별전시 목록보기</a> </div>
+                        </div>
+                    </div>
+                    <div class="slide slide-5" style="">
+                        <div class="main-img-box"></div>
+                        <div class="data-box">
+                            <div class="ico now">현재전시</div>
+                            <div class="title">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</div>
+                            <div class="text-box-1">
+                                <div class="date"><span>기간</span><span>2019-11-05~2020-03-08</span></div>
+                                <div class="place"><span>장소</span><span>상설전시관 2층 서화실</span></div>
+                            </div>
+                            <div class="text-box-2">
+                                시・서・화 삼절의 묵향을 느끼다 시와 글씨와 그림은 하나일 수 있을까요? 옛 문인들은 시와 글씨와 그림을 모두 인간의 내면에서 자연스럽게 우러나온 것이며 이 세 가지에 모두 뛰어난 인물을 ‘삼절三絶’이라 일컬...
+                            </div>
+                            <div class="more-btn"><a href="#">특별전시 목록보기</a> </div>
+                        </div>
+                    </div>
+                    <div class="slide slide-6" style="">
+                        <div class="main-img-box"></div>
+                        <div class="data-box">
+                            <div class="ico now">현재전시</div>
+                            <div class="title">베트남 국립역사박물관 소장품展</div>
+                            <div class="text-box-1">
+                                <div class="date"><span>기간</span><span>2019-03-27 ~ 2020-11-01</span></div>
+                                <div class="place"><span>장소</span><span>기증관 가네코 가즈시게실(상설전시관 2층)</span></div>
+                            </div>
+                            <div class="text-box-2">
+                                국립중앙박물관 인도·동남아시아실 개편 베트남 국립역사박물관 소장품展 국립중앙박물관은 다양한 아시아 문화를 선보이고자 베트남 국립역사박물관과 전시협약을 맺고 베트남의 고대문화 및 청동·도자를 중심으로 베트남 상...
+                            </div>
+                            <div class="more-btn"><a href="#">특별전시 목록보기</a> </div>
+                        </div>
+                    </div>
+                    <div class="slide slide-7" style="">
+                        <div class="main-img-box"></div>
+                        <div class="data-box">
+                            <div class="ico expected">예정전시</div>
+                            <div class="title">새 보물의 봄나들이, 신국보보물전2017-2019</div>
+                            <div class="text-box-1">
+                                <div class="date"><span>기간</span><span>2020-04-14~2020-06-14</span></div>
+                                <div class="place"><span>장소</span><span>기획전시실</span></div>
+                            </div>
+                            <div class="text-box-2">
+                                “다시 오지 않을” 국보와 보물의 향연! 사상 최다 국보와 보물이 선보입니다. 단 62일 동안! 2017년~2019년에 새롭게 지정된 국보와 보물을 공개합니다. 한국을 대표하는 기록유산인 조선왕조실...
+                            </div>
+                            <div class="more-btn"><a href="#">특별전시 목록보기</a> </div>
+                        </div>
+                    </div>
+                    <div class="slide slide-8" style="">
+                        <div class="main-img-box"></div>
+                        <div class="data-box">
+                            <div class="ico expected">예정전시</div>
+                            <div class="title">꽃비 내리다-보물 제1270호 영천 은해사 괘불</div>
+                            <div class="text-box-1">
+                                <div class="date"><span>기간</span><span>2020-04-01~2020-10-11</span></div>
+                                <div class="place"><span>장소</span><span>서화관 불교회화실</span></div>
+                            </div>
+                            <div class="text-box-2">
+                                국립중앙박물관 2020년 괘불전 꽃비 내리다-보물 제1270호 영천 은해사 괘불 국립중앙박물관은 2020년 부처님 오신 날을 기념하여 ‘꽃비 내리다-영천 은해사 괘불’을 개최합니다. 이번 전시에는 바다...
+                            </div>
+                            <div class="more-btn"><a href="#">특별전시 목록보기</a> </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="side-btns">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down-btn">
+            <div class="ico"></div>
+            <div class="text">scroll down</div>
+        </div>
+    </div>
+
+    <div class="page-2 page" data-section-name="page-2">
+        <div>page-3</div>
+        <div class="bn-box-1 bn-box">
+            <div class="bn box relative">
+                <div class="title">이용안내</div>
+                <div class="contents row">
+                    <div class="menu-box-1 cell">
+                        <div class="menu-1 row">
+                            <div class="title cell">관람시간</div>
+                            <div class="text-box cell">
+                                <div class="1">
+                                    <span class="day">월·화·목·금 :</span>
+                                    <span class="time"> 10:00 ~ 18:00</span>
+                                </div>
+                                <div class="2">
+                                    <span class="day">수·토 :</span>
+                                    <span class="time">10:00 ~ 21:00</span>
+                                </div>
+                                <div class="3">
+                                    <span class="day">일·공휴일 :</span>
+                                    <span class="time">10:00 ~ 19:00</span>
+                                </div>
+                                <div class="notice">※ 옥외 전시장(정원)은 오전 7시부터 관람하실 수 있습니다.</div>
+                            </div>
+                        </div>
+                        <div class="menu-2 row">
+                            <div class="title cell">휴관일 및 휴실일</div>
+                            <div class="text-box cell">
+                                <div class="1">
+                                    <span class="day">휴관일 :</span>
+                                    <span class="time"> 1월 1일, 설날(1.25.), 추석(10.1.)</span>
+                                </div>
+                                <div class="2">
+                                    <span class="day">상설전시 휴실일 :</span>
+                                    <span class="time"> 매년 4,11월 첫째 월요일</span>
+                                </div>
+                                <div class="3">
+
+                                    <span class="time">- 2020년 휴실일 : 4.6.(월) / 11.2.(월)</span>
+                                </div>
+                                <div class="notice">※ 기획전시실(특별전시 종료시 휴실), 어린이박물관, 야외전시장은 정상 개관</div>
+                            </div>
+                        </div>
+                        <div class="menu-3 row">
+                            <div class="title cell">야간개장</div>
+                            <div class="text-box cell">
+                                <div class="1">
+                                    <span class="day">월·화·목·금 :</span>
+                                    <span class="time"> 10:00 ~ 18:00</span>
+                                </div>
+                                <div class="2">
+                                    <span class="day">수·토 :</span>
+                                    <span class="time">10:00 ~ 21:00</span>
+                                </div>
+                                <div class="3">
+                                    <span class="day">일·공휴일 :</span>
+                                    <span class="time">10:00 ~ 19:00</span>
+                                </div>
+                                <div class="notice">※ 옥외 전시장(정원)은 오전 7시부터 관람하실 수 있습니다.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box-2 cell relative">
+                        <div class="menu-1 row">
+                            <div class="title cell">관람료</div>
+                            <div class="text-box cell">
+                                <div class="1">
+                                    <div class="sub-title">무료</div>
+                                    <div class="text">
+                                        <div>상설전시관, 어린이박물관, 무료 특별전시</div>
+                                        <div>상설전시관은 관람권 없이 바로 입장합니다</div>
+                                    </div>
+                                </div>
+                                <div class="2">
+                                    <div class="sub-title">유료</div>
+                                    <div class="text">
+                                        <div>유료 기획전시</div>
+                                        <div>관람권 : 기획전시실 앞 매표소 (관람종료 30전까지)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-2 row">
+                            <div class="cell">
+                                <div class="img"></div>
+                                <div class="title"></div>
+                            </div>
+                            <div class="cell">
+                                <div class="img"></div>
+                                <div class="title"></div>
+                            </div>
+                            <div class="cell">
+                                <div class="img"></div>
+                                <div class="title"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="more-btn"><a href="#">이용안내 더보기</a></div>
+
+            </div>
+        </div>
+        <div class="scroll-down-btn">
+            <div class="ico"></div>
+            <div class="text">scroll down</div>
+        </div>
+    </div>
+
+    <div class="page-3 page" data-section-name="page-3">
+        <div>page-4</div>
+        <div class="calendar-box">
+            <div class="title">
+                <div class="year-month">
+                    <span>2020년</span><span>2월</span>
+                </div>
+                <div class="side-btns">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="table-box">
+                <table class="calendar">
+                    <htead>
+                        <tr>
+                            <th>일요일</th>
+                            <th>월요일</th>
+                            <th>화요일</th>
+                            <th>수요일</th>
+                            <th>목요일</th>
+                            <th>금요일</th>
+                            <th>토요일</th>
+                        </tr>
+                    </htead>
+                    <tbody>
+                        <tr>
+                            <!--첫째주 시작 -->
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="date">1</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+                                <div class="menu-2">
+                                    <p class="title-2">행사</p>
+                                    <a href="#">가족뮤지컬 〈장화 신은 고양이 비긴즈〉</a>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="date">2</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+                                <div class="menu-2">
+                                    <p class="title-2">행사</p>
+                                    <a href="#">가족뮤지컬 〈장화 신은 고양이 비긴즈〉</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="date">3</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+
+                            </td>
+                            <td>
+                                <div class="date">4</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="date">5</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="date">6</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="date">7</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="date">8</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="date">9</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+
+                            </td>
+                            <td>
+                                <div class="date">10</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+
+                            </td>
+                            <td>
+                                <div class="date">11</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="date">12</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="date">13</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="date">14</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="date">15</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="date">16</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+
+                            </td>
+                            <td>
+                                <div class="date">17</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+
+                            </td>
+                            <td>
+                                <div class="date">18</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="date">19</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+                                <div class="menu-2">
+                                    <p class="title-2">행사</p>
+                                    <a href="#">2020년 2월 큐레이터와의 대화</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="date">20</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="date">21</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="date">22</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="date">23</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+
+                            </td>
+                            <td>
+                                <div class="date">24</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+
+                            </td>
+                            <td>
+                                <div class="date">25</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="date">26</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+                                <div class="menu-2">
+                                    <p class="title-2">행사</p>
+                                    <a href="#">2020년 2월 큐레이터와의 대화</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="date">27</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="date">28</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="date">29</div>
+                                <div class="menu-1">
+                                    <p class="title-1">전시</p>
+                                    <a href="#">베트남 국립역사박물관 소장품展</a>
+                                    <a href="#">자하 신위 탄생 250주년 기념 서화전: 자줏빛 노을에 물들다</a>
+                                    <a href="#">손세기·손창근 기증 명품서화전 3: 안복眼福을 나누다</a>
+                                    <a href="#">가야본성-칼(劒)과 현(絃)</a>
+                                    <a href="#">세계문화관 개관(상설전시관 3층)</a>
+                                    <a href="#">인간, 물질 그리고 변형-핀란드 디자인 10 000년</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="scroll-down-btn">
+            <div class="ico"></div>
+            <div class="text">scroll down</div>
+        </div>
+    </div>
+
+    <div class="page-4 page" data-section-name="page-4">
+        <div>page-5</div>
+        <div class="bn-box bn-box-2 relative">
+            <div class="bn box">
+                <div class="title">알림</div>
+                <div class="contents row">
+                    <div class="menu-box-1 cell">
+                        <div class="tab-box relative">
+                            <div class="tab-head row">
+                                <div class="tab-title tab-title-1 cell active">
+                                    <div href="#">알림</div>
+                                </div>
+                                <div class="tab-title tab-title-2 cell">
+                                    <div href="#">고시/공고</div>
+                                </div>
+                                <div class="tab-title tab-title-3 cell">
+                                    <div href="#">채용안내</div>
+                                </div>
+                                <div class="tab-title tab-title-4 cell">
+                                    <div href="#">보도자료</div>
+                                </div>
+                                <div class="more-btn cell">
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="tab-contents">
+                                <div class="tab-page-1 active">
+                                    <div>
+                                        <span class="title">2.21.(금) 국립중앙박물관 도서관 보수작업 알림</span>
+                                        <span class="date">2020.02.18</span>
+
+                                    </div>
+                                    <div>
+                                        <span class="title">청소년 자원봉사자 잠정 중단 알림_2020.2.19(수)~2.29(토)_(3월미정)</span>
+                                        <span class="date">2020.02.17</span>
+
+                                    </div>
+                                    <div>
+                                        <span class="title">분실물 정보 안내</span>
+                                        <span class="date">2020.02.17</span>
+
+                                    </div>
+                                    <div>
+                                        <span class="title">국립중앙박물관 행복배달부 원고 공모 수상자 발표</span>
+                                        <span class="date">2020.02.14</span>
+
+                                    </div>
+                                    <div>
+                                        <span class="title">기증관 휴게실(상설전시관2층) 임시 폐쇄</span>
+                                        <span class="date">2020.02.13</span>
+
+                                    </div>
+                                    <div>
+                                        <span class="title">2020년 국립중앙박물관 청년기자단 모집</span>
+                                        <span class="date">2020.02.11</span>
+
+                                    </div>
+                                </div>
+                                <div class="tab-page-2">
+                                    <div><span class="title">2020년 상반기 박물관·미술관 학예사 자격증 및 경력인정대상기관 심사 계획 공고</span><span class="date">2020-01-20</span></div>
+                                    <div><span class="title">
+                                            2019년 하반기 박물관 미술관 학예사 자격증 및 경력인정대상기관 심사 결과 공고</span><span class="date">2019-10-25</span></div>
+                                    <div><span class="title">급 식 재 료 납 품 업 체 모 집 공 고</span><span class="date">2019-09-25</span></div>
+                                    <div><span class="title">국립중앙박물관 특별전 『인간, 물질 그리고 변형-핀란드 디자인 10 000년』 도록 위탁 출판 재공고</span><span class="date">2019-09-24</span></div>
+                                    <div><span class="title">국립중앙박물관 특별전 도록 『핀란드, 10 000년의 디자인(가제)』위탁 출판 공고</span><span class="date">2019-09-16</span></div>
+                                    <div><span class="title">국립중앙박물관 실감콘텐츠 체험관 조성 사업 입찰 공고</span><span class="date">2019-08-09</span></div>
+                                </div>
+                                <div class="tab-page-3">
+                                    <div><span class="title">
+                                            국립중앙박물관 보존과학부 기간제근로자(휴직대체인력) 채용 공고</span><span class="date">2020-02-18</span></div>
+                                    <div><span class="title">국립중앙박물관 보존과학부 공무직(학예보조) 채용 공고</span><span class="date">2020-02-18</span></div>
+                                    <div><span class="title">국립중앙박물관 유물관리부 기간제근로자(학예보조-휴직대체인력) 채용시험 최종 합격자 공고</span><span class="date">2020-02-18</span></div>
+                                    <div><span class="title">국립중앙박물관 유물관리부 기간제근로자(학예보조-수장고 중층화) 채용시험 최종합격자 공고</span><span class="date">2020-02-18</span></div>
+                                    <div><span class="title">
+                                            국립중앙박물관 유물관리부 기간제근로자(학예보조-휴직대체인력) 서류전형 합격자 및 면접시험 공고</span><span class="date">2020-02-14</span></div>
+                                    <div><span class="title">국립중앙박물관 유물관리부 기간제근로자(학예보조-수장고 중층화) 서류전형 합격자 및 면접시험 공고</span><span class="date">2020-02-14</span></div>
+                                </div>
+                                <div class="tab-page-4">
+                                    <div><span class="title">
+                                            [국립중앙박물관]2020년 국립중앙박물관 청년기자단 모집</span><span class="date">2020-02-17</span></div>
+                                    <div><span class="title">[국립경주박물관] SNS기자단 '박물관 친구들' 발대식 개최</span><span class="date">2020-02-07</span></div>
+                                    <div><span class="title">
+                                            [국립대구박물관] 2020년“정월대보름 문화행사”취소</span><span class="date">2020-02-05</span></div>
+                                    <div><span class="title">
+                                            [국립중앙박물관]2020년 2월 ‘큐레이터와의 대화’ 프로그램 소개</span><span class="date">2020-02-03</span></div>
+                                    <div><span class="title">
+                                            [국립경주박물관] 어린이박물관 임시 휴관일 알림</span><span class="date">2020-01-31</span></div>
+                                    <div><span class="title">
+                                            [국립대구박물관] 2020년“정월대보름 문화행사”개최 - 문화체험·민속놀이·영화상영 -</span><span class="date">2020-01-29</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box-2 cell">
+                        <div class="title">팝업</div>
+                        <div class="slider slider-k" data-autoplay="Y" data-autoplay-dir="right" data-autoplay-interval="5000" data-play-stop-button="Y">
+                            <div class="slides">
+                                <div class="slide active"></div>
+                                <div class="slide"></div>
+                                <div class="slide"></div>
+                                <div class="slide"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down-btn">
+            <div class="ico"></div>
+            <div class="text">scroll down</div>
+        </div>
+    </div>
+
+    <div class="page-5 page" data-section-name="page-5">
+        <div>page-6</div>
+        <div class="slider-3-box bn-box relative box">
+            <div class="title">교육</div>
+            <div class="slider slider-3 slider-k" data-autoplay="Y" data-autoplay-dir="right" data-autoplay-interval="5000" data-play-stop-button="Y">
+                <div class="slides">
+                    <div class="slide row slide-1 active">
+                        <div class="cell">
+                            <div class="bn expected">접수예정</div>
+                            <div class="title">[학급단체] 교과서는 살아 있다 - 이집트</div>
+                            <div class="date">2020-04-14~2020-07-08</div>
+                            <div class="text-1">교과 연계 이집트 전시품 감상 교육</div>
+                            <div class="notice">
+                                <div><span>대상</span><span>초등 5~6학년, 중등 1~3학년 학급단체 30명 이내</span></div>
+                                <div><span>참가비</span><span>무료</span></div>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="bn now">접수중</div>
+                            <div class="title">2020년 찾아가는 박물관</div>
+                            <div class="date">2020-03-23~2020-11-26</div>
+                            <div class="text-1">과학으로 밝힌 문화재의 비밀 / 문화재 관람 및 모형 제작, 기법 체험</div>
+                            <div class="notice">
+                                <div><span>대상</span><span>초‧중등 학급 및 학교, 지역문화축제 등</span></div>
+                                <div><span>참가비</span><span>무료</span></div>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="bn now">접수중</div>
+                            <div class="title">[학급단체] 2020년 태블릿 PC로 떠나는 박물...</div>
+                            <div class="date">2020-04-02~2020-11-30</div>
+                            <div class="text-1">증강현실(AR) 기술 활용 주요 전시품 탐색, 미션 해결</div>
+                            <div class="notice">
+                                <div><span>대상</span><span>초등 4~6학년, 중등 1~3학년 학급단체 30명 이내</span></div>
+                                <div><span>참가비</span><span>무료</span></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="slide row slide-2">
+                        <div class="cell">
+                            <div class="bn finished">접수마감</div>
+                            <div class="title">[학급단체] 상반기 국립중앙박물관 보물을 찾아</div>
+                            <div class="date">2020-03-30~2020-05-18</div>
+                            <div class="text-1">자기주도형 학습지 활용 전시품 탐구 및 신체 표현 활동</div>
+                            <div class="notice">
+                                <div><span>대상</span><span>초등학교 5~6학년 학급 단체 / 회당 25명 이내</span></div>
+                                <div><span>참가비</span><span>무료</span></div>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="bn now">접수중</div>
+                            <div class="title">[학급단체] 상반기 국립중앙박물관 보물을 찾아</div>
+                            <div class="date">2020-03-23~2020-06-29</div>
+                            <div class="text-1">자기주도형 학습지 활용 전시품 탐구</div>
+                            <div class="notice">
+                                <div><span>대상</span><span>초등학교 5~6학년 학급 단체 / 회당 30명 이내</span></div>
+                                <div><span>참가비</span><span>무료</span></div>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="bn expected">접수예정</div>
+                            <div class="title">[학급단체] 교과서는 살아 있다 - 이집트</div>
+                            <div class="date">2020-04-14~2020-07-08</div>
+                            <div class="text-1">교과 연계 이집트 전시품 감상 교육</div>
+                            <div class="notice">
+                                <div><span>대상</span><span>초등 5~6학년, 중등 1~3학년 학급단체 30명 이내</span></div>
+                                <div><span>참가비</span><span>무료</span></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="side-btns">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="more-btn">
+                <a href="#">교육 목록 보기</a>
+            </div>
+
+        </div>
+        <div class="scroll-down-btn">
+            <div class="ico"></div>
+            <div class="text">scroll down</div>
+        </div>
+    </div>
+
+    <div class="page-6 page" data-section-name="page-6">
+        <div>page-7</div>
+        <div class="slider-4-box relative box">
+            <div class="title">공연 · 행사</div>
+            <div class="slider slider-4 slider-k" data-autoplay="Y" data-autoplay-dir="right" data-autoplay-interval="5000" data-play-stop-button="Y">
+                <div class="slides">
+                    <div class="slide slide-1 active">
+                        <div class="main-img-box"></div>
+                        <div class="data-box">
+                            <div class="ico expected">현재전시</div>
+                            <div class="title">이야기가 흐르는 가곡다방</div>
+                            <div class="text-box-1">
+                                <div class="place"><span>장소</span><span>국립중앙박물관 극장 용</span></div>
+                                <div class="date"><span>기간</span><span>2020-04-17 ~ 2020-04-19</span></div>
+                                <div class="time"><span>시간</span><span>금 오후 8시 / 토,일 오후 3시</span></div>
+                                <div class="pay"><span>입장료</span><span>R석 50,000원 / S석 30,000원 / 스페셜 피트석 35,000원</span></div>
+                            </div>
+
+                            <div class="more-btn"><a href="#">공연 · 행사 목록보기</a> </div>
+                        </div>
+                    </div>
+                    <div class="slide slide-1">
+                        <div class="main-img-box"></div>
+                        <div class="data-box">
+                            <div class="ico expected">현재전시</div>
+                            <div class="title">이야기가 흐르는 가곡다방</div>
+                            <div class="text-box-1">
+                                <div class="place"><span>장소</span><span>국립중앙박물관 극장 용</span></div>
+                                <div class="date"><span>기간</span><span>2020-04-17 ~ 2020-04-19</span></div>
+                                <div class="time"><span>시간</span><span>금 오후 8시 / 토,일 오후 3시</span></div>
+                                <div class="pay"><span>입장료</span><span>R석 50,000원 / S석 30,000원 / 스페셜 피트석 35,000원</span></div>
+                            </div>
+
+                            <div class="more-btn"><a href="#">공연 · 행사 목록보기</a> </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="side-btns">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="scroll-down-btn">
+            <div class="ico"></div>
+            <div class="text">scroll down</div>
+        </div>
+
+    </div>
+
+    <div class="page-7 page" data-section-name="page-7">
+        <div>page-7</div>
+        <div class="slider-5-box bn-box bn-box-5 box">
+            <div class="title">큐레이터 추천 소장품</div>
+            <div class="slider slider-5 slider-k" data-autoplay="Y" data-autoplay-dir="right" data-autoplay-interval="5000" data-play-stop-button="Y">
+                <div class="slides">
+                    <div class="slide slide-1 row">
+                        <div class="cell">
+                            <div class="img-box"><img src="./img/index.img/9e29fbd4e9364468db0fee4029c3897a_thumb.jpg" alt=""></div>
+                            <div class="title">국보 78호 금동반가사유상(金銅...</div>
+                        </div>
+                        <div class="cell">
+                            <div class="img-box"><img src="./img/index.img/d13f67ad07c4c9e1671d1f748cb1ffb8_thumb.jpg" alt=""></div>
+                            <div class="title">장송낙일(長松落日)</div>
+                        </div>
+                        <div class="cell">
+                            <div class="img-box"><img src="./img/index.img/0B8D9086-76DE-E18E-F8A3-4622ABD3504E_thumb.jpg" alt=""></div>
+                            <div class="title">대방광불화엄경소 권제30, 송나...</div>
+                        </div>
+
+                    </div>
+                    <div class="slide slide-2 row">
+                        <div class="cell">
+                            <div class="img-box"><img src="./img/index.img/288d2f5966612969d47852bd37424558_thumb.jpg" alt=""></div>
+                            <div class="title">청동 북 - 동남아시아 선사 문...</div>
+                        </div>
+                        <div class="cell">
+                            <div class="img-box"><img src="./img/index.img/9c190068ccf6c4e840ff5f7308944045_thumb.jpg" alt=""></div>
+                            <div class="title">부석사의 오래된 큰 그림 [浮石...</div>
+                        </div>
+                        <div class="cell">
+                            <div class="img-box"><img src="./img/index.img/ssu002662-00.jpg" alt=""></div>
+                            <div class="title">간돌검(磨製石劍)</div>
+                        </div>
+
+                    </div>
+                    <div class="slide slide-3 row">
+                        <div class="cell">
+                            <div class="img-box"><img src="./img/index.img/EE9A57CB-8C58-BDED-00D2-224BB2E9CAC4_thumb.jpg" alt=""></div>
+                            <div class="title">신선이 사는 세계, 낙랑 무덤에...</div>
+                        </div>
+                        <div class="cell">
+                            <div class="img-box"><img src="./img/index.img/1f2fd19db9cd44c150d80335d8a6deb9_thumb.jpg" alt=""></div>
+                            <div class="title">식리총 금동신발(金銅飾履)</div>
+                        </div>
+                        <div class="cell">
+                            <div class="img-box"><img src="./img/index.img/E3731193-4297-6AC6-BD9C-76F6F6EACA8D_thumb.jpg" alt=""></div>
+                            <div class="title">청자 풀꽃무늬 표주박모양 주자와 승반</div>
+                        </div>
+
+                    </div>
+                    <div class="slide slide-4 row">
+                        <div class="cell">
+                            <div class="img-box"><img src="./img/index.img/27C0884F-9FAA-DFB1-D5BE-7C790BC7BA2B_thumb.jpg" alt=""></div>
+                            <div class="title">창원 다호리 유적에서 출토된 세....</div>
+                        </div>
+                        <div class="cell">
+                            <div class="img-box"><img src="./img/index.img/c5f15f3072e09f4bb6c83a5ca3454c1f_thumb.jpg" alt=""></div>
+                            <div class="title">방형대좌 금동반가사유상(金銅半跏...</div>
+                        </div>
+                        <div class="cell">
+                            <div class="img-box"><img src="./img/index.img/DD76C4DF-7A05-72F5-F696-5A1EF7E8F896_thumb.jpg" alt=""></div>
+                            <div class="title">〈석굴수서(石窟授書)〉, 근대기...</div>
+                        </div>
+
+                    </div>
+                    <div class="slide slide-5 row">
+                        <div class="cell">
+                            <div class="img-box"><img src="./img/index.img/duk002748-00-00.jpg" alt=""></div>
+                            <div class="title">광주 하사창동 출토 철불(鐵造佛坐像)</div>
+                        </div>
+                        <div class="cell">
+                            <div class="img-box"><img src="./img/index.img/5BC641AF-3D0B-F447-CFE9-99734B7C1B5E_thumb.jpg" alt=""></div>
+                            <div class="title">가야 금동관(金銅冠)</div>
+                        </div>
+                        <div class="cell">
+                            <div class="img-box"><img src="./img/index.img/koo03172.jpg" alt=""></div>
+                            <div class="title">정조 임금 편지</div>
+                        </div>
+
+                    </div>
+                    <div class="slide slide-6 row">
+                        <div class="cell">
+                            <div class="img-box"><img src="./img/index.img/0cc052d9a1a9b09bafcd3a84b2da2d2c_thumb.jpg" alt=""></div>
+                            <div class="title">금동 여지무늬 허리띠 - 여지(...</div>
+                        </div>
+                        <div class="cell">
+                            <div class="img-box"><img src="./img/index.img/1b68f422dcdf849e378527e93f30818f_thumb.jpg" alt=""></div>
+                            <div class="title">이채 초상(李采 肖像)</div>
+                        </div>
+                        <div class="cell">
+                            <div class="img-box"><img src="./img/index.img/e7ac7140bbd6ca02925e16adb0d5e0c5_thumb.jpg" alt=""></div>
+                            <div class="title">겐지모노가타리 화첩(源氏物語畫帖)</div>
+                        </div>
+
+                    </div>
+                    <div class="slide slide-7 row active">
+                        <div class="cell">
+                            <div class="img-box"><img src="./img/index.img/1472c625d117f5e66a3fe20128fa3511_thumb.jpg" alt=""></div>
+                            <div class="title">'홍무 23년'명 직물 마패</div>
+                        </div>
+                        <div class="cell">
+                            <div class="img-box"><img src="./img/index.img/ssu013521-00-09.jpg" alt=""></div>
+                            <div class="title">감로도(甘露圖)</div>
+                        </div>
+                        <div class="cell">
+                            <div class="img-box"><img src="./img/index.img/9e29fbd4e9364468db0fee4029c3897a_thumb.jpg" alt=""></div>
+                            <div class="title">국보 78호 금동반가사유상(金銅...</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="side-btns">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="more-btn">
+                <a href="#">추천 소장품 목록 보기</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer" data-section-name="page-8">
+        <div class="inner con relative">
+            <div class="slider-box carousel-1 relative" data-carousel-1-autoplay-status="Y">
+                <div class="slider owl-carousel owl-theme">
+                    <div class="slide item">
+                        <a href="#"></a>
+                        <img src="./img/index.img/474204.jpg" alt="">
+                    </div>
+                    <div class="slide item">
+                        <a href="#"></a><img src="./img/index.img/348843.jpg" alt="">
+                    </div>
+                    <div class="slide item">
+                        <a href="#"></a><img src="./img/index.img/462364.jpg" alt="">
+                    </div>
+                    <div class="slide item">
+                        <a href="#"></a><img src="./img/index.img/531619.jpg" alt="">
+                    </div>
+                    <div class="slide item">
+                        <a href="#"></a><img src="./img/index.img/482778.jpg" alt="">
+                    </div>
+                    <div class="slide item">
+                        <a href="#"></a><img src="./img/index.img/125.png" alt="">
+                    </div>
+                    <div class="slide item">
+                        <a href="#"></a><img src="./img/index.img/126.png" alt="">
+                    </div>
+                    <div class="slide item">
+                        <a href="#"></a><img src="./img/index.img/16954.png" alt="">
+                    </div>
+                    <div class="slide item">
+                        <a href="#"></a><img src="./img/index.img/16955.png" alt="">
+                    </div>
+                    <div class="slide item">
+                        <a href="#"></a><img src="./img/index.img/479224.jpg" alt="">
+                    </div>
+                    <div class="slide item">
+                        <a href="#"></a><img src="./img/index.img/16957.png" alt="">
+                    </div>
+                    <div class="slide item">
+                        <a href="#"></a><img src="./img/index.img/16958.png" alt="">
+                    </div>
+                    <div class="slide item">
+                        <a href="#"></a><img src="./img/index.img/16960.png" alt="">
+                    </div>
+                    <div class="slide item">
+                        <a href="#"></a><img src="./img/index.img/16959.png" alt="">
+                    </div>
+                    <div class="slide item">
+                        <a href="#"></a><img src="./img/index.img/16962.png" alt="">
+                    </div>
+                    <div class="slide item">
+                        <a href="#"></a><img src="./img/index.img/16963.png" alt="">
+                    </div>
+                    <div class="slide item">
+                        <a href="#"></a><img src="./img/index.img/297946.png" alt="">
+                    </div>
+                    <div class="slide item">
+                        <a href="#"></a><img src="./img/index.img/297947.png" alt="">
+                    </div>
+                    <div class="slide item">
+                        <a href="#"></a><img src="./img/index.img/16964.png" alt="">
+                    </div>
+                    <div class="slide item">
+                        <a href="#"></a><img src="./img/index.img/298237.png" alt="">
+                    </div>
+                    <div class="slide item">
+                        <a href="#"></a><img src="./img/index.img/16965.png" alt="">
+                    </div>
+                    <div class="slide item">
+                        <a href="#"></a><img src="./img/index.img/16966.png" alt="">
+                    </div>
+                </div>
+                <div class="play"></div>
+                <div class="stop"></div>
+            </div>
+            <div class="list-1">
+                <div class="row">
+                    <div class="cell">
+                        <a href="/site/main/content/relics_management_system" class="btn_mng">문화유산표준관리시스템</a>
+                    </div>
+                    <div class="cell">
+                        <a href="http://www.museum.go.kr/site/main/mento/index" class="btn_mng" target="_blank" title="새창으로 열림">청년멘토</a>
+                    </div>
+                    <div class="cell">
+                        <a href="#">가이드북 다운로드<span></span></a>
+                        <ul>
+                            <li><a href="#">한국어(PDF)</a></li>
+                            <li><a href="#">English(PDF)</a></li>
+                            <li><a href="#">中文(PDF)</a></li>
+                            <li><a href="#">日本語(PDF)</a></li>
+                            <li><a href="#">Русский(PDF)</a></li>
+                            <li><a href="#">Français(PDF)</a></li>
+                            <li><a href="#">Deutsche(PDF)</a></li>
+                            <li><a href="#">Tiếng Việt(PDF)</a></li>
+                            <li><a href="#">Español(PDF)</a></li>
+                            <li><a href="#">العربية(PDF)</a></li>
+                            <li><a href="#">박물관 야외정원 안내</a></li>
+                            <li><a href="#">프로그램(2월~4월)</a></li>
+                        </ul>
+                    </div>
+                    <div class="cell">
+                        <a href="#">관련사이트 바로가기<span></span></a>
+                        <ul>
+                            <li><a href="#">국립박물관 문화재단</a></li>
+                            <li><a href="#">국립중앙박물관회</a></li>
+                            <li><a href="#">사단법인 한국박물관협회</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="list-2">
+                <div class="row">
+                    <div class="cell"><a href="#">개인정보처리방침</a></div>
+                    <div class="cell"><a href="#">전자민원</a></div>
+                    <div class="cell"><a href="#">공공데이터개방</a></div>
+                    <div class="cell"><a href="#">저작권 정책</a></div>
+                    <div class="cell"><a href="#">클린신고 센터</a></div>
+                </div>
+                <div class="row">
+                    <div class="cell">04383 서울시 용산구 서빙고로 137(용산동6가 168-6)</div>
+                    <div class="cell">대표전화 02.2077.9000</div>
+                    <div class="cell">ⓒ National Museum of Korea.</div>
+                </div>
+            </div>
+            <div class="mark row">
+                <div class="cell"></div>
+                <div class="cell-right"></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
