@@ -604,12 +604,11 @@ $('.header > .top-bar > .inner > .main-menu-box > ul > li' ).hover(function () {
     
 });
 
-$('body').hover(function (e) {
+$('.header > .contents').mouseleave(function () {
     
     $('.header > .contents.active').removeClass('active');
     $('.header.active').removeClass('active');
     
-    e.stopPropagation()
 });
 
 // 전체메뉴 함수

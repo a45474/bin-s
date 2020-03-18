@@ -1,8 +1,3 @@
-
-html {
-    font-family: 'Nanum Gothic', sans-serif;
-}
-
 /* 노말라이즈 */
 body, ul, li {
     margin:0;
@@ -12,7 +7,7 @@ body, ul, li {
 
 a {
     color:inherit;
-    text-decoration:none;
+    text-decoration:inherit;
 }
 
 /* 라이브러리 */
@@ -38,31 +33,6 @@ a {
 
 .absolute {
     position:absolute;
-}
-
-.con {
-    margin:0 auto;
-}
-
-/* 라이브러리 */
-.row::after {
-    content:"";
-    display:block;
-    clear:both;
-}
-
-.cell {
-    float:left;
-    box-sizing:border-box;
-}
-
-.cell-right {
-    float:right;
-    box-sizing:border-box;
-}
-
-.relative {
-    position:relative;
 }
 
 .block {
@@ -120,235 +90,2624 @@ a {
     text-align:center;
 }
 
-/* 커스텀 */
 
-/*전체*/
-body {
-    height:5000px;
-}
+/* 슬라이더 */
 
-.all-page {
-    position: absolute;
+.page-1 > .main-slider-box {
+    position:relative;
+    height:993px;
     width:100%;
-    height:100vh;
-    top:0;
-    transition:2s;
 }
 
-.all-page-1 {
-    left:-100%;
-    background-color: gold;
-}
-
-.all-page-2 {
-    left:auto;
-    right:-100%;
-    background-color: pink;
-}
-
-.all-page-1.active {
-    left:0;
-}
-
-.all-page-2.active {
-    right:0;
-}
-
-
-/* 사이드바 시작 */
-
-body > .side-bar {
-    width:57px;
-    height:100%;
-    position:fixed;
-    border-left:1px solid white;
-    top:0;
-    padding-top:240px;
-    transition:2s;
-    opacity: 0;
-    z-index:8;
-}
-
-body > .side-bar-1 {
-    left:auto;
-    right:0;
-    transform: translateX(100%);
-}
-
-body > .side-bar-1.active {
-    transform: translateX(0);
-}
-
-body > .side-bar-2 {
-    left:0;
-    transform: translateX(-100%);
-}
-
-body > .side-bar-2.active {
-    transform: translateX(0);
-}
-
-body > .side-bar.active {
-    opacity: 1;
-}
-
-.not-scroll-top-0 body > .side-bar {
-    background-color:rgba(255, 255, 255, .5);
-    border-left:1px solid rgba(100, 100, 100, .2);
-}
-
-body > .side-bar > ul > .page-name > a {
-    width:57px;
-    height:59px;
-    background-image:url(https://www.koem.or.kr/images/koem/main/img_mainAsideTitle1.png);
-    background-repeat:no-repeat;
-    background-position:center top;
-    display:block;
-}
-
-.not-scroll-top-0 body > .side-bar-1 > ul > .page-name > a {
-    background-image:url(https://www.koem.or.kr/images/koem/main/img_mainAsideTitle1_on.png);
-}
-
-
-body > .side-bar > ul > .arrow-btn {
+.page-1 > .main-slider-box > .main-slider {
     position:absolute;
-    width:68px;
-    height:68px;
-    right:0;
-    top:323px;
-    cursor: pointer;
-}
-
-body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list {
-    width:25px;
-    margin-top:120px;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:not(:last-child) {
     width:100%;
-    border-bottom:1px solid white;
+    max-width:2379px;
+    top:0;
+    left:50%;
+    transform:translatex(-50%);
+    user-select:none;
+    height:993px;
 }
 
-.not-scroll-top-0 body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:not(:last-child) {
-    border-bottom:1px solid rgba(100, 100, 100, .2);
+.page-1 > .main-slider-box > .main-slider > .slides > div {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    transition:opacity 1s;
+    background-size:auto 100%;
 }
 
-body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li > a {
-    width:18px;
-    margin:15px auto;
+.page-1 > .main-slider-box > .main-slider > .slides > div.active {
+    opacity:1;
+}
+
+.page-1 > .main-slider-box > .main-slider > .slides > .slide:nth-of-type(1) {
+    background-image:url(https://www.koem.or.kr/images/koem/main/page1_visual1.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.page-1 > .main-slider-box > .main-slider > .slides > .slide:nth-of-type(2) {
+    background-image:url(https://www.koem.or.kr/images/koem/main/page1_visual2.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.page-1 > .main-slider-box > .main-slider > .slides > .slide:nth-of-type(3) {
+    background-image:url(https://www.koem.or.kr/images/koem/main/page1_visual3.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+/* 슬라이드 끝 */
+
+/* 텍스트 박스 시작 */
+
+/* 텍스트 */
+body > .page-1 > .main-slider-box > .main-slider > .text-box {
+    position:absolute;
+    top:240px;
+    left:50%;
+    transform:translatex(-50%);
+    text-align:center;
+    color:white;
+    white-space:nowrap;
+}
+
+body > .page-1 > .main-slider-box > .main-slider > .text-box > .title > span {
+    background-image:url(https://www.koem.or.kr/images/koem/main/img_visualSlogan.png);
+    background-repeat:no-repeat;
+    height:61px;
+    display:inline-block;
+    opacity:0;
+    transition-timing-fuction:ease;
+}
+
+body > .page-1 > .main-slider-box > .main-slider > .text-box > .title > span.active {
+    opacity:1;
+}
+
+body > .page-1 > .main-slider-box > .main-slider > .text-box > .title > span:nth-of-type(1) {
+    width:260px;
+    background-position:0 0;
+    transition:opacity 2s .5s;
+}
+
+body > .page-1 > .main-slider-box > .main-slider > .text-box > .title > span:nth-of-type(2) {
+    width:312px;
+    background-position:-260px 0;
+    transition:opacity 2s .8s;
+}
+
+body > .page-1 > .main-slider-box > .main-slider > .text-box > .title > span:nth-of-type(3) {
+    width:247px;
+    background-position:-572px 0;
+    transition:opacity 2s 1.2s;
+}
+
+body > .page-1 > .main-slider-box > .main-slider > .text-box > .title > span:nth-of-type(4) {
+    width:324px;
+    background-position:-247px -61px;
     display:block;
-    height:22px;
-    background-image:url(https://www.koem.or.kr/images/koem/main/img_mainAside_all.png);
+    margin:0 auto;
+    transition:opacity 2s 1.5s;
+}
+
+body > .page-1 > .main-slider-box > .main-slider > .text-box > .text {
+    margin-top:30px;
+    font-size:19px;
+    margin-bottom:25px;
+    opacity:0;
+    transition:opacity 6s;
+}
+
+body > .page-1 > .main-slider-box > .main-slider > .text-box > .text.active {
+    opacity:1;
+}
+
+body > .page-1 > .main-slider-box > .main-slider > .text-box > .btn > .center-btn > div {
+    display:none;
+}
+
+body > .page-1 > .main-slider-box > .main-slider > .text-box > .btn > .center-btn > div.active {
+    display:block;
+}
+
+/* 사이드 버튼 */
+
+body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns {
+    position:relative;
+    height:38px;
+    width:720px;
+    margin:0 auto;
+}
+
+body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > div {
+    width:320px;
+    height:24px;
+    position:absolute;
+    top:50%;
+    left:0;
+    transform:translatey(-50%);
+}
+
+body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .next-btn {
+    right:0;
+    left:auto;
+}
+
+body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > div > .ico {
+    background-image:url(https://www.koem.or.kr/images/koem/main/img_mainVisual_all.png);
+    background-repeat:no-repeat;
+    position:absolute;
+    background-position: -155px 0;
+    bottom:4px;
+    left:0;
+    width:58px;
+    height:24px;
+    overflow:hidden;
+    box-sizing:border-box;
+    border-bottom:1px solid;
+    transition:left .5s, right .5s;
+    cursor:pointer;
+}
+
+body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > div > .line {
+    height:1px;
+    width:100%;
+    background-color:white;
+    display:block;
+    position:absolute;
+    bottom:4px;
+    left:0;
+}
+
+body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .next-btn > .line {
+    right:0;
+    left:auto;
+}
+
+body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .next-btn > .ico {
+    background-position:-120px -23px;
+    left:auto;
+    right:0;
+}
+
+body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .next-btn > .ico:hover {
+    right:-29px;
+}
+
+body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .prev-btn > .ico:hover {
+    left:-29px;
+}
+
+
+/* 오토플레이 버튼 */
+
+.page-1 > .main-slider-box > .main-slider > .text-box > .autoplay-btn-box {
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translatex(-50%);
+    width:38px;
+    height:38px;
+    z-index:10;
+}
+
+.page-1 > .main-slider-box > .main-slider > .text-box > .autoplay-btn-box > div {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    cursor:pointer;
+    background-image:url(https://www.koem.or.kr/images/koem/main/img_mainVisual_all.png);
     background-repeat:no-repeat;
     transition:opacity .5s;
-}
-
-body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li > a:hover {
-    opacity:.6;
-}
-
-body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(1) > a {
-    background-position:2px -138px;
-}
-
-
-body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(2) > a {
-    background-position:-21px -138px;
-}
-
-body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(3) > a {
-    background-position:-43px -138px;
-}
-
-body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(4) > a {
-    background-position:-69px -138px;
-}
-
-body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(5) > a {
-    background-position:-94px -138px;
-}
-
-.not-scroll-top-0 body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(1) > a {
-    background-position:2px -170px;
-}
-
-
-.not-scroll-top-0 body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(2) > a {
-    background-position:-20px -170px;
-}
-
-.not-scroll-top-0 body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(3) > a {
-    background-position:-43px -170px;
-}
-
-.not-scroll-top-0 body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(4) > a {
-    background-position:-69px -170px;
-}
-
-.not-scroll-top-0 body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(5) > a {
-    background-position:-94px -170px;
-}
-
-/* 사이드바 1끝 */
-
-/* 사이드바2 시작 */
-body > .side-bar-2 {
-    border-left:none;
-    border-right:1px solid rgba(100, 100, 100, .2);
-}
-    
-
-body > .side-bar-2 > ul > .page-name > a {
-    background-image:url(https://www.koem.or.kr/images/koem/main/img_mainAsideTitle2.png);
-}    
-
-body > .side-bar-2 > ul > .arrow-btn {
-    transform:rotate(180deg);
+    position:absolute;
+    top:0;
     left:0;
 }
 
-body > .side-bar-2 > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(1) > a {
-    background-position:2px -170px;
+.slider-k[data-autoplay-now-work="Y"] .autoplay-btn-box > .btn-start-play {
+    display:none;
+}
+
+.slider-k[data-autoplay-now-work="N"] .autoplay-btn-box > .btn-stop-play {
+    display:none;
+}
+
+.page-1 > .main-slider-box > .main-slider > .text-box > .autoplay-btn-box > div:nth-of-type(2) {
+    background-position:-141px -95px;
+}
+
+.page-1 > .main-slider-box > .main-slider > .text-box > .autoplay-btn-box > div:nth-of-type(2):hover {
+    background-position:-183px -95px;
+}
+
+.page-1 > .main-slider-box > .main-slider > .text-box > .autoplay-btn-box > div:nth-of-type(1) {
+    background-image:url(https://www.koem.or.kr/images/koem/main/img_mainVisual_all.png);
+    background-position:-94px -95px;
+}
+
+.page-1 > .main-slider-box > .main-slider > .text-box > .autoplay-btn-box > div:nth-of-type(1):hover {
+     background-position:-183px -50px; 
+}
+
+/* 일시정지, 재생 버튼 끝 만세 꺄하하하하하*/
+
+/* 스크롤 다운 버튼 시작 */
+.page-1 > .main-slider-box > .main-slider > .scroll-down-btn {
+    position:absolute;
+    bottom:145px;
+    left:50%;
+    transform:translatex(-50%);
+    cursor:pointer;
+    width:111px;
+    height:100px;
+}
+
+.page-1 > .main-slider-box > .main-slider > .scroll-down-btn > span:nth-of-type(1) {
+    width:38px;
+    height:55px;
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translatex(-50%);
+    overflow:hidden;
+
+}
+
+.page-1 > .main-slider-box > .main-slider > .scroll-down-btn > span:nth-of-type(1) {
+    animation-name:up-down;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes up-down {
+    0% {
+        top:-5%;
+    }
+    50% {
+        top:5%;
+    }
+    100% {
+        top:-5%;
+    }
+}
+
+.page-1 > .main-slider-box > .main-slider > .scroll-down-btn > span:nth-of-type(1) > img {
+    position:absolute;
+    top:1px;
+    left:-35px;
+}
+
+.page-1 > .main-slider-box > .main-slider > .scroll-down-btn > span:nth-of-type(2) {
+    width:111px;
+    height:25px;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translatex(-50%);
+    overflow:hidden;
+}
+
+.page-1 > .main-slider-box > .main-slider > .scroll-down-btn > span:nth-of-type(2) > img {
+    position:absolute;
+    top:-60px;
+    left:2px;
+}
+/* 스크롤 다운 버튼 끝 */
+
+
+/* 반응형 작업 시작 */
+
+@media (min-width:961px) {
+    .page-1 > .main-slider-box {
+        height:993px;
+    }
+    
+    .page-1 > .main-slider-box > .main-slider {
+        min-width:1200px;
+        height:993px;
+    }
+}
+
+@media  (max-width:960px) and (min-width:641px) {
+    .page-1 > .main-slider-box {
+        height:500px;
+        
+    }
+    
+    .page-1 > .main-slider-box > .main-slider {
+        height:500px;
+        min-width:641px;
+    }
+    
+   .page-1 > .main-slider-box > .main-slider > .text-box {
+        top:120px;
+    }
+
+    .page-1 > .main-slider-box > .main-slider > .text-box > .title > span {
+        display:none !important;
+    }
+
+    .page-1 > .main-slider-box > .main-slider > .text-box > .title {
+        height:80px;
+        background-image:url(https://www.koem.or.kr/images/koem/main/img_visualSlogan.png);
+        background-repeat:no-repeat;
+        background-size:500px auto;
+        background-position:center;
+    }
+    
+    .page-1 > .main-slider-box > .main-slider > .text-box > .text {
+        font-size:16px;
+        line-height:150%;
+        letter-spacing:-1px;
+    }
+    
+    .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .prev-btn, .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .next-btn {
+        width:220px;
+    }
+    
+    .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns {
+        width:530px;
+        margin-top:70px;
+    }
+    
+    .page-1 > .main-slider-box > .main-slider > .scroll-down-btn {
+        display:none;
+    }
 }
 
 
-body > .side-bar-2 > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(2) > a {
-    background-position:-20px -170px;
+@media (max-width:640px) {
+    .page-1 > .main-slider-box {
+        height:400px;
+    }
+    
+    .page-1 > .main-slider-box > .main-slider  {
+        height:400px;
+        min-width:163px;
+    }
+    
+    .page-1 > .main-slider-box > .main-slider > .text-box {
+        top:120px;
+    }
+
+    .page-1 > .main-slider-box > .main-slider > .text-box > .title > span {
+        display:none !important;
+    }
+
+    .page-1 > .main-slider-box > .main-slider > .text-box > .title {
+        height:80px;
+        background-image:url(https://www.koem.or.kr/images/koem/main/img_visualSlogan.png);
+        background-repeat:no-repeat;
+        background-size:300px auto;
+        background-position:center;
+    }
+    
+    .page-1 > .main-slider-box > .main-slider > .text-box > .text {
+        display:none;
+    }
+    
+    .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .prev-btn, .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .next-btn {
+        width:108px;
+    }
+    
+    .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .prev-btn > .ico, .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .next-btn > .ico {
+        width:36px;
+        height:15px;
+        background-image:url(https://www.koem.or.kr/images/koem/main/icon_mainCommon_mobile.png);
+    }
+    
+    .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .prev-btn > .ico {
+        background-position:-69px 0;
+        left:0;
+    }
+    
+    .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .next-btn > .ico {
+        background-position:-112px 0px;
+    }
+    
+    .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns {
+        width:300px;
+        margin-top:30px;
+    }
+    
+    .page-1 > .main-slider-box > .main-slider > .scroll-down-btn {
+        display:none;
+    }
+    
+    .page-1 > .main-slider-box > .main-slider > .text-box > .btn > .pause-btn > div {
+        width:29px;
+        height:29px;
+        background-position:0 0 !important;
+        background-image:url(https://www.koem.or.kr/images/koem/main/icon_mainCommon_mobile.png);
+        top:3px;
+    }
 }
 
-body > .side-bar-2 > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(3) > a {
-    background-position:-43px -170px;
+/* 반응형 작업 끝 */
+
+/* 메인 슬라이드바 끝 */
+
+/* 탭메뉴 시작 */
+
+.tab-bn-box {
+    position:relative;
+    height:430px;
 }
 
-body > .side-bar-2 > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(4) > a {
-    background-position:-69px -170px;
+.tab-bn-box > .tab-bn  {
+    max-width:1580px;
+    position:absolute;
+    left:50%;
+    transform:translatex(-50%);
+    width:100%;
 }
 
-body > .side-bar-2 > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(5) > a {
-    background-position:-94px -170px;
+.tab-bn-box > .tab-bn > .head {
+    margin-bottom:30px;
 }
 
-body > .side-bar-2 > ul > .sns-ico-list-box > .sns-ico-list > li:not(:last-child) {
-    border-bottom:1px solid rgba(100, 100, 100, .2);
+.tab-bn-box > .tab-bn > .head::after {
+    content:"";
+    width:38px;
+    height:38px;
+    background-image:url(https://www.koem.or.kr/images/koem/common/icon_common_all.png);
+    background-repeat:no-repeat;
+    background-position:1px -99px;
+    border:1px solid #d8dade;
+    border-radius:50%;
+    position:absolute;
+    top:5px;
+    right:5%;
+    cursor:pointer;
 }
 
-/*사이드 바 끝*/
+.tab-bn-box > .tab-bn > .head > div > a {
+    font-size:23px;
+    padding:0 20px;
+    color:#484848;
+    display:block;
+    padding:5px 20px;
+    position:relative;
+}
+
+.tab-bn-box > .tab-bn > .head > div.active > a {
+    color:#005cb9;
+}
+
+.tab-bn-box > .tab-bn > .head > div:not(:last-child) > a::after {
+    position:absolute;
+    content:"";
+    display:block;
+    width:1px;
+    height:18px;
+    background-color:#dcdcdc;
+    top:50%;
+    right:0;
+    transform:translatey(-45%);
+}
+
+.tab-bn-box > .tab-bn > .head > div > a::before {
+    content:"";
+    display:block;
+    width:0;
+    height:1px;
+    background-color:#005cb9;
+    top:-1.5px;
+    left:0;
+    opacity:0;
+    transition:all .5s;
+}
+
+.tab-bn-box > .tab-bn > .head > div.active > a::before, .tab-bn-box > .tab-bn > .head > div > a:hover::before {
+    opacity:1;
+    width:100%;
+}
+
+.tab-bn-box > .tab-bn > .contents {
+    top:100%;
+}
+
+.tab-bn-box > .tab-bn > .contents .owl-carousel-box {
+    display:none;
+}
+
+.tab-bn-box > .tab-bn > .contents .owl-carousel-box.active {
+    display:block;
+}
+
+.tab-bn-box > .tab-bn > .contents .owl-carousel {
+    border:1px solid #e5e5e5;
+    
+}
+
+.tab-bn-box > .tab-bn > .contents .owl-carousel  .owl-item  {
+    border-right:1px solid #e5e5e5;
+    display:block;
+    text-align:left;
+    width:calc(1580px / 5) !important;
+}
+
+.tab-bn-box > .tab-bn > .contents .owl-carousel  .item > a {
+    display:block;
+    width:100%;
+    padding:20px;
+    box-sizing:border-box;
+    position:relative;
+    
+}
+
+.tab-bn-box > .tab-bn > .contents .owl-carousel  .item > a::before {
+    content:"";
+    position:absolute;
+    display:block;
+    top:0;
+    left:0;
+    width:0;
+    height:0;
+    border-top:3px solid #005cb9;
+    border-right:3px solid #005cb9;
+    opacity:0;
+}
+
+.tab-bn-box > .tab-bn > .contents .owl-carousel  .item > a:hover::before {
+    width:calc(100% - 3px);
+    height:calc(100% - 3px);
+    opacity:1;
+    transition:width .2s, height .2s linear .2s;
+}
+
+.tab-bn-box > .tab-bn > .contents .owl-carousel  .item > a::after {
+    content:"";
+    position:absolute;
+    display:block;
+    bottom:0;
+    right:0;
+    width:0;
+    height:0;
+    border-bottom:3px solid #005cb9;
+    border-left:3px solid #005cb9;
+    opacity:0;
+}
+
+.tab-bn-box > .tab-bn > .contents .owl-carousel  .item > a:hover::after {
+    width:calc(100% - 3px);
+    height:calc(100% - 3px);
+    opacity:1;
+    transition:width .2s linear .4s, height .2s linear .6s, opacity 0s linear .4s;
+}
 
 
-/*헤더 시작*/
+.tab-bn-box > .tab-bn > .contents .owl-carousel  .item > a > .img-box {
+    height:160px;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-color:gold;
+    background-size:cover;
+    margin-top:20px;
+
+}
+
+.tab-bn-box > .tab-bn > .contents .owl-carousel  .item > a > .text-1 {
+    color:#181818;
+    font-size:18px;
+    display:block;
+    margin-top:16px;
+    height:52px;
+    line-height:26px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    text-align:left;
+    display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+}
+
+.tab-bn-box > .tab-bn > .contents .owl-carousel  .item > a > .date {
+    font-size:14px;
+    text-align:left;
+    display:block;
+    margin-top:18px;
+    color:#7a7a7a;
+}
+
+.tab-bn-box > .tab-bn > .contents .owl-carousel  .item > a > .text-2 {
+    display:block;
+    font-size:15px;
+    margin-top:20px;
+    overflow:hidden;
+    height:66px;
+    line-height:22px;
+    text-overflow:ellipsis;
+    word-wrap:break-word;
+    display: -webkit-box;
+    -webkit-line-clamp:3;
+}
+
+.tab-bn-box > .tab-bn > .contents .owl-nav {
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:70%;
+    transform:translatey(-50%) translatex(-50%);
+    margin-top:0 !important;
+}
+
+.tab-bn-box > .tab-bn > .contents .owl-nav > div {
+    width:56px;
+    height:56px;
+    background-image:url(https://www.koem.or.kr/images/koem/common/icon_common_all.png) !important;
+    background-repeat:no-repeat;
+    top:200px;
+    z-index:1;
+    opacity:.8;
+    cursor:pointer;
+    position:absolute;
+    top:50%;
+    transform:translatey(-50%);
+    display:block !important;
+    margin:0 !important;
+    padding:0 !important;
+    background-color:transparent !important;
+}
+
+.tab-bn-box > .tab-bn > .contents .owl-nav > div:nth-of-type(1) {
+    background-position:-44px -200px !important;
+}
+
+.tab-bn-box > .tab-bn > .contents .owl-nav > div:nth-of-type(2) {
+    background-position:-44px -256px !important;
+    right:0 !important;
+}
+
+.tab-bn-box > .tab-bn > .contents {
+    overflow:hidden;
+    width:100%;
+}
+
+@media (max-width:865px) {
+    .tab-bn-box {
+        margin-top:30px;
+    }
+    
+    .tab-bn-box > .tab-bn {
+        max-width:1190px;
+    }
+    .tab-bn-box > .tab-bn > .head > div > a {
+        font-size:18px;
+        padding:0 10px;
+    }
+    .tab-bn-box > .tab-bn > .contents .owl-carousel  .owl-item {
+        width:calc(1150px / 5) !important;
+    }
+}
+
+.tab-bn-box > .tab-bn > .contents .owl-carousel .owl-stage-outer {
+    width:100%;
+    height:325px;
+}
+
+@media (max-width:575px) {
+
+    .tab-bn-box > .tab-bn > .contents .owl-nav {
+        width:98%;
+    }
+    
+    .tab-bn-box > .tab-bn > .contents .owl-nav > div {
+        width:31px;
+        height:31px;
+        background-image:url(https://www.koem.or.kr/images/koem/main/icon_mainCommon_mobile.png) !important;
+        
+    }
+    
+    .tab-bn-box > .tab-bn > .contents .owl-nav > div:nth-of-type(1) {
+        background-position:-276px 0 !important;
+    }
+
+    .tab-bn-box > .tab-bn > .contents .owl-nav > div:nth-of-type(2) {
+        background-position:-315px 0 !important;
+        right:0 !important;
+    }
+    
+    .tab-bn-box > .tab-bn > .head::after {
+        width:21px;
+        height:21px;
+        background-image:url(https://www.koem.or.kr/images/koem/main/icon_mainCommon_mobile.png);
+        background-position:-216px -2px;
+
+    }
+}
+
+/* 탭메뉴 끝 */
+
+/* 카운트 슬라이드 시작 */
+.page-1 > .slider-box {
+    position:relative;
+    height:100px;
+    box-sizing:border-box;
+}
+
+.page-1 > .slider-box > .notice-slider {
+    max-width:1580px;
+    width:100%;
+    height:100px;
+    border:1px solid #ededed;
+    background:#f3f3f3;
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translatex(-50%); 
+    box-sizing:border-box;
+}
+
+.page-1 > .slider-box > .notice-slider > .title-box {
+    line-height:49px;
+    left:75px;
+}
+
+.page-1 > .slider-box > .notice-slider > .title-box > .img-box {
+    width:49px;
+    height:49px;
+    background-position:-100px -50px;
+    background-repeat:no-repeat;
+    display:block;
+    
+}
+
+.page-1 > .slider-box > .notice-slider > .title-box > .title {
+    font-weight:bold;
+    left:60px;
+    top:50%;
+    font-size:23px;
+    white-space:nowrap;
+    color:#005cb9;
+    margin-left:25px;
+    box-sizing:border-box;
+    display:block;
+}
+
+.page-1 > .slider-box > .notice-slider > .title-box > .title::after {
+    content:"";
+    width:1px;
+    height:22px;
+    background-color:#cccccc;
+    display:block;
+    position:absolute;
+    top:50%;
+    right:-34px;
+    transform:translatey(-50%);
+}
+
+.page-1 > .slider-box > .notice-slider > .slide-box {
+    position:relative;
+    height:100%;
+    width:300px;
+    overflow:hidden;
+    margin-left:370px;
+    padding-left:15px;
+    box-sizing:border-box;
+}
+
+.page-1 > .slider-box > .notice-slider > .slide-box > .slides > .slide {
+    position:absolute;
+    opacity:0;
+    left:0;
+}
+
+@-webkit-keyframes move-top {
+  0% {
+    top:100%;
+  }
+  50% {
+     top:0;   
+  }
+  100% {
+    top:-100%;
+  }
+}
+
+.page-1 > .slider-box > .notice-slider > .slide-box > .slides > .slide.active {
+    opacity:1;
+    animation-name:move-top;
+    animation-duration:2s;
+}
+
+.page-1 > .slider-box > .notice-slider > .slide-box > .slides > .slide > a {
+    display:block;
+    line-height:100px;
+    font-size:17px;
+    color:#1d1d1d;
+    white-space:nowrap;
+    position:relative;
+}
+
+.page-1 > .slider-box > .notice-slider > .slide-box > .slides > .slide > a::before {
+    content:"";
+    display:block;
+    position:absolute;
+    top:50%;
+    left:-25px;
+    width:4px;
+    height:4px;
+    background-color:black;
+    transform:translatey(-50%);
+    z-index:10;
+}
+
+.page-1 > .slider-box > .notice-slider > .right-box {
+    left:auto;
+    right:75px;
+    width:130px;
+    height:29px;
+}
+
+
+.page-1 > .slider-box > .notice-slider > .right-box > .btn-box {
+    position:relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:block;
+
+}
+
+.page-1 > .slider-box > .notice-slider > .right-box > .btn-box > .img-box {
+    background-repeat:no-repeat;
+    width:29px;
+    height:29px;
+    position:absolute;
+    cursor:pointer;
+    
+}
+
+.page-1 > .slider-box > .notice-slider > .right-box > .btn-box > .img-box:nth-of-type(1) {
+    top:0;
+    left:0;
+    background-position:0 0;
+}
+
+.page-1 > .slider-box > .notice-slider > .right-box > .btn-box > .img-box:nth-of-type(2) {
+    background-position:0 -50px;
+    top:0;
+    right:0;
+
+}
+
+.page-1 > .slider-box > .notice-slider > .right-box > .slide-counter {
+    
+}
+
+.page-1 > .slider-box > .notice-slider > .right-box > .slide-counter > span {
+    display:inline-block;
+    line-height:1;
+}
+
+.page-1 > .slider-box > .notice-slider > .right-box > .slide-counter > span:not(:nth-of-type(1)) {
+    font-size: 14px;
+    color: #6e6e6e;
+}
+
+.page-1 > .slider-box > .notice-slider > .right-box > .slide-counter > span:nth-of-type(1) {
+    font-size: 19px;
+    color: #0a2f87;
+    font-weight:bold;
+}
+
+@media (max-width:1656px) and (min-width:865px) {
+    .page-1 > .slider-box > .notice-slider {
+        left:10px;
+        transform:translatex(0);
+        width:calc(100% - 78px);
+    }
+}
+
+@media (max-width:1656px) {
+    .page-1 > .slider-box > .notice-slider > .right-box > .slide-counter > span {
+        color:#6e6e6e !important;
+        font-size:13px !important;
+        font-weight:normal !important;
+    }
+}
+
+@media (max-width:1194px) and (min-width:865px) {
+    .page-1 > .slider-box > .notice-slider {
+        min-width:1120px;
+    }
+}
+
+@media (max-width:864px) {
+     
+    .page-1 > .slider-box > .notice-slider {
+        padding:0 !important;
+        height:73px;
+        width:calc(100% - 100px);
+        top:50px;
+    }
+    
+    .page-1 > .slider-box > .notice-slider > .title-box {
+        left:0;
+    }
+    
+    .page-1 > .slider-box > .notice-slider > .title-box > .title::after {
+        display:none;
+    }
+    
+    .page-1 > .slider-box > .notice-slider > .slide-box {
+        margin-left:30px !important;
+        width:100% !important;
+        padding-bottom:0 !important;
+    }
+    
+    .page-1 > .slider-box > .notice-slider > .title-box, .page-1 > .slider-box > .notice-slider > .right-box {
+        top:-35px; 
+    }
+    .page-1 > .slider-box > .notice-slider > .slide-box > .slides > .slide > a {
+        line-height:73px;
+    }
+    
+    .page-1 > .slider-box > .notice-slider > .right-box {
+        right:20px;
+    }
+    
+    .page-1 > .slider-box > .notice-slider > .right-box > .btn-box > .img-box {
+        border: 1px solid #d8dade;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width:575px) {
+    .page-1 > .slider-box > .notice-slider {
+        height:60px;
+    }
+    
+    .page-1 > .slider-box > .notice-slider > .title-box {
+        line-height:35px;
+    }
+    
+    .page-1 > .slider-box > .notice-slider > .title-box > .img-box {
+        width:35px !important;
+        height:35px !important;
+        background-size:140px 350px;
+        background-position:-70px -35px;
+    }
+    
+    .page-1 > .slider-box > .notice-slider > .title-box > .title {
+        font-size: 18px;
+        margin-left:10px;
+    }
+    .page-1 > .slider-box > .notice-slider > .right-box {
+        width:90px;
+        right:0;
+        left:auto;
+    }
+    .page-1 > .slider-box > .notice-slider > .right-box > .slide-counter > span {
+        line-height:50px;
+    }
+    
+    .page-1 > .slider-box > .notice-slider > .right-box > .btn-box > .img-box {
+        width:23px;
+        height:23px;
+        background-size:160px 400px;
+    }
+    
+    .page-1 > .slider-box > .notice-slider > .right-box > .btn-box > .img-box:nth-of-type(2) {
+        background-position:0 -40px;
+    }
+    
+    .page-1 > .slider-box > .notice-slider > .slide-box > .slides > .slide > a {
+        font-size:14px;
+        line-height:60px;
+    }
+}
+/* 카운트 슬라이드 끝 */
+
+
+/* sns 슬라이더 시작 */
+
+body {
+    overflow-x:hidden;
+}
+
+.page-1 > .sns-bn-slider-box {
+    margin-top:100px;
+    width:100%;
+    position:relative;
+    left:50%;
+    top:0;
+    transform:translatex(-50%);
+    height:360px;
+}
+
+.page-1 > .sns-bn-slider-box > .sns-bn-slider {
+    position:absolute;
+    top:0;
+    left:50%;
+    width:100%;
+    height:100%;
+    transform:translatex(-50%);
+}
+
+/* 타이틀 */
+
+.page-1 > .sns-bn-slider-box > .sns-bn-slider > .title > a {
+    display:block;
+    font-size:42px;
+    color:#000000;
+    text-align:center;
+    font-weight:400;
+    cursor:auto;
+}
+
+/* 슬라이더 */
+
+.page-1 > .sns-bn-slider-box > .sns-bn-slider .owl-nav {
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:85%;
+    transform:translatey(-50%) translatex(-50%);
+    margin:0 !important;
+    padding:0 !important;
+    display:block !important;
+}
+
+.page-1 > .sns-bn-slider-box .owl-nav > .owl-prev, .owl-nav > .owl-next{
+    display:block !important;
+    position:absolute;
+    width:56px;
+    height:56px;
+    border-radius:50% !important;
+    background-image:url(https://www.koem.or.kr/images/koem/common/icon_common_all.png) !important;
+    background-repeat:no-repeat !important;
+    background-position:-44px -200px !important;
+    padding:0 !important;
+    margin:0 !important;
+    box-sizing:border-box;
+    color:transparent !important;
+    top:50%;
+    left:0;
+    transform:translatey(-50%);
+    opacity:.8;
+    transition:transform .2s;
+    background-color:transparent !important;
+}
+
+.page-1 > .sns-bn-slider-box .owl-nav > .owl-prev:hover, .owl-nav > .owl-next:hover {
+    transform:translatey(-35%);
+}
+
+.page-1 > .sns-bn-slider-box .owl-nav > .owl-next {
+    right:0;
+    left:auto;
+    background-position:-44px -256px !important;
+} 
+
+.page-1 > .sns-bn-slider-box  > .sns-bn-slider > .owl-carousel {
+    margin-top:100px;
+}
+
+.page-1 > .sns-bn-slider-box  > .sns-bn-slider > .owl-carousel .owl-item {
+    min-width:calc(1995px / 7);
+}
+
+.page-1 > .sns-bn-slider-box  > .sns-bn-slider > .owl-carousel .item > a {
+    display:block;
+    background-color:#E2E2E2;
+    padding:25px;
+    box-sizing:border-box;
+    transition:transform .2s;
+    width:260px;
+    height:260px;
+    position:relative;
+}
+
+.page-1 > .sns-bn-slider-box  > .sns-bn-slider > .owl-carousel .item:hover > a {
+    transform:translatey(-22px);
+}
+
+.page-1 > .sns-bn-slider-box > .sns-bn-slider  > .owl-carousel .item > a > .title {
+    font-size:25px;
+    margin-bottom:40px;
+    color:#262626;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    text-align:left;
+    font-weight:bold;
+    display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+}
+
+.page-1 > .sns-bn-slider-box > .sns-bn-slider  > .owl-carousel .item > a > .text-1 {
+    font-size:14px;
+    margin-bottom:15px;
+    color:#111111;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    text-align:left;
+    display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+}
+
+.page-1 > .sns-bn-slider-box > .sns-bn-slider  > .owl-carousel .item > a > .date {
+    font-size:14px;
+    color:#111111;
+}
+
+.page-1 > .sns-bn-slider-box > .sns-bn-slider  > .owl-carousel .item > a > .img-box {
+    display:block;
+    width:259px;
+    height:260px;
+    box-sizing:border-box;
+}
+
+.page-1 > .sns-bn-slider-box > .sns-bn-slider  > .owl-carousel .item > a > .img-box > img {
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.page-1 > .sns-bn-slider-box > .sns-bn-slider  > .owl-carousel .item > a > .sns-ico-box {
+    width:33px;
+    height:34px;
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    background-image:url(https://www.koem.or.kr/images/koem/common/icon_common_all.png);
+    background-repeat:no-repeat;
+}
+
+.page-1 > .sns-bn-slider-box > .sns-bn-slider  > .owl-carousel .item > a > .naver-blog {
+    background-position:0 -400px;
+}
+
+.page-1 > .sns-bn-slider-box > .sns-bn-slider  > .owl-carousel .item > a > .face-book {
+    background-position:-80px -400px;
+}
+
+.page-1 > .sns-bn-slider-box > .sns-bn-slider  > .owl-carousel {
+
+    width:100% !important;
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translatex(-50%);
+    height:260px;
+    overflow-y:hidden;
+}
+
+@media (max-width:864px) {
+    .page-1 > .sns-bn-slider-box > .sns-bn-slider > .title > a {
+        font-size:26px;
+        margin-bottom:30px;
+    }
+    
+    .page-1 > .sns-bn-slider-box  > .sns-bn-slider > .owl-carousel {
+        margin-top:70px;
+    }
+}
+/* sns 슬라이더 끝 */
+
+
+/* 미디어 배너 시작 */
+
+.page-1 > .media-bn-box {
+    background-color:#d3e0ee;
+    padding-top:75px;
+    padding-bottom:70px;
+    margin-top:150px;
+}
+
+.page-1 > .media-bn-box > .media-bn {
+    max-width:1580px;
+    margin:0 auto;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div {
+    float:left;
+    box-sizing:border-box;
+    height:405px;
+    width:28%;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div:not(:nth-of-type(3)) {
+    padding:45px 30px;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div > div > .title {
+    font-size:24px;
+    color:#ffffff;
+    position:relative;
+    cursor:auto;
+}
+
+/* 메뉴박스1 */
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-1 {
+    background-image:url(https://www.koem.or.kr/images/koem/main/bg_videoPlay.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+    position:relative;
+    cursor:pointer;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-1::before {
+    content:"";
+    display:block;
+    width:90px;
+    height:90px;
+    position:absolute;
+    background-image:url(https://www.koem.or.kr/images/koem/main/icon_videoPlay_play.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+    top:50%;
+    left:50%;
+    transform:translatex(-50%) translatey(-50%);
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-1::after {
+    content:"";
+    display:block;
+    height:11px;
+    position:absolute;
+    background-image:url(https://www.koem.or.kr/images/koem/main/icon_videoPlay_bar.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+    bottom:40px;
+    left:40px;
+    right:40px;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-1 .title::after {
+   content:"";
+    display:block;
+    width:36px;
+    height:36px;
+    background-image:url(https://www.koem.or.kr/images/koem/main/icon_mainBotArea_all.png);
+    background-position:0 0;
+    background-repeat:no-repeat;
+    position:absolute;
+    top:50%;
+    right:0px;
+    transform:translatey(-50%); 
+}
+
+/* 메뉴박스2 */
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-2 {
+    background-color:white;
+    border-right:1px #e7e7e7 solid;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-2 .title {
+    color:#131313;
+    
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-2 .text-box {
+    color:#797979;
+    cursor:auto;
+    font-size:14px;
+    font-weight:400;
+    display:block;
+    margin-top:25px;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-2 .menu-list {
+    margin-top:60px;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-2 .menu-list > div {
+    
+    float:left;
+    width:calc((100% - 20px) / 2);
+    box-sizing:border-box;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-2 .menu-list > div:nth-of-type(1) {
+    margin-right:20px;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-2 .menu-list > div > div {
+    border-bottom:1px solid #d5d5d5;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-2 .menu-list > div > div > a {
+    font-size:15px;
+    font-weight:500;
+    display:block;
+    margin:15px 0;
+    letter-spacing:-1px; 
+    padding-left:10px;
+    position:relative;
+    
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-2 .menu-list > div > div > a::before {
+    content:"";
+    clear:both;
+    display:block;
+    position:absolute;
+    width:2px;
+    height:2px;
+    background-color:#131313;
+    top:50%;
+    left:0;
+    transform:translatey(-50%);
+    z-index:10;
+}
+
+
+/* 메뉴박스3 */
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-3 {
+    background-color:white;
+    width:calc(100% - 28% * 3);
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-3 > div > div {
+    position:relative;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-3 > div > div > .title {
+    font-size:17px;
+    color:#131313;
+    margin-bottom:15px;
+    letter-spacing:-1.5px;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-3 > div > div > .text-1 {
+    font-size:14px;
+    color:#797979;
+    
+    width:70%;
+    letter-spacing:-1px;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-3 > div > div > .text-1::after {
+    position:absolute;
+    top:50%;
+    right:20px;
+    transform:translatey(-50%);
+    width:56px;
+    height:56px;
+    display:block;
+    content:"";
+    background-repeat:no-repeat;
+    background-size:56px auto;
+    background-image:url(https://www.koem.or.kr/images/koem/main/bg_mainBotArea_item3.png);
+    background-position:0 0;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-3 > div > div:nth-of-type(2) > .text-1::after {
+    background-position: 0 -55px;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-3 > div > div:nth-of-type(3) > .text-1::after {
+    background-image:url(https://www.koem.or.kr/images/koem/main/bg_mainBotArea_item3_add.png);
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-3 > div {
+    height:100%;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-3 > div > div {
+    height:calc(100% / 3);
+    border-bottom:1px #e7e7e7 solid;
+    box-sizing:border-box;
+    padding:16px;
+}
+
+/* 메뉴박스4 */
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-4 {
+    background-color:#0a2f87;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-4 > div > .title {
+    border-bottom: 1px solid #546eab;
+    padding-bottom:21px;
+    margin-bottom:17px;
+    box-sizing:border-box;
+    
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-4 > div > .title > .btn-box {
+    position:absolute;
+    width:55px;
+    height:13px;
+    top:10px;
+    right:0;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-4 > div > .title > .btn-box > .post-btn {
+    width:100%;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-4 > div > .title > .btn-box > .autoplay-btn-box {
+    width:100%;
+    height:100%;
+    box-sizing:border-box;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-4 > div > .title > .btn-box > div > div {
+    width:8px;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-image:url(https://www.koem.or.kr/images/koem/main/icon_mainBotArea_all.png);
+    background-repeat:no-repeat;
+    background-position:-86px 0;
+    cursor:pointer;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-4 > div > .title > .btn-box > .post-btn > .next-btn {
+    background-position:-124px 0;
+    right:0;
+    left:auto;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-4 > div > .title > .btn-box > .autoplay-btn-box > div {
+    top:0;
+    left:50%;
+    transform:translatex(-50%);
+    width:7px;
+    height:13px;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-4 > div > .title > .btn-box > .autoplay-btn-box > .btn-start-play {
+    background-position:-99px 0;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-4 > div > .title > .btn-box > .autoplay-btn-box > .btn-stop-play {
+    background-position:-112px 0;
+
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-4 > div {
+    height:100%;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-4 > div > .slider {
+    width:100%;
+    height:259px;
+    
+    position:relative;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-4 > div > .slider > .slides > .slide {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    display:none;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-4 > div > .slider > .slides > .slide.active {
+    display:block;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-4 > div > .slider > .slides > .slide > a {
+    display:block;
+    height:100%;
+    background-color:gold;
+}
+
+
+/* 전화번호 박스 */
+.page-1 > .media-bn-box > .media-bn > .tel-box {
+    width:100%;
+    
+    padding-top:50px;
+    padding-left:7%;
+    padding-right:7%;
+    box-sizing:border-box;
+}
+
+.page-1 > .media-bn-box > .media-bn > .tel-box > div {
+    width:50%;
+    
+    float:left;
+    box-sizing:border-box;
+    text-align:center;
+    
+}
+
+.page-1 > .media-bn-box > .media-bn > .tel-box > div > div {
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+}
+
+.page-1 > .media-bn-box > .media-bn > .tel-box > div > div > .title {
+    margin-right:90px;
+    font-size:22px;
+    color:#181818;
+    white-space:nowrap;
+    letter-spacing:-2px;
+}
+
+.page-1 > .media-bn-box > .media-bn > .tel-box > div > div > .tel {
+    font-size:30px;
+    color:#181818;
+    position:relative;
+    font-weight:bold;
+    letter-spacing:-1px;
+    white-space:nowrap;
+}
+
+.page-1 > .media-bn-box > .media-bn > .tel-box > div > div > .tel::before {
+    content:"";
+    width:40px;
+    height:40px;
+    display:block;
+    position:absolute;
+    top:50%;
+    left:0;
+    transform:translatey(-50%) translatex(calc(-100% - 15px));
+    background-image:url(https://www.koem.or.kr/images/koem/common/icon_common_all.png);
+    background-repeat:no-repeat;
+    background-position:-100px 0;
+}
+
+
+/* 반응형 */
+
+@media (max-width:1656px) {
+    .page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-2 .menu-list > div > div > a {
+        font-size:13px;
+    }
+}
+
+@media (max-width:1656px) and (min-width:865px) {
+    .page-1 > .media-bn-box {
+        padding-left:10px;
+        padding-right:68px;
+    }
+    
+    
+}
+
+@media (max-width:1320px) {
+    .page-1 > .media-bn-box > .media-bn > .tel-box > div {
+        width:100%;
+    }
+    
+    .page-1 > .media-bn-box > .media-bn > .tel-box > div:nth-of-type(1) {
+        margin-bottom:10px;
+    }
+    
+    .page-1 > .media-bn-box > .media-bn > .menu-box-list > div:not(:nth-of-type(3)) {
+        padding-left:20px;
+        padding-right:20px;
+    }
+}
+
+@media (max-width:1194px) and (min-width:865px) {
+    .page-1 > .media-bn-box > .media-bn {
+        min-width:1120px;
+    }
+}
+
+@media (max-width:864px) {
+     
+    .page-1 > .media-bn-box > .media-bn > .tel-box > div > div > .title {
+        font-size:18px;
+    }
+    
+    .page-1 > .media-bn-box > .media-bn > .tel-box > div > div > .tel {
+        font-size:20px;
+    } 
+}
+
+@media (max-width:864px) and (min-width:576px) {
+    .page-1 > .media-bn-box {
+        padding:50px;
+        padding-bottom:70px;
+    }
+
+    .page-1 > .media-bn-box > .media-bn > .menu-box-list {
+        height:720px;
+    }
+    
+    .page-1 > .media-bn-box > .media-bn > .menu-box-list > div {
+        width:50% !important;
+        display:block;
+        height:50%;
+        box-sizing:border-box;
+        
+    }
+    
+    .page-1 > .media-bn-box > .media-bn > .menu-box-list > div:not(:nth-of-type(3)) {
+        padding:20px !important;
+    }
+    
+    .page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-4 > div > .slider {
+        height:235px;
+    }
+    
+    .page-1 > .media-bn-box > .media-bn > .menu-box-list > div:nth-of-type(3) {
+        clear:both;
+    }
+    
+    .page-1 > .media-bn-box > .media-bn > .menu-box-list > div:not(:nth-of-type(3)) > div > .title {
+        font-size:20px;
+    }
+    
+    .page-1 > .media-bn-box > .media-bn > .menu-box-list > div:not(:nth-of-type(3)) > div > .text-box {
+        margin-top:13px;
+    }
+   
+}
+
+@media (max-width:575px) {
+    
+    .page-1 > .media-bn-box {
+        padding-top:50px;
+        padding-left:30px;
+        padding-right:30px;
+    }
+    
+    .page-1 > .media-bn-box > .media-bn > .menu-box-list > div {
+        width:100% !important;
+        display:block;
+        height:50%;
+        
+    }
+    
+    .page-1 > .media-bn-box > .media-bn > .menu-box-list > div:not(:nth-of-type(3)) {
+        padding:25px 45px !important;
+    }
+    
+    .page-1 > .media-bn-box > .media-bn > .menu-box-list > div:not(:nth-of-type(1)) {
+        margin-bottom:10px;
+    }
+    
+    .page-1 > .media-bn-box > .media-bn > .menu-box-list > div:nth-of-type(1) {
+        height:289px;
+    }
+    
+    .page-1 > .media-bn-box > .media-bn > .menu-box-list > div:nth-of-type(2) > div > .menu-list {
+        
+    }
+    
+    .page-1 > .media-bn-box > .media-bn > .tel-box > div > div > .tel::before {
+        width:28px;
+        height:28px;
+        background-image:url(https://www.koem.or.kr/images/koem/main/icon_mainCommon_mobile.png);
+        background-position:-354px 0;
+    }
+    
+/*     .media-bn-box > .media-bn > .tel-box > div > div {
+      position:relative;
+    }
+    
+    
+    
+    .media-bn-box > .media-bn > .tel-box > div > div > div {
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translatex(-50%) translatey(-50%);
+       
+    } */
+    
+    .page-1 > .media-bn-box > .media-bn > .tel-box > div > div > .title {
+        margin-right:5px;
+    }
+    
+    .page-1 > .media-bn-box > .media-bn > .tel-box > div > div > div {
+        float:none;
+    }
+}
+
+/* 미디어 배너 끝 */
+
+
+/* 레일 배너 시작 */
+
+.page-1 > .rail-slider-bn-box {
+    max-width:1490px;
+    margin:40px auto;
+    position:relative;
+    height:70px;
+    overflow:hidden;
+}
+
+.page-1 > .rail-slider-box {
+    width:1490px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translatey(-50%) translatex(-50%);
+}
+
+
+.page-1 > .rail-slider-bn-box > .rail-slider-box > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > a {
+    display:block;
+    height:64px;
+    position:relative;
+    background: #fff;
+    border: 1px solid #dcdcdc;
+    box-sizing:border-box;
+}
+
+.page-1 > .rail-slider-box > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > a::after {
+    width:100%;
+    height:100%;
+    content:"";
+    display:block;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translatex(-50%) translatey(-50%);
+    border:2px solid #005cb9;
+    opacity:0;
+    transition:opacity .2s;
+    box-sizing:border-box;
+}
+
+.page-1 > .rail-slider-box > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > a:hover::after {
+    opacity:1;
+}
+
+.page-1 > .rail-slider-box > .owl-carousel > .owl-nav {
+    display:none;
+}
+
+.page-1 > .rail-slider-bn-box > .right-next-btn, .page-1 > .rail-slider-bn-box  > .left-prev-btn {
+    width:40px;
+    position:absolute;
+    height:70px;
+    top:50%;
+    transform:translatey(-50%);
+    left:0;
+    background-color:white;
+    z-index:1;
+    display:none;
+}
+
+.page-1 > .rail-slider-bn-box > .right-next-btn {
+    left:auto;
+    right:0;
+}
+
+.page-1 > .rail-slider-bn-box > .right-next-btn::before, .rail-slider-bn-box > .left-prev-btn::before {
+    content:"";
+    display:block;
+    width:35px;
+    height:35px;
+    position:absolute;
+    background-image:url(https://www.koem.or.kr/images/koem/common/icon_common_all.png);
+    background-repeat:no-repeat;
+    background-position:0 -150px;
+    top:50%;
+    left:50%;
+    transform:translatey(-50%) translatex(-50%);
+    cursor:pointer;
+}
+
+.page-1 > .rail-slider-bn-box > .right-next-btn::before {
+    background-position:0 -200px;
+}
+
+@media (max-width:1665px) {
+    .page-1 > .rail-slider-bn-box > .right-next-btn, .rail-slider-bn-box  > .left-prev-btn {
+        display:block;
+    }
+}
+
+@media (max-width:865px) {
+    
+    .page-1 > .rail-slider-bn-box {
+        display:none !important;
+    }
+    
+}
+/* 레일 배너 끝 */
+
+
+
+/* 페이지1 푸터 시작 */
+
+.footer {
+    margin-top: 100px;
+}
+
+.footer > div > div {
+    max-width: 1580px;
+    margin: 0 auto;
+}
+
+.footer > .menu-box-1 {
+    background-image: url(https://www.koem.or.kr/images/koem/common/bg_footGnb.gif);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    height: 400px;
+    background-color: #1c1f2b;
+}
+
+.footer > .menu-box-1 > .menu-box-1-inner > div > div {
+    width: calc(100% / 6);
+    position: relative;
+    box-sizing: border-box;
+}
+
+.footer > .menu-box-1 > .menu-box-1-inner > .menu-list > div > .title {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.footer
+    > .menu-box-1
+    > .menu-box-1-inner
+    > .menu-list >
+    div:not(:nth-of-type(1))::after {
+    content: "";
+    display: block;
+    width:1px;
+    height:240px;
+    background-color: #2d313d;
+    top:0;
+    left:-30px;
+    position:absolute;
+}
+
+.footer > .menu-box-1 > .menu-box-1-inner > .menu-list > div {
+    margin-bottom: 7px;
+}
+
+.footer > .menu-box-1 > .menu-box-1-inner > .menu-list > div > div {
+    margin-bottom:5px;
+}
+
+.footer > .menu-box-1 > .menu-box-1-inner > .menu-list > div > div > a {
+    font-size: 14px;
+    color: #cececf;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.footer
+    > .menu-box-1
+    > .menu-box-1-inner
+    > .menu-list
+    > div
+    > div
+    > a:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    bottom: 0;
+    left: 0;
+}
+
+.footer > .menu-box-2 > .menu-box-2-inner > .logo-box {
+    margin-bottom: 100px;
+}
+
+.footer > .menu-box-2 > .menu-box-2-inner > .logo-box > a {
+    background-image: url(https://www.koem.or.kr/images/koem/common/img_footLogo.png);
+    display: block;
+    width: 250px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 70px;
+    box-sizing: border-box;
+}
+
+.footer > .menu-box-2 {
+    background-color: #141720;
+}
+
+.footer > .menu-box-2 > .menu-box-2-inner {
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.footer > .menu-box-2 > .menu-box-2-inner > .sns-ico-list-mobile {
+    margin-top:30px;
+    display:none;
+    clear:both;
+}
+
+.footer > .menu-box-2 > .menu-box-2-inner > .sns-ico-list-mobile > div {
+    display: inline-block;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .sns-ico-list-mobile
+    > div:not(:nth-of-type(5)) {
+    margin-right: 30px;
+    
+}
+
+.footer > .menu-box-2 > .menu-box-2-inner > .sns-ico-list-mobile > div > a {
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-image: url(https://www.koem.or.kr/images/koem/main/img_mainAside_all.png);
+    background-repeat: no-repeat;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .sns-ico-list-mobile
+    > div:nth-of-type(1)
+    > a {
+    width: 13px;
+    background-position: 0 -138px;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .sns-ico-list-mobile
+    > div:nth-of-type(2)
+    > a {
+    width: 10px;
+    background-position: -23px -138px;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .sns-ico-list-mobile
+    > div:nth-of-type(3)
+    > a {
+    width: 18px;
+    background-position: -43px -138px;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .sns-ico-list-mobile
+    > div:nth-of-type(4)
+    > a {
+    width: 13px;
+    background-position: -71px -138px;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .sns-ico-list-mobile
+    > div:nth-of-type(5)
+    > a {
+    width: 18px;
+    background-position: -94px -138px;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .menu-list-box
+    > .menu-list-1 {
+    width: calc(100% - 320px);
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .menu-list-box
+    > .menu-list-1
+    > div {
+    float: left;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .menu-list-box
+    > .menu-list-1
+    > div
+    > a {
+    color: #cdcdce;
+    font-size: 15px;
+    display: block;
+    margin-right: 24px;
+    position: relative;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .menu-list-box
+    > .menu-list-1
+    > div:nth-of-type(1)
+    > a {
+    color: #48c1ef;
+    font-weight: 600;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .menu-list-box
+    > .menu-list-1
+    > div
+    > a:hover::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    bottom: 0;
+    left: 0;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .menu-list-box
+    > .menu-list-2
+    > div
+    > a {
+    cursor: auto;
+    color: #919294;
+    font-size: 14px;
+    display: block;
+    margin-right: 24px;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .menu-list-box
+    > .menu-list-2 {
+    margin-top: 30px;
+    width: calc(100% - 320px);
+    padding-bottom: 70px;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .menu-list-box
+    > .menu-list-2
+    > div:not(:nth-of-type(4)) {
+    display: inline-block;
+}
+
+.footer > .menu-box-2 > .menu-box-2-inner > .copyright {
+    position: relative;
+}
+
+.footer > .menu-box-2 > .menu-box-2-inner > .copyright > .link-list {
+    position: absolute;
+    top: 0%;
+    right: 0;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .local-site-box {
+    width: 260px;
+    height: 100%;
+    border: 1px solid #43454d;
+    cursor: pointer;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    position: relative;
+    padding: 10px;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .local-site-box
+    > a {
+    font-size: 14px;
+    display: block;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .local-site-box
+    > a
+    > span {
+    background-image: url(https://www.koem.or.kr/images/koem/common/icon_common_all.png);
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 6px;
+    background-position: -50px -100px;
+    display: block;
+    float: right;
+    margin-top: 6px;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .local-site-box.active
+    > a
+    > span {
+    background-position: -62px -100px;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .local-site-box
+    a {
+    color: white;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .local-site-box
+    > .pop-up {
+    border: 1px solid #43454d;
+    padding: 15px 40px;
+    padding-bottom: 0;
+    width: 260px;
+    bottom: 100%;
+    left: -1px;
+    box-sizing: border-box;
+    background-color: #141720;
+    position: absolute;
+    display: none;
+       
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .local-site-box.active
+    > .pop-up {
+    display: block;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .local-site-box
+    > .pop-up
+    > div {
+    width: 50%;
+    float: left;
+
+    box-sizing: border-box;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .local-site-box
+    > .pop-up
+    > div:nth-of-type(2) {
+    text-align: right;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .local-site-box
+    > .pop-up
+    > div
+    > a {
+    color: white;
+    font-size: 15px;
+    position: relative;
+    line-height: 32px;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .local-site-box
+    > .pop-up
+    > div
+    > a:hover {
+    color: #48c1ef;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .local-site-box
+    > .pop-up
+    > div
+    > a:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #48c1ef;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .mark-box {
+    padding-left: 25px;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .mark-box
+    > div {
+    background-image: url(https://www.koem.or.kr/images/koem/common/icon_common_all.png);
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+    float: left;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .mark-box
+    > div:nth-of-type(1) {
+    background-image: url(https://www.koem.or.kr/images/koem/main/img_markLink_add.png);
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .mark-box
+    > div:nth-of-type(2) {
+    background-position: 0 -350px;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .mark-box
+    > div:nth-of-type(3) {
+    background-position: -45px -350px;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .mark-box
+    > div:nth-of-type(4) {
+    width: 60px;
+    background-position: -90px -350px;
+}
+
+.footer > .top-btn {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 64px;
+    height: 63px;
+    background-color: #a08a4b;
+    color: #ffffff;
+    text-align: center;
+    line-height: 75px;
+    transform: translatey(-50%);
+}
+
+.footer > .top-btn > span {
+    background-image: url(/images/koem/common/icon_common_all.png);
+    background-repeat: no-repeat;
+    background-position: -36px 0;
+    display: block;
+    width: 11px;
+    height: 8px;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    transform: translatex(-50%);
+    box-sizing: border-box;
+}
+
+.footer > .page2-btn-mobile {
+    position: absolute;
+    bottom: 20px;
+    right: 5px;
+    display: none;
+}
+
+.footer > .page2-btn-mobile > a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(https://www.koem.or.kr/images/koem/main/icon_mainCommon_mobile.png);
+    background-repeat: no-repeat;
+    background-position: 0 -37px;
+}
+
+@media (max-width: 1840px) {
+    .footer > .top-btn {
+        display: none;
+    }
+}
+
+@media (min-width: 960px) {
+    .footer > div {
+        min-width: 1200px;
+    }
+}
+
+@media (max-width: 959px) {
+    .footer {
+        max-width: 100%;
+        background-image: url(https://www.koem.or.kr/images/koem/common/bg_footGnb_mo.gif);
+        background-repeat: no-repeat;
+        background-position: top;
+        padding: 30px 40px;
+        background-size: 100% auto;
+        background-color: #141720;
+        margin-top:0;
+    }
+
+    .footer > div {
+        max-width: 100%;
+    }
+
+    .footer > .menu-box-1 {
+        display: none;
+    }
+    
+    .footer > .menu-box-2 {
+        background-color:transparent;
+    }
+
+    .footer
+        > .menu-box-2
+        > .menu-box-2-inner
+        > .copyright
+        > .menu-list-box
+        > .menu-list-2 {
+        padding-bottom: 0;
+        width: 100%;
+    }
+
+    .footer > .menu-box-2 > .menu-box-2-inner > .logo-box {
+        margin-bottom: 0;
+        margin-top: 23px;
+    }
+
+    .footer > .menu-box-2 > .menu-box-2-inner {
+        background-color: transparent;
+        padding: 0;
+        margin-top: 25px;
+    }
+
+    .footer > .menu-box-2 > .menu-box-2-inner > .copyright {
+        width: 100%;
+    }
+
+    .footer
+        > .menu-box-2
+        > .menu-box-2-inner
+        > .copyright
+        > .menu-list-box
+        > .menu-list-1 {
+        display: none;
+    }
+
+    .footer
+        > .menu-box-2
+        > .menu-box-2-inner
+        > .copyright
+        > .menu-list-box
+        > .menu-list-2
+        > div
+        > a {
+        font-size: 13px;
+    }
+
+    .footer
+        > .menu-box-2
+        > .menu-box-2-inner
+        > .copyright
+        > .menu-list-box
+        > .menu-list-2
+        > div:nth-of-type(3) {
+        display: block;
+    }
+
+    .footer
+        > .menu-box-2
+        > .menu-box-2-inner
+        > .copyright
+        > .menu-list-box
+        > .menu-list-2
+        > div:nth-of-type(4) {
+        margin-top: 30px;
+    }
+
+    .footer
+        > .menu-box-2
+        > .menu-box-2-inner
+        > .copyright
+        > .link-list
+        > .mark-box {
+        display: none;
+    }
+
+    .footer > .menu-box-2 > .menu-box-2-inner > .copyright > .link-list {
+        top: 20px;
+    }
+
+    .footer > .menu-box-2 > .menu-box-2-inner > .sns-ico-list-mobile {
+        display: block;
+    }
+}
+
+@media (max-width: 636px) {
+    .footer > .menu-box-2 > .menu-box-2-inner > .logo-box {
+        margin-top: 0;
+        width:100%;
+    }
+
+    .footer > .menu-box-2 > .menu-box-2-inner > .logo-box > a {
+        display: block;
+        width: 195px;
+        height: 28px;
+        background-size: 100% auto;
+        margin: 0 auto;
+    }
+
+    .footer > .menu-box-2 > .menu-box-2-inner > .sns-ico-list-mobile {
+        margin-top: 90px;
+        text-align: center;
+        width:100%;
+    }
+
+    .footer > .menu-box-2 > .menu-box-2-inner > .copyright > .link-list {
+        width: 100%;
+        top: 50px;
+    }
+
+    .footer
+        > .menu-box-2
+        > .menu-box-2-inner
+        > .copyright
+        > .link-list
+        > .local-site-box {
+        width: 100%;
+    }
+    
+    .footer
+        > .menu-box-2
+        > .menu-box-2-inner
+        > .copyright
+        > .link-list
+    > .local-site-box > .pop-up {
+        width:100%;
+    }
+    
+    .footer
+        > .menu-box-2
+        > .menu-box-2-inner
+        > .copyright
+        > .link-list
+    > .local-site-box > .pop-up > div {
+        
+        padding:0 50px;
+    }    
+
+    .footer > .menu-box-2 > .menu-box-2-inner > .copyright > .link-list > div {
+        width: 100%;
+    }
+
+    .footer
+        > .menu-box-2
+        > .menu-box-2-inner
+        > .copyright
+        > .menu-list-box
+        > .menu-list-2 {
+        text-align: center;
+    }
+
+    .footer > .page2-btn-mobile {
+        display: block;
+    }
+}
+
+/* 반응형 지점 
+
+1840 에서 탑버튼 사라짐
+
+960 에서 왕창 바뀜
+
+636 에서 모바일 버전으로 바뀜
+
+*/
+
+/* 페이지1푸터 끝 */
+
+
+
+/* 헤더 시작 */
+
 .header {
     height:100px;
     margin:0 auto;
     padding-top:30px;
     box-sizing:border-box;
-    z-index: 10;
-    position: absolute;
-    width:100%;
+    position:absolute;
     top:0;
-    lrft:0;
+    left:0;
+    width:100%;
+    z-index:10;
 }
 
 /* 탑바 */
@@ -779,11 +3138,6 @@ body > .side-bar-2 > ul > .sns-ico-list-box > .sns-ico-list > li:not(:last-child
     left:0;
     box-sizing:border-box;
     padding-top:0;
-    
-}
-
-.not-scroll-top-0  .header  contents {
-    z-index: 20;
 }
 
 .not-scroll-top-0  .header .link-menu-box {
@@ -806,7 +3160,7 @@ body > .side-bar-2 > ul > .sns-ico-list-box > .sns-ico-list > li:not(:last-child
     display:none;
     top:0;
     left:0;
-    z-index: 12;
+    z-index:20;
 }
 
 .popup-bg.active {
@@ -816,7 +3170,14 @@ body > .side-bar-2 > ul > .sns-ico-list-box > .sns-ico-list > li:not(:last-child
 /* 팝업메뉴 */
 .popup-menu-box {
     display:none;
-    
+    z-index:21;
+    position:absolute;
+    top:0;
+    left:50%;
+    width:1535px;
+    height:900px;
+    transform:translatex(-50%);
+    top:50px;
 }
 
 .popup-menu-box.active {
@@ -829,12 +3190,11 @@ body > .side-bar-2 > ul > .sns-ico-list-box > .sns-ico-list > li:not(:last-child
     width:calc(100% - 54px);
     background-color:white;
     position:absolute;
-    top:50px;
+    top:0;
     left:50%;
     transform:translatex(-50%);
     padding:50px;
     box-sizing:border-box;
-    z-index: 14;
 }
 
 @media (max-width:1700px) {
@@ -846,6 +3206,13 @@ body > .side-bar-2 > ul > .sns-ico-list-box > .sns-ico-list > li:not(:last-child
 }
 
 @media (max-width:959px) {
+    .popup-menu-box {
+        max-width:960px;
+        width:100%;
+        height:100%;
+        top:0;
+    }
+    
     .popup {
         display:none;
     }
@@ -970,7 +3337,6 @@ body > .side-bar-2 > ul > .sns-ico-list-box > .sns-ico-list > li:not(:last-child
     position:fixed;
     top:0;
     right:0;
-    z-index: 14;
 }
 
 .popup-mobile.active {
@@ -1231,995 +3597,1894 @@ body > .side-bar-2 > ul > .sns-ico-list-box > .sns-ico-list > li:not(:last-child
     }
 }
 
-
 /* 모바일 팝업 끝 */
 
-/* 슬라이더 */
-.all-page-1 > .main-slider {
-    position:relative;
-    width:100%;
-    max-width:2379px;
-    top:0;
-    left:50%;
-    transform:translatex(-50%);
-    user-select:none;
-    height:993px;
-}
+/* 헤더 끝 */
+/* 페이지1 끝 */
 
-.all-page-1 > .main-slider > .slides > div {
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0;
-    left:0;
-    opacity:0;
-    transition:opacity 1s;
-    background-size:auto 100%;
-}
-
-.all-page-1 > .main-slider > .slides > div.active {
-    opacity:1;
-}
-
-.all-page-1 > .main-slider > .slides > .slide:nth-of-type(1) {
-    background-image:url(https://www.koem.or.kr/images/koem/main/page1_visual1.jpg);
+/* 페이지 2시작 */
+/* 메인배너 시작 */
+.main-bn {
     background-repeat:no-repeat;
     background-position:center;
-}
-
-.all-page-1 > .main-slider > .slides > .slide:nth-of-type(2) {
-    background-image:url(https://www.koem.or.kr/images/koem/main/page1_visual2.jpg);
-    background-repeat:no-repeat;
-    background-position:center;
-}
-
-.all-page-1 > .main-slider > .slides > .slide:nth-of-type(3) {
-    background-image:url(https://www.koem.or.kr/images/koem/main/page1_visual3.jpg);
-    background-repeat:no-repeat;
-    background-position:center;
-}
-/* 슬라이드 끝 */
-
-/* 텍스트 박스 시작 */
-
-/* 텍스트 */
-.all-page-1 > .main-slider > .text-box {
-    position:absolute;
-    top:240px;
-    left:50%;
-    transform:translatex(-50%);
-    text-align:center;
-    color:white;
-    white-space:nowrap;
-}
-
-.all-page-1 > .main-slider > .text-box > .title > span {
-    background-image:url(https://www.koem.or.kr/images/koem/main/img_visualSlogan.png);
-    background-repeat:no-repeat;
-    height:61px;
-    display:inline-block;
-    opacity:0;
-    transition-timing-fuction:ease;
-}
-
-.all-page-1 > .main-slider > .text-box > .title > span.active {
-    opacity:1;
-}
-
-.all-page-1 > .main-slider > .text-box > .title > span:nth-of-type(1) {
-    width:260px;
-    background-position:0 0;
-    transition:opacity 2s .5s;
-}
-
-.all-page-1 > .main-slider > .text-box > .title > span:nth-of-type(2) {
-    width:312px;
-    background-position:-260px 0;
-    transition:opacity 2s .8s;
-}
-
-.all-page-1 > .main-slider > .text-box > .title > span:nth-of-type(3) {
-    width:247px;
-    background-position:-572px 0;
-    transition:opacity 2s 1.2s;
-}
-
-.all-page-1 > .main-slider > .text-box > .title > span:nth-of-type(4) {
-    width:324px;
-    background-position:-247px -61px;
-    display:block;
-    margin:0 auto;
-    transition:opacity 2s 1.5s;
-}
-
-.all-page-1 > .main-slider > .text-box > .text {
-    margin-top:30px;
-    font-size:19px;
-    margin-bottom:25px;
-    opacity:0;
-    transition:opacity 6s;
-}
-
-.all-page-1 > .main-slider > .text-box > .text.active {
-    opacity:1;
-}
-
-.all-page-1 > .main-slider > .text-box > .btn > .center-btn > div {
-    display:none;
-}
-
-.all-page-1 > .main-slider > .text-box > .btn > .center-btn > div.active {
-    display:block;
-}
-
-/* 사이드 버튼 */
-
-.all-page-1 > .main-slider > .text-box > .side-btns {
-    position:relative;
-    height:38px;
-    width:720px;
-    margin:0 auto;
-}
-
-.all-page-1 > .main-slider > .text-box > .side-btns > div {
-    width:320px;
-    height:24px;
-    position:absolute;
-    top:50%;
-    left:0;
-    transform:translatey(-50%);
-}
-
-.all-page-1 > .main-slider > .text-box > .side-btns > .next-btn {
-    right:0;
-    left:auto;
-}
-
-.all-page-1 > .main-slider > .text-box > .side-btns > div > .ico {
-    background-image:url(https://www.koem.or.kr/images/koem/main/img_mainVisual_all.png);
-    background-repeat:no-repeat;
-    position:absolute;
-    background-position: -155px 0;
-    bottom:4px;
-    left:0;
-    width:58px;
-    height:24px;
-    overflow:hidden;
+    height:676px;
+    padding-top:230px;
     box-sizing:border-box;
-    border-bottom:1px solid;
-    transition:left .5s, right .5s;
-    cursor:pointer;
-}
-
-.all-page-1 > .main-slider > .text-box > .side-btns > div > .line {
-    height:1px;
-    width:100%;
-    background-color:white;
-    display:block;
-    position:absolute;
-    bottom:4px;
-    left:0;
-}
-
-.all-page-1 > .main-slider > .text-box > .side-btns > .next-btn > .line {
-    right:0;
-    left:auto;
-}
-
-.all-page-1 > .main-slider > .text-box > .side-btns > .next-btn > .ico {
-    background-position:-120px -23px;
-    left:auto;
-    right:0;
-}
-
-.all-page-1 > .main-slider > .text-box > .side-btns > .next-btn > .ico:hover {
-    right:-29px;
-}
-
-.all-page-1 > .main-slider > .text-box > .side-btns > .prev-btn > .ico:hover {
-    left:-29px;
-}
-
-
-/* 오토플레이 버튼 */
-
-.all-page-1 > .main-slider > .text-box > .autoplay-btn-box {
-    position:absolute;
-    bottom:0;
-    left:50%;
-    transform:translatex(-50%);
-    width:38px;
-    height:38px;
-    z-index:10;
-}
-
-.all-page-1 > .main-slider > .text-box > .autoplay-btn-box > div {
-    width:100%;
-    height:100%;
     overflow:hidden;
-    cursor:pointer;
-    background-image:url(https://www.koem.or.kr/images/koem/main/img_mainVisual_all.png);
+    position:relative;
+    min-width:1200px;
+}
+
+.main-bn > .anymation-img {
+    position:absolute;
+    background-image:url(https://www.koem.or.kr/images/koem/main/bg_page1_section2_building.png);
     background-repeat:no-repeat;
-    transition:opacity .5s;
-    position:absolute;
-    top:0;
-    left:0;
-}
-
-.slider-k[data-autoplay-now-work="Y"] .autoplay-btn-box > .btn-start-play {
-    display:none;
-}
-
-.slider-k[data-autoplay-now-work="N"] .autoplay-btn-box > .btn-stop-play {
-    display:none;
-}
-
-.all-page-1 > .main-slider > .text-box > .autoplay-btn-box > div:nth-of-type(2) {
-    background-position:-141px -95px;
-}
-
-.all-page-1 > .main-slider > .text-box > .autoplay-btn-box > div:nth-of-type(2):hover {
-    background-position:-183px -95px;
-}
-
-.all-page-1 > .main-slider > .text-box > .autoplay-btn-box > div:nth-of-type(1) {
-    background-image:url(https://www.koem.or.kr/images/koem/main/img_mainVisual_all.png);
-    background-position:-94px -95px;
-}
-
-.all-page-1 > .main-slider > .text-box > .autoplay-btn-box > div:nth-of-type(1):hover {
-     background-position:-183px -50px; 
-}
-
-/* 일시정지, 재생 버튼 끝 만세 꺄하하하하하*/
-
-/* 스크롤 다운 버튼 시작 */
-.all-page-1 > .main-slider > .scroll-down-btn {
-    position:absolute;
-    bottom:145px;
-    left:50%;
-    transform:translatex(-50%);
-    cursor:pointer;
-    width:111px;
-    height:100px;
-}
-
-.all-page-1 > .main-slider > .scroll-down-btn > span:nth-of-type(1) {
-    width:38px;
-    height:55px;
-    position:absolute;
-    top:0;
-    left:50%;
-    transform:translatex(-50%);
-    overflow:hidden;
-
-}
-
-.all-page-1 > .main-slider > .scroll-down-btn > span:nth-of-type(1) {
-    animation-name:up-down;
-    animation-duration:2s;
-    animation-iteration-count:infinite;
-}
-
-@keyframes up-down {
-    0% {
-        top:-5%;
-    }
-    50% {
-        top:5%;
-    }
-    100% {
-        top:-5%;
-    }
-}
-
-.all-page-1 > .main-slider > .scroll-down-btn > span:nth-of-type(1) > img {
-    position:absolute;
-    top:1px;
-    left:-35px;
-}
-
-.all-page-1 > .main-slider > .scroll-down-btn > span:nth-of-type(2) {
-    width:111px;
-    height:25px;
-    position:absolute;
+    background-position:center;
+    background-size:cover;
+    width:742px;
+    height:554px;
     bottom:0;
+    transform:translatey(30%);
+    right:0;
+    transition:transform 1.5s, opacity 2s;
+    opacity:.5;
+}
+
+.main-bn > .anymation-img.active {
+    transform:translatey(0);
+    opacity:1;
+}
+
+.main-bn > .content-box > .title {
+    font-size:42px;
+    font-weight:bold;
+    color:#0a0a0a;
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.main-bn > .content-box {
+    position:relative;
+    border:1px solid transparent;
+}
+
+.main-bn > .content-box > .bn-list {
+    width:1200px;
+    position:absolute;
+    top:100%;
     left:50%;
     transform:translatex(-50%);
-    overflow:hidden;
 }
 
-.all-page-1 > .main-slider > .scroll-down-btn > span:nth-of-type(2) > img {
-    position:absolute;
-    top:-60px;
-    left:2px;
-}
-/* 스크롤 다운 버튼 끝 */
-
-
-/* 반응형 작업 시작 */
-
-@media (min-width:961px) {
-    body > .all-page-1 > .main-slider {
-        min-width:1200px;
-        height:993px;
-    }
-}
-
-@media  (max-width:960px) and (min-width:641px) {
-    body > .all-page-1 > .main-slider {
-        height:500px;
-        min-width:641px;
-    }
-    
-    body > .all-page-1 > .main-slider > .text-box {
-        top:120px;
-    }
-
-    body > .all-page-1 > .main-slider > .text-box > .title > span {
-        display:none !important;
-    }
-
-    body > .all-page-1 > .main-slider > .text-box > .title {
-        height:80px;
-        background-image:url(https://www.koem.or.kr/images/koem/main/img_visualSlogan.png);
-        background-repeat:no-repeat;
-        background-size:500px auto;
-        background-position:center;
-    }
-    
-    body > .all-page-1 > .main-slider > .text-box > .text {
-        font-size:16px;
-        line-height:150%;
-        letter-spacing:-;
-    }
-    
-    body > .all-page-1 > .main-slider > .text-box > .side-btns > .prev-btn, body > .all-page-1 > .main-slider > .text-box > .side-btns > .next-btn {
-        width:220px;
-    }
-    
-    body > .all-page-1 > .main-slider > .text-box > .side-btns {
-        width:530px;
-        margin-top:70px;
-    }
-    
-    body > .all-page-1 > .main-slider > .scroll-down-btn {
-        display:none;
-    }
-}
-
-
-@media (max-width:640px) {
-    body > .all-page-1 > .main-slider  {
-        height:400px;
-        min-width:163px;
-    }
-    
-    body > .all-page-1 > .main-slider > .text-box {
-        top:120px;
-    }
-
-    body > .all-page-1 > .main-slider > .text-box > .title > span {
-        display:none !important;
-    }
-
-    body > .all-page-1 > .main-slider > .text-box > .title {
-        height:80px;
-        background-image:url(https://www.koem.or.kr/images/koem/main/img_visualSlogan.png);
-        background-repeat:no-repeat;
-        background-size:300px auto;
-        background-position:center;
-    }
-    
-    body > .all-page-1 > .main-slider > .text-box > .text {
-        display:none;
-    }
-    
-     body > .all-page-1 > .main-slider > .text-box > .side-btns > .prev-btn,  body > .page-1 > .main-slider > .text-box > .side-btns > .next-btn {
-        width:108px;
-    }
-    
-     body > .all-page-1 > .main-slider > .text-box > .side-btns > .prev-btn > .ico,  body > .page-1 > .main-slider > .text-box > .side-btns > .next-btn > .ico {
-        width:36px;
-        height:15px;
-        background-image:url(https://www.koem.or.kr/images/koem/main/icon_mainCommon_mobile.png);
-    }
-    
-     body > .all-page-1 > .main-slider > .text-box > .side-btns > .prev-btn > .ico {
-        background-position:-69px 0;
-    }
-    
-     body > .all-page-1 > .main-slider > .text-box > .side-btns > .next-btn > .ico {
-        background-position:-112px 0px;
-    }
-    
-     body > .all-page-1 > .main-slider > .text-box > .side-btns {
-        width:300px;
-        margin-top:30px;
-    }
-    
-    body > .all-page-1 > .main-slider > .scroll-down-btn {
-        display:none;
-    }
-    
-    body > .all-page-1 > .main-slider > .text-box > .btn > .pause-btn > div {
-        width:29px;
-        height:29px;
-        background-position:0 0 !important;
-        background-image:url(https://www.koem.or.kr/images/koem/main/icon_mainCommon_mobile.png);
-        top:3px;
-    }
-}
-/* 반응형 작업 끝 */
-/* 메인 슬라이드바 끝 */
-
-
-/* 페이지-1 탭메뉴 시작 */
-
-body > .all-page-1 >.tab-bn-box {
-    position: relative ;
-    height:500px;
-}
-
-body > .all-page-1 >.tab-bn-box > .tab-bn  {
-    max-width:1580px;
-    position:absolute;
-    top:100px;
-    left:50%;
-    transform:translatex(-50%);
-    width:100%;
-}
-
-body > .all-page-1 >.tab-bn-box > .tab-bn > .head {
-    margin-bottom:30px;
-}
-
-body > .all-page-1 >.tab-bn-box > .tab-bn > .head::after {
-    content:"";
-    width:38px;
-    height:38px;
-    background-image:url(https://www.koem.or.kr/images/koem/common/icon_common_all.png);
-    background-repeat:no-repeat;
-    background-position:1px -99px;
-    border:1px solid #d8dade;
-    border-radius:50%;
-    position:absolute;
-    top:5px;
-    right:5%;
-    cursor:pointer;
-}
-
-body > .all-page-1 >.tab-bn-box > .tab-bn > .head > div > span {
-    font-size:23px;
-    padding:0 20px;
-    color:#484848;
-    display:block;
-    padding:5px 20px;
+.main-bn > .content-box > .bn-list > .bn {
+    width:calc(100% /4);
+    height:233px;
+    color:#ffffff;
     position:relative;
 }
 
-body > .all-page-1 >.tab-bn-box > .tab-bn > .head > div.active > span {
-    color:#005cb9;
-    
-}
-
-body > .all-page-1 >.tab-bn-box > .tab-bn > .head > div:not(:last-child) > span::after {
-    position:absolute;
-    content:"";
-    display:block;
-    width:1px;
-    height:18px;
-    background-color:#dcdcdc;
-    top:50%;
-    right:0;
-    transform:translatey(-45%);
-}
-
-body > .all-page-1 >.tab-bn-box > .tab-bn > .head > div > span::before {
-    content:"";
-    display:block;
-    width:0;
-    height:1px;
-    background-color:#005cb9;
-    top:-1.5px;
-    left:0;
-    opacity:0;
-    transition:all .5s;
-}
-
-body > .all-page-1 >.tab-bn-box > .tab-bn > .head > div.active > span::before, body > .all-page-1 >.tab-bn-box > .tab-bn > .head > div > span:hover::before {
-    opacity:1;
-    width:100%;
-}
-
-body > .all-page-1 >.tab-bn-box > .tab-bn > .contents {
-    top:100%;
-    
-}
-
-body > .all-page-1 >.tab-bn-box > .tab-bn >.contents .owl-carousel-box {
-    display:none;
-    
-}
-
-body > .all-page-1 >.tab-bn-box > .tab-bn >.contents .owl-carousel-box.active {
-    display:block;
-    
-}
-
-body > .all-page-1 >.tab-bn-box > .tab-bn .owl-carousel {
-    border:1px solid #e5e5e5;
-}
-
-body > .all-page-1 >.tab-bn-box > .tab-bn .owl-carousel  .owl-item  {
-    border-right:1px solid #e5e5e5;
-    display:block;
-    text-align:left;
-}
-
-body > .all-page-1 >.tab-bn-box > .tab-bn .owl-carousel  .item > a {
+.main-bn > .content-box > .bn-list > .bn > a {
     display:block;
     width:100%;
+    height:100%;
+    background-image:url(https://www.koem.or.kr/images/koem/main/page1_section2_bgAll.jpg);
+    background-repeat:no-repeat;
+    background-color:rgba(0,0,0,.2);
     padding:20px;
     box-sizing:border-box;
-    position:relative;
-}
-
-body > .all-page-1 >.tab-bn-box > .tab-bn .owl-carousel  .item > a::before {
-    content:"";
     position:absolute;
-    display:block;
     top:0;
     left:0;
-    width:0;
-    height:0;
-    border-top:3px solid #005cb9;
-    border-right:3px solid #005cb9;
-    opacity:0;
+    transition:transform .5s;
 }
 
-body > .all-page-1 >.tab-bn-box > .tab-bn .owl-carousel  .item > a:hover::before {
-    width:calc(100% - 3px);
-    height:calc(100% - 3px);
-    opacity:1;
-    transition:width .2s, height .2s linear .2s;
+.main-bn > .content-box > .bn-list > .bn > a:hover {
+    transform:translatey(-20px);
 }
 
-body > .all-page-1 >.tab-bn-box > .tab-bn .owl-carousel  .item > a::after {
-    content:"";
-    position:absolute;
-    display:block;
-    bottom:0;
-    right:0;
-    width:0;
-    height:0;
-    border-bottom:3px solid #005cb9;
-    border-left:3px solid #005cb9;
-    opacity:0;
-}
-
-body > .all-page-1 >.tab-bn-box > .tab-bn .owl-carousel  .item > a:hover::after {
-    width:calc(100% - 3px);
-    height:calc(100% - 3px);
-    opacity:1;
-    transition:width .2s linear .4s, height .2s linear .6s, opacity 0s linear .4s;
-}
-
-
-body > .all-page-1 >.tab-bn-box > .tab-bn .owl-carousel  .item > a > .img-box {
-    height:160px;
-    background-position:center center;
-    background-repeat:no-repeat;
-    background-color:gold;
-    background-size:cover;
-    margin-top:20px;
-
-}
-
-body > .all-page-1 >.tab-bn-box > .tab-bn .owl-carousel .item > a > .text-1 {
-    color:#181818;
-    font-size:18px;
-    display:block;
-    margin-top:16px;
-    height:52px;
-    line-height:26px;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    text-align:left;
-    display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-}
-
-body > .all-page-1 >.tab-bn-box > .tab-bn .owl-carousel .item > a > .date {
-    font-size:14px;
-    text-align:left;
-    display:block;
-    margin-top:18px;
-    color:#7a7a7a;
-}
-
-body > .all-page-1 >.tab-bn-box > .tab-bn .owl-carousel .item > a > .text-2 {
-    display:block;
-    font-size:15px;
-    margin-top:20px;
-    overflow:hidden;
-    height:66px;
-    line-height:22px;
-    text-overflow:ellipsis;
-    word-wrap:break-word;
-    display: -webkit-box;
-    -webkit-line-clamp:3;
-}
-
-body > .all-page-1 >.tab-bn-box > .tab-bn .owl-nav {
-    position:absolute;
-    top:50%;
-    left:50%;
-    width:95%;
-    transform:translatey(-50%) translatex(-50%);
-    margin-top:0 !important;
-}
-
-body > .all-page-1 >.tab-bn-box > .tab-bn  .owl-nav > div {
-    width:56px;
-    height:56px;
-    background-image:url(https://www.koem.or.kr/images/koem/common/icon_common_all.png) !important;
-    background-repeat:no-repeat;
-    top:200px;
-    z-index:1;
-    opacity:.8;
-    cursor:pointer;
-    position:absolute;
-    top:50%;
-    transform:translatey(-50%);
-    display:block !important;
-    margin:0 !important;
-    padding:0 !important;
-    background-color:transparent !important;
-}
-
-body > .all-page-1 >.tab-bn-box > .tab-bn .owl-nav > div:nth-of-type(1) {
-    background-position:-44px -200px !important;
-}
-
-body > .all-page-1 >.tab-bn-box > .tab-bn .owl-nav > div:nth-of-type(2) {
-    background-position:-44px -256px !important;
-    right:0 !important;
-}
-
-body > .all-page-1 >.tab-bn-box > .tab-bn > .contents {
-    overflow:hidden;
-    width:100%;
-}
-
-@media (max-width:865px) {
-    body > .all-page-1 > .tab-bn-box > .tab-bn {
-        max-width:1190px;
-    }
-    body > .all-page-1 >.tab-bn-box > .tab-bn > .head > div > a {
-        font-size:18px;
-        padding:0 10px;
-    }
-
-    body > .all-page-1 >.tab-bn-box > .tab-bn > .contents .owl-carousel .owl-item {
-        width:calc(1150px / 5) !important;
-    }
-
-}
-
-body > .all-page-1 >.tab-bn-box > .tab-bn > .contents .owl-carousel .owl-stage-outer {
-    width:100%;
-    height:325px;
-}
-
-@media (max-width:575px) {
-
-    body > .all-page-1 >.tab-bn-box > .tab-bn > .contents .owl-nav {
-        width:98%;
-    }
-    
-    body > .all-page-1 >.tab-bn-box > .tab-bn > .contents .owl-nav > div {
-        width:31px;
-        height:31px;
-        background-image:url(https://www.koem.or.kr/images/koem/main/icon_mainCommon_mobile.png) !important;
-        
-    }
-    
-    body > .all-page-1 >.tab-bn-box > .tab-bn > .contents .owl-nav > div:nth-of-type(1) {
-        background-position:-276px 0 !important;
-    }
-
-    body > .all-page-1 >.tab-bn-box > .tab-bn > .contents .owl-nav > div:nth-of-type(2) {
-        background-position:-315px 0 !important;
-        right:0 !important;
-    }
-    
-    body > .all-page-1 >.tab-bn-box > .tab-bn > .head::after {
-        width:21px;
-        height:21px;
-        background-image:url(https://www.koem.or.kr/images/koem/main/icon_mainCommon_mobile.png);
-        background-position:-216px -2px;
-
-    }
-}
-
-/* 페이지-1 탭메뉴 끝 */
-
-
-/* 카운트 슬라이드 시작 */
-.count-slider-box {
-    margin:0 auto;
-    position: relative;
-    width:1580px;
-}
-
-.count-slider-box > .notice-slider {
-    margin:20px 0;
-    height:100px;
-    border:1px solid #ededed;
-    background:#f3f3f3;
-    padding:0 75px;
-}
-
-.count-slider-box > .notice-slider > .title-box {
-    line-height:49px;
-    left:75px !important;
-}
-
-.count-slider-box > .notice-slider > .title-box > .img-box {
-    width:49px;
-    height:49px;
-    background-position:-100px -50px;
-    background-repeat:no-repeat;
+.main-bn > .content-box > .bn-list > .bn > a > span {
+    color:black;
     display:block;
 }
 
-.count-slider-box > .notice-slider > .title-box > .title {
-    font-weight:bold;
-    left:60px;
-    top:50%;
-    font-size:23px;
-    white-space:nowrap;
-    color:#005cb9;
-    margin-left:25px;
-    box-sizing:border-box;
-    display:block;
-}
-
-.count-slider-box > .notice-slider > .title-box > .title::after {
-    content:"";
-    width:1px;
-    height:22px;
-    background-color:#cccccc;
-    display:block;
-    position:absolute;
-    top:50%;
-    right:-34px;
-    transform:translatey(-50%);
-}
-
-.count-slider-box > .notice-slider > .slide-box {
-    
-    position:relative;
-    height:100%;
-    width:300px;
-    overflow:hidden;
-    margin-left:300px;
-    padding-left:15px;
-    box-sizing:border-box;
-}
-
-.count-slider-box > .notice-slider > .slide-box > .slides > .slide {
-    position:absolute;
-    opacity:0;
-    left:0;
-}
-
-@-webkit-keyframes move-top {
-  0% {
-    top:100%;
-  }
-  50% {
-     top:0;   
-  }
-  100% {
-    top:-100%;
-  }
-}
-
-.count-slider-box > .notice-slider > .slide-box > .slides > .slide.active {
-    opacity:1;
-    animation-name:move-top;
-    animation-duration:2s;
-}
-
-.count-slider-box > .notice-slider > .slide-box > .slides > .slide > a {
-    display:block;
-    line-height:100px;
-    font-size:17px;
-    color:#1d1d1d;
-    white-space:nowrap;
-    position:relative;
-}
-
-.count-slider-box > .notice-slider > .slide-box > .slides > .slide > a::before {
-    content:"";
-    display:block;
-    position:absolute;
-    top:50%;
-    left:-25px;
-    width:4px;
-    height:4px;
-    background-color:black;
-    transform:translatey(-50%);
-    z-index:10;
-}
-
-.count-slider-box > .notice-slider > .right-box {
-    right:75px !important;
-    left:auto;
-    width:130px;
-    height:29px;
-}
-
-.count-slider-box > .notice-slider > .right-box > .btn-box {
-    position:relative;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    display:block;
-
-}
-
-.count-slider-box > .notice-slider > .right-box > .btn-box > .img-box {
-    background-repeat:no-repeat;
-    width:29px;
-    height:29px;
-    position:absolute;
-    cursor:pointer;
-}
-
-.count-slider-box > .notice-slider > .right-box > .btn-box > .img-box:nth-of-type(1) {
-    top:0;
-    left:0;
+.main-bn > .content-box > .bn-list > .bn:nth-of-type(1) > a {
     background-position:0 0;
 }
 
-.count-slider-box > .notice-slider > .right-box > .btn-box > .img-box:nth-of-type(2) {
-    background-position:0 -50px;
-    top:0;
-    right:0;
+.main-bn > .content-box > .bn-list > .bn:nth-of-type(1) > a > span {
+    color:#ffffff;
 }
 
-.count-slider-box > .notice-slider > .right-box > .slide-counter > span {
-    display:inline-block;
-    line-height:1;
+.main-bn > .content-box > .bn-list > .bn:nth-of-type(2) > a {
+    background-position:-305px 0;
 }
 
-.count-slider-box > .notice-slider > .right-box > .slide-counter > span:not(:nth-of-type(1)) {
-    font-size: 14px;
-    color: #6e6e6e;
+.main-bn > .content-box > .bn-list > .bn:nth-of-type(3) > a {
+    background-position:-610px 0;
 }
 
-.count-slider-box > .notice-slider > .right-box > .slide-counter > span:nth-of-type(1) {
-    font-size: 19px;
-    color: #0a2f87;
-    font-weight:bold;
+.main-bn > .content-box > .bn-list > .bn:nth-of-type(4) > a {
+    background-position:-915px 0;
 }
 
+.main-bn > .content-box > .bn-list > .bn > a > .title {
+    font-size:21px;
+    letter-spacing:-1px;
+    margin-bottom:20px;
+    z-index:2;
+}
 
-@media (max-width:1656px) and (min-width:865px) {
-    .all-page-1 > .count-slider-box > .notice-slider {
-        left:10px;
-        transform:translatex(0);
-        width:calc(100% - 78px);
+.main-bn > .content-box > .bn-list > .bn > a > .text-1 {
+    font-size:14px;
+}
+
+.main-bn > .content-box > .bn-list > .bn > a > .ico-box {
+    background-image:url(https://www.koem.or.kr/images/koem/common/icon_common_all.png);
+    width:36px;
+    height:36px;
+    background-position:0 -300px;
+    background-repeat:no-repeat;
+    position:absolute;
+    bottom:30px;
+    right:30px;
+}
+
+.main-bn > .content-box > .bn-list > .bn:nth-of-type(1) > a > .ico-box {
+    background-position:0 -250px;
+}
+
+/* 메인배너 반응형 작업 */
+
+@media (max-width:1400px) and (min-width:960px) {
+
+    .main-bn > .content-box > .bn-list {
+        width:1000px;
     }
 }
 
-@media (max-width:1656px) {
-    .all-page-1 > .count-slider-box > .notice-slider > .right-box > .slide-counter > span {
-        color:#6e6e6e !important;
-        font-size:13px !important;
-        font-weight:normal !important;
-    }
-}
-
-@media (max-width:1194px) and (min-width:865px) {
-    .all-page-1 > .count-slider-box > .notice-slider {
-        min-width:1120px;
-    }
-}
-
-@media (max-width:864px) {
-     
-    .all-page-1 > .count-slider-box > .notice-slider {
-        padding:0 !important;
-        height:73px;
-        width:calc(100% - 100px);
-        top:50px;
+@media (max-width:959px) {
+        
+    .main-bn {
+        padding-top:120px;
+        padding-bottom:50px;
+        min-width:100%;
+        height:654px;
     }
     
-    .all-page-1 > .count-slider-box > .notice-slider > .title-box {
-        left:0;
+    .main-bn > .content-box > .title {
+        font-size:26px;
+        margin-bottom:40px;
     }
     
-    .all-page-1 > .count-slider-box > .notice-slider > .title-box > .title::after {
-        display:none;
+    .main-bn > .content-box > .bn-list {
+        width:610px;
+        height:420px;
     }
     
-   .all-page-1> .count-slider-box > .notice-slider > .slide-box {
-        margin-left:30px !important;
-        width:100% !important;
-        padding-bottom:0 !important;
+    .main-bn > .content-box > .bn-list > .bn {
+        width:50%;
+        height:50%;
     }
     
-    .all-page-1 > .count-slider-box > .notice-slider > .title-box, .page-1 > .slider-box > .notice-slider > .right-box {
-        top:-35px; 
+    .main-bn > .content-box > .bn-list > .bn > a > .title {
+        font-size:16px;
+        margin-bottom:10px;
     }
-    .all-page-1 > .count-slider-box > .notice-slider > .slide-box > .slides > .slide > a {
-        line-height:73px;
+
+    .main-bn > .content-box > .bn-list > .bn > a > .text-1 {
+        font-size:12px;
     }
     
-    .all-page-1 > .count-slider-box > .notice-slider > .right-box {
+    .main-bn > .anymation-img {
+        right:0;
+        left:40%;
+    }
+    
+}
+
+@media (max-width:639px) {
+    .main-bn > .content-box > .bn-list {
+        max-width:570px;
+        width:calc(100% - 60px);
+        height:360px;
+    }
+    
+    .main-bn > .content-box > .bn-list > .bn > a > .ico-box {
+        bottom:15px;
         right:20px;
     }
     
-    .all-page-1 > .count-slider-box > .notice-slider > .right-box > .btn-box > .img-box {
-        border: 1px solid #d8dade;
-        border-radius: 50%;
+    .main-bn > .content-box > .title {
+        font-size:24px;
+        font-weight:normal;
     }
 }
 
-@media (max-width:575px) {
-    .all-page-1 > .count-slider-box > .notice-slider {
-        height:60px;
+/* 메인배너 끝 */
+
+
+/* 주요업무배너 시작 */
+.business-bn-box {
+    margin-top:50px;
+    box-sizing:border-box;
+    position:relative;
+    height:613px;
+    
+}
+
+.business-bn-box > .business-bn {
+    max-width:1580px;
+    min-width:1200px;
+    width:100%;
+    box-sizing:border-box;
+    min-width:1200px;
+    position:absolute;
+    left:50%;
+    transform:translatex(-50%);
+    height:100%;
+    padding:0 70px;
+}
+
+@media (max-width:1200px) {
+    .business-bn-box > .business-bn {
+        left:0;
+        transform:translatex(0);
+    }
+}
+
+.business-bn-box > .business-bn > .title {
+    font-size:42px;
+    font-weight:bold;
+    color:#0a0a0a;
+    text-align:center;
+    margin-bottom:50px;
+    line-height:1;
+}
+
+.business-bn-box > .business-bn > .contents {
+    
+    box-sizing:border-box;
+}
+
+.business-bn-box > .business-bn > .contents > .bn-list > .bn {
+    height:513px;
+    width:calc((50% - 80px) / 4);
+    box-sizing:border-box;
+    position:relative;
+    margin-right:20px;
+    transition:width .5s;
+}
+
+.business-bn-box > .business-bn > .contents > .bn-list > .bn:nth-of-type(5) {
+    margin-right:0;
+}
+
+.business-bn-box > .business-bn > .contents > .bn-list > .bn.active + .bn {
+    margin-left:20px;
+}
+
+.business-bn-box > .business-bn > .contents > .bn-list > .bn.active {
+    width:50%;
+    margin:0;
+}
+
+.business-bn-box > .business-bn > .contents > .bn-list > .bn::after {
+    content:"";
+    display:block;
+    width:185px;
+    height:1px;
+    position: absolute;
+    top:40%;
+    left:50%;
+    border-top:1px #172b59 solid;
+    opacity:0;
+    transform:translatex(-100%);
+    
+}
+
+.business-bn-box > .business-bn > .contents > .bn-list > .bn.active::after {
+    opacity:1;
+    transform:translatex(-30%);
+    transition:transform 1s, opacity 1s;
+}
+
+.business-bn-box > .business-bn > .contents > .bn-list > .bn > div {
+    box-sizing:border-box;
+    height:100%;
+    float:left;
+    overflow:hidden;
+    position:absolute;
+    top:0;
+}
+
+.business-bn-box > .business-bn > .contents > .bn-list > .bn > .img-box {
+    width:100%;
+    left:0;
+    background-repeat:no-repeat;
+    background-image:url(https://www.koem.or.kr/images/koem/main/page1_section1_all.jpg);
+    position:relative;
+    text-align:center;
+}
+
+.business-bn-box > .business-bn > .contents > .bn-list > .bn.active > .img-box {
+    width:50%;
+    background-color:pink;
+}
+
+.business-bn-box > .business-bn > .contents > .bn-list > .bn:nth-of-type(1) > .img-box {
+    background-position:0 0;
+}
+
+.business-bn-box > .business-bn > .contents > .bn-list > .bn:nth-of-type(2) > .img-box {
+    background-position:0 -513px;
+}
+
+.business-bn-box > .business-bn > .contents > .bn-list > .bn:nth-of-type(3) > .img-box {
+    background-position:0 -1026px;
+}
+
+.business-bn-box > .business-bn > .contents > .bn-list > .bn:nth-of-type(4) > .img-box {
+    background-position:0 -1539px;
+}
+
+.business-bn-box > .business-bn > .contents > .bn-list > .bn:nth-of-type(5) > .img-box {
+    background-position:0 -2052px;
+}
+
+.business-bn-box > .business-bn > .contents > .bn-list > .bn > .img-box:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(0,0,0,.4);
+}
+
+.business-bn-box > .business-bn > .contents > .bn-list > .bn.active > .img-box:after {
+    background-color:rgba(0,0,0,0);
+}
+
+.business-bn-box > .business-bn > .contents > .bn-list > .bn > .text-box {
+    width:100%;
+    left:auto;
+    right:0;
+    padding:30px 45px;
+    z-index:-1;
+}
+
+.business-bn-box > .business-bn > .contents > .bn-list > .bn.active > .text-box {
+    width:50%;
+}
+
+.business-bn-box > .business-bn > .contents > .bn-list > .bn > .img-box > .title {
+    position:absolute;
+    top:50%;
+    left:49%;
+    transform:translatey(-50%) translatex(-50%);
+    text-shadow: 1px 1px 3px rgba(0,0,0,.2);
+    font-size:23px;
+    opacity:1;
+    transition:opacity .5s;
+    line-height:36px;
+    z-index:5;
+    color:white;
+    letter-spacing:-2px;
+    white-space:nowrap;
+    text-align:center;
+    box-sizing:border-box;
+}
+
+.business-bn-box > .business-bn > .contents > .bn-list > .bn.active > .img-box > .title {
+    opacity:0;
+    
+}
+
+.business-bn-box > .business-bn > .contents > .bn-list > .bn > .text-box > .title {
+    font-size:30px;
+    font-weight:700;
+    color:#014a99;
+    margin-bottom:25px;
+    letter-spacing:-1px;
+}
+
+.business-bn-box > .business-bn > .contents > .bn-list > .bn > .text-box > .text-1 {
+    font-size:18px;
+    color:#444444;
+    line-height:140%;
+    margin-bottom:50px;
+    letter-spacing:-1px;
+}
+
+.business-bn-box > .business-bn > .contents > .bn-list > .bn > .text-box > .text-2 {
+    margin-top:100px;
+    font-size:15px;
+    color:#666666;
+    line-height:140%;
+    margin-bottom:40px;
+    letter-spacing:-2px;
+}
+
+.business-bn-box > .business-bn > .contents > .bn-list > .bn > .text-box > .more-btn {
+    cursor:pointer;
+}
+
+.business-bn-box > .business-bn > .contents > .bn-list > .bn > .text-box > .more-btn > a {
+    position:relative;
+    width:160px;
+    height:34px;
+    background:#172b59;
+    color:#ffffff;
+    line-height:34px;
+    text-indent:20px;
+    font-size:15px;
+    display:block;
+    box-sizing:border-box;
+}
+
+.business-bn-box > .business-bn > .contents > .bn-list > .bn > .text-box > .more-btn > a > .ico-box {
+    display:block;
+    position:absolute;
+    top:0;
+    right:10px;
+    width:34px;
+    height:34px;
+    background-image:url(https://www.koem.or.kr/images/koem/common/icon_common_all.png);
+    background-repeat:no-repeat;
+    background-position:-50px -150px;
+    z-index:1;
+}
+
+@media (max-width:1655px) {
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn > .text-box {
+        padding:40px 50px;
     }
     
-    .all-page-1 > .count-slider-box > .notice-slider > .title-box {
-        line-height:35px;
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn > .text-box > .title {
+        font-size:20px;
     }
     
-    .all-page-1 > .count-slider-box > .notice-slider > .title-box > .img-box {
-        width:35px !important;
-        height:35px !important;
-        background-size:140px 350px;
-        background-position:-70px -35px;
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn > .text-box > .text-1 {
+        font-size:16px;
     }
     
-    .all-page-1 > .count-slider-box > .notice-slider > .title-box > .title {
-        font-size: 18px;
-        margin-left:10px;
-    }
-    .all-page-1 > .count-slider-box > .notice-slider > .right-box {
-        width:90px;
-        right:0;
-        left:auto;
-    }
-    .all-page-1 > .count-slider-box > .notice-slider > .right-box > .slide-counter > span {
-        line-height:50px;
-    }
-    
-    .all-page-1 > .count-slider-box > .notice-slider > .right-box > .btn-box > .img-box {
-        width:23px;
-        height:23px;
-        background-size:160px 400px;
-    }
-    
-    .all-page-1 > .count-slider-box > .notice-slider > .right-box > .btn-box > .img-box:nth-of-type(2) {
-        background-position:0 -40px;
-    }
-    
-    .all-page-1 > .count-slider-box > .notice-slider > .slide-box > .slides > .slide > a {
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn > .text-box > .text-2 {
         font-size:14px;
-        line-height:60px;
     }
 }
 
-/* 카운트 슬라이드 끝 */
+@media (max-width:959px) {
+    .business-bn-box {
+        height:1020px;
+    }
+    
+    .business-bn-box > .business-bn {
+        max-width:100%;
+        min-width:100%;
+        
+    }
+    
+    .business-bn-box > .business-bn > .title {
+        font-size:26px;
+        margin-bottom:40px;
+    }
+    
+    .business-bn-box > .business-bn > .contents > .bn-list {
+        height:996px;
+    }
+    
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn {
+        width:100%;
+        height:calc((50% - 40px) / 4);
+        margin:0;
+        transition:height 1s, width 1s;
+    }
+    
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn:not(.active) {
+        margin-bottom:10px;   
+    }
+    
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn.active + .bn {
+        margin-left:0;
+        margin-top:10px;
+    }
+    
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn.active {
+        width:100%;
+        height:50%;
+    }
+    
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn.active > div {
+        height:50%;
+        width:100%;
+    }
+    
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn > .text-box {
+        bottom:0;
+        left:0;
+        top:auto;
+        height:0;
+        padding-left:40px;
+        padding-top:30px;
+        padding-right:5px;
+        padding-bottom:0;
+    }
+    
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn.active > .text-box {
+        height:50%;
+    }
+    
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn::after {
+        content:"";
+        display:block;
+        position:absolute;
+        width:1px;
+        height:calc(50% - 30px);
+        background-color:#111111;
+        top:40%;
+        left:20px;
+        z-index:20;
+        transition:transform 0s, opacity 0s;
+    }
+    
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn > div {
+        width:100% !important;
+    }
+    
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn > .img-box {
+        background-size:100% 2000px;
+    }
+    
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn:nth-of-type(1) > .img-box {
+        background-position:0 -150px;
+    }
+
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn:nth-of-type(2) > .img-box {
+        background-position:0 -550px;
+    }
+
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn:nth-of-type(3) > .img-box {
+        background-position:0 -950px;
+    }
+
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn:nth-of-type(4) > .img-box {
+        background-position:0 -1350px;
+    }
+
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn:nth-of-type(5) > .img-box {
+        background-position:0 -1750px;
+    }
+
+    
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn > .img-box > .title {
+        left:30px;
+        transform:translatex(0) translatey(-50%);
+        transition:all 0s;
+    }
+    
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn > .img-box > .title > br {
+        display:none;
+    }
+
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn > .text-box > .title {
+        font-size:25px;
+        margin-bottom:5px;
+    }
+    
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn > .text-box > .text-1 {
+        font-size:15px;
+        margin-bottom:15px;
+        
+    }
+    
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn > .text-box > .text-2 {
+        font-size:13px;
+        margin-bottom:40px;
+        margin-top:0;
+    }
+}
+
+@media (max-width:574px) {
+    
+    .business-bn-box {
+        height:880px;
+    }
+    
+    .business-bn-box > .business-bn {
+        padding:0 30px;
+    }
+    
+    .business-bn-box > .business-bn > .contents > .bn-list {
+        height:840px;
+    }
+    
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn.active > .img-box {
+        height:40%;
+    }
+    
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn.active > .text-box {
+        height:60%;
+    }
+    
+    .business-bn-box > .business-bn > .contents > .bn-list > .bn > .text-box > .text-2 {
+        margin-bottom:20px;
+    }
+}
+/* 주요업무 배너 끝 */
 
 
+/* 바로가기 배너 시작 */
+
+.page-2 > .shortcuts-bn-box {
+    border-bottom:1px solid #f0f0f0;
+    padding-bottom:50px;
+    position:relative;
+    height:150px;
+    margin-top:100px;
+}
+
+.page-2 > .shortcuts-bn-box > .shortcuts-bn-list {
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translatex(-50%);
+    width:100%;
+    height:100%;
+    max-width:1580px;
+    min-width:1200px;
+}
+
+.page-2 > .shortcuts-bn-box > .shortcuts-bn-list > .title {
+    font-size:24px;
+    font-weight:bold;
+    position:absolute;
+    top:40%;
+    left:0;
+    display:block;
+    transform:translatey(-60%);
+    left:10px;
+    
+}
+
+.page-2 > .shortcuts-bn-box > .shortcuts-bn-list > .title > a {
+    display:block;
+    height:100%;
+}
+
+.page-2 > .shortcuts-bn-box > .shortcuts-bn-list > ul {
+    width:calc(100% - 220px);
+}
+
+.page-2 > .shortcuts-bn-box > .shortcuts-bn-list > ul > li {
+    width:calc(100% / 6);
+    position:relative;
+    height:150px;
+}
+
+.page-2 > .shortcuts-bn-box > .shortcuts-bn-list > ul > li:after {
+    display:block;
+    content:'';
+    position:absolute;
+    left:0;
+    top:50%;
+    height:80%;
+    background-color:#f0f0f0;
+    width:1px;
+    transform:translatey(-50%);
+}
+
+.page-2 > .shortcuts-bn-box > .shortcuts-bn-list > ul > li > a {
+    display:block;
+    position:absolute;
+    top:50%;
+    left:0;
+    width:100%;
+    transition:transform .5s;
+    transform:translatey(-50%);
+}
+
+.page-2 > .shortcuts-bn-box > .shortcuts-bn-list > ul > li:hover > a {
+    transform:translatey(-70px);
+}
+
+.page-2 > .shortcuts-bn-box > .shortcuts-bn-list > ul > li > a > .ico-box {
+    width:76px;
+    height:76px;
+    background-image:url(https://www.koem.or.kr/images/koem/main/icon_page1_botSection1_all.png);
+    background-repeat:no-repeat;
+    display:block;
+    margin:0 auto;
+}
+
+.page-2 > .shortcuts-bn-box > .shortcuts-bn-list > ul > li:nth-of-type(1) > a > .ico-box {
+    background-position:0 0;
+}
+
+.page-2 > .shortcuts-bn-box > .shortcuts-bn-list > ul > li:nth-of-type(2) > a > .ico-box {
+    background-position:-89px 0;
+    width:85px;
+}
+
+.page-2 > .shortcuts-bn-box > .shortcuts-bn-list > ul > li:nth-of-type(3) > a > .ico-box {
+    background-position:-184px 0;
+    width:80px;
+}
+
+.page-2 > .shortcuts-bn-box > .shortcuts-bn-list > ul > li:nth-of-type(4) > a > .ico-box {
+    background-position:-272px 0;
+}
+
+.page-2 > .shortcuts-bn-box > .shortcuts-bn-list > ul > li:nth-of-type(5) > a > .ico-box {
+    background-position:-349px 0;
+}
+
+.page-2 > .shortcuts-bn-box > .shortcuts-bn-list > ul > li:nth-of-type(6) > a > .ico-box {
+    background-position:-433px 0;
+    width:76px;
+}
+
+.page-2 > .shortcuts-bn-box > .shortcuts-bn-list > ul > li > a > .title {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #4f4f4f;
+    font-weight:400;
+    margin-top:20px;
+}
+
+@media (max-width:864px) {
+    .page-2 > .shortcuts-bn-box {
+        height:300px;
+        border-bottom:none;
+        
+    }
+    
+    .page-2 > .shortcuts-bn-box > .shortcuts-bn-list {
+        max-width:100%;
+        min-width:100%;
+        width:100%;
+        
+    }
+    
+    .page-2 > .shortcuts-bn-box > .shortcuts-bn-list > .title {
+        width:100%;
+        top:0;
+        left:50%;
+        text-align:center;
+        transform:translatey(0) translatex(-50%);
+    }
+    
+    .page-2 > .shortcuts-bn-box > .shortcuts-bn-list > ul {
+        clear:both;
+        width:100%;
+        margin-top:55px;
+    }
+    
+    .page-2 > .shortcuts-bn-box > .shortcuts-bn-list > ul > li {
+        width:calc(100% / 3);
+        
+    }
+    
+    .page-2 > .shortcuts-bn-box > .shortcuts-bn-list > ul > li:nth-of-type(4) {
+        clear:both;
+    }
+    
+    .page-2 > .shortcuts-bn-box > .shortcuts-bn-list > ul > li:after {
+        height:50%;
+    }
+    
+    @media (max-width:575px) {
+        .page-2 > .shortcuts-bn-box > .shortcuts-bn-list > .title {
+            font-weight:normal;
+        }
+        
+        .page-2 > .shortcuts-bn-box > .shortcuts-bn-list > ul > li > a > .ico-box {
+            
+            height:58px;
+            background-image:url(https://www.koem.or.kr/images/koem/main/icon_mainCommon_mobile.png);
+        }
+        
+        .page-2 > .shortcuts-bn-box > .shortcuts-bn-list > ul > li:nth-of-type(1) > a > .ico-box {
+            background-position:0 -92px;
+            width:59px;
+        }
+        
+        .page-2 > .shortcuts-bn-box > .shortcuts-bn-list > ul > li:nth-of-type(2) > a > .ico-box {
+            background-position:-66px -90px;
+            width:62px;
+        }
+        
+        .page-2 > .shortcuts-bn-box > .shortcuts-bn-list > ul > li:nth-of-type(3) > a > .ico-box {
+            background-position:-140px -92px;
+            width:60px;
+        }
+        
+        .page-2 > .shortcuts-bn-box > .shortcuts-bn-list > ul > li:nth-of-type(4) > a > .ico-box {
+            background-position:-209px -92px;
+            width:47px;
+        }
+        
+        .page-2 > .shortcuts-bn-box > .shortcuts-bn-list > ul > li:nth-of-type(5) > a > .ico-box {
+            background-position:-263px -92px;
+            width:56px;
+        }
+        
+        .page-2 > .shortcuts-bn-box > .shortcuts-bn-list > ul > li:nth-of-type(6) > a > .ico-box {
+            background-position:-327px -92px;
+            width:57px;
+        }
+    }
+}
+/* 바로가기 배너 끝 */
 
 
+/* 레일 슬라이드 시작 */
+.rail-slider-bn-box {
+    max-width:1490px;
+    margin:40px auto;
+    position:relative;
+    height:70px;
+    overflow:hidden;
+}
 
+.rail-slider-box {
+    width:1490px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translatey(-50%) translatex(-50%);
+}
+
+
+.rail-slider-bn-box > .rail-slider-box > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > a {
+    display:block;
+    height:64px;
+    position:relative;
+    background: #fff;
+    border: 1px solid #dcdcdc;
+    box-sizing:border-box;
+}
+
+.rail-slider-box > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > a::after {
+    width:100%;
+    height:100%;
+    content:"";
+    display:block;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translatex(-50%) translatey(-50%);
+    border:2px solid #005cb9;
+    opacity:0;
+    transition:opacity .2s;
+    box-sizing:border-box;
+}
+
+.rail-slider-box > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > a:hover::after {
+    opacity:1;
+}
+
+.rail-slider-box > .owl-carousel > .owl-nav {
+    display:none;
+}
+
+.rail-slider-bn-box > .right-next-btn, .rail-slider-bn-box  > .left-prev-btn {
+    width:40px;
+    position:absolute;
+    height:70px;
+    top:50%;
+    transform:translatey(-50%);
+    left:0;
+    background-color:white;
+    z-index:1;
+    display:none;
+}
+
+.rail-slider-bn-box > .right-next-btn {
+    left:auto;
+    right:0;
+}
+
+.rail-slider-bn-box > .right-next-btn::before, .rail-slider-bn-box > .left-prev-btn::before {
+    content:"";
+    display:block;
+    width:35px;
+    height:35px;
+    position:absolute;
+    background-image:url(https://www.koem.or.kr/images/koem/common/icon_common_all.png);
+    background-repeat:no-repeat;
+    background-position:0 -150px;
+    top:50%;
+    left:50%;
+    transform:translatey(-50%) translatex(-50%);
+    cursor:pointer;
+}
+
+.rail-slider-bn-box > .right-next-btn::before {
+    background-position:0 -200px;
+}
+
+@media (max-width:1665px) {
+    .rail-slider-bn-box > .right-next-btn, .rail-slider-bn-box  > .left-prev-btn {
+        display:block;
+    }
+}
+
+@media (max-width:865px) {
+    
+    .rail-slider-bn-box {
+        display:none;
+    }
+    
+}
+/* 레일 슬라이드 끝 */
+
+
+/* 푸터 시작 */
+
+
+.footer > div > div {
+    max-width: 1580px;
+    margin: 0 auto;
+}
+
+.footer > .menu-box-1 {
+    background-image: url(https://www.koem.or.kr/images/koem/common/bg_footGnb.gif);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    height: 400px;
+    background-color: #1c1f2b;
+}
+
+.footer > .menu-box-1 > .menu-box-1-inner > div > div {
+    width: calc(100% / 6);
+    position: relative;
+    box-sizing: border-box;
+}
+
+.footer > .menu-box-1 > .menu-box-1-inner > .menu-list > div > .title {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.footer
+    > .menu-box-1
+    > .menu-box-1-inner
+    > .menu-list >
+    div:not(:nth-of-type(1))::after {
+    content: "";
+    display: block;
+    width:1px;
+    height:240px;
+    background-color: #2d313d;
+    top:0;
+    left:-30px;
+    position:absolute;
+}
+
+.footer > .menu-box-1 > .menu-box-1-inner > .menu-list > div {
+    margin-bottom: 7px;
+}
+
+.footer > .menu-box-1 > .menu-box-1-inner > .menu-list > div > div {
+    margin-bottom:5px;
+}
+
+.footer > .menu-box-1 > .menu-box-1-inner > .menu-list > div > div > a {
+    font-size: 14px;
+    color: #cececf;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.footer
+    > .menu-box-1
+    > .menu-box-1-inner
+    > .menu-list
+    > div
+    > div
+    > a:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    bottom: 0;
+    left: 0;
+}
+
+.footer > .menu-box-2 > .menu-box-2-inner > .logo-box {
+    margin-bottom: 100px;
+}
+
+.footer > .menu-box-2 > .menu-box-2-inner > .logo-box > a {
+    background-image: url(https://www.koem.or.kr/images/koem/common/img_footLogo.png);
+    display: block;
+    width: 250px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 70px;
+    box-sizing: border-box;
+}
+
+.footer > .menu-box-2 {
+    background-color: #141720;
+}
+
+.footer > .menu-box-2 > .menu-box-2-inner {
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.footer > .menu-box-2 > .menu-box-2-inner > .sns-ico-list-mobile {
+    margin-top:30px;
+    display:none;
+    clear:both;
+}
+
+.footer > .menu-box-2 > .menu-box-2-inner > .sns-ico-list-mobile > div {
+    display: inline-block;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .sns-ico-list-mobile
+    > div:not(:nth-of-type(5)) {
+    margin-right: 30px;
+    
+}
+
+.footer > .menu-box-2 > .menu-box-2-inner > .sns-ico-list-mobile > div > a {
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-image: url(https://www.koem.or.kr/images/koem/main/img_mainAside_all.png);
+    background-repeat: no-repeat;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .sns-ico-list-mobile
+    > div:nth-of-type(1)
+    > a {
+    width: 13px;
+    background-position: 0 -138px;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .sns-ico-list-mobile
+    > div:nth-of-type(2)
+    > a {
+    width: 10px;
+    background-position: -23px -138px;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .sns-ico-list-mobile
+    > div:nth-of-type(3)
+    > a {
+    width: 18px;
+    background-position: -43px -138px;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .sns-ico-list-mobile
+    > div:nth-of-type(4)
+    > a {
+    width: 13px;
+    background-position: -71px -138px;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .sns-ico-list-mobile
+    > div:nth-of-type(5)
+    > a {
+    width: 18px;
+    background-position: -94px -138px;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .menu-list-box
+    > .menu-list-1 {
+    width: calc(100% - 320px);
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .menu-list-box
+    > .menu-list-1
+    > div {
+    float: left;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .menu-list-box
+    > .menu-list-1
+    > div
+    > a {
+    color: #cdcdce;
+    font-size: 15px;
+    display: block;
+    margin-right: 24px;
+    position: relative;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .menu-list-box
+    > .menu-list-1
+    > div:nth-of-type(1)
+    > a {
+    color: #48c1ef;
+    font-weight: 600;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .menu-list-box
+    > .menu-list-1
+    > div
+    > a:hover::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    bottom: 0;
+    left: 0;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .menu-list-box
+    > .menu-list-2
+    > div
+    > a {
+    cursor: auto;
+    color: #919294;
+    font-size: 14px;
+    display: block;
+    margin-right: 24px;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .menu-list-box
+    > .menu-list-2 {
+    margin-top: 30px;
+    width: calc(100% - 320px);
+    padding-bottom: 70px;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .menu-list-box
+    > .menu-list-2
+    > div:not(:nth-of-type(4)) {
+    display: inline-block;
+}
+
+.footer > .menu-box-2 > .menu-box-2-inner > .copyright {
+    position: relative;
+}
+
+.footer > .menu-box-2 > .menu-box-2-inner > .copyright > .link-list {
+    position: absolute;
+    top: 0%;
+    right: 0;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .local-site-box {
+    width: 260px;
+    height: 100%;
+    border: 1px solid #43454d;
+    cursor: pointer;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    position: relative;
+    padding: 10px;
+    z-index:10;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .local-site-box
+    > span {
+    font-size: 14px;
+    display: block;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .local-site-box
+    > span
+    > span {
+    background-image: url(https://www.koem.or.kr/images/koem/common/icon_common_all.png);
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 6px;
+    background-position: -50px -100px;
+    display: block;
+    float: right;
+    margin-top: 6px;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .local-site-box.active
+    > span
+    > span {
+    background-position: -62px -100px;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .local-site-box
+    span {
+    color: white;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .local-site-box
+    > .pop-up {
+    border: 1px solid #43454d;
+    padding: 15px 40px;
+    padding-bottom: 0;
+    width: 99%;
+    bottom: 100%;
+    left: -1px;
+    box-sizing: border-box;
+    background-color: #141720;
+    position: absolute;
+    display: none;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .local-site-box.active
+    > .pop-up {
+    display: block;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .local-site-box
+    > .pop-up
+    > div {
+    width: 50%;
+    float: left;
+    
+    box-sizing: border-box;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .local-site-box
+    > .pop-up
+    > div:nth-of-type(2) {
+    text-align: right;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .local-site-box
+    > .pop-up
+    > div
+    > a {
+    color: white;
+    font-size: 15px;
+    position: relative;
+    line-height: 32px;
+    display:block;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .local-site-box
+    > .pop-up
+    > div
+    > a:hover {
+    color: #48c1ef;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .local-site-box
+    > .pop-up
+    > div
+    > a:hover::after {
+    content: "";
+    display: block;
+    width: 67%;
+    height: 1px;
+    background-color: #48c1ef;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .mark-box {
+    padding-left: 25px;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .mark-box
+    > div {
+    background-image: url(https://www.koem.or.kr/images/koem/common/icon_common_all.png);
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+    float: left;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .mark-box
+    > div:nth-of-type(1) {
+    background-image: url(https://www.koem.or.kr/images/koem/main/img_markLink_add.png);
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .mark-box
+    > div:nth-of-type(2) {
+    background-position: 0 -350px;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .mark-box
+    > div:nth-of-type(3) {
+    background-position: -45px -350px;
+}
+
+.footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .mark-box
+    > div:nth-of-type(4) {
+    width: 60px;
+    background-position: -90px -350px;
+}
+
+.footer > .top-btn {
+    display: block;
+    position: absolute;
+    right:100px;
+    top: 0;
+    width: 64px;
+    height: 63px;
+    background-color: #a08a4b;
+    color: #ffffff;
+    text-align: center;
+    line-height: 75px;
+    transform: translatey(-50%);
+    background-image: url(https://www.koem.or.kr/images/koem/common/icon_common_all.png);
+    background-repeat: no-repeat;
+    background-position:-36px 0;
+}
+
+.footer > .page2-btn-mobile {
+    position: absolute;
+    bottom: 20px;
+    right: 5px;
+    display: none;
+}
+
+.footer > .page2-btn-mobile > a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(https://www.koem.or.kr/images/koem/main/icon_mainCommon_mobile.png);
+    background-repeat: no-repeat;
+    background-position: 0 -37px;
+}
+
+@media (max-width: 1840px) {
+    .footer > .top-btn {
+        display: none;
+    }
+}
+
+@media (min-width: 960px) {
+    
+    .footer > div {
+        min-width: 1200px;
+    }
+}
+
+@media (max-width: 959px) {
+    .footer {
+        max-width: 100%;
+        background-image: url(https://www.koem.or.kr/images/koem/common/bg_footGnb_mo2.gif);
+        background-repeat: no-repeat;
+        background-position: top;
+        padding: 30px 40px;
+        background-size: 100% auto;
+        background-color: #141720;
+        margin-top:100px;
+    }
+
+    .footer > div {
+        max-width: 100%;
+    }
+
+    .footer > .menu-box-1 {
+        display: none;
+    }
+    
+    .footer > .menu-box-2 {
+        background-color:transparent;
+    }
+
+    .footer
+        > .menu-box-2
+        > .menu-box-2-inner
+        > .copyright
+        > .menu-list-box
+        > .menu-list-2 {
+        padding-bottom: 0;
+        width: 100%;
+    }
+
+    .footer > .menu-box-2 > .menu-box-2-inner > .logo-box {
+        margin-bottom: 0;
+        margin-top: 23px;
+    }
+
+    .footer > .menu-box-2 > .menu-box-2-inner {
+        background-color: transparent;
+        padding: 0;
+        margin-top: 25px;
+    }
+
+    .footer > .menu-box-2 > .menu-box-2-inner > .copyright {
+        width: 100%;
+    }
+
+    .footer
+        > .menu-box-2
+        > .menu-box-2-inner
+        > .copyright
+        > .menu-list-box
+        > .menu-list-1 {
+        display: none;
+    }
+
+    .footer
+        > .menu-box-2
+        > .menu-box-2-inner
+        > .copyright
+        > .menu-list-box
+        > .menu-list-2
+        > div
+        > a {
+        font-size: 13px;
+    }
+
+    .footer
+        > .menu-box-2
+        > .menu-box-2-inner
+        > .copyright
+        > .menu-list-box
+        > .menu-list-2
+        > div:nth-of-type(3) {
+        display: block;
+    }
+
+    .footer
+        > .menu-box-2
+        > .menu-box-2-inner
+        > .copyright
+        > .menu-list-box
+        > .menu-list-2
+        > div:nth-of-type(4) {
+        margin-top: 30px;
+    }
+
+    .footer
+        > .menu-box-2
+        > .menu-box-2-inner
+        > .copyright
+        > .link-list
+        > .mark-box {
+        display: none;
+    }
+
+    .footer > .menu-box-2 > .menu-box-2-inner > .copyright > .link-list {
+        top: 20px;
+    }
+
+    .footer > .menu-box-2 > .menu-box-2-inner > .sns-ico-list-mobile {
+        display: block;
+    }
+}
+
+@media (max-width: 636px) {
+    .footer > .menu-box-2 > .menu-box-2-inner > .logo-box {
+        margin-top: 0;
+        width:100%;
+    }
+
+    .footer > .menu-box-2 > .menu-box-2-inner > .logo-box > a {
+        display: block;
+        width: 195px;
+        height: 28px;
+        background-size: 100% auto;
+        margin: 0 auto;
+    }
+
+    .footer > .menu-box-2 > .menu-box-2-inner > .sns-ico-list-mobile {
+        margin-top: 90px;
+        text-align: center;
+        width:100%;
+    }
+
+    .footer > .menu-box-2 > .menu-box-2-inner > .copyright > .link-list {
+        width: 100%;
+        top: 50px;
+    }
+
+    .footer
+        > .menu-box-2
+        > .menu-box-2-inner
+        > .copyright
+        > .link-list
+        > .local-site-box {
+        width: 100%;
+    }
+
+    .footer > .menu-box-2 > .menu-box-2-inner > .copyright > .link-list > div {
+        width: 100%;
+    }
+
+    .footer
+        > .menu-box-2
+        > .menu-box-2-inner
+        > .copyright
+        > .menu-list-box
+        > .menu-list-2 {
+        text-align: center;
+    }
+
+    .footer > .page2-btn-mobile {
+        display: block;
+    }
+    
+      .footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .local-site-box
+    > .pop-up {
+        padding:0;
+    }
+    
+    
+    .footer
+    > .menu-box-2
+    > .menu-box-2-inner
+    > .copyright
+    > .link-list
+    > .local-site-box
+    > .pop-up
+    > div {
+        text-align:center !important;
+    }
+}
+
+/* 푸터 끝 */
+
+
+/* 사이드바 시작 */
+
+
+@media (max-width:639px) {
+    .side-bar {
+        display:none;
+    } 
+}
+
+ .side-bar {
+    width:57px;
+    height:100%;
+    position:fixed;
+    border-left:1px solid white;
+    top:0;
+    right:0;
+    padding-top:240px;
+    transition:2s;
+    transform:translatex(0);
+    z-index:8;
+}
+
+.side-bar.active {
+    opacity:0;
+    transform:translatex(100%);
+}
+
+.not-scroll-top-0  .side-bar {
+    background-color:rgba(255, 255, 255, .5);
+    border-left:1px solid rgba(100, 100, 100, .2);
+}
+
+ .side-bar > ul > .page-name > div {
+    width:57px;
+    height:59px;
+    background-image:url(https://www.koem.or.kr/images/koem/main/img_mainAsideTitle1.png);
+    background-repeat:no-repeat;
+    background-position:center top;
+    display:block;
+}
+
+.not-scroll-top-0 .side-bar > ul > .page-name > div {
+    background-image:url(https://www.koem.or.kr/images/koem/main/img_mainAsideTitle1_on.png);
+}
+
+
+.side-bar > ul > .arrow-btn {
+    position:absolute;
+    width:68px;
+    height:68px;
+    right:0;
+    top:323px;
+}
+
+.side-bar > ul > .sns-ico-list-box > .sns-ico-list {
+    width:25px;
+    margin-top:120px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:not(:last-child) {
+    width:100%;
+    border-bottom:1px solid white;
+}
+
+.not-scroll-top-0 .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:not(:last-child) {
+    border-bottom:1px solid rgba(100, 100, 100, .2);
+}
+
+.side-bar > ul > .sns-ico-list-box > .sns-ico-list > li > a {
+    width:18px;
+    margin:15px auto;
+    display:block;
+    height:22px;
+    background-image:url(https://www.koem.or.kr/images/koem/main/img_mainAside_all.png);
+    background-repeat:no-repeat;
+    transition:opacity .5s;
+}
+
+.side-bar > ul > .sns-ico-list-box > .sns-ico-list > li > div:hover {
+    opacity:.6;
+}
+
+.side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(1) > a {
+    background-position:2px -138px;
+}
+
+
+.side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(2) > a {
+    background-position:-21px -138px;
+}
+
+.side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(3) > a {
+    background-position:-43px -138px;
+}
+
+.side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(4) > a {
+    background-position:-69px -138px;
+}
+
+.side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(5) > a {
+    background-position:-94px -138px;
+}
+
+.not-scroll-top-0 .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(1) > a {
+    background-position:2px -170px;
+}
+
+
+.not-scroll-top-0 .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(2) > a {
+    background-position:-20px -170px;
+}
+
+.not-scroll-top-0 .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(3) > a {
+    background-position:-43px -170px;
+}
+
+.not-scroll-top-0 .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(4) > a {
+    background-position:-69px -170px;
+}
+
+.not-scroll-top-0 .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(5) > a {
+    background-position:-94px -170px;
+}
+
+/* 사이드바 1끝 */
+
+/* 사이드바2 시작 */
+.side-bar:nth-of-type(2) {
+    left:0;
+    border-left:none;
+    border-right:1px solid rgba(100, 100, 100, .2);
+}
+    
+
+.side-bar:nth-of-type(2) > ul > .page-name > div {
+    background-image:url(https://www.koem.or.kr/images/koem/main/img_mainAsideTitle2.png);
+}    
+
+.side-bar:nth-of-type(2) > ul > .arrow-btn {
+    transform:rotate(180deg);
+    left:0;
+}
+
+.side-bar:nth-of-type(2) > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(1) > a {
+    background-position:2px -170px;
+}
+
+
+.side-bar:nth-of-type(2) > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(2) > a {
+    background-position:-20px -170px;
+}
+
+.side-bar:nth-of-type(2) > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(3) > a {
+    background-position:-43px -170px;
+}
+
+.side-bar:nth-of-type(2) > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(4) > a {
+    background-position:-69px -170px;
+}
+
+.side-bar:nth-of-type(2) > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(5) > a {
+    background-position:-94px -170px;
+}
+
+.side-bar:nth-of-type(2) > ul > .sns-ico-list-box > .sns-ico-list > li:not(:last-child) {
+    border-bottom:1px solid rgba(100, 100, 100, .2);
+}
+
+.side-bar:nth-of-type(2).active {
+    transform:translatex(-100%);
+}
+/* 사이드바 끝 */
+
+/* 페이지2끝 */
+
+/* 페이지1, 페이지2 전환 */
+body > .page-1, .page-2{
+    position:absolute;
+    transition:all 2s;
+    width:100%;
+}
+
+body > .page-1 {
+    top:0;
+    left:0;
+}
+
+body > .page-2 {
+    top:0;
+    left:100%;
+}
+
+body.active > .page-2 {
+    display:block;
+    left:0;
+}
+
+body.active > .page-1 {
+    left:-100%;
+}
+
+body.active > .page-1 > .main-slider-box > .slider {
+    max-width:100%;
+    min-width:100%;
+    left:0;
+    
+}
