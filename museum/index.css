@@ -214,7 +214,7 @@ html[data-current-index="0"] .pagination-box, html[data-current-index="8"] .pagi
     width:100px;
     height:50px;
     left:50%;
-    bottom:10px;
+    bottom:20px;
     transform:translatex(-50%);
     cursor:pointer;
     box-sizing:border-box;
@@ -446,14 +446,14 @@ html[data-current-index="0"] .pagination-box, html[data-current-index="8"] .pagi
     cursor:pointer;
 }
 
-.header > .top_bar_2 > .top_bar_2_inner > .right-menu-box > .center-box > div  a {
+.header > .top_bar_2 > .top_bar_2_inner > .right-menu-box > .center-box > div a, .header > .top_bar_2 > .top_bar_2_inner > .right-menu-box > .center-box > div > span  {
     display:inline-block;
     font-size:12px;
     color:#666666;
     line-height:normal;
 }
 
-.header > .top_bar_2 > .top_bar_2_inner > .right-menu-box > .center-box > div  a:hover {
+.header > .top_bar_2 > .top_bar_2_inner > .right-menu-box > .center-box > div  a:hover, .header > .top_bar_2 > .top_bar_2_inner > .right-menu-box > .center-box > div  span:hover {
     color:#333333;
     border-bottom:1px solid;
 }
@@ -865,7 +865,7 @@ html[data-current-index="0"] .pagination-box, html[data-current-index="8"] .pagi
 .main-slider-box {
     position:relative;
     height:calc(100% - 117px);
-    margin-top:117px;
+    top:117px;
 }
 
 .main-slider-box > .slider-k {
@@ -1130,7 +1130,7 @@ html[data-current-index="0"] .pagination-box, html[data-current-index="8"] .pagi
 }
 
 .main-slider-box > .main-slider > .slides > .slide-12 {
-    background-image:url(./img/index.img/076828aa5986450e25274249b94bbb2e_thumb.jpg);
+    background-image:url(./img/index.img/174059.jpg);
 }
 
 .main-slider-box > .main-slider > .slides > .slide-12 > .text-box {
@@ -1237,6 +1237,7 @@ html[data-current-index="0"] .pagination-box, html[data-current-index="8"] .pagi
     background-position-y: center;
     background-image:url(./img/index.img/btn_emuseum_search.png);
 }
+
 /* 메인 슬라이더 끝 */
 
 /* 슬라이더2 시작 */
@@ -1246,7 +1247,7 @@ html[data-current-index="0"] .pagination-box, html[data-current-index="8"] .pagi
     height:642px;
     box-sizing:border-box;
     width:1220px;
-    top:50%;
+    top:55%;
     left:50%;
     transform:translatex(-50%) translatey(-50%);
 }
@@ -1603,7 +1604,7 @@ html[data-current-index="0"] .pagination-box, html[data-current-index="8"] .pagi
 .bn-box-1 {
     height:730px;
     position:absolute;
-    top:50%;
+    top:60%;
     left:50%;
     transform:translatex(-50%) translatey(-50%);
 }
@@ -1737,10 +1738,11 @@ html[data-current-index="0"] .pagination-box, html[data-current-index="8"] .pagi
     height:100%;
     border-radius: 5px;
     background-repeat:no-repeat;
-    background-position:center;
+    background-position:center 40%;
     width:calc((100% - 40px) / 3);
     box-sizing:border-box;
     cursor:pointer;
+    position: relative;
 }
 
 .bn-box-1 > .bn > .contents > .menu-box-2 > .menu-2 > div:not(:nth-of-type(1)) {
@@ -1760,6 +1762,20 @@ html[data-current-index="0"] .pagination-box, html[data-current-index="8"] .pagi
 .bn-box-1 > .bn > .contents > .menu-box-2 > .menu-2 > div:nth-of-type(3) {
     background-color:#5376b7;
     background-image:url(./img/index.img/icon_ope_btn03.png);
+}
+
+.bn-box-1 > .bn > .contents > .menu-box-2 > .menu-2 > div > .title {
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    bottom:10px;
+    left:50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.bn-box-1 > .bn > .contents > .menu-box-2 > .menu-2 > div > .title:hover {
+    border-bottom:1px solid;
 }
 
 .bn-box-1 > .bn > .more-btn {
@@ -1945,7 +1961,7 @@ html[data-current-index="0"] .pagination-box, html[data-current-index="8"] .pagi
 .bn-box-2 {
     height:700px;
     position:absolute;
-    top:50%;
+    top:60%;
     left:50%;
     transform:translatex(-50%) translatey(-50%);
 }
@@ -3152,6 +3168,7 @@ html[data-current-index="0"] .pagination-box, html[data-current-index="8"] .pagi
     font-size: 18px;
 }
 /* 큐레이터 추천 소장품 배너 끝 */
+
 
 .box > .title {
     font-family: "Batang" !important;

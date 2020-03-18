@@ -74,6 +74,9 @@ $(function() {
         },
         afterRender:function() {
             $(".pagination-box a").on("click", $.scrollify.move);
+            $('html').attr('data-current-index', 0);
+            $('.page-0').addClass('active');
+            $('.page-0').addClass('visited');
         }
     });
 });
@@ -302,3 +305,23 @@ $('a').click(function() {
         return false;
     }
 })
+
+// 탭메뉴 함수 시작
+var $tab = $('.bn-box > .bn > .contents > .menu-box-1 > .tab-box > .tab-head > .tab-title');
+
+$tab.click(function () {
+    
+    var $this = $(this);
+    var index = $this.index();
+    
+    $this.siblings('.active').removeClass('active');
+    $this.addClass('active');
+    
+    var $contentsPage = $('.bn-box > .bn > .contents > .menu-box-1 > .tab-box > .tab-contents > div');
+    
+    $contentsPage.siblings('.active').removeClass('active');
+    $contentsPage.eq(index).addClass('active');
+    
+});
+
+// 탭메뉴 함수 끝
