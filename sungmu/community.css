@@ -1,0 +1,92 @@
+.top-bar {
+    top:0 !important;
+}
+
+.page > .inner {
+    top:120px !important;
+}
+
+.page > .inner > .contents {
+    height:570px;
+    border-radius: 20px;
+    overflow: hidden;
+    border:1px solid #eee;
+}
+
+.page.bottom-wave {
+    background-size:auto 120px;
+    background:url(./index.img/wave-pattern-01.png), linear-gradient(#fff, #fff, #000);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.page > .inner > .contents > ul {
+    height:100%;
+    background-color:rgba(255,255,255,.9);
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    overflow-y: auto;
+}
+
+.page > .inner > .contents > ul > li {
+    border-bottom:1px solid #eee;
+    min-height:calc(100% / 14);
+    max-height: 99%;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.page > .inner > .contents > ul > li.hidden {
+    display: none;
+}
+
+.page > .inner > .contents > ul > li > div > span {
+    display: block;
+}
+
+.page > .inner > .contents > ul > li > .head {
+    padding:10px;
+    box-sizing: border-box;
+}
+
+.page > .inner > .contents > ul > li > .head > .ico {
+    width:22px;
+    height:22px;
+    margin:0 30px;
+    background-repeat: no-repeat;
+    background-image: url(./index.img/ico-dragon-fly-03.png);
+    background-size:cover;
+
+}
+
+.page-2 > .inner > .contents > ul > li > .head > .ico {
+    color:#273575;
+    font-weight:600;
+    background:none;
+}
+
+.page > .inner > .contents > ul > li > .head > .title {
+    font-weight:600;
+    letter-spacing: -1px;
+}
+
+.page > .inner > .contents > ul > li > .head > .date {
+    font-weight:200;
+    letter-spacing: -1px;
+    margin-right:50px;
+}
+
+.page-2 > .inner > .contents > ul > li > .head > .date {
+    font-size:14px;
+}
+
+.page > .inner > .contents > ul > li > .text-box {
+    height:0;
+    overflow:hidden;
+    display: none;
+}
+
+.page > .inner > .contents > ul > li.active > .text-box {
+    display: block;
+    height:auto;
+    padding:50px;
+}

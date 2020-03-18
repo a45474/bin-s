@@ -1,0 +1,143 @@
+
+.page > .inner > .contents {
+    height:550px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.page {
+    position: relative;
+}
+
+.page::before {
+    top:0;
+    left:0;
+    position:absolute;
+    z-index:-1;
+    content:"";
+    width:100%;
+    height:100%;
+    background-size:50% auto;
+}
+
+.page.white-wave-bg::before {
+    background-image:url(./index.img/wave-bg-72ppi-03.png);
+    color:#000;
+    opacity:0.7!important;
+}
+
+.page.black-wave-bg > .inner > .title {
+    color:#fff;
+}
+
+.page.black-wave-bg > .inner > .title::after {
+    background-color:#fff;
+    
+} 
+
+.page.black-wave-bg::before {
+    background-image:url(./index.img/wave-bg-72ppi-02.png);
+    color:#fff;
+    opacity:0.8!important;
+}
+
+.page > .inner > .title > span {
+    text-shadow: 2px 2px 5px rgba(0,0,0,.5);
+}
+
+.page > .inner > .title::after {
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+}
+
+.pagination-box {
+    background-color:rgba(255, 255, 255, .9);
+    border-radius: 10px;
+    padding:5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+}
+
+.page > .inner > .contents > .tab-box {
+    width:40%;
+    height:100%;
+    overflow: hidden;
+    background-color:#fff;
+}
+
+.page.black-wave-bg > .inner > .contents > .tab-box {
+    background-color:#000;
+    color:white;
+}
+
+.page > .inner > .contents > .video-box {
+    width:60%;
+    background-color:#000;
+    height:100%;
+}
+
+.page > .inner > .contents > .tab-box > .tab {
+    height:calc(100% / 5);
+    padding-top:40px;
+    padding-left:30px;
+    box-sizing:border-box;
+    border-bottom:2px solid #eee;
+    cursor:pointer;
+}
+
+.page > .inner > .contents > .tab-box > .tab > div > span {
+    display: block;
+    float:left;
+}
+
+.page > .inner > .contents > .tab-box > .tab > div > .ico {
+    width:26px;
+    height:26px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    background-image: url(./index.img/ico-dragon-fly-03.png);
+}
+
+.page > .inner > .contents > .tab-box > .tab > div > .title {
+    height:calc(100% / 5);
+    width:calc(100% - 80px);
+    padding-left:10px;
+    font-size:20px;
+    font-weight:600;
+    position: relative;
+    letter-spacing: -1px;
+}
+
+.page > .inner > .contents > .tab-box > .tab > div > .title::after {
+    content: "";
+    display: block;
+    width:13px;
+    height:13px;
+    box-sizing: border-box;
+    position: absolute;
+    top:50%;
+    transform: translateY(-70%) rotate(135deg);
+    right:0;
+    border-top:3px solid #777777;
+    border-right:3px solid #777777;
+    
+}
+
+.page > .inner > .contents > .tab-box > .tab.active > div > .title::after {
+    
+    transform: translateY(-20%) rotate(-45deg);
+}
+
+.page > .inner > .contents > .tab-box > .text-box {
+    height:0;
+    overflow-y: hidden;
+    transition: height .5s;
+}
+
+.page > .inner > .contents > .tab-box > .text-box.active {
+    height:calc(100% / 5 *4);
+    overflow-y: scroll;
+}
+
+.page > .inner > .contents > .tab-box > .tab.hidden {
+    display: none;
+}
