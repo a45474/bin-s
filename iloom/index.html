@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>일룸 모작 페이지</title>
+    <!--    제이쿼리-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- 모바일에서 PC에서 보던 사이즈와 같은 크기로 나오게 함 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 호환성 문제를 어느정도 해결 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+
+<body>
+    <!-- 팝업메뉴 -->
+    <div class="popup-bg"></div>
+    <div class="popup-menu relative">
+
+        <nav class="menu-list-1">
+            <div class="title-under-line"></div>
+
+            <ul class="relative cell">
+
+                <li class="title"><a href="#">침실</a></li>
+
+                <li class="sub-title">
+                    <a href="#">침대</a>
+                    <ul>
+                        <li><a href="#">모션베드</a></li>
+                        <li><a href="#">일반침대</a></li>
+                        <li><a href="#">패밀리침대</a></li>
+                        <li><a href="#">액세서리</a></li>
+                        <li><a href="#">매트리스</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-title">
+                    <a href="#">옷장</a>
+                    <ul>
+                        <li><a href="#">조합형</a></li>
+                        <li><a href="#">포인트형</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-title">
+                    <a href="#">수납장</a>
+                    <ul>
+                        <li><a href="#">협탁</a></li>
+                        <li><a href="#">서랍장</a></li>
+                        <li><a href="#">파티션수납장</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-title">
+                    <a href="#">화장대</a>
+                    <ul>
+                        <li><a href="#">화장대</a></li>
+                        <li><a href="#">스툴</a></li>
+                        <li><a href="#">액세서리</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="relative cell">
+                <li class="title"><a href="#">거실</a></li>
+
+                <li class="sub-title">
+                    <a href="#">테이블</a>
+                    <ul>
+                        <li><a href="">소파 테이블</a></li>
+                        <li><a href="">패밀리 테이블</a></li>
+                        <li><a href="">멀티테이블</a></li>
+                        <li><a href="">액세서리</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-title">
+                    <a href="#">거실장</a>
+                    <ul>
+                        <li><a href="">거실장</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-title">
+                    <a href="#">소파</a>
+                    <ul>
+                        <li><a href="">일자형</a></li>
+                        <li><a href="">카우치/코너</a></li>
+                        <li><a href="">1인/소파베드</a></li>
+                        <li><a href="">리클라이너</a></li>
+                        <li><a href="">액세서리</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-title">
+                    <a href="#">수납장</a>
+                    <ul>
+                        <li><a href="">책장</a></li>
+                        <li><a href="">서랍장</a></li>
+                        <li><a href="">액세서리</a></li>
+                        <li><a href="">장식장</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-title">
+                    <a href="#">액세서리</a>
+
+                </li>
+
+            </ul>
+
+            <ul class="relative cell">
+                <li class="title"><a href="#">주방</a></li>
+
+                <li class="sub-title">
+                    <a href="#">식탁</a>
+                    <ul>
+                        <li><a href="">식탁</a></li>
+                        <li><a href="">의자</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-title">
+                    <a href="#">수납장</a>
+                    <ul>
+                        <li><a href="">수납장</a></li>
+                        <li><a href="">액세서리</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <ul class="relative cell">
+                <li class="title"><a href="#">키즈룸</a></li>
+
+                <li class="sub-title">
+                    <a href="#">침대</a>
+                    <ul>
+                        <li><a href="#">침대</a></li>
+                        <li><a href="#">매트리스</a></li>
+                        <li><a href="#">액세서리</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-title">
+                    <a href="#">책상</a>
+                    <ul>
+                        <li><a href="#">액세서리</a></li>
+                        <li><a href="#">액세서리</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-title">
+                    <a href="#">수납장</a>
+                    <ul>
+                        <li><a href="#">서랍/수납장</a></li>
+                        <li><a href="#">책장</a></li>
+                        <li><a href="#">옷장/행거</a></li>
+                        <li><a href="#">놀이장</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-title">
+                    <a href="#">소파/의자</a>
+                    <ul>
+                        <li><a href="#">소파</a></li>
+                        <li><a href="#">의자</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-title">
+                    <a href="#">액세서리</a>
+                    <ul>
+
+                    </ul>
+                </li>
+
+            </ul>
+
+            <ul class="relative cell">
+                <li class="title"><a href="#">학생방</a></li>
+
+                <li class="sub-title">
+                    <a href="#">책상</a>
+                    <ul>
+                        <li><a href="#">일반형</a></li>
+                        <li><a href="#">기능형</a></li>
+                        <li><a href="#">액세서리</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-title">
+                    <a href="#">책장</a>
+                    <ul>
+                        <li><a href="#">책장</a></li>
+                        <li><a href="#">액세서리</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-title">
+                    <a href="#">수납장</a>
+                    <ul>
+                        <li><a href="#">서랍장</a></li>
+                        <li><a href="#">수납장</a></li>
+                        <li><a href="#">옷장/행거</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-title">
+                    <a href="#">의자</a>
+                    <ul>
+                        <li><a href="#">의자</a></li>
+                        <li><a href="#">액세서리</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-title">
+                    <a href="#">침대</a>
+                    <ul>
+                        <li><a href="#">일반침대</a></li>
+                        <li><a href="#">수납침대</a></li>
+                        <li><a href="#">모션침대</a></li>
+                        <li><a href="#">매트리스</a></li>
+                        <li><a href="#">액세서리</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <ul class="relative cell">
+                <li class="title"><a href="#">서재</a></li>
+
+                <li class="sub-title">
+                    <a href="#">책상</a>
+                    <ul>
+                        <li><a href="#">일반형</a></li>
+                        <li><a href="#">모션형</a></li>
+                        <li><a href="#">액세서리</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-title">
+                    <a href="#">책장</a>
+                    <ul>
+                        <li><a href="#">책장</a></li>
+                        <li><a href="#">액세서리</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-title">
+                    <a href="#">서랍장</a>
+                    <ul>
+                        <li><a href="#">책상서랍</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-title">
+                    <a href="#">의자</a>
+                    <ul>
+                        <li><a href="#">태스크의자</a></li>
+                        <li><a href="#">프리미엄의자</a></li>
+                        <li><a href="#">보조의자</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-title">
+                    <a href="#">수납장</a>
+                    <ul>
+                        <li><a href="#">장식장</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="relative cell">
+                <li class="title"><a href="#">펫</a></li>
+
+                <li class="sub-title">
+                    <a href="#">가구</a>
+                    <ul>
+                        <li><a href="#">가구</a></li>
+                        <li><a href="#">액세서리</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="menu-list-2">
+
+            <ul>
+                <li><a href="">시리즈</a></li>
+                <li><a href="">아울렛</a></li>
+                <li>
+                    <ul>
+                        <li><a href="">공간제안 서비스</a></li>
+                        <li><a href="">매장안내</a></li>
+                        <li><a href="">엄마의 서재</a></li>
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">전시품 판매</a></li>
+                        <li><a href="">라이프 스타일</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="close-btn">
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+
+    <!-- 탑바 -->
+    <nav class="top-bar">
+        <ul class="menu-1 cell">
+            <li class="cell btn relative">
+                <a href=""><img src="./index.img/top_bar_ico_menu.png" alt=""></a>
+            </li>
+            <li class="cell relative">
+                <a href="#">침실</a>
+                <ul>
+                    <li><a href="">침대</a></li>
+                    <li><a href="">옷장</a></li>
+                    <li><a href="">수납장</a></li>
+                    <li><a href="">화장대</a></li>
+                </ul>
+            </li>
+            <li class="cell relative">
+                <a href="">거실</a>
+                <ul>
+                    <li><a href="">테이블</a></li>
+                    <li><a href="">거실장</a></li>
+                    <li><a href="">소파</a></li>
+                    <li><a href="">수납장</a></li>
+                    <li><a href="">액세서리</a></li>
+                </ul>
+            </li>
+            <li class="cell relative">
+                <a href="">주방</a>
+                <ul>
+                    <li><a href="">식탁</a></li>
+                    <li><a href="">수납장</a></li>
+                </ul>
+            </li>
+            <li class="cell relative">
+                <a href="">키즈룸</a>
+                <ul>
+                    <li><a href="">침대</a></li>
+                    <li><a href="">책상</a></li>
+                    <li><a href="">수납장</a></li>
+                    <li><a href="">소파/의자</a></li>
+                    <li><a href="">액세서리</a></li>
+                </ul>
+            </li>
+            <li class="cell relative">
+                <a href="">학생방</a>
+                <ul>
+                    <li><a href="">책상</a></li>
+                    <li><a href="">책장</a></li>
+                    <li><a href="">수납장</a></li>
+                    <li><a href="">의자</a></li>
+                    <li><a href="">침대</a></li>
+                </ul>
+            </li>
+            <li class="cell relative">
+                <a href="">서재</a>
+                <ul>
+                    <li><a href="">책상</a></li>
+                    <li><a href="">책장</a></li>
+                    <li><a href="">서랍장</a></li>
+                    <li><a href="">의자</a></li>
+                    <li><a href="">수납장</a></li>
+                </ul>
+            </li>
+            <li class="cell relative period"><a href="">·</a></li>
+            <li class="cell relative">
+                <a href="">펫</a>
+                <ul>
+                    <li><a href="">가구</a></li>
+                </ul>
+            </li>
+            <li class="cell relative period"><a href="">·</a></li>
+            <li class="cell relative"><a href="">시리즈</a></li>
+            <li class="cell relative period"><a href="">·</a></li>
+            <li class="cell relative">
+                <a href="">아울렛</a>
+                <ul>
+                    <li><a href="">침실</a></li>
+                    <li><a href="">거실</a></li>
+                    <li><a href="">키즈룸</a></li>
+                    <li><a href="">학생방</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="logo-box">
+            <a href="#"><img src="./index.img/top_bar_logo.png" alt=""></a>
+        </div>
+
+        <ul class="menu-2 cell-right">
+            <li class="cell"><a href="#">로그인</a></li>
+            <li class="cell"><a href="#">회원가입</a></li>
+            <li class="cell"><a href="#">주문/배송</a></li>
+            <li class="cell"><a href="#">이벤트</a></li>
+            <li class="cell"><a href="#">고객센터</a></li>
+            <li class="cell"><a href="#">매장안내</a></li>
+            <li class="cell"><a href="#">회사소개</a></li>
+            <li class="cell search-ico"><a href="#">
+                    <img src="./index.img/top_bar_search_3.png" alt="">
+                </a>
+
+            </li>
+            <li class="cell"><a href="#">
+                    <img src="./index.img/top_bar_cart_1.png" alt="">
+                </a>
+
+            </li>
+        </ul>
+
+        <ul class="menu-3 search-box row">
+            <li class="cell search-ico"><a href="#"><img src="./index.img/top_bar_search_1.png" alt=""></a></li>
+            <li class="cell"><a href="#"><img src="./index.img/top_bar_cart_2.png" alt=""></a></li>
+        </ul>
+
+        <div class="search-popup">
+            <form class="relative" action=""><input type="text" placeholder="검색"><img src="./index.img/top_bar_search_2.png"></form>
+            <nav class="suggest-list">
+                <ul class="list-1">
+                    <li class="title"><a href="#">추천 검색</a></li>
+                    <li><a href=""># 신학기준비_일룸학생가구BEST</a></li>
+                    <li><a href=""># 마마무_솔라의_다나모션베드</a></li>
+                    <li><a href=""># 책상_신제품_모아보기</a></li>
+                    <li><a href=""># 펫가구_캐스터네츠</a></li>
+                    <li><a href=""># 학생방의자</a></li>
+                </ul>
+                <ul class="list-2">
+                    <li class="title"><a href="#">추천 컨텐츠</a></li>
+                    <li><a href="#"># 나의일룸생활_후기보러가기</a></li>
+                    <li><a href="#"># 일룸패밀리에게_선물을_드려요</a></li>
+                    <li><a href="#"># 신학기_학생방_꾸미기_TIP</a></li>
+                    <li><a href="#"># 이달의프로모션</a></li>
+                    <li><a href="#"># 엄마의서재</a></li>
+                </ul>
+            </nav>
+        </div>
+    </nav>
+
+    <!-- 슬라이드바 -->
+    <div class="iloom-main-slider relative slider">
+        <div class="slides">
+            <div class="slide active">
+                <img src="./index.img/main-bn-1.jpg" alt="">
+                <div class="link-box"><a href=""></a></div>
+            </div>
+            <div class="slide">
+                <img src="./index.img/main-bn-2.jpg" alt="">
+                <div class="link-box"><a href=""></a></div>
+            </div>
+            <div class="slide">
+                <img src="./index.img/main-bn-3.jpg" alt="">
+                <div class="link-box"><a href=""></a></div>
+            </div>
+            <div class="slide">
+                <img src="./index.img/main-bn-4.jpg" alt="">
+                <div class="link-box"><a href=""></a></div>
+            </div>
+            <div class="slide">
+                <img src="./index.img/main-bn-5.jpg" alt="">
+                <div class="link-box"><a href=""></a></div>
+            </div>
+            <div class="slide">
+                <img src="./index.img/main-bn-6.jpg" alt="">
+                <div class="link-box"><a href=""></a></div>
+            </div>
+        </div>
+
+        <div class="side-btn">
+            <div class="btn">
+                <span><img src="./index.img/main_bn_side_l.png" alt=""></span>
+
+            </div>
+            <div class="btn">
+                <span><img src="./index.img/main_bn_side_r.png" alt=""></span>
+
+            </div>
+        </div>
+
+        <div class="slide-counter">
+            <span class="current-slide-no"></span>
+            <span class="slash">/</span>
+            <span class="total-slide-no"></span>
+        </div>
+    </div>
+
+    <!-- 이벤트 배너 -->
+    <div class="event-bn">
+        <ul class="row">
+            <li class="cell">
+                <a href="">
+                    <div class="img-box"><img src="./index.img/event_bn_1.jpg" alt="이미지를 찾을 수 없네요."></div>
+                </a>
+            </li>
+            <li class="cell">
+                <a href="">
+                    <div class="img-box"><img src="./index.img/event_bn_2.jpg" alt="이미지를 찾을 수 없네요."></div>
+                </a>
+            </li>
+            <li class="cell">
+                <a href="">
+                    <div class="img-box"><img src="./index.img/event_bn_3.jpg" alt="이미지를 찾을 수 없네요."></div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 인스타 배너 -->
+    <div class="instar-bn">
+        <div class="text-box"><img src="./index.img/sns_bn_title.png" alt=""></div>
+        <ul class="row">
+            <li class="cell">
+                <a href="">
+                    <div class="img-box"><img src="./index.img/sns_bn_1.jpg" alt="이미지를 찾을 수 없네요."></div>
+                </a>
+            </li>
+            <li class="cell">
+                <a href="">
+                    <div class="img-box"><img src="./index.img/sns_bn_2.jpg" alt="이미지를 찾을 수 없네요."></div>
+                </a>
+            </li>
+            <li class="cell">
+                <a href="">
+                    <div class="img-box"><img src="./index.img/sns_bn_3.jpg" alt="이미지를 찾을 수 없네요."></div>
+                </a>
+            </li>
+            <li class="cell">
+                <a href="">
+                    <div class="img-box"><img src="./index.img/sns_bn_4.jpg" alt="이미지를 찾을 수 없네요."></div>
+                </a>
+            </li>
+            <li class="cell">
+                <a href="">
+                    <div class="img-box"><img src="./index.img/sns_bn_5.jpg" alt="이미지를 찾을 수 없네요."></div>
+                </a>
+            </li>
+        </ul>
+
+        <div class="more-btn"><a href="">Read More</a></div>
+    </div>
+
+    <!-- 퀵 메뉴 배너 -->
+    <div class="quick-bn-bar">
+        <div class="title-img-box"><img src="./index.img/quick_bn_title.png" alt=""></div>
+        <nav class="quick-menu-list">
+            <ul class="row">
+                <li class="cell">
+                    <div class="img-box relative"><img src="./index.img/quick_bn_1.png" alt=""></div>
+                    <div class="text-box">
+                        <div class="text-1">Consulting</div>
+                        <div class="text-2">공간제안 서비스</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box relative"><img src="./index.img/quick_bn_2.png" alt=""></div>
+                    <div class="text-box">
+                        <div class="text-1">Store</div>
+                        <div class="text-2">매장안내</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box relative"><img src="./index.img/quick_bn_3.png" alt=""></div>
+                    <div class="text-box">
+                        <div class="text-1">Notice</div>
+                        <div class="text-2">공지사항</div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-box relative"><img src="./index.img/quick_bn_4.png" alt=""></div>
+                    <div class="text-box">
+                        <div class="text-1">Outlet</div>
+                        <div class="text-2">전시품 판매</div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 푸터 -->
+    <div class="footer">
+        <nav class="campany-menu-list-1">
+            <ul class="row">
+                <li class="cell">
+                    <a href=""><img src="./index.img/footer_logo.png" alt=""></a>
+                </li>
+                <li class="cell">
+                    <a href="">ABOUT</a>
+                    <a href="">회사소개</a>
+                    <a href="">매장안내</a>
+                    <a href="">인재채용</a>
+                </li>
+                <li class="cell">
+                    <a href="">SUPPORT</a>
+                    <a href="">고객센터</a>
+                    <a href="">대리점 개설안내</a>
+
+                </li>
+                <li class="cell">
+                    <a href="">INFO</a>
+                    <a href="">이용약관</a>
+                    <a href="">개인정보 처리방침</a>
+
+                </li>
+                <li class="cell">
+                    <a>고객센터</a>
+                    <a>1577-5670</a>
+                    <a>평일 09:30 ~ 17:30, 제품문의, 매장안내, AS, 분해설치</a>
+
+                </li>
+            </ul>
+        </nav>
+        <nav class="campany-menu-list-2">
+            <ul class="row">
+                <li class="cell sns-icon-list">
+                    <a href=""><img src="./index.img/footer_sns_ico_i.png" alt=""></a>
+                    <a href=""><img src="./index.img/footer_sns_ico_f.png" alt=""></a>
+                    <a href=""><img src="./index.img/footer_sns_io_b.png" alt=""></a>
+                </li>
+                <li class="cell copyright">
+                    <a href="">서울시 송파구 오금로 311 (오금동45-1) (주)일룸 ·대표이사 강성문</a>
+                    <a href="">개인정보보호 책임자 : 강성문</a>
+                    <a href="">사업자등록번호 : 215-86-93600·통신판매업신고 : 2009-서울송파-0069호·부가통신사업신고필증 : 021129</a>
+                    <a href="">webmaster@iloom.com·Copyright (c) 2018 iloom lnc. All rights reserved</a>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><img src="./index.img/footer_mark_1.png" alt=""></div>
+                    <div class="img-box"><img src="./index.img/footer_mark_2.png" alt=""></div>
+                    <div class="img-box"><img src="./index.img/footer_mark_3.png" alt=""></div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 로우바 -->
+    <div class="low-fixed-menu relative">
+        <div>
+            <img src="./index.img/low_fixed_ico_1_history.jpg" alt="">
+            <a href="">최근본상품(0)</a>
+        </div>
+        <div>
+            <a href=""><img src="./index.img/low_fixed_ico_2_kakao.svg" alt="">&nbsp카톡문의</a>
+        </div>
+        <div>
+            <div class="text-box">
+                <a>일룸 쇼핑몰에서 판매되는 제품은 추천 제품으로 구성되어있습니다. 더 다양한 제품 구성은 전국 일룸 매장에서 만나보세요! </a>
+                <a href="">2주 동안 보지 않기</a>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
