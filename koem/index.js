@@ -555,6 +555,7 @@ else {
 
 $('.footer > .menu-box-2 > .menu-box-2-inner > .copyright > .link-list > .local-site-box').click(function () {
     
+    alert('hi');
     var $this = $(this);
     
     // console.log('hi');
