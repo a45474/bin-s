@@ -735,7 +735,7 @@ html[data-current-index="0"] .pagination-box, html[data-current-index="8"] .pagi
     margin-left:10px;
 }
 
-.footer > .inner > .list-1 > .row > .cell > a {
+.footer > .inner > .list-1 > .row > .cell > span {
     display:block;
     text-align: center;
     background-color: #3f3f4b;

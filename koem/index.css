@@ -90,6 +90,34 @@ a {
     text-align:center;
 }
 
+/* 커스텀 */
+
+/* 페이지1, 페이지2 전환 */
+body > .page-1, body > .page-2{
+    position:absolute;
+    transition:left 1s, right 1s;
+    width:100%;
+    height:auto;
+    overflow-x:hidden;
+}
+
+body > .page-1 {
+    top:0;
+    left:0;
+}
+
+body > .page-2 {
+    top:0;
+    left:100%;
+}
+
+body.active > .page-2 {
+    left:0;
+}
+
+body.active > .page-1 {
+    left:-100%;
+}
 
 /* 슬라이더 */
 
@@ -147,7 +175,7 @@ a {
 /* 텍스트 박스 시작 */
 
 /* 텍스트 */
-body > .page-1 > .main-slider-box > .main-slider > .text-box {
+.page-1 > .main-slider-box > .main-slider > .text-box {
     position:absolute;
     top:240px;
     left:50%;
@@ -155,9 +183,10 @@ body > .page-1 > .main-slider-box > .main-slider > .text-box {
     text-align:center;
     color:white;
     white-space:nowrap;
+
 }
 
-body > .page-1 > .main-slider-box > .main-slider > .text-box > .title > span {
+.page-1 > .main-slider-box > .main-slider > .text-box > .title > span {
     background-image:url(https://www.koem.or.kr/images/koem/main/img_visualSlogan.png);
     background-repeat:no-repeat;
     height:61px;
@@ -166,29 +195,29 @@ body > .page-1 > .main-slider-box > .main-slider > .text-box > .title > span {
     transition-timing-fuction:ease;
 }
 
-body > .page-1 > .main-slider-box > .main-slider > .text-box > .title > span.active {
+.page-1 > .main-slider-box > .main-slider > .text-box > .title > span.active {
     opacity:1;
 }
 
-body > .page-1 > .main-slider-box > .main-slider > .text-box > .title > span:nth-of-type(1) {
+.page-1 > .main-slider-box > .main-slider > .text-box > .title > span:nth-of-type(1) {
     width:260px;
     background-position:0 0;
     transition:opacity 2s .5s;
 }
 
-body > .page-1 > .main-slider-box > .main-slider > .text-box > .title > span:nth-of-type(2) {
+.page-1 > .main-slider-box > .main-slider > .text-box > .title > span:nth-of-type(2) {
     width:312px;
     background-position:-260px 0;
     transition:opacity 2s .8s;
 }
 
-body > .page-1 > .main-slider-box > .main-slider > .text-box > .title > span:nth-of-type(3) {
+.page-1 > .main-slider-box > .main-slider > .text-box > .title > span:nth-of-type(3) {
     width:247px;
     background-position:-572px 0;
     transition:opacity 2s 1.2s;
 }
 
-body > .page-1 > .main-slider-box > .main-slider > .text-box > .title > span:nth-of-type(4) {
+.page-1 > .main-slider-box > .main-slider > .text-box > .title > span:nth-of-type(4) {
     width:324px;
     background-position:-247px -61px;
     display:block;
@@ -196,7 +225,7 @@ body > .page-1 > .main-slider-box > .main-slider > .text-box > .title > span:nth
     transition:opacity 2s 1.5s;
 }
 
-body > .page-1 > .main-slider-box > .main-slider > .text-box > .text {
+.page-1 > .main-slider-box > .main-slider > .text-box > .text {
     margin-top:30px;
     font-size:19px;
     margin-bottom:25px;
@@ -204,28 +233,28 @@ body > .page-1 > .main-slider-box > .main-slider > .text-box > .text {
     transition:opacity 6s;
 }
 
-body > .page-1 > .main-slider-box > .main-slider > .text-box > .text.active {
+.page-1 > .main-slider-box > .main-slider > .text-box > .text.active {
     opacity:1;
 }
 
-body > .page-1 > .main-slider-box > .main-slider > .text-box > .btn > .center-btn > div {
+.page-1 > .main-slider-box > .main-slider > .text-box > .btn > .center-btn > div {
     display:none;
 }
 
-body > .page-1 > .main-slider-box > .main-slider > .text-box > .btn > .center-btn > div.active {
+.page-1 > .main-slider-box > .main-slider > .text-box > .btn > .center-btn > div.active {
     display:block;
 }
 
 /* 사이드 버튼 */
 
-body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns {
+.page-1 > .main-slider-box > .main-slider > .text-box > .side-btns {
     position:relative;
     height:38px;
     width:720px;
     margin:0 auto;
 }
 
-body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > div {
+.page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > div {
     width:320px;
     height:24px;
     position:absolute;
@@ -234,12 +263,12 @@ body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > div 
     transform:translatey(-50%);
 }
 
-body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .next-btn {
+.page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .next-btn {
     right:0;
     left:auto;
 }
 
-body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > div > .ico {
+.page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > div > .ico {
     background-image:url(https://www.koem.or.kr/images/koem/main/img_mainVisual_all.png);
     background-repeat:no-repeat;
     position:absolute;
@@ -255,7 +284,7 @@ body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > div 
     cursor:pointer;
 }
 
-body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > div > .line {
+.page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > div > .line {
     height:1px;
     width:100%;
     background-color:white;
@@ -265,22 +294,22 @@ body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > div 
     left:0;
 }
 
-body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .next-btn > .line {
+.page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .next-btn > .line {
     right:0;
     left:auto;
 }
 
-body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .next-btn > .ico {
+.page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .next-btn > .ico {
     background-position:-120px -23px;
     left:auto;
     right:0;
 }
 
-body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .next-btn > .ico:hover {
+.page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .next-btn > .ico:hover {
     right:-29px;
 }
 
-body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .prev-btn > .ico:hover {
+.page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .prev-btn > .ico:hover {
     left:-29px;
 }
 
@@ -335,8 +364,7 @@ body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .pre
      background-position:-183px -50px; 
 }
 
-/* 일시정지, 재생 버튼 끝 만세 꺄하하하하하*/
-
+/* 일시정지, 재생 버튼 끝 만세*/
 /* 스크롤 다운 버튼 시작 */
 .page-1 > .main-slider-box > .main-slider > .scroll-down-btn {
     position:absolute;
@@ -567,7 +595,7 @@ body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .pre
     cursor:pointer;
 }
 
-.tab-bn-box > .tab-bn > .head > div > a {
+.tab-bn-box > .tab-bn > .head > div > span {
     font-size:23px;
     padding:0 20px;
     color:#484848;
@@ -576,11 +604,11 @@ body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .pre
     position:relative;
 }
 
-.tab-bn-box > .tab-bn > .head > div.active > a {
+.tab-bn-box > .tab-bn > .head > div.active > span {
     color:#005cb9;
 }
 
-.tab-bn-box > .tab-bn > .head > div:not(:last-child) > a::after {
+.tab-bn-box > .tab-bn > .head > div:not(:last-child) > span::after {
     position:absolute;
     content:"";
     display:block;
@@ -592,7 +620,7 @@ body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .pre
     transform:translatey(-45%);
 }
 
-.tab-bn-box > .tab-bn > .head > div > a::before {
+.tab-bn-box > .tab-bn > .head > div > span::before {
     content:"";
     display:block;
     width:0;
@@ -604,7 +632,7 @@ body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .pre
     transition:all .5s;
 }
 
-.tab-bn-box > .tab-bn > .head > div.active > a::before, .tab-bn-box > .tab-bn > .head > div > a:hover::before {
+.tab-bn-box > .tab-bn > .head > div.active > span::before, .tab-bn-box > .tab-bn > .head > div > span:hover::before {
     opacity:1;
     width:100%;
 }
@@ -690,7 +718,6 @@ body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .pre
     background-color:gold;
     background-size:cover;
     margin-top:20px;
-
 }
 
 .tab-bn-box > .tab-bn > .contents .owl-carousel  .item > a > .text-1 {
@@ -763,6 +790,7 @@ body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .pre
 .tab-bn-box > .tab-bn > .contents .owl-nav > div:nth-of-type(2) {
     background-position:-44px -256px !important;
     right:0 !important;
+    left:auto;
 }
 
 .tab-bn-box > .tab-bn > .contents {
@@ -778,7 +806,7 @@ body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .pre
     .tab-bn-box > .tab-bn {
         max-width:1190px;
     }
-    .tab-bn-box > .tab-bn > .head > div > a {
+    .tab-bn-box > .tab-bn > .head > div > span {
         font-size:18px;
         padding:0 10px;
     }
@@ -822,6 +850,7 @@ body > .page-1 > .main-slider-box > .main-slider > .text-box > .side-btns > .pre
 
     }
 }
+
 
 /* 탭메뉴 끝 */
 
@@ -1591,6 +1620,35 @@ body {
     bottom:0;
     right:0;
     display:none;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+    background-color:aqua;
+}
+
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-4 > div > .slider > .slides > .slide:nth-of-type(1) {
+    background-image:url(https://cdn.pixabay.com/photo/2020/03/05/00/13/hands-4903050_960_720.jpg);
+}
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-4 > div > .slider > .slides > .slide:nth-of-type(2) {
+    background-image:url(https://cdn.pixabay.com/photo/2020/01/20/20/58/building-4781384_960_720.jpg);
+}
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-4 > div > .slider > .slides > .slide:nth-of-type(3) {
+    background-image:url(https://cdn.pixabay.com/photo/2020/03/16/19/02/beach-4938039_960_720.jpg);
+}
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-4 > div > .slider > .slides > .slide:nth-of-type(4) {
+    background-image:url(https://cdn.pixabay.com/photo/2016/11/29/04/19/beach-1867285_960_720.jpg);
+}
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-4 > div > .slider > .slides > .slide:nth-of-type(5) {
+    background-image:url(https://cdn.pixabay.com/photo/2015/07/27/19/47/turtle-863336_960_720.jpg);
+}
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-4 > div > .slider > .slides > .slide:nth-of-type(6) {
+    background-image:url(https://cdn.pixabay.com/photo/2013/11/01/11/13/dolphin-203875_960_720.jpg);
+}
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-4 > div > .slider > .slides > .slide:nth-of-type(7) {
+    background-image:url(https://cdn.pixabay.com/photo/2016/01/08/16/53/flame-1128636_960_720.jpg);
+}
+.page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-4 > div > .slider > .slides > .slide:nth-of-type(8) {
+    background-image:url(https://cdn.pixabay.com/photo/2015/03/02/23/40/father-656734_960_720.jpg);
 }
 
 .page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-4 > div > .slider > .slides > .slide.active {
@@ -1600,7 +1658,7 @@ body {
 .page-1 > .media-bn-box > .media-bn > .menu-box-list > div.menu-box-4 > div > .slider > .slides > .slide > a {
     display:block;
     height:100%;
-    background-color:gold;
+    color:transparent;
 }
 
 
@@ -2236,7 +2294,7 @@ body {
     > .copyright
     > .link-list
     > .local-site-box
-    > a {
+    > span {
     font-size: 14px;
     display: block;
 }
@@ -2247,7 +2305,7 @@ body {
     > .copyright
     > .link-list
     > .local-site-box
-    > a
+    > span
     > span {
     background-image: url(https://www.koem.or.kr/images/koem/common/icon_common_all.png);
     background-repeat: no-repeat;
@@ -2265,7 +2323,7 @@ body {
     > .copyright
     > .link-list
     > .local-site-box.active
-    > a
+    > span
     > span {
     background-position: -62px -100px;
 }
@@ -2276,7 +2334,7 @@ body {
     > .copyright
     > .link-list
     > .local-site-box
-    a {
+    span {
     color: white;
     white-space: nowrap;
     box-sizing: border-box;
@@ -2299,7 +2357,6 @@ body {
     background-color: #141720;
     position: absolute;
     display: none;
-       
 }
 
 .footer
@@ -2652,6 +2709,7 @@ body {
         > .link-list
     > .local-site-box > .pop-up {
         width:100%;
+        
     }
     
     .footer
@@ -2693,8 +2751,6 @@ body {
 */
 
 /* 페이지1푸터 끝 */
-
-
 
 /* 헤더 시작 */
 
@@ -2916,7 +2972,7 @@ body {
     height:100%;
     width:100%;
     display:block;
-    z-index:-2;
+    z-index:-3;
     position:absolute;
     top:0;
     left:0;
@@ -2929,11 +2985,14 @@ body {
 }
 
 .header > .contents > .inner > div {
-    display:none;
+    opacity:0;
     position:relative;
+    transition:opacity 1s;
+    display:none;
 }
 
 .header > .contents > .inner > div.active {
+    opacity:1;
     display:block;
 }
 
@@ -3096,7 +3155,7 @@ body {
 }
 
 /* 탑바 반응형 작업 */
-@media (max-width:864px) {
+@media (max-width:960px) {
     
     .header {
         padding-top:0;
@@ -3138,6 +3197,7 @@ body {
     left:0;
     box-sizing:border-box;
     padding-top:0;
+    box-shadow:3px 3px 8px rgba(0,0,0,.3);
 }
 
 .not-scroll-top-0  .header .link-menu-box {
@@ -3205,7 +3265,7 @@ body {
     }
 }
 
-@media (max-width:959px) {
+@media (max-width:960px) {
     .popup-menu-box {
         max-width:960px;
         width:100%;
@@ -3333,10 +3393,11 @@ body {
 .popup-mobile {
     max-width:960px;
     width:100%;
-    height:100%;
+    height:800px;
     position:fixed;
     top:0;
     right:0;
+    display:none;
 }
 
 .popup-mobile.active {
@@ -3439,22 +3500,25 @@ body {
 /* 바디 시작 */
 
 .popup-mobile > .body {
-    height:100%;
+    height:800px;
     background-color:#f0f0f0;
+    box-sizing:border-box;
 }
 
 .popup-mobile > .body > .side-bar {
-    height:100%;
+    height:830px;
     width:25%;
     top:120px;
     left:0;
+    background-color:#f0f0f0;
+    box-sizing:border-box;
 }
 
 .popup-mobile > .body > .side-bar > ul > li > a {
     padding:0 5px;
     border-right:0 none;
     border-bottom:1px solid #dfdfdf;
-    background-color:#f0f0f0;
+    
     line-height:77px;
     color:#464646;
     font-size:19px;
@@ -3478,7 +3542,7 @@ body {
     width:75%;
     padding:30px;
     box-sizing:border-box;
-    height:842px;
+    height:830px;
     top:120px;
     right:0;
 }
@@ -3561,13 +3625,13 @@ body {
 
 /* 반응형 작업 */
 
-@media (min-width:960px) {
+@media (max-width:960px) {
     .popup-mobile {
-        display:none;
+        display:block;
     }
 }
 
-@media (max-width:515px) {
+@media (max-width:640px) {
     .popup-mobile > .header > .top-bar > .bar-2 > .menu-box > div > a {
         font-size:13px;
     }
@@ -3630,7 +3694,7 @@ body {
     opacity:.5;
 }
 
-.main-bn > .anymation-img.active {
+body.active > .page-2 > .main-bn > .anymation-img {
     transform:translatey(0);
     opacity:1;
 }
@@ -4821,7 +4885,7 @@ body {
     > .link-list
     > .local-site-box {
     width: 260px;
-    height: 50px;
+    height: 100%;
     border: 1px solid #43454d;
     cursor: pointer;
     margin-bottom: 10px;
@@ -4837,12 +4901,9 @@ body {
     > .copyright
     > .link-list
     > .local-site-box
-    > span {
+    > .a {
     font-size: 14px;
     display: block;
-        border:1px solid red;
-        height:100%;
-        text-align: center;
 }
 
 .footer
@@ -4851,7 +4912,7 @@ body {
     > .copyright
     > .link-list
     > .local-site-box
-    > span
+    > .a
     > span {
     background-image: url(https://www.koem.or.kr/images/koem/common/icon_common_all.png);
     background-repeat: no-repeat;
@@ -4869,7 +4930,7 @@ body {
     > .copyright
     > .link-list
     > .local-site-box.active
-    > span
+    > .a
     > span {
     background-position: -62px -100px;
 }
@@ -4880,7 +4941,7 @@ body {
     > .copyright
     > .link-list
     > .local-site-box
-    span {
+    .a {
     color: white;
     white-space: nowrap;
     box-sizing: border-box;
@@ -5284,37 +5345,34 @@ body {
 
 /* 사이드바 시작 */
 
-
-@media (max-width:639px) {
-    .side-bar {
-        display:none;
-    } 
-}
-
- .side-bar {
+ body > .side-bar {
     width:57px;
     height:100%;
     position:fixed;
     border-left:1px solid white;
     top:0;
     right:0;
-    padding-top:240px;
     transition:2s;
     transform:translatex(0);
     z-index:8;
+    padding-top:240px;
 }
 
-.side-bar.active {
+body > .side-bar.active {
     opacity:0;
     transform:translatex(100%);
 }
 
-.not-scroll-top-0  .side-bar {
+.not-scroll-top-0 body > .side-bar {
     background-color:rgba(255, 255, 255, .5);
     border-left:1px solid rgba(100, 100, 100, .2);
 }
 
- .side-bar > ul > .page-name > div {
+body > .side-bar > ul {
+    height:100%;
+}
+
+ body > .side-bar > ul > .page-name > div {
     width:57px;
     height:59px;
     background-image:url(https://www.koem.or.kr/images/koem/main/img_mainAsideTitle1.png);
@@ -5323,12 +5381,12 @@ body {
     display:block;
 }
 
-.not-scroll-top-0 .side-bar > ul > .page-name > div {
+.not-scroll-top-0 body > .side-bar > ul > .page-name > div {
     background-image:url(https://www.koem.or.kr/images/koem/main/img_mainAsideTitle1_on.png);
 }
 
 
-.side-bar > ul > .arrow-btn {
+body > .side-bar > ul > .arrow-btn {
     position:absolute;
     width:68px;
     height:68px;
@@ -5336,23 +5394,23 @@ body {
     top:323px;
 }
 
-.side-bar > ul > .sns-ico-list-box > .sns-ico-list {
+body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list {
     width:25px;
     margin-top:120px;
     margin-left:auto;
     margin-right:auto;
 }
 
-.side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:not(:last-child) {
+body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:not(:last-child) {
     width:100%;
     border-bottom:1px solid white;
 }
 
-.not-scroll-top-0 .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:not(:last-child) {
+.not-scroll-top-0 body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:not(:last-child) {
     border-bottom:1px solid rgba(100, 100, 100, .2);
 }
 
-.side-bar > ul > .sns-ico-list-box > .sns-ico-list > li > a {
+body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li > a {
     width:18px;
     margin:15px auto;
     display:block;
@@ -5362,132 +5420,99 @@ body {
     transition:opacity .5s;
 }
 
-.side-bar > ul > .sns-ico-list-box > .sns-ico-list > li > div:hover {
+body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li > div:hover {
     opacity:.6;
 }
 
-.side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(1) > a {
+body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(1) > a {
     background-position:2px -138px;
 }
 
 
-.side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(2) > a {
+body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(2) > a {
     background-position:-21px -138px;
 }
 
-.side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(3) > a {
+body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(3) > a {
     background-position:-43px -138px;
 }
 
-.side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(4) > a {
+body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(4) > a {
     background-position:-69px -138px;
 }
 
-.side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(5) > a {
+body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(5) > a {
     background-position:-94px -138px;
 }
 
-.not-scroll-top-0 .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(1) > a {
+.not-scroll-top-0 body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(1) > a {
     background-position:2px -170px;
 }
 
 
-.not-scroll-top-0 .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(2) > a {
+.not-scroll-top-0 body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(2) > a {
     background-position:-20px -170px;
 }
 
-.not-scroll-top-0 .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(3) > a {
+.not-scroll-top-0 body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(3) > a {
     background-position:-43px -170px;
 }
 
-.not-scroll-top-0 .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(4) > a {
+.not-scroll-top-0 body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(4) > a {
     background-position:-69px -170px;
 }
 
-.not-scroll-top-0 .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(5) > a {
+.not-scroll-top-0 body > .side-bar > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(5) > a {
     background-position:-94px -170px;
 }
 
 /* 사이드바 1끝 */
 
 /* 사이드바2 시작 */
-.side-bar:nth-of-type(2) {
+body > .side-bar:nth-of-type(2) {
     left:0;
     border-left:none;
     border-right:1px solid rgba(100, 100, 100, .2);
 }
     
 
-.side-bar:nth-of-type(2) > ul > .page-name > div {
+body > .side-bar:nth-of-type(2) > ul > .page-name > div {
     background-image:url(https://www.koem.or.kr/images/koem/main/img_mainAsideTitle2.png);
 }    
 
-.side-bar:nth-of-type(2) > ul > .arrow-btn {
+body > .side-bar:nth-of-type(2) > ul > .arrow-btn {
     transform:rotate(180deg);
     left:0;
 }
 
-.side-bar:nth-of-type(2) > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(1) > a {
+body > .side-bar:nth-of-type(2) > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(1) > a {
     background-position:2px -170px;
 }
 
 
-.side-bar:nth-of-type(2) > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(2) > a {
+body > .side-bar:nth-of-type(2) > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(2) > a {
     background-position:-20px -170px;
 }
 
-.side-bar:nth-of-type(2) > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(3) > a {
+body > .side-bar:nth-of-type(2) > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(3) > a {
     background-position:-43px -170px;
 }
 
-.side-bar:nth-of-type(2) > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(4) > a {
+body > .side-bar:nth-of-type(2) > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(4) > a {
     background-position:-69px -170px;
 }
 
-.side-bar:nth-of-type(2) > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(5) > a {
+body > .side-bar:nth-of-type(2) > ul > .sns-ico-list-box > .sns-ico-list > li:nth-of-type(5) > a {
     background-position:-94px -170px;
 }
 
-.side-bar:nth-of-type(2) > ul > .sns-ico-list-box > .sns-ico-list > li:not(:last-child) {
+body > .side-bar:nth-of-type(2) > ul > .sns-ico-list-box > .sns-ico-list > li:not(:last-child) {
     border-bottom:1px solid rgba(100, 100, 100, .2);
 }
 
-.side-bar:nth-of-type(2).active {
+body > .side-bar:nth-of-type(2).active {
     transform:translatex(-100%);
 }
 /* 사이드바 끝 */
 
-/* 페이지2끝 */
 
-/* 페이지1, 페이지2 전환 */
-body > .page-1, .page-2{
-    position:absolute;
-    transition:all 2s;
-    width:100%;
-}
-
-body > .page-1 {
-    top:0;
-    left:0;
-}
-
-body > .page-2 {
-    top:0;
-    left:100%;
-}
-
-body.active > .page-2 {
-    display:block;
-    left:0;
-}
-
-body.active > .page-1 {
-    left:-100%;
-}
-
-body.active > .page-1 > .main-slider-box > .slider {
-    max-width:100%;
-    min-width:100%;
-    left:0;
-    
-}
