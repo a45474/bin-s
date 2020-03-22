@@ -79,7 +79,7 @@
     padding-top:40px;
     padding-left:30px;
     box-sizing:border-box;
-    border-bottom:2px solid #eee;
+/*    border-bottom:2px solid #eee;*/
     cursor:pointer;
 }
 
@@ -101,7 +101,7 @@
     height:calc(100% / 5);
     width:calc(100% - 80px);
     padding-left:10px;
-    font-size:20px;
+    font-size:18px;
     font-weight:600;
     position: relative;
     letter-spacing: -1px;
@@ -140,4 +140,9 @@
 
 .page > .inner > .contents > .tab-box > .tab.hidden {
     display: none;
+}
+
+.page > .inner > .contents > .video-box {
+    width:60%;
+    height:100%;
 }
