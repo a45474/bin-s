@@ -1,0 +1,283 @@
+
+.page {
+    position:relative;
+    overflow:hidden;
+    height:100vh;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+.page  > .inner {
+    width:1000px;
+    position:absolute;
+    background-color:rgba(255,255,255,.5);
+    height:400px;
+    top:57%;
+    left:50%;
+    transform:translatex(-50%) translatey(-50%);
+    border-radius:30px;
+    background-position:center;
+    transition:background-color .5s;
+}
+
+.page  > .inner:hover {
+    background-color:rgba(255,255,255,.8);
+}
+
+.page > .title {
+    color:white;
+    font-size:45px;
+    text-transform:uppercase;
+    text-shadow:5px 5px 5px rgba(255, 255, 255, 1);
+    position:absolute;
+    top:20%;
+    left:50%;
+    transform:translatex(-50%);
+}
+
+.page > .title > span > i {
+    font-size:23px;
+    position:absolute;
+    top:50%;
+    left:-50px;
+    transform:translatey(-50%);
+    text-shadow:5px 5px 5px rgba(255, 255, 255, .5);
+}
+
+.page > .title > span > i:nth-of-type(2) {
+    left:auto;
+    right:-50px;
+    transform:translatey(-50%);
+}
+
+
+.page > .inner > .text-box > .text-box-inner {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translatex(-50%) translatey(-50%);
+}
+
+
+.page > .inner > .text-box > .text-box-inner > div {
+    white-space:nowrap;
+    font-size:14px;
+    margin-bottom:10px;
+    font-weight:bold;
+}
+
+/* 페이지1 프로필 시작 */
+.page-1 {
+    background-color:#E1BEE7;
+    background-image:url(https://github.com/a45474/LeeDoBin/blob/master/portfolio/index.img/pink-2832485_1920.jpg?raw=true);
+}
+
+.page-1 > .inner > div {
+    width:50%;
+    height:100%;
+    position:relative;
+}
+
+.page-1 > .inner > .text-box > .text-box-inner > div > .title {
+    font-weight:bold;
+    color:#558B2F;
+    padding-right:15px;
+}
+
+.page-1 > .inner > .text-box > .text-box-inner > div > span:nth-of-type(2) {
+    color:#363636;
+}
+
+/* 페이지2 이력 */
+.page-2 {
+    background-color:aqua;
+    background-image:url(https://github.com/a45474/LeeDoBin/blob/master/portfolio/index.img/flower-1.jpg?raw=true);
+}
+
+.page-2 > .inner > .text-box > .text-box-inner > div {
+    border-bottom:1px solid #ccc;
+    padding-bottom:15px;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.page-2 > .inner > .text-box > .text-box-inner > div:nth-of-type(1) {
+    border-top:1px solid #ccc;
+    padding-top:10px;
+}
+
+.page-2 > .inner {
+    color:#363636;
+}
+
+/* 페이지 3 스킬 */
+.page-3 {
+    background-color:;
+    background-image:url(https://cdn.pixabay.com/photo/2016/07/05/16/47/wall-1498954_960_720.jpg);
+}
+
+.page-3 > .inner {
+    background-color:transparent;
+}
+
+.page-3  > .inner:hover {
+    background-color:transparent;
+}
+
+.page-3 > .inner > div {
+    text-align:center;
+    position:relative;
+    height:150px;
+    margin-bottom:50px;
+}
+
+.page-3 > .inner > div > div {
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translatex(-50%);
+    box-sizing:border-box;
+    width:auto;
+    width:550px;
+}
+
+.page-3 > .inner > div:nth-of-type(2) > div {
+    width:350px !important;
+}
+
+.page-3 > .inner > div > div > div {
+    width:150px;
+    height:150px;
+    background-color:rgba(255,255,255,.2);
+    box-sizing:border-box;
+    color:#fff;
+    position:relative;
+    box-shadow:5px 5px 10px rgba(255, 255, 255, 1);
+    border-radius:30px;
+    transition:background-color .8s, transform .8s, border .8s;
+}
+
+.page-3 > .inner > div > div > div:hover {
+    background-color:#fff;
+    color:#558B2F;
+    transform:scale(1.5);
+    border-radius:100%;
+    border:10px solid gold;
+}
+
+.page-3 > .inner > div > div > div:hover > div {
+    font-size:30px;
+}
+
+.page-3 > .inner > div > div > div:not(:last-child) {
+    margin-right:50px;
+}
+
+.page-3 > .inner > div > div > div > div {
+    position:absolute;
+    font-size:20px;
+    top:50%;
+    left:50%;
+    transform:translatex(-50%) translatey(-50%);
+    text-transform:uppercase;
+    font-weight:bold;
+}
+
+.page-3 > .inner > div:nth-of-type(2) > div > div > div {
+    letter-spacing:-2px;
+}
+
+/* 페이지4 관심사 */
+.page-4 {
+    background-image:url(https://cdn.pixabay.com/photo/2015/10/05/17/09/minion-972908_960_720.jpg);
+}
+
+.page-4 > .title > span> i {
+    font-size:30px;
+}
+
+.page-4 > .inner > .text-box > .text-box-inner > div {
+    font-size:15px;
+    padding:10px 0;
+    letter-spacing:-1px;
+    color:#363636;
+    transition:all .5s;
+    text-align:center;
+}
+
+.page-4 > .inner > .text-box > .text-box-inner > div > span {
+    display:none;
+    color:#D81B60;
+}
+
+.page-4 > .inner > .text-box > .text-box-inner > div:nth-of-type(4) > span {
+    padding-left:30px;
+}
+
+.page-4 > .inner > .text-box > .text-box-inner > div:hover > span {
+    display:inline-block;
+}
+
+.page-4 > .inner > .text-box > .text-box-inner > div > i:nth-of-type(2) {
+    display:none;
+    color:#D32F2F;
+    transform:rotate(-15deg);
+    font-size:30px;
+}
+
+.page-4 > .inner > .text-box > .text-box-inner > div:hover {
+    font-size:20px;
+}
+
+.page-4 > .inner > .text-box > .text-box-inner > div:hover > i:nth-of-type(2) {
+    display:inline-block;
+}
+
+.page-4 > .inner > .text-box > .text-box-inner > div:hover > i:nth-of-type(1) {
+    display:none;
+}
+
+/* 페이지5 꿈 */
+.page-5 {
+    background-color:#363636;
+    background-image:url(https://github.com/a45474/LeeDoBin/blob/master/portfolio/index.img/bone-1.jpg?raw=true);
+/*     background-blend-mode:overlay; */
+
+
+}
+
+.page-5 > .inner {
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+
+.page-5 > .inner > img {
+    height:100%;
+    width:auto;
+    opacity:.8;
+}
+
+/* 페이지6 */
+.page-6 {
+    background-image:url(https://github.com/a45474/LeeDoBin/blob/master/portfolio/index.img/bone-1.jpg?raw=true);
+    background-position:center;
+}
+
+/* 페이지-7 */
+.page-7 {
+    background-image:url(https://github.com/a45474/LeeDoBin/blob/master/portfolio/index.img/bone-1.jpg?raw=true);
+    background-position:bottom;
+}
+
+.page-7 > .inner {
+    background-color:transparent;
+    color:white;
+    font-size:50px;
+    white-space:nowrap;
+    top:50%;
+}
+
+.page-7 > .inner:hover {
+    background-color:transparent;
+}
