@@ -1,0 +1,1410 @@
+/*  폰트 적용 */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/*노말라이즈*/
+html,
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+/*라이브러리*/
+.con {
+    margin: 0 auto;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.cell {
+    float: left;
+    box-sizing: border-box;
+}
+
+.cell-right {
+    float: right;
+    box-sizing: border-box;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
+
+.absolute-middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.absolute-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img-box {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.img-box > img {
+    width: 100%;
+    display: block;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
+
+.line-height-0 {
+    line-height: 0;
+}
+
+.line-height-0 > * {
+    line-height: normal;
+}
+
+
+/*커스텀*/
+body {
+    overflow-x:
+        hidden;
+
+}
+
+.con-1 {
+    max-width: 1500px;
+    min-width: 1000px;
+}
+
+.con-2 {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.top-bar {
+    background-color: rgba(0, 0, 0, .9);
+    padding: 20px 0;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    z-index: 8;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+}
+
+.top-bar.active {
+    position: fixed;
+    top: 0;
+}
+
+.top-bar > .inner > .row {
+    vertical-align: middle;
+}
+
+.top-bar > .inner > .row > .cell > a {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: :-1px;
+    padding: 0px 80px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.top-bar > .inner > .row:nth-of-type(1) > .cell {
+    position: relative;
+}
+
+.top-bar > .inner > .row:nth-of-type(1) > .cell::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 3.5px;
+    background-color: white;
+    bottom: 0;
+    transform: translateY(500%)translateX(-50%);
+    left: 50%;
+    transition: width .5s;
+}
+
+.top-bar > .inner > .row:nth-of-type(1) > .cell > ul {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    transform: translatex(-50%) translatey(110%);
+    left: 50%;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 20px 0;
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid #eee;
+}
+
+.top-bar > .inner > .row:nth-of-type(1) > .cell:hover > ul,
+.top-bar > .inner > .row:nth-of-type(1) > .cell.active > ul {
+    display: block;
+}
+
+.top-bar > .inner > .row:nth-of-type(1) > .cell > ul > li {
+    font-size: 15px;
+    padding: 6px 0;
+}
+
+.top-bar > .inner > .row:nth-of-type(1) > .cell > ul > li:hover {
+    color: white;
+    background-color: #000;
+}
+
+.top-bar > .inner > .row:nth-of-type(1) > .cell.active::after,
+.top-bar > .inner > .row:nth-of-type(1) > .cell:hover::after,
+.top-bar > .inner > .row:nth-of-type(1) > .cell:active::after {
+    width: 80px;
+}
+
+.top-bar > .inner > .right-box {
+    color: white;
+    width: 120px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translatey(-50%);
+}
+
+.top-bar > .inner > .right-box > .cell:nth-of-type(1) > .btn {
+    cursor: pointer;
+    font-size: 14px;
+    border: 1.5px solid;
+    padding: 2px 6px 4px 6px;
+    letter-spacing: -1px;
+    display: block;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.top-bar > .inner > .right-box > .cell.active > .btn {
+    color: #000;
+}
+
+.top-bar > .inner > .right-box > .cell:nth-of-type(1) {
+    position: relative;
+}
+
+.top-bar > .inner > .right-box > .cell:nth-of-type(1) > .pop-up {
+    position: absolute;
+    border: 2px solid #eee;
+    color: #000;
+    width: 100px;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    display: none;
+    background-color: white;
+    z-index: -1;
+    padding-bottom: 14px;
+    box-sizing: border-box;
+}
+
+.top-bar > .inner > .right-box > .cell:nth-of-type(1).active > .pop-up {
+    display: block;
+}
+
+.top-bar > .inner > .right-box > .cell > .pop-up > div:nth-of-type(2) > div {
+    padding-top: 3px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.top-bar > .inner > .right-box > .cell > .pop-up > div:nth-of-type(2) > div:hover {
+    color: white;
+    background-color: #000;
+}
+
+.top-bar > .inner > .right-box > .cell > .pop-up > div:nth-of-type(1) {
+    background-color: transparent;
+    height: 55px;
+}
+
+.top-bar > .inner > .right-box > .cell:nth-of-type(2) {
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    cursor: pointer;
+}
+
+.top-bar > .inner > .right-box > .cell:nth-of-type(2) > span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    top: 0;
+    left: 0;
+}
+
+.top-bar > .inner > .right-box > .cell:nth-of-type(2) > span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.top-bar > .inner > .right-box > .cell:nth-of-type(2) > span:nth-of-type(3) {
+    top: auto;
+    bottom: 0;
+}
+
+.top-bar > .inner > .logo-box {
+    width: 135px;
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    left: 0;
+}
+
+/* 팝업 시작 */
+.popup-bg {
+    display: none;
+}
+
+.popup-all-menu {
+    width: 1200px;
+    height: 736px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) scale(.8);
+    border-radius: 20px;
+    display: none;
+    background-image: url(https://a45474.github.io/LeeDoBin/sungmu/index.img/popup-all-menu-02.png);
+}
+
+.popup-all-menu.active {
+    display: block;
+}
+
+.popup-bg.active {
+    display: block;
+}
+
+.popup-all-menu > .logo-box {
+    margin: 100px 0;
+}
+
+.popup-all-menu > div > ul > li {
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+.popup-all-menu > div > ul > li > .title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.popup-all-menu > div > ul > li > ul > li {
+
+    padding: 10px 0;
+    letter-spacing: -1px;
+}
+
+.popup-all-menu > div > ul {
+    margin-bottom: 90px;
+}
+
+.popup-all-menu > .close-btn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 100%;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.popup-all-menu > .close-btn > div {
+    height: 3px;
+    background-color: #363636;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.popup-all-menu > .close-btn > div:nth-of-type(2) {
+    transform: translateX(-50%) translateY(-50%) rotate(90deg);
+}
+
+/* 페이지 공통 시작 */
+
+.bottom-wave {
+    background-image: url(./index.img/wave-pattern-01.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto 220px;
+}
+
+.page {
+    height: 100vh;
+    position: relative;
+}
+
+.page > .inner {
+    position: absolute;
+    left: 50%;
+    top: 150px;
+    transform: translateX(-50%);
+}
+
+.page > .inner > .title {
+    margin-bottom: 80px;
+    position: relative;
+    text-align: center;
+}
+
+.page > .inner > .title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: #363636;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(25px);
+}
+
+.page > .inner > .title > span {
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.page > .inner > .contents {
+    position: relative;
+}
+
+.page > .inner > .contents > .text {
+    font-size: 14px;
+    letter-spacing: -1px;
+    line-height: 22px;
+}
+
+/* 문짝 시작 */
+.page > .left-dore,
+.page > .right-dore {
+    position: absolute;
+    height: 100%;
+    transition: transform 3s;
+    width: 50%;
+    height: 100%;
+    z-index: 5;
+}
+
+.page > .left-dore > img,
+.page > .right-dore > img {
+    position: absolute;
+    width: calc(100% / 5 * 2);
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: transform 3.5s;
+}
+
+.page > div > img:nth-of-type(2) {
+    left: 40%;
+    transition: transform 2s 1s;
+}
+
+.page > div > img:nth-of-type(3) {
+    left: 80%;
+}
+
+.page > .left-dore {
+    left: 0;
+    transform: translatex(-20%);
+}
+
+.page > .right-dore {
+    right: 0;
+    transform: translatex(0%);
+}
+
+.page.active > .left-dore > img:nth-of-type(3) {
+    transform: translatex(-200%);
+}
+
+.page.active > .left-dore > img:nth-of-type(2) {
+    transform: translatex(-100%);
+}
+
+.page.active > .right-dore > img:nth-of-type(1) {
+    transform: translatex(200%);
+}
+
+.page.active > .right-dore > img:nth-of-type(2) {
+    transform: translatex(100%);
+}
+
+.page > .left-dore > img:nth-of-type(2) {
+    z-index: -1;
+}
+
+.page > .left-dore > img:nth-of-type(3) {
+    z-index: -2;
+}
+
+@media (max-width:1000px) {
+
+    .page > .left-dore,
+    .page > .right-dore {
+        display: none;
+    }
+}
+
+/* 문짝 끝 */
+
+
+/* 페이지네이션 시작 */
+.pagination-box {
+    position: fixed;
+    top: 50%;
+    transform: translatey(-50%);
+    right: 12%;
+    z-index: 10;
+    transition: opacity .5s;
+}
+
+.pagination-box > .pagination > li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.pagination-box > .pagination > li > a {
+    display: block;
+    line-height: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+    color: #333;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+.pagination-box > .pagination > li > a::after {
+    content: "";
+    display: none;
+    position: absolute;
+    width: 5px;
+    height: 18px;
+    background-color: #273575;
+    top: 50%;
+    right: 0;
+    transform: translateY(-47%);
+}
+
+.pagination-box > .pagination > li > a::before {
+    content: "";
+    display: none;
+    position: absolute;
+    width: 5px;
+    height: 18px;
+    background-color: #ee3224;
+    top: 50%;
+    left: 0;
+    transform: translateY(-47%);
+}
+
+.pagination-box > .pagination > li > a.active::after,
+.pagination-box > .pagination > li > a.active::before {
+    display: block;
+}
+
+.pagination-box > .top-btn,
+.pagination-box > .bottom-btn {
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    position: absolute;
+    cursor: pointer;
+    background-image: url(https://a45474.github.io/LeeDoBin/sungmu/index.img/ico-dragon-fly-03.png);
+    transition: top .5s, bottom .5s;
+    border-radius: 100%
+}
+
+.pagination-box > .top-btn {
+    top: -40px;
+    left: 50%;
+    transform: translatex(-50%);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+}
+
+.pagination-box > .top-btn:active {
+    top: -80px;
+}
+
+.pagination-box > .bottom-btn {
+    transform: translatex(50%) rotate(180deg);
+    right: 50%;
+    bottom: -40px;
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, .5);
+}
+
+.pagination-box > .bottom-btn:active {
+    bottom: -80px;
+}
+
+@media (max-width:1200px) {
+    .pagination-box {
+        display: none;
+    }
+}
+
+html[data-current-index="0"] .pagination-box,
+html[data-current-index="6"] .pagination-box {
+    opacity: 0;
+}
+
+/* 페이지네이션 끝 */
+
+/* 페이지1 시작 */
+.page-1 > .inner > .contents {
+
+    position: relative;
+    height: 400px;
+}
+
+.page-1 > .inner > .contents > .text {
+    font-size: 16px;
+    line-height: 35px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translatex(-50%) translatey(-50%);
+}
+
+/* 페이지2 시작 */
+
+.page-2 > .inner > .contents > .text {
+    width: 45%;
+}
+
+.page-2 > .inner {
+    top: 120px;
+}
+
+.page-2 > .inner > .contents > .text > .sub-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 110px;
+}
+
+.page-2 > .inner > .contents > .img-box {
+    /*     position: absolute;
+    top:-50px;
+    left:0;
+    border:1px solid red; */
+    margin-top: -30px;
+}
+
+@media (max-width:1000px) {
+    .page-2 > .inner > .contents > .img-box {
+        position: absolute;
+        top: -50px;
+        left: 0;
+
+    }
+}
+
+@media (max-width:400px) {
+    .page-2 > .inner > .contents > .img-box {
+        float: none;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .page-2 > .inner > .contents > .text {
+        float: none;
+        margin: 0 auto;
+
+    }
+}
+
+/* 페이지3 시작 */
+/* 탭 */
+
+
+.page-3 > .inner > .contents {
+    position: relative;
+}
+
+.page-3 > .inner > .contents > .tab-contents-box > .contents > .slider-box {
+    width: 65%;
+    background-color: #000;
+}
+
+.page-3 > .inner > .contents > .tab-contents-box > .contents > .text-box {
+    width: 35%;
+    padding: 50px;
+    background-color: #eee;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: -1px;
+    height: 490px;
+}
+
+.page-3 > .inner > .contents > .tab-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+}
+
+.page-3 > .inner > .contents > .tab-box > .tab-list {
+    overflow: hidden;
+    width: 0;
+    transition: width .5s;
+    width: 0;
+}
+
+.page-3 > .inner > .contents > .tab-box > .tab-list.active {
+    width: 130px;
+}
+
+.page-3 > .inner > .contents > .tab-box > .tab-box-btn {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 50px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, .9);
+    ;
+    box-shadow: 3px -4px 5px rgba(255, 255, 255, .7);
+    top: 50%;
+    right: -35px;
+    transform: translateY(-50%) rotate(90deg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 80%;
+    background-image: url(https://github.com/a45474/LeeDoBin/blob/master/sungmu/index.img/ico-dragon-fly-03.png?raw=true);
+    border-radius: 5px 5px 0px 0px;
+    cursor: pointer;
+}
+
+.page-3 > .inner > .contents > .tab-box > .tab-list > .tab {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    padding: 10px 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, .9);
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.page-3 > .inner > .contents > .tab-box > div > div:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+/* 탭 끝 */
+
+/* 탭 콘텐츠 시작 */
+.page-3 > .inner > .contents > .tab-contents-box > .contents {
+    display: none;
+}
+
+.page-3 > .inner > .contents > .tab-contents-box > .contents.active {
+    display: block;
+}
+
+/* 탭 콘텐츠 끝 */
+
+@media (max-width:900px) {
+    .page-3 > .inner > .contents {
+        margin: 0 20px;
+    }
+
+    .page-3 > .inner > .contents > .tab-contents-box > .contents > .text-box,
+    .page-3 > .inner > .contents > .tab-contents-box > .contents > .slider-box {
+        float: none;
+        width: 100% !important;
+    }
+
+    .page-3 > .inner > .contents > .tab-contents-box > .contents > .text-box {
+        height: auto;
+    }
+}
+
+/* 선생님 데모 적용 시작 */
+/* 캐러셀 1 */
+.page-3 > .inner > .contents > .tab-contents-box > .contents > .slider-box > .carousel-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item {
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-3 > .inner > .contents > .tab-contents-box > .contents > .slider-box > .carousel-1 > .owl-carousel > .owl-nav {
+    margin: 0 !important;
+}
+
+.page-3 > .inner > .contents > .tab-contents-box > .contents > .slider-box > .carousel-1 > .owl-carousel > .owl-nav > div,
+.carousel-1 > .owl-carousel > .owl-nav > div:hover {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    background-position: center center;
+    opacity: .8;
+    background-image: url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/ico-dragon-fly-03.png?raw=true);
+}
+
+.page-3 > .inner > .contents > .tab-contents-box > .contents > .slider-box > .carousel-1 > .owl-carousel > .owl-nav > div.owl-prev {
+    left: 10%;
+    transform: translatey(-50%) rotate(-90deg) !important;
+}
+
+.page-3 > .inner > .contents > .tab-contents-box > .contents > .slider-box > .carousel-1 > .owl-carousel > .owl-nav > div.owl-next {
+    right: 10%;
+    transform: translatey(-50%) rotate(90deg) !important;
+}
+
+
+.page-3 > .inner > .contents > .tab-contents-box > .contents > .slider-box > .carousel-1[data-carousel-1-autoplay-status="Y"] .play {
+    display: none;
+}
+
+.page-3 > .inner > .contents > .tab-contents-box > .contents > .slider-box > .carousel-1[data-carousel-1-autoplay-status="N"] .stop {
+    display: none;
+}
+
+.page-3 > .inner > .contents > .tab-contents-box > .contents > .slider-box > .carousel-1 > .owl-carousel > .owl-stage-outer > .owl-stage {
+    box-sizing: border-box;
+}
+
+.page-3 > .inner > .contents > .tab-contents-box > .contents > .slider-box > .carousel-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item.active > .item {
+    border: 5px solid gold;
+    box-sizing: border-box;
+}
+
+/* 캐러셀 2 */
+.page-3 > .inner > .contents > .tab-contents-box > .contents > .slider-box > .carousel-2 {
+    padding: 10px 0;
+}
+
+.page-3 > .inner > .contents > .tab-contents-box > .contents > .slider-box > .carousel-2 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item {
+    height: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.page-3 > .inner > .contents > .tab-contents-box > .contents > .slider-box > .carousel-2 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item.active {
+    border: 5px solid red !important;
+}
+
+.page-3 > .inner > .contents > .tab-contents-box > .contents > .slider-box > .carousel-2[data-carousel-1-autoplay-status="Y"] .play {
+    display: none;
+}
+
+.page-3 > .inner > .contents > .tab-contents-box > .contents > .slider-box > .carousel-2[data-carousel-1-autoplay-status="N"] .stop {
+    display: none;
+}
+
+.page-3 > .inner > .contents > .tab-contents-box > .contents > .slider-box .item > h1 {
+    display: none;
+}
+
+/* 페이지5 시작 */
+.page-5 > .inner > .contents > div {
+    width: 50%;
+    padding: 50px;
+}
+
+.page-5 > .inner > .contents > div > div {
+    margin-bottom: 30px;
+
+}
+
+.page-5 > .inner > .contents > div > div > .text {
+    font-size: 14px;
+    letter-spacing: -1px;
+}
+
+.page-5 > .inner > .contents > div > div > .title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.page-5 > .inner > .contents > div > div > .title > span {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+}
+
+
+.page-5 > .inner > .contents > div > div > .title {
+    margin-bottom: 20px;
+}
+
+.page-5 > .inner > .contents > div > div > .title > span {
+    margin-right: 15px;
+}
+
+
+.page-5 > .inner > .contents > div:nth-of-type(1) > div:nth-of-type(1) > .title > span {
+    background-image: url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/ico-01.png?raw=true);
+}
+
+.page-5 > .inner > .contents > div:nth-of-type(1) > div:nth-of-type(2) > .title > span {
+    background-image: url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/ico-03.png?raw=true);
+}
+
+.page-5 > .inner > .contents > div:nth-of-type(2) > div:nth-of-type(1) > .title > span {
+    background-image: url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/ico-02.png?raw=true);
+}
+
+/* 푸터 시작 */
+
+.footer {
+    background-color: #363636;
+}
+
+.footer > .inner {
+    padding: 60px 0;
+}
+
+.footer > .inner > .cell:nth-of-type(1) > .copyright-box {
+    border-right: 1px solid #eee;
+    padding-right: 90px;
+}
+
+.footer > .inner > .cell:nth-of-type(1) > .logo-box {
+    margin-right: 70px;
+}
+
+.footer > .inner > .cell:nth-of-type(1) > .copyright-box > div > span {
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: :-1px;
+    font-weight: 100;
+}
+
+.footer > .inner > .cell:nth-of-type(1) > .copyright-box > div > .notice {
+    font-weight: 600;
+}
+
+.footer > .inner > .cell:nth-of-type(1) > .copyright-box > div:nth-of-type(2) > span:nth-of-type(2) {
+    letter-spacing: .5px;
+}
+
+.footer > .inner > .cell:nth-of-type(1) > .copyright-box > div:nth-of-type(1) > span {
+    padding-right: 20px;
+}
+
+.footer > .inner > .cell:nth-of-type(1) > .copyright-box > div:nth-of-type(3) {
+    margin-top: 40px;
+}
+
+.footer > .inner > .cell:nth-of-type(2) {
+    padding-left: 90px;
+}
+
+.footer > .inner > .cell:nth-of-type(2) > div > span {
+    font-size: 45px;
+    color: #00ffff;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 52px;
+}
+
+@media (max-width:1500px) {
+    .footer > .inner {
+        padding: 50px;
+        width: 100%;
+    }
+
+    .footer > .inner > .cell:nth-of-type(1) > .copyright-box > div > span {
+        font-size: 15px;
+        color: #fff;
+        letter-spacing: :-1px;
+        font-weight: 100;
+    }
+
+    .footer > .inner > .cell {
+        float: none !important;
+    }
+
+    .footer > .inner > .cell:nth-of-type(1) > .copyright-box {
+        padding-top: 40px;
+        clear: both;
+    }
+
+    .footer > .inner > .cell:nth-of-type(2) {
+        padding-left: 0;
+        padding-top: 40px;
+    }
+
+    .footer > .inner > .cell:nth-of-type(2) > div {
+        float: left;
+        padding-right: 50px;
+    }
+
+    .footer > .inner > .cell:nth-of-type(1) > .copyright-box {
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 40px;
+    }
+}
+
+/* 푸터 끝 */
+
+@media (max-width:1000px) {
+
+    .con-1,
+    con-2 {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .top-bar {
+        top: 0;
+        opacity: 1;
+    }
+
+    .top-bar > .inner > .row:nth-of-type(1) {
+        display: none;
+    }
+
+    .top-bar > .inner {
+        height: 70px;
+        box-sizing: border-box;
+    }
+
+    .top-bar > .inner > .logo-box {
+        width: 180px;
+        left: 30px;
+    }
+
+    .top-bar > .inner > .right-box {
+        width: 140px;
+        height: 50px;
+        right: 30px;
+    }
+
+    .top-bar > .inner > .right-box > .cell > .btn {
+        font-size: 18px !important;
+        border: 3.5px solid !important;
+        letter-spacing: -1px;
+        display: block;
+        font-weight: 600;
+        border-radius: 5px;
+        padding: 4px 6px !important;
+        box-sizing: border-box;
+    }
+
+    .top-bar > .inner > .right-box > .cell:nth-of-type(2) {
+        height: 70%;
+        width: 45px;
+    }
+
+    .top-bar > .inner > .right-box > .cell:nth-of-type(2) > span {
+        height: 4px;
+    }
+
+    .popup-all-menu {
+        width: 100%;
+        height: 100%;
+        background-size: 100% 100%;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%) scale(1);
+        border-radius: 15px;
+    }
+
+    .page > .inner {
+
+        position: absolute;
+        top: 130px;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+
+    .footer > .inner > .cell:nth-of-type(1) > .copyright-box > div > span {
+        display: block;
+    }
+
+    .footer > .inner > .cell:nth-of-type(2) > div {
+        float: none;
+    }
+
+    /*     .page > .scroll-down-btn {
+        display:none;
+    } */
+
+}
+
+.page-0 > .main-slider-box {
+    position: relative;
+    height: 100vh;
+}
+
+.page-0 > .main-slider-box > .mobile-text {
+    position: absolute;
+    width: 70vw;
+    height: 40vw;
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 30px;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    text-align: center;
+    transform: translatex(-50%) translatey(-50%);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+    display: none;
+}
+
+.page-0 > .main-slider-box > .mobile-text > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    text-shadow: 3px 3px 5px rgba(255, 255, 255, .5);
+    font-size: 7vw;
+    display: block;
+    transform: translatex(-50%) translatey(-50%);
+    white-space: nowrap;
+    letter-spacing: -2px;
+
+}
+
+@media (max-width:1000px) {
+    .page-0 > .main-slider-box > .mobile-text {
+        display: block;
+    }
+}
+
+.page-0 > .main-slider-box > .main-slider > .slides > .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translatex(-50%) translatey(-50%);
+    min-width: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-slider-box > .slider-k {
+    position: relative;
+    user-select: none;
+}
+
+.main-slider-box > .slider-k .side-btns > div {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main-slider-box > .slider-k .side-btns > div:hover {
+    opacity: .9;
+}
+
+.main-slider-box > .slider-k .side-btns > div > span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transition: left .5s, right .5s;
+    transform: translateY(-50%) rotate(-90deg);
+    width: 80px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-image: url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/ico-dragon-fly-02.png?raw=true);
+    background-size: contain;
+    background-position: center center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 10%;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, .5);
+}
+
+.main-slider-box > .slider-k .side-btns > div:last-child > span {
+    transform: translateY(-50%) rotate(90deg);
+    right: 40px;
+    left: auto;
+    box-shadow: 5px -5px 5px rgba(0, 0, 0, .5);
+}
+
+.main-slider-box > .slider-k .side-btns > div:active > span {
+    left: inherit;
+}
+
+.main-slider-box > .slider-k .side-btns > div:last-child:active > span {
+    left: auto;
+    right: inherit;
+}
+
+.main-slider-box > .slider-k .side-btns > div:last-child {
+    left: auto;
+    right: 0;
+}
+
+@media (max-width:1000px) {
+    .main-slider-box > .slider-k .side-btns {
+        display: none;
+    }
+}
+
+.main-slider-box > .slider-k.height-full {
+    height: 100%;
+}
+
+.main-slider-box > .slider-k .slides > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s, visibility 0.5s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Malgun Gothic";
+    background-position: 50% 0;
+}
+
+.main-slider-box > .slider-k .slides > div.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.main-slider-box > .slider-k .page-nav {
+    position: absolute;
+    bottom: 40px;
+    left: 55px;
+    padding: 10px 0;
+}
+
+.main-slider-box > .slider-k .page-nav > div {
+    display: inline-block;
+    color: transparent;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 4px;
+}
+
+.main-slider-box > .slider-k .page-nav > div.active {
+    background-color: red;
+}
+
+@media (max-width:1000px) {
+    .main-slider-box > .slider-k .page-nav {
+        display: none;
+    }
+
+    .main-slider-box > .slider-k .autoplay-btn-box {
+        display: none;
+    }
+}
+
+.main-slider-box > .slider-k .autoplay-btn-box {
+    position: absolute;
+    bottom: 53px;
+    left: 330px;
+    cursor: pointer;
+}
+
+.main-slider-box > .slider-k .autoplay-btn-box > div {
+    width: 17px;
+    height: 17px;
+    background-color: ;
+    border-radius: 100%;
+    transition: background-color .5s;
+}
+
+.main-slider-box > .slider-k .autoplay-btn-box > div > i {
+    color: #000;
+    display: block;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translatex(-50%) translatey(-50%);
+}
+
+.main-slider-box > .slider-k .autoplay-btn-box:hover > div {
+    background-color: #000;
+}
+
+.main-slider-box > .slider-k .autoplay-btn-box:hover > div > i {
+    color: #fff;
+}
+
+.main-slider-box > .slider-k .autoplay-btn-box > .btn-stop-play > i {
+    font-size: 10px;
+}
+
+.main-slider-box > .slider-k .autoplay-btn-box > .btn-start-play > i {
+    font-size: 22px;
+    left: 55%;
+}
+
+.main-slider-box > .slider-k[data-autoplay-now-work="Y"] .autoplay-btn-box > .btn-start-play {
+    display: none;
+}
+
+.main-slider-box > .slider-k[data-autoplay-now-work="N"] .autoplay-btn-box > .btn-stop-play {
+    display: none;
+}
+
+/* 페이지 공통 스크롤 다운 버튼 시작 */
+.page > .scroll-down-btn {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 50%;
+    bottom: 20px;
+    transform: translatex(-50%);
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.page > .scroll-down-btn > img {
+    animation-duration: 1s;
+    animation-name: up-down;
+    animation-iteration-count: infinite;
+    display: block;
+    position: absolute;
+    width: 50px;
+    left: 0 !important;
+    transition: opacity 1s !important;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, .5));
+}
+
+.page > .scroll-down-btn > img:nth-of-type(2) {
+    opacity: 0;
+}
+
+.page > .scroll-down-btn:hover > img:nth-of-type(2) {
+    opacity: 1;
+}
+
+.page > .scroll-down-btn:hover > img:nth-of-type(1) {
+    opacity: 0;
+}
+
+.page > .scroll-down-btn > img:nth-of-type(1) {
+    opacity: 1;
+}
+
+@keyframes up-down {
+    0% {
+        border-color: #fff;
+        top: 0px;
+    }
+
+    100% {
+        border-color: #333;
+        top: 10px;
+    }
+}
+
+@media (max-width:1000px) {
+    .page > .scroll-down-btn > img:nth-of-type(1) {
+        display: none;
+    }
+
+    .page > .scroll-down-btn > img:nth-of-type(2) {
+        display: block;
+        opacity: .8;
+    }
+
+}
+
+/* 페이지 공통 스크롤 다운 버튼 끝 */

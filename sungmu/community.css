@@ -13,13 +13,6 @@
     border:1px solid #eee;
 }
 
-.page.bottom-wave {
-    background-size:auto 120px;
-    background:url(./index.img/wave-pattern-01.png), linear-gradient(#fff, #fff, #000);
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
-
 .page > .inner > .contents > ul {
     height:100%;
     background-color:rgba(255,255,255,.9);

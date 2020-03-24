@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>안녕하세요? 성무검도관 입니다.</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+    <!-- owl 캐러셀 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+   
+    <div class="popup-bg fixed" style="width:100%; height:100%; background-color:rgba(0,0,0,.8); z-index: 10"></div>
+<div class="popup-all-menu fixed">
+    <div class="logo-box text-align-center"><img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/logo-01.png" alt=""></div>
+    <div class="close-btn">
+        <div></div>
+        <div></div>
+    </div>
+    <div class="">
+        <ul class="row con" style="width:60%">
+            <li class="cell">
+                <div class="title"><a href="#">검도관소개</a></div>
+                <ul class="">
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">관장이력</a></li>
+                    <li><a href="#">시설소개</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                    <li><a href="#">수련안내</a></li>
+                </ul>
+            </li>
+            <li class="cell">
+                <div class="title"><a href="#">검도자료</a></div>
+                <ul>
+                    <li><a href="#">검도이론</a></li>
+                    <li><a href="#">기본기</a></li>
+                    <li><a href="#">심화과정</a></li>
+                    <li><a href="#">더많은영상</a></li>
+                </ul>
+            </li>
+            <li class="cell">
+                <div class="title"><a href="#">커뮤니티</a></div>
+                <ul>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">Q&A</a></li>
+                    <li><a href="#">갤러리</a></li>
+                    <li><a href="#">페이스북</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="text-align-center">- 성무검도관 사이트를 방문해주신 여러분 반갑습니다. :) hahaha -</div>
+    </div>
+</div>
+
+<div class="top-bar">
+    <div class="inner con con-1 text-align-center relative">
+        <div class="logo-box img-box">
+            <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/logo-03.png" alt="">
+        </div>
+        <ul class="row inline-block">
+            <li class="cell">
+                <a href="#">검도관 소개</a>
+                <ul class="">
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">관장이력</a></li>
+                    <li><a href="#">시설소개</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                    <li><a href="#">수련안내</a></li>
+                </ul>
+            </li>
+            <li class="cell">
+                <a href="#">검도자료</a>
+                <ul>
+                    <li><a href="#">검도이론</a></li>
+                    <li><a href="#">기본기</a></li>
+                    <li><a href="#">심화과정</a></li>
+                    <li><a href="#">더많은영상</a></li>
+                </ul>
+            </li>
+            <li class="cell">
+                <a href="#">커뮤니티</a>
+                <ul>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">Q&A</a></li>
+                    <li><a href="#">갤러리</a></li>
+                    <li><a href="#">페이스북</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="right-box row">
+            <div class="cell">
+                <div class="btn">LANG</div>
+                <div class="pop-up">
+
+                    <div></div>
+                    <div>
+                        <div><a href="#">한국어</a></div>
+                        <div><a href="#">ENGLISH</a></div>
+                        <div><a href="#">日本語</a></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cell">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="pagination-box">
+    <a href="#page-0" class="top-btn"></a>
+    <ul class="pagination">
+        <li><a class="active" href="#page-1">인사말</a></li>
+        <li><a class="" href="#page-2">관장이력</a></li>
+        <li><a class="" href="#page-3">시설안내</a></li>
+        <li><a class="" href="#page-4">오시는길</a></li>
+        <li><a class="" href="#page-5">수련안내</a></li>
+    </ul>
+    <a href="#page-6" class="bottom-btn"></a>
+</div>
+
+<div class="page page-0" data-section-name="page-0">
+    <div class="main-slider-box">
+        <div class="mobile-text"><div>반갑습니다.<br>성무검도관 입니다.</div></div>
+        <div class="main-slider slider-k height-full" data-autoplay="Y" data-autoplay-dir="right" data-autoplay-interval="5000" data-play-stop-button="Y">
+            <div class="slides">
+                <div class="slide active" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/main-slider-slide-12.png?raw=true)">
+                </div>
+                <div class="slide" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/slide-1.png?raw=true)"></div>
+                <div class="slide" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/slide-10.png?raw=true)"></div>
+                <div class="slide" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/slide-11.png?raw=true)"></div>
+                <div class="slide" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/slide-12.png?raw=true)"></div>
+                <div class="slide" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/slide-2.png?raw=true)"></div>
+                <div class="slide" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/slide-3.png?raw=true)"></div>
+                <div class="slide" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/slide-4.png?raw=true)"></div>
+                <div class="slide" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/slide-5.png?raw=true)"></div>
+                <div class="slide" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/slide-6.png?raw=true)"></div>
+                <div class="slide" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/slide-7.png?raw=true)"></div>
+                <div class="slide" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/slide-8.png?raw=true)"></div>
+                <div class="slide" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/slide-9.png?raw=true)"></div>
+                <div class="slide" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/slide-10.png?raw=true)"></div>
+                <div class="slide" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/main-slider-slide-6.png?raw=true)"></div>
+            </div>
+            <div class="side-btns">
+                <div>
+                    <span></span>
+                </div>
+                <div>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-down-btn">
+        <img src="https://github.com/a45474/bin-s/blob/master/sungmu/index.img/ico-scroll-down-01.png?raw=true" alt="">
+        <img src="https://github.com/a45474/bin-s/blob/master/sungmu/index.img/ico-scroll-down-02.png?raw=true" alt="">
+    </div>
+</div>
+<div class="page page-1 bottom-wave" data-section-name="page-1">
+    <div class="left-dore">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+    </div>
+    <div class="right-dore">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+    </div>
+    <div class="inner con-2 con">
+        <div class="title"><span>맞이하는 글</span></div>
+        <div class="contents">
+            <div class="text text-align-center">
+                안녕하세요?<br>
+                성무검도관장 김태홍입니다.<br>
+                저는 올해로 검도의 길에 들어선지 31년이 되었지만<br>
+                아직도 검도가 어렵습니다.<br>
+                수련의 길은 끝이 없다는 것을 매순간 느끼며<br>
+                오늘도 멈추지 않고 정진합니다.<br>
+                성무검도관의 문은 어떤 분께든 활짝 열려있습니다.<br>
+                함께 무도의 길을 걷고자 하시는 분들을<br>
+                언제든 환영합니다.<br>
+                오늘도 좋은 하루 되시길 바랍니다.<br>
+                감사합니다.
+
+            </div>
+        </div>
+    </div>
+    <div class="scroll-down-btn">
+        <img src="https://github.com/a45474/bin-s/blob/master/sungmu/index.img/ico-scroll-down-01.png?raw=true" alt="">
+        <img src="https://github.com/a45474/bin-s/blob/master/sungmu/index.img/ico-scroll-down-02.png?raw=true" alt="">
+    </div>
+</div>
+
+<div class="page page-2" data-section-name="page-2">
+    <div class="left-dore">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+    </div>
+    <div class="right-dore">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+    </div>
+    <div class="inner con-2 con">
+        <div class="title"><span>관장이력</span></div>
+        <div class="contents row">
+            <div class="img-box cell">
+                <img src="https://github.com/a45474/bin-s/blob/master/sungmu/index.img/profile-img.png?raw=true" alt="프로필 이미지">
+            </div>
+            <div class="text cell-right">
+                <div class="sub-title">&nbsp;&nbsp;&nbsp;경력</div>
+                <br>
+                - 현)대전시검도회 승단심사위원<br>
+                - 현)대전시 서구검도연합회 총무이사<br>
+                - 현)대전시 검우회 정회원겸 총무<br>
+                - 대한검도회 사범자격취득1998<br>
+                - 대한검도회 심판자격취득1998<br>
+                - 생활체육지도자 (검도)1998<br>
+                - 검도 연사. 6단<br>
+                - 조선세법4단<br>
+                - 현) 대한검도회 공인 성무검도관. 관장 Since2000<br>
+                - 전)대성검도관 관장 (1998~2000)<br>
+                <br><br>
+                <div class="sub-title">입상내역</div>
+                <br>
+                - 대전시검도회 회장기. 초단부우승1991<br>
+                - 대전시검도회 회장기 2단부우승1992<br>
+                - 대전시검도회회장기 3단부 준우승1995<br>
+                - 대전시 시장기검도대회 대학부개인전 준우승1991<br>
+                - 대전시 서구 검도대표 시민체전 우승 2000<br>
+                - 전국시군구대항 대전시대표 3위(단체전)1997<br>
+                - 사회인 검도대회 3위(단체전)1997<br>
+                - 전국세심관검도대회 우승. 준우승(단체전)1994.1995<br>
+                - 전국유당기검도대회 우승(개인.단체전)2018<br>
+                - 그외 다수 입상<br>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-down-btn">
+        <img src="https://github.com/a45474/bin-s/blob/master/sungmu/index.img/ico-scroll-down-01.png?raw=true" alt="">
+        <img src="https://github.com/a45474/bin-s/blob/master/sungmu/index.img/ico-scroll-down-02.png?raw=true" alt="">
+    </div>
+</div>
+
+<div class="page page-3">
+   <div class="left-dore">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+    </div>
+    <div class="right-dore">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+    </div>
+    <div class="inner con con-2">
+        <div class="title"><span>시설안내</span></div>
+        <div class="contents">
+            <div class="tab-box text-align-center">
+                <div class="tab-list active">
+                    <div class="tab"><span>쾌적한 5층</span></div>
+                    <div class="tab"><span>넓은 공간</span></div>
+                    <div class="tab"><span>샤워실</span></div>
+                    <div class="tab"><span>탈의실</span></div>
+                    <div class="tab"><span>선사유적지 뒤</span></div>
+                    <div class="tab"><span>청사 도보10분</span></div>
+                    <div class="tab"><span>해돋이 명소</span></div>
+                    <div class="tab"><span>주차공간</span></div>
+                </div>
+                <div class="tab-box-btn"></div>
+            </div>
+            <div class="tab-contents-box">
+
+                <div class="contents row contents-1">
+                    <div class="slider-box cell">
+                        <div class="carousel-1">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item active"  onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/door-1.jpg?raw=true);"></div>
+                                <div class="item"  onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/cabinet-1.jpg?raw=true);"></div>
+                                <div class="item"  onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/door-1.jpg?raw=true);"></div>
+                                <div class="item"  onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/cabinet-1.jpg?raw=true);"></div>
+                                <div class="item"  onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/door-1.jpg?raw=true);"></div>
+                                <div class="item"  onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/cabinet-1.jpg?raw=true);"></div>
+                                <div class="item"  onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/door-1.jpg?raw=true);"></div>
+                                <div class="item"  onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/cabinet-1.jpg?raw=true);"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-2">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/door-1.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/cabinet-1.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/door-1.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/cabinet-1.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/door-1.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/cabinet-1.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/door-1.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/cabinet-1.jpg?raw=true);"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="text-box cell">
+                        <div class="text-box-inner">5층이라 통풍이 잘됩니다. 장마철에도 호구관리가 쉽습니다.</div>
+                    </div>
+                </div>
+                <div class="contents row contents-2">
+                    <div class="slider-box cell">
+                        <div class="carousel-1">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item active" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/cabinet-2.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/cabinet-3.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/cabinet-2.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/cabinet-3.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/cabinet-2.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/cabinet-3.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/cabinet-2.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/cabinet-3.jpg?raw=true);"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-2">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item active" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/cabinet-2.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/cabinet-3.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/cabinet-2.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/cabinet-3.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/cabinet-2.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/cabinet-3.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/cabinet-2.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/cabinet-3.jpg?raw=true);"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="text-box cell">
+                        <div class="text-box-inner">공간이 넓어 많은 인원을 수용할 수 있습니다. 대련을 할 때 편합니다.</div>
+                    </div>
+                </div>
+                <div class="contents row contents-3">
+                    <div class="slider-box cell">
+                        <div class="carousel-1">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item active" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/shower%20room-1.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/shower%20room-2.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/shower%20room-3.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/shower%20room-1.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/shower%20room-2.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/shower%20room-3.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/shower%20room-1.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/shower%20room-2.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/shower%20room-3.jpg?raw=true);"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-2">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item active" onclick="Carousel2__itemClicked(this);"  style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/shower%20room-1.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);"  style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/shower%20room-2.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);"  style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/shower%20room-3.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);"  style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/shower%20room-1.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);"  style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/shower%20room-2.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);"  style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/shower%20room-3.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);"  style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/shower%20room-1.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);"  style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/shower%20room-2.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);"  style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/shower%20room-3.jpg?raw=true);"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="text-box cell">
+                        <div class="text-box-inner">샤워실이 마련되어 있어 직장인 분들은 운동 후 샤워를 하고 바로 출근하실 수 있습니다.</div>
+                    </div>
+                </div>
+                <div class="contents row contents-4">
+                    <div class="slider-box cell">
+                        <div class="carousel-1">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item active"  onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/fitting%20room-1.jpg?raw=true);"></div>
+                                <div class="item"  onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/fitting%20room-2.jpg?raw=true);"></div>
+                                <div class="item"  onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/closet-1.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);"  style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/fitting%20room-1.jpg?raw=true);"></div>
+                                <div class="item"  onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/fitting%20room-2.jpg?raw=true);"></div>
+                                <div class="item"  onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/closet-1.jpg?raw=true);"></div>
+                                <div class="item"  onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/fitting%20room-1.jpg?raw=true);"></div>
+                                <div class="item"  onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/fitting%20room-2.jpg?raw=true);"></div>
+                                <div class="item"  onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/closet-1.jpg?raw=true);"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-2">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item active"  onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/fitting%20room-1.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);"  style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/fitting%20room-2.jpg?raw=true);"></div>
+                                <div class="item"  onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/closet-1.jpg?raw=true);"></div>
+                                <div class="item"  onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/fitting%20room-1.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);"  style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/fitting%20room-2.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);"  style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/closet-1.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);"  style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/fitting%20room-1.jpg?raw=true);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);"  style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/fitting%20room-2.jpg?raw=true);"></div>
+                                <div class="item"  onclick="Carousel2__itemClicked(this);" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/closet-1.jpg?raw=true);"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="text-box cell">
+                        <div class="text-box-inner">남여 탈의실이 따로 마련되어 있습니다.</div>
+                    </div>
+                </div>
+                <div class="contents row contents-5 active">
+                    <div class="slider-box cell">
+                        <div class="carousel-1">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item active"  onclick="Carousel2__itemClicked(this);" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Dunsan_prehistoric_site_East_Entrance.jpg/272px-Dunsan_prehistoric_site_East_Entrance.jpg);"></div>
+                                <div class="item"  onclick="Carousel2__itemClicked(this);" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Neolithic_Pit_house_in_Dunsan_prehistoric_site.jpg/1280px-Neolithic_Pit_house_in_Dunsan_prehistoric_site.jpg);"></div>
+                                <div class="item"  onclick="Carousel2__itemClicked(this);" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Neolithic_Pit_House_Site_in_Dunsan_prehistoric_site.jpg/1280px-Neolithic_Pit_House_Site_in_Dunsan_prehistoric_site.jpg);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);"  style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bronze-age_Pit_House_No.2_in_Dunsan_prehistoric_site.jpg/1280px-Bronze-age_Pit_House_No.2_in_Dunsan_prehistoric_site.jpg);"></div>
+                                <div class="item"  onclick="Carousel2__itemClicked(this);" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Dunsan_prehistoric_site_East_Entrance.jpg/272px-Dunsan_prehistoric_site_East_Entrance.jpg);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);"  style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Neolithic_Pit_house_in_Dunsan_prehistoric_site.jpg/1280px-Neolithic_Pit_house_in_Dunsan_prehistoric_site.jpg);"></div>
+                                <div class="item"  onclick="Carousel2__itemClicked(this);" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Neolithic_Pit_House_Site_in_Dunsan_prehistoric_site.jpg/1280px-Neolithic_Pit_House_Site_in_Dunsan_prehistoric_site.jpg);"></div>
+                                <div class="item"  onclick="Carousel2__itemClicked(this);" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bronze-age_Pit_House_No.2_in_Dunsan_prehistoric_site.jpg/1280px-Bronze-age_Pit_House_No.2_in_Dunsan_prehistoric_site.jpg);"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-2">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item active" onclick="Carousel2__itemClicked(this);"  style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Dunsan_prehistoric_site_East_Entrance.jpg/272px-Dunsan_prehistoric_site_East_Entrance.jpg);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);"  style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Neolithic_Pit_house_in_Dunsan_prehistoric_site.jpg/1280px-Neolithic_Pit_house_in_Dunsan_prehistoric_site.jpg);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);"  style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Neolithic_Pit_House_Site_in_Dunsan_prehistoric_site.jpg/1280px-Neolithic_Pit_House_Site_in_Dunsan_prehistoric_site.jpg);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);"  style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bronze-age_Pit_House_No.2_in_Dunsan_prehistoric_site.jpg/1280px-Bronze-age_Pit_House_No.2_in_Dunsan_prehistoric_site.jpg);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);"  style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Dunsan_prehistoric_site_East_Entrance.jpg/272px-Dunsan_prehistoric_site_East_Entrance.jpg);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);"  style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Neolithic_Pit_house_in_Dunsan_prehistoric_site.jpg/1280px-Neolithic_Pit_house_in_Dunsan_prehistoric_site.jpg);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);"  style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Neolithic_Pit_House_Site_in_Dunsan_prehistoric_site.jpg/1280px-Neolithic_Pit_House_Site_in_Dunsan_prehistoric_site.jpg);"></div>
+                                <div class="item" onclick="Carousel2__itemClicked(this);"  style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bronze-age_Pit_House_No.2_in_Dunsan_prehistoric_site.jpg/1280px-Bronze-age_Pit_House_No.2_in_Dunsan_prehistoric_site.jpg);"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="text-box cell">
+                        <div class="text-box-inner">선사유적지 뒷편에 자리하고 있어 경치가 좋습니다.</div>
+                    </div>
+                </div>
+                <div class="contents row contents-6">
+                    <div class="slider-box cell">
+                        <div class="carousel-1">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item active" style="background-image:url(http://www.chungsa.go.kr/chungsa/images/frt/sub1/pic10.gif);"></div>
+                                <div class="item" style="background-image:url(http://www.chungsa.go.kr/chungsa/images/frt/sub1/pic11.gif);"></div>
+                                <div class="item" style="background-image:url(http://file.scourt.go.kr/mainfo/1513326813669_173333.jpg);"></div>
+                                <div class="item" style="background-image:url(http://file.scourt.go.kr/mainfo/1513326820497_173340.jpg);"></div>
+                                <div class="item" style="background-image:url(http://file.scourt.go.kr/mainfo/1564645502232_164502.JPG);"></div>
+                                <div class="item" style="background-image:url(http://www.chungsa.go.kr/chungsa/images/frt/sub1/pic10.gif);"></div>
+                                <div class="item" style="background-image:url(http://www.chungsa.go.kr/chungsa/images/frt/sub1/pic11.gif);"></div>
+                                <div class="item" style="background-image:url(http://file.scourt.go.kr/mainfo/1513326813669_173333.jpg);"></div>
+                                <div class="item" style="background-image:url(http://file.scourt.go.kr/mainfo/1513326820497_173340.jpg);"></div>
+                                <div class="item" style="background-image:url(http://file.scourt.go.kr/mainfo/1564645502232_164502.JPG);"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-2">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item active" style="background-image:url(http://www.chungsa.go.kr/chungsa/images/frt/sub1/pic10.gif);"></div>
+                                <div class="item" style="background-image:url(http://www.chungsa.go.kr/chungsa/images/frt/sub1/pic11.gif);"></div>
+                                <div class="item" style="background-image:url(http://file.scourt.go.kr/mainfo/1513326813669_173333.jpg);"></div>
+                                <div class="item" style="background-image:url(http://file.scourt.go.kr/mainfo/1513326820497_173340.jpg);"></div>
+                                <div class="item" style="background-image:url(http://file.scourt.go.kr/mainfo/1564645502232_164502.JPG);"></div>
+                                <div class="item" style="background-image:url(http://www.chungsa.go.kr/chungsa/images/frt/sub1/pic10.gif);"></div>
+                                <div class="item" style="background-image:url(http://www.chungsa.go.kr/chungsa/images/frt/sub1/pic11.gif);"></div>
+                                <div class="item" style="background-image:url(http://file.scourt.go.kr/mainfo/1513326813669_173333.jpg);"></div>
+                                <div class="item" style="background-image:url(http://file.scourt.go.kr/mainfo/1513326820497_173340.jpg);"></div>
+                                <div class="item" style="background-image:url(http://file.scourt.go.kr/mainfo/1564645502232_164502.JPG);"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="text-box cell">
+                        <div class="text-box-inner">정부청사 도보 5분 거리에 있어, 법원 차량 5분 거리 등 둔산동 출퇴근이 용이합니다.</div>
+                    </div>
+                </div>
+                <div class="contents row contents-7">
+                    <div class="slider-box cell">
+                        <div class="carousel-1">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item active" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/sunrise-1.jpg?raw=true);"></div>
+                                <div class="item" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/sunrise-2.jpg?raw=true);"></div>
+                                <div class="item" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/sunrise-1.jpg?raw=true);"></div>
+                                <div class="item" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/sunrise-2.jpg?raw=true);"></div>
+                                <div class="item" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/sunrise-1.jpg?raw=true);"></div>
+                                <div class="item" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/sunrise-2.jpg?raw=true);"></div>
+                                <div class="item" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/sunrise-1.jpg?raw=true);"></div>
+                                <div class="item" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/sunrise-2.jpg?raw=true);"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-2">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item active" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/sunrise-1.jpg?raw=true);"></div>
+                                <div class="item" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/sunrise-2.jpg?raw=true);"></div>
+                                <div class="item" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/sunrise-1.jpg?raw=true);"></div>
+                                <div class="item" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/sunrise-2.jpg?raw=true);"></div>
+                                <div class="item" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/sunrise-1.jpg?raw=true);"></div>
+                                <div class="item" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/sunrise-2.jpg?raw=true);"></div>
+                                <div class="item" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/sunrise-1.jpg?raw=true);"></div>
+                                <div class="item" style="background-image:url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/camera/sunrise-2.jpg?raw=true);"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="text-box cell">
+                        <div class="text-box-inner">일출 일몰을 볼 수 있습니다.</div>
+                    </div>
+                </div>
+                <div class="contents row contents-8">
+                    <div class="slider-box cell">
+                        <div class="carousel-1">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item active"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-2">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item active"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="text-box cell">
+                        <div class="text-box-inner">가까운 곳에 주차장이 있습니다.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="scroll-down-btn">
+        <img src="https://github.com/a45474/bin-s/blob/master/sungmu/index.img/ico-scroll-down-01.png?raw=true" alt="">
+        <img src="https://github.com/a45474/bin-s/blob/master/sungmu/index.img/ico-scroll-down-02.png?raw=true" alt="">
+    </div>
+</div>
+
+<div class="page page-4" data-section-name="page-4">
+    <div class="left-dore">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+    </div>
+    <div class="right-dore">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+    </div>
+    <div class="inner con-2 con">
+        <div class="title"><span>오시는 길</span></div>
+        <div class="contents">
+            <a href="https://map.kakao.com/?urlX=584877&urlY=796150&urlLevel=4&map_type=TYPE_MAP&map_hybrid=false" target="_blank"><img width="100%" height="400" src="https://map2.daum.net/map/mapservice?FORMAT=PNG&SCALE=5&MX=584877&MY=796150&S=0&IW=504&IH=310&LANG=0&COORDSTM=WCONGNAMUL&logo=kakao_logo" style="border:1px solid #ccc"></a>
+            <div class="hide" style="overflow:hidden;padding:7px 11px;border:1px solid #dfdfdf;border-color:rgba(0,0,0,.1);border-radius:0 0 2px 2px;background-color:#f9f9f9;width:482px;"><strong style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵"></strong>
+                <div style="float: right;position:relative"><a style="font-size:12px;text-decoration:none;float:left;height:15px;padding-top:1px;line-height:15px;color:#000" target="_blank" href="https://map.kakao.com/?urlX=584877&urlY=796150&urlLevel=4&map_type=TYPE_MAP&map_hybrid=false">지도 크게 보기</a></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="scroll-down-btn">
+        <img src="https://github.com/a45474/bin-s/blob/master/sungmu/index.img/ico-scroll-down-01.png?raw=true" alt="">
+        <img src="https://github.com/a45474/bin-s/blob/master/sungmu/index.img/ico-scroll-down-02.png?raw=true" alt="">
+    </div>
+</div>
+
+<div class="page page-5 bottom-wave" data-section-name="page-5">
+    <div class="left-dore">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+    </div>
+    <div class="right-dore">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+        <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/dore-01.png" alt="">
+    </div>
+    <div class="inner con-2 con">
+        <div class="title"><span>수련안내</span></div>
+        <div class="contents row">
+            <div class="cell">
+                <div>
+                    <div class="title row"><span class="cell"></span>수련시간</div>
+                    <div class="text">
+                        <div><span>새벽반 : </span>평일 오전 6:00 ~ 7:00 </div>
+                        <div><span>저녁반 : </span>평일 오후 7:00 ~ 8:00</div>
+                        <div><span>저녁반2 : </span>월·수·금 오후 8:00 ~ 9:00</div>
+                        <div><span>* 방학 및 관원 상황에 맞추어 추가 수업 있음 *<br>자세한 사항은 전화문의</span></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="title row"><span class="cell"></span>관비</div>
+                    <div class="text">
+                        <div><span>주3회 :</span>월 10만원</div>
+                        <div><span>주5회 :</span>월 12만원</div>
+                
+                    </div>
+                </div>
+            </div>
+            <div class="cell">
+                <div>
+                    <div class="title row"><span class="cell"></span>차량운행</div>
+                    <div class="text">
+                        <div><span>* 새벽반은 차량운행이 없습니다. *</span></div>
+                        <div><span>* 자세한 사항 전화문의 *</span></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="title row" class="cell"></div>
+                    <div class="text"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer" data-section-name="page-6">
+
+    <div class="inner con con-1 row">
+        <div class="cell row">
+            <div class="logo-box cell">
+                <img src="https://a45474.github.io/LeeDoBin/sungmu/index.img/logo-02.png" alt="">
+            </div>
+            <div class="copyright-box cell">
+                <div>
+                    <span>주소 : 대전광역시 서구 청사로 123번길 21 우)35214</span>
+                    <span>사업자등록번호 : 250-10-08039</span>
+                    <span>전화 : 042-483-4520</span>
+                    <span>대표 : 김태홍</span>
+                </div>
+                <div>
+                    <span class="notice">본 사이트는 성무검도관 성인부 관원들이 직접 제작하였습니다.</span>
+                    <span>(기획·자료조사/안한울·이도빈, 번역/안한울, 디자인·퍼블리싱·유지보수/이도빈)</span>
+                </div>
+                <div>
+                    <span>ⓒ COPYRIGHT 2020 성무검도관 ALL RIGHTS RESERVED.</span>
+                </div>
+            </div>
+        </div>
+        <div class="cell">
+            <div><span>042.483.4520</span></div>
+            <div><span>010.5428.6965</span></div>
+        </div>
+    </div>
+</div>
+   
+    <script src="./index.js"></script>
+</body>
+
+</html>
