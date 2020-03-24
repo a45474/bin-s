@@ -1,0 +1,71 @@
+body, ul, li {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+a {
+    color:inherit;
+    text-decoration: none;
+}
+
+.con {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-70%);
+}
+
+.con > .inner {
+    text-align: center;
+}
+
+.con > .inner > .title {
+    font-size:50px;
+    margin-bottom:40px;
+}
+
+.con > .inner > div > div {
+    border:1px solid;
+    width:180px;
+    height:40px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.con > .inner > div > div:hover {
+    background-color: #000;
+    color:#fff;
+}
+
+.con > .inner > div > div:nth-of-type(1) {
+    margin-bottom:20px;
+}
+
+.con > .inner > div > div > a {
+    position: absolute;
+    top:50%;
+    left:50%;
+    display: block;
+    transform: translateX(-50%) translateY(-50%);
+    white-space: nowrap;
+    font-size: 20px;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.con > .inner > div > div > a:nth-of-type(2) {
+    font-size:14px;
+    font-weight: 600;
+    color:red;
+    display: none;
+}
+
+.con > .inner > div > div:hover > a:nth-of-type(1) {
+    display: none;
+}
+
+.con > .inner > div > div:hover > a:nth-of-type(2) {
+    display: block;
+}
