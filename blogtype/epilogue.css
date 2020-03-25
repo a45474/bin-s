@@ -1,0 +1,516 @@
+.page {
+    height:100vh;
+    position:relative;
+}
+.page > div {
+    position:absolute;
+}
+
+.page > .text-box > div {
+    text-align:center;
+    font-size:18px;
+    color:white;
+}
+
+.page > .text-box:nth-of-type(1) > div {
+    text-shadow:2px 2px 10px rgba(255, 255, 255, .7);
+}
+
+.page > .text-box > div > span {
+    font-weight:bold;
+    font-size:25px;
+} 
+
+.page > .text-box > div {
+    text-align:center;
+    font-size:18px;
+    color:white;
+}
+
+.page > .text-box:nth-of-type(2) > div > span {
+    color:rgba(255,255,255,.2);
+}
+
+
+.page > .text-box:nth-of-type(2) > div {
+    color:rgba(255,255,255,.1);
+    letter-spacing:-1px;
+}
+
+.page > .text-box:nth-of-type(2) > div > span {
+    color:rgba(255,255,255,.2);
+}
+
+.page > .text-box:nth-of-type(1) > div {
+    text-shadow:2px 2px 10px rgba(255, 255, 255, .7);
+}
+
+.page > .text-box > div > span {
+    font-weight:bold;
+    font-size:25px;
+} 
+
+/* 페이지0 */
+.page-0 {
+    background-color:#5D4037;
+}
+
+.page-0 > .text-box {
+    top:50%;
+    left:50%;
+    transform:translatex(-50%) translatey(-60%);
+    transition:scale 1s 3.2s;
+}
+
+.page-0.active > .text-box {
+    transform:translatex(-50%) translatey(-60%) scale(1.5);
+}
+
+.page-0 > .text-box > div:nth-of-type(2) {
+    font-size:35px;
+    position:absolute;
+    top:-2px;
+    right:-25px;
+}
+
+.page-0 span, .page-0 i {
+    opacity:0;
+}
+
+.page-0.active span:nth-of-type(1) {
+    opacity:1;
+    transition:opacity 2s;
+}
+
+.page-0.active span:nth-of-type(2) {
+    opacity:1;
+    transition:opacity 2s .4s;
+}
+
+.page-0.active span:nth-of-type(3) {
+    opacity:1;
+    transition:opacity 2s .8s;
+}
+
+.page-0.active span:nth-of-type(4) {
+    opacity:1;
+    transition:opacity 2s 1.2s;
+}
+
+.page-0.active span:nth-of-type(5) {
+    opacity:1;
+    transition:opacity 2s 1.6s;
+}
+
+.page-0.active span:nth-of-type(6) {
+    opacity:1;
+    transition:opacity 2s 2s;
+}
+
+.page-0.active span:nth-of-type(7) {
+    opacity:1;
+    transition:opacity 2s 2.4s;
+}
+
+.page-0.active span:nth-of-type(8) {
+    opacity:1;
+    transition:opacity 2s 2.8s;
+}
+
+.page-0.active i {
+    opacity:1;
+    transition:opacity 2s 3.2s;
+}
+
+/* .page-0 > .text-box::after {
+    content:"";
+    display:block;
+    clear:both;
+    width:20%;
+    height:3px;
+    background-color:white;
+    position:absolute;
+    bottom:-70px;
+    left:50%;
+    transform:translatex(-50%);
+} */
+
+.page-0 > .text-box > div > span {
+    font-size:80px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* 페이지1 */
+.page-1 {
+    background-color:pink;
+}
+
+.page-1 > .text-box {
+    top:50%;
+    left:50%;
+    transform:translatex(-50%) translatey(-50%);
+    transition:transform 1s;
+}
+
+.page-1 > .text-box:nth-of-type(2) {
+    transform:translatex(-50%) translatey(-50%) scale(3);
+}
+
+.page-1 > .text-box:nth-of-type(2) > div {
+    color:rgba(255,255,255,.1);
+    letter-spacing:-1px;
+}
+
+.page-1 > .text-box:nth-of-type(2) > div > span {
+    color:rgba(255,255,255,.2);
+}
+
+.page-1.active > .text-box:nth-of-type(2) {
+    transform:translatex(-50%) translatey(-50%) scale(5);
+}
+
+
+.page-1 > .text-box:nth-of-type(2) {
+    transform:translatex(-50%) translatey(-50%) scale(3);
+}
+
+
+.page-1.active > .text-box:nth-of-type(2) {
+    transform:translatex(-50%) translatey(-50%) scale(5);
+}
+
+
+/* 페이지2 시작 */
+.page-2 {
+    background-color:#CE93D8;
+}
+
+.page-2 > .text-box {
+    top:50%;
+    left:0;
+    transform:translatex(-150%) translatey(-50%);
+}
+
+.page-2 > .text-box {
+    transition:transform 1.5s, left 1.5s; 
+}
+
+.page-2.active > .text-box:nth-of-type(1) {
+    left:50%;
+    transform:translatex(-50%) translatey(-50%);
+}
+ 
+.page-2 > .text-box:nth-of-type(2) > div {
+    color:rgba(255,255,255,.1);
+    letter-spacing:-1px;
+}
+
+.page-2 > .text-box:nth-of-type(2) {
+    transform:translatex(-150%) translatey(-50%) scale(3);
+}
+
+
+.page-2.active > .text-box:nth-of-type(2) {
+    left:50%;
+    transform:translatex(-50%) translatey(-50%) scale(5);
+}
+
+/* 페이지3 시작 */
+.page-3 {
+    background-color:#78909C;
+}
+.page-3 > .text-box {
+    top:0;
+    left:50%;
+    transform:translatex(-50%) translatey(-200%); 
+    transition:top 2s, transform 2s;
+}
+.page-3 > .text-box:nth-of-type(2) {
+    transform:translatex(-50%) translatey(-200%) scale(3);
+}
+.page-3.active > .text-box:nth-of-type(1) {
+    top:50%;
+    transform:translatex(-50%) translatey(-50%);
+}
+
+.page-3.active > .text-box:nth-of-type(2) {
+    top:50%;
+    transform:translatex(-50%) translatey(-50%) scale(5);
+}
+
+html[data-current-index="2"] .page-3 > .text-box {
+    opacity:0;
+}
+
+/* 페이지4 시작 */
+.page-4 {
+    background-color:#8D6E63;
+}
+
+.page-4 > .text-box {
+    bottom:0;
+    left:50%;
+    transform:translatex(-50%) translatey(150%);
+    transition:transform 1.5s;
+}
+
+.page-4 > .text-box:nth-of-type(2) {
+    transform:translatex(-50%) translatey(150%) scale(5);
+}
+
+.page-4.active > .text-box {
+    bottom:50%;
+    transform:translatex(-50%) translatey(50%);
+}
+
+.page-4.active > .text-box:nth-of-type(2) {
+    transform:translatex(-50%) translatey(50%) scale(3);
+}
+
+html[data-current-index="5"] .page-4 > .text-box {
+    opacity:0;
+}
+
+/* 페이지5 시작 */
+.page-5 {
+    background-color:#80DEEA;
+}
+
+.page-5 > .text-box {
+    top:50%;
+    left:50%;
+    transform:translatex(-50%) translatey(-50%);
+}
+
+.page-5 > .text-box {
+    top:50%;
+    left:50%;
+    transform:translatex(-50%) translatey(-50%);
+}
+
+.page-5 > .text-box:nth-of-type(2) {
+    transform:translatex(-50%) translatey(-50%) scale(5);
+}
+
+.page-5 > .text-box > div {
+    opacity:0;
+}
+
+.page-5.active > .text-box > div:nth-of-type(1) {
+    opacity:1;
+    transition:opacity 1s;
+}
+
+.page-5.active > .text-box > div:nth-of-type(2) {
+    opacity:1;
+    transition:opacity 1s .7s;
+}
+
+.page-5.active > .text-box > div:nth-of-type(3) {
+    opacity:1;
+    transition:opacity 1s 1.4s;
+}
+
+.page-5.active > .text-box > div:nth-of-type(4) {
+    opacity:1;
+    transition:opacity 1s 2.1s;
+}
+
+/* 페이지6 시작 */
+.page-6 {
+    background-color:#37474F;
+}
+
+.page-6 > .text-box {
+    top:50%;
+    left:50%;
+    transform:translatex(-50%) translatey(-50%);
+    transition:opacity 5s, transform 5s;
+}
+
+.page-6 > .text-box:nth-of-type(2) {
+    transform:translatex(-50%) translatey(-50%) scale(5);
+}
+
+.page-6.active > .text-box {
+    opacity:0;
+}
+
+.page-6.active > .text-box:nth-of-type(2) {
+    transform:translatex(-50%) translatey(-50%) scale(3);
+}
+
+/* 페이지7 시작 */
+.page-7 {
+    background-color:#1E88E5;
+}
+
+.page-7 > .text-box {
+    top:50%;
+    left:50%;
+    transform:translatex(-50%) translatey(-50%);
+    transition:opacity 4s, transform 4s;
+    opacity:0;
+}
+
+.page-7 > .text-box:nth-of-type(2) {
+    transform:translatex(-50%) translatey(-50%) scale(3);
+}
+
+.page-7.active > .text-box {
+    opacity:1;
+}
+
+.page-7.active > .text-box:nth-of-type(2) {
+    transform:translatex(-50%) translatey(-50%) scale(5);
+}
+
+/* 페이지8 시작 */
+.page-8 {
+    background-color:#FF9E80;
+}
+
+.page-8 > .text-box {
+    top:50%;
+    left:50%;
+    transform:translatex(-50%) translatey(-50%);
+}
+
+.page-8 > .text-box:nth-of-type(2) {
+    transform:translatex(-50%) translatey(-50%) scale(10);
+    opacity:0;
+}
+
+.page-8.active > .text-box:nth-of-type(2) {
+    transform:translatex(-50%) translatey(-50%) scale(4);
+    opacity:1;
+    transition:opacity 3s, transform 3s;
+}
+
+/* 페이지9 시작 */
+.page-9 {
+    background-color:#43A047;
+}
+
+.page-9 > .text-box {
+    top:50%;
+    right:0;
+    opacity:0;
+    transform:translatex(200%) translatey(-50%);
+    transition:opacity 4s, transform 4s; 
+}
+
+.page-9 > .text-box:nth-of-type(2) {
+    transform:translatex(-50%) translatey(-50%) scale(10);
+    opacity:0;
+    left:0;
+    transition:opacity 4s, transform 4s; 
+}
+
+.page-9.active > .text-box {
+    top:50%;
+    left:50%;
+    transform:translatex(-50%) translatey(-50%);
+    opacity:1;
+}
+
+.page-9.active > .text-box:nth-of-type(2) {
+    transform:translatex(-50%) translatey(-50%) scale(4);
+    opacity:1;
+}
+
+/* 페이지10 시작 */
+.page-10 {
+    background-color:#00897B;
+}
+
+.page-10 > .text-box {
+    top:50%;
+    left:50%;
+    transform:translatex(-50%) translatey(-50%) scale(.5);
+    opacity:0;
+    transition:opacity 4s, transform 4s;
+}
+
+.page-10 > .text-box:nth-of-type(2) {
+    transform:translatex(-50%) translatey(-50%) scale(.1);
+    opacity:0;
+    transition:opacity 4s, transform 4s;
+}
+
+.page-10.active > .text-box {
+    top:50%;
+    left:50%;
+    transform:translatex(-50%) translatey(-50%) scale(1);
+    opacity:1;
+}
+
+
+.page-10.active > .text-box:nth-of-type(2) {
+    transform:translatex(-50%) translatey(-50%) scale(5);
+    opacity:1;
+}
+
+/* 페이지11 시작 */
+.page-11 {
+    background-color:#B3E5FC;
+}
+
+.page-11 > .text-box {
+    top:50%;
+    left:50%;
+    transform:translatex(-50%) translatey(-50%);
+    opacity:0;
+    transition:opacity 4s, transform 4s;
+}
+
+.page-11.active > .text-box:nth-of-type(2) {
+    transform:translatex(-50%) translatey(-50%) scale(5);
+    opacity:1;
+}
+
+.page-11.active > .text-box:nth-of-type(1) {
+    transform:translatex(-50%) translatey(-50%) scale(1);
+    opacity:1;
+}
+
+/* 페이지12 시작 */
+.page-12 {
+    background-color:#FFFDE7;
+    
+}
+
+.page-12 > .text-box {
+    top:50%;
+    left:50%;
+    transform:translatex(-50%) translatey(-50%);
+    
+}
+.page-12 > .text-box > div {
+    color:#000 !important;
+    font-weight:bold;
+}
+
+/* 페이지13 시작 */
+.page-13 {
+    background-color:#FFCDD2;
+}
+
+.page-13 > .text-box {
+    top:50%;
+    left:50%;
+    width:100%;
+    height:40%;
+    transform:translatex(-50%) translatey(-50%);
+    background-color:gray;
+}
+
+.page-13 > .text-box > div {
+    color:#fff !important;
+    font-size:80px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translatex(-50%) translatey(-50%);
+    text-shadow:none !important;
+}
