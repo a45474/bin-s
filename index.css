@@ -62,10 +62,11 @@ a {
     display: none;
 }
 
+/*
 .con > .inner > div > div:hover > a:nth-of-type(1) {
     display: none;
 }
 
 .con > .inner > div > div:hover > a:nth-of-type(2) {
     display: block;
-}
+}*/

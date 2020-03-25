@@ -22,6 +22,19 @@ $(function () {
         },
         afterRender: function () {
             $(".pagination-box a").on("click", $.scrollify.move);
+            
+            $('.first-menu-1 .second-menu a').each(function(index, node) {
+                var $node = $(node);
+                var href = $node.attr('href').trim().replace('./creation.html', '');
+                
+                $node.attr('href', href);
+            });
+            
+            $('.first-menu-1 .second-menu a').on("click", $.scrollify.move);
+            $('.first-menu-1 .second-menu a').on("click", function() {
+                $('.side-bar-bg').click();
+            });
+            
             $('html').attr('data-current-index', 1);
             $('.page-1').addClass('active');
             $('.page-1').addClass('visited');
