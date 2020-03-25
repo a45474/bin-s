@@ -373,6 +373,7 @@ body {
     width:calc(100%);
     box-sizing:border-box;
     height:35px;
+    z-index: 98;
 }
 
 .top-bar > .slider > .slides > .slide {
