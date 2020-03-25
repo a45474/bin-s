@@ -1,0 +1,92 @@
+.page {
+    height:100vh;
+    box-sizing:border-box;
+    position:relative;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+.page > .inner {
+    width:1000px;
+    height:500px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translatex(-50%) translatey(-50%);
+    border:8px solid #eee;
+    border-radius:35px;
+    overflow:hidden;
+    transition:background-color .5s;
+}
+
+.page > .inner:hover {
+    background-color:rgba(0,0,0,.5);
+}
+
+.page > .inner > .text-box {
+    position:absolute;
+    top:50%;
+    transform:translatey(-50%);
+    right:6%;
+    width:350px;
+    letter-spacing:-1px;
+    color:#fff;
+}
+
+.page > .inner > .img-box {
+    width:50%;
+    height:100%;
+    background-position:center top;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.page > .inner > .text-box > .title {
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:30px;
+}
+
+.page > .inner > .text-box > .text-1 {
+    font-size:15px;
+    margin-bottom:50px;
+}
+
+.page > .inner > .text-box > .more-btn {
+    padding:10px;
+    box-sizing:border-box;
+    background-color:#179a26;
+    margin-top:20px;
+    border-radius:15px;
+    color:#fff;
+    width:80%;
+    text-align:center;
+}
+
+.page > .inner > .text-box > .more-btn > a  {
+    position:relative;
+    padding-right:25px;
+    font-size:14px;
+}
+
+.page > .inner > .text-box > .more-btn > a >i  {
+    position:absolute;
+    transform:rotate(90deg) translatex(-50%);
+    right:0;
+    top:50%;
+    transition:right .3s, color .3s;
+}
+
+.page > .inner > .text-box > .more-btn > a:hover >i {
+    right:-100px;
+    
+}
+
+.page-1 {
+    background-image:url(https://github.com/a45474/bin-s/blob/master/forest/index.img/main-slider-winter-1.png?raw=true);
+}
+
+.page-1 > .inner > .img-box {
+    background-image:url(https://github.com/a45474/bin-s/blob/master/index.img/a45474.github.io_bin-s_forest_index.html.png?raw=true);
+}
