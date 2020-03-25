@@ -353,10 +353,10 @@ $('.sns-bn > .tab-contents .owl-carousel').owlCarousel({
 });
 
 $('.sns-bn-box > .sns-bn > .tab-contents > .side-btns > div:nth-of-type(2)').click(function() {
-    $('.owl-carousel').trigger('next.owl.carousel');
+    $('.sns-bn > .tab-contents .owl-carousel').trigger('next.owl.carousel');
 });
 
 $('.sns-bn-box > .sns-bn > .tab-contents > .side-btns > div:nth-of-type(1)').click(function() {
-    $('.owl-carousel').trigger('prev.owl.carousel');
+    $('.sns-bn > .tab-contents .owl-carousel').trigger('prev.owl.carousel');
 });
 
