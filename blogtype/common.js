@@ -61,3 +61,8 @@ if (isProductMode) {
     setInterval(topBarSliderClickNextBtn, 3000);
 }
 
+$('a').click(function() {
+    if ( $(this).attr('href') == '#' ) {
+        return false;
+    }
+});

@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
 body, ul, li {
     margin:0;
     padding:0;
     list-style: none;
+     font-family: 'Noto Sans KR', sans-serif;
 }
 
 a {
@@ -23,6 +26,7 @@ a {
 .con > .inner > .title {
     font-size:50px;
     margin-bottom:40px;
+    font-weight: 600;
 }
 
 .con > .inner > div > div {
