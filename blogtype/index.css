@@ -1,22 +1,17 @@
 
-
-/* 페이지 공통 */
-
-
 .page {
     height:100vh;
     position:relative;
-    transform-style:preserve-3d;
 }
 
 .page > .text-box {
     position:absolute;
-    top:31%;
+    top:29%;
     left:50%;
     transform:translatex(-50%);
-    font-size:70px;
+    font-size:85px;
     white-space:nowrap;
-    line-height:77px;
+    line-height:90px;
     text-align:center;
     color:#fff;
     opacity:0;
@@ -28,41 +23,92 @@
 }
 
 .text-box:nth-of-type(2) {
-    top:54%;
+    top:56%;
     transform:translatex(-50%) rotate(180deg);
     text-shadow:5px 5px 5px rgba(255,255,255,.2);
     color:transparent;
-    font-size:75px;
     line-height:80x;
 }
 
-/* .text-box:nth-of-type(2):hover {
-    transform: rotateX(90deg);
-} */
+/* 배경 만들기 */
+.bg {
+    position:fixed;
+    top:0;
+    left:50%;
+    transform:translatex(-50%);
+    width:300%;
+    height:100%;
+    background-image:linear-gradient(to bottom, 
+        darkblue 0%,
+        #021B79 .1%, 
+        #207cca 1.2%, 
+        #2b88d9 1.6%, 
+        #2575fc 1.8%, 
+        
+        #801515 7.5%,
+        #f77062 8%,  
+        #6C1239 9.5%,
+        #fe5196 12%,
+        
+        #0B25B2 15%, 
+        #00F260 17.6%, 
+        #0B25B2 19.5%,
+        
+        #cbb4d4 23.5%, 
+        #20002c 24%,
+        #cbb4d4 25.5%,
+        #fff 25.8%,
+        #cbb4d4 26%,
+        #20002c 27.5%,
+        
+        #1E9600 32.5%, 
+        #FFF200 33.6%, 
+        #ED213A 34.5%,
+        #93291E 35.5%,
+        
+        #d9a7c7 41%, 
+        #89fffd 42%, 
+        #fffcdc 42.6%,
+        
+        #007991 48.5%, 
+        #78ffd6 49.5%,
+        #007991 50%,
+       
+       gold 55%,
+        #C33764 57%,
+        gold 58%,
+        #C33764 59%,
+        
+        #43C6AC 66%,
+        #DD5E89 68%,
+        #C6426E 70%,
+        #F7BB97 74%,
     
-/* .page > .text-box > div {
-    background: linear-gradient(#fff 0%,#000 100%);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-} */
+        #56CCF2 89%,
+        #2F80ED 90%,
+        
+        #f7b733 91.333%,
+        #fc4a1a 93%,
+        
 
-/* 페이지1 */
-.page-1 {
-    background: #397fb3; 
-    background: linear-gradient(180deg, #021B79 0%,#207cca 50%,#2b88d9 51%,#0575E6 100%);
-    transition:background 3s;
+        #fff 100%
+    );
+         
+    background-size:100% 3000%;
+    background-position:0 0;
+    transition:background-position 2s;
 }
 
-/* 페이지2 */
-.page-2 {
-    background: #ff5c5c;
-    background: linear-gradient(#1a2a6c 0%,#b21f1f 50%,#fdbb2d 100%);
+html[data-current-index="0"] body:hover .bg {
+    background-position:0 0;
 }
 
-/* 페이지3 */
-.page-3 {
-    background: #ff5c5c;
-    background: radial-gradient( #0575E6 0%, #00F260 100%);
+html[data-current-index="1"] body:hover .bg {
+    background-position:0 8.3333%;  
+}
+
+html[data-current-index="2"] body:hover .bg {
+    background-position:0 16.6666%;
 }
 
 .page-3 > .text-box {
@@ -73,11 +119,10 @@
     top:54%;
 }
 
-/* 페이지4 */
-.page-4 {
-    background: #ff5c5c;
-    background: linear-gradient(90deg, #cbb4d4 0%, #20002c 100%);
+html[data-current-index="3"] body:hover .bg {
+    background-position:0 24.9999%;
 }
+
 
 .page-4 > .text-box, .page-5 > .text-box {
     font-size:100px;
@@ -88,46 +133,39 @@
     top:55%;
 }
 
-/* 페이지5 */
-.page-5 {
-    background: #ff5c5c;
-    background: linear-gradient(90deg, #1a2a6c 0%,#b21f1f 50%,#fdbb2d 100%);
+html[data-current-index="4"] body:hover .bg {
+    background-position:0 33.3332%;
+    transform:translatex(-50%) rotate(1670deg) scale(2);
+    transition:background-position 2s, transform 1s;
+}
+
+html[data-current-index="5"] body:hover .bg {
+    background-position:0 38.4615%;
+    
 }
 
 .page-5 > .text-box, .page-4 > .text-box {
     font-size:100px;
     letter-spacing:-1px;
+    
 }
 
-/* 페이지6 */
-.page-6 {
-    background: #ff5c5c;
-    background: linear-gradient(45deg, #ef32d9 0%, #89fffd 100%);
+
+html[data-current-index="6"] body:hover .bg {
+    background-position:0 41.6665%;
 }
 
 .page-6 > .text-box {
     font-size:50px;
-    top:50%;
-    transform:translatex(-50%) translatey(-50%);
+    top:41%;
 }
 
-/* 페이지7 */
-.page-7 {
-    background: #ff5c5c;
-    background: linear-gradient(90deg, #1D2B64 0%,#F8CDDA 100%);
-}
 
 .page-7 > .text-box {
     font-size:80px;
-    top:50%;
-    transform:translatex(-50%) translatey(-50%);
+    top:40%;
 }
 
-/* 페이지8 */
-.page-8 {
-    background: #ff5c5c;
-    background: linear-gradient(45deg, #3864BC 0%,#0C3890 50%,#082B71 51%,#eee 100%);
-}
 
 .page-8 > .text-box {
     transform:translatex(-50%) rotate(45deg);
@@ -135,11 +173,6 @@
 
 .page-8 > .text-box:nth-of-type(2) {
     transform:translatex(-54%) rotate(225deg);
-}
-/* 페이지9 */
-.page-9 {
-    background: #ff5c5c;
-    background: linear-gradient(-45deg, #642B73 0%,#DD5E89 50%, #C6426E 51%, #F7BB97 100%);
 }
 
 .page-9 > .text-box {
@@ -150,37 +183,66 @@
     transform:translatex(-40%) rotate(135deg);
 }
 
-/* 페이지10 */
-.page-10 {
-    background: #ff5c5c;
-    background: linear-gradient( #56CCF2 0%,#2F80ED 100%);
+html[data-current-index="7"] body:hover .bg {
+    background-position:0 49.9999%;
+    transform:translatex(-50%) rotate(45deg) scale(2);
+    transition:background-position 2s, transform 1s;
 }
 
-.page-10 > .text-box {
-    line-height:70px;
+html[data-current-index="8"] body:hover .bg {
+    background-position:0 58.3331%;
+    width:200%;
+    
+    transform:translatex(-50%) rotate(-45deg) scale(2);
+    transition:background-position 2s, transform 1s;
+}
+/* 
+.page-8 > .text-box {
+    transform:translatex(-50%) rotate(0) scale(1);
+    transition:transform 1s;
 }
 
-/* 페이지11 */
-.page-11 {
-    background: #ff5c5c;
-    background: radial-gradient(#f7b733 0%, #fc4a1a 100%);
+.page-8.active > .text-box {
+    transform:translatex(-50%) rotate(45deg) scale(.5);
+}
+ */
+html[data-current-index="9"] body:hover .bg {
+    background-position:0 66.6664%;
 }
 
-.page-11 > .text-box {
+/* .page-12 > .text-box, .page-11 > .text-box, .page-10 > .text-box {
+    top:50%;
+    transform:translatex(-50%) translatey(-60%);
+} */
+
+.page-10 > .text-box, .page-11 > .text-box, .page-12 > .text-box {
+    line-height:90px;
     font-size:80px;
+    top:45% !important;
+
 }
 
-/* 페이12 */
-.page-12 {
-    background: #ff5c5c;
-    background: linear-gradient(90deg, #ADA996 0%,#F2F2F2 25%,#DBDBDB 51%,#EAEAEA 100%);
+
+html[data-current-index="10"] body:hover .bg {
+    background-position:0 74.9997%;
 }
+
+
+html[data-current-index="11"] body:hover .bg {
+    background-position:0 83.333%;
+}
+
 
 .page-12 > .text-box, .page-11 > .text-box, .page-10 > .text-box {
     top:50%;
     transform:translatex(-50%) translatey(-50%);
 }
 
+
+
+html[data-current-index="12"] body:hover .bg {
+    background-position:0 91.666%;
+}
 
 
 

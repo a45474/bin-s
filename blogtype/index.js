@@ -25,7 +25,7 @@ $(function () {
         },
         afterRender: function () {
             $(".pagination-box a").on("click", $.scrollify.move);
-            $('html').attr('data-current-index', 1);
+            $('html').attr('data-current-index', 0);
             $('.page-1').addClass('active');
             $('.page-1').addClass('visited');
         }
