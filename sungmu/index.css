@@ -124,6 +124,297 @@ body {
     width: 100%;
 }
 
+.page-0 > .main-slider-box {
+    position: relative;
+    height: 100vh;
+}
+
+.page-0 > .main-slider-box > .mobile-text {
+    position: absolute;
+    width: 70vw;
+    height: 40vw;
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 30px;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    text-align: center;
+    transform: translatex(-50%) translatey(-50%);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+    display: none;
+}
+
+.page-0 > .main-slider-box > .mobile-text > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    text-shadow: 3px 3px 5px rgba(255, 255, 255, .5);
+    font-size: 7vw;
+    display: block;
+    transform: translatex(-50%) translatey(-50%);
+    white-space: nowrap;
+    letter-spacing: -2px;
+
+}
+
+@media (max-width:1000px) {
+    .page-0 > .main-slider-box > .mobile-text {
+        display: block;
+    }
+}
+
+.page-0 > .main-slider-box > .main-slider > .slides > .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translatex(-50%) translatey(-50%);
+    min-width: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-slider-box > .slider-k {
+    position: relative;
+    user-select: none;
+}
+
+.main-slider-box > .slider-k .side-btns > div {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main-slider-box > .slider-k .side-btns > div:hover {
+    opacity: .9;
+}
+
+.main-slider-box > .slider-k .side-btns > div > span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transition: left .5s, right .5s;
+    transform: translateY(-50%) rotate(-90deg);
+    width: 80px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-image: url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/ico-dragon-fly-02.png?raw=true);
+    background-size: contain;
+    background-position: center center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 10%;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, .5);
+}
+
+.main-slider-box > .slider-k .side-btns > div:last-child > span {
+    transform: translateY(-50%) rotate(90deg);
+    right: 40px;
+    left: auto;
+    box-shadow: 5px -5px 5px rgba(0, 0, 0, .5);
+}
+
+.main-slider-box > .slider-k .side-btns > div:active > span {
+    left: inherit;
+}
+
+.main-slider-box > .slider-k .side-btns > div:last-child:active > span {
+    left: auto;
+    right: inherit;
+}
+
+.main-slider-box > .slider-k .side-btns > div:last-child {
+    left: auto;
+    right: 0;
+}
+
+@media (max-width:1000px) {
+    .main-slider-box > .slider-k .side-btns {
+        display: none;
+    }
+}
+
+.main-slider-box > .slider-k.height-full {
+    height: 100%;
+}
+
+.main-slider-box > .slider-k .slides > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s, visibility 0.5s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Malgun Gothic";
+    background-position: 50% 0;
+}
+
+.main-slider-box > .slider-k .slides > div.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.main-slider-box > .slider-k .page-nav {
+    position: absolute;
+    bottom: 40px;
+    left: 55px;
+    padding: 10px 0;
+}
+
+.main-slider-box > .slider-k .page-nav > div {
+    display: inline-block;
+    color: transparent;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 4px;
+}
+
+.main-slider-box > .slider-k .page-nav > div.active {
+    background-color: red;
+}
+
+@media (max-width:1000px) {
+    .main-slider-box > .slider-k .page-nav {
+        display: none;
+    }
+
+    .main-slider-box > .slider-k .autoplay-btn-box {
+        display: none;
+    }
+}
+
+.main-slider-box > .slider-k .autoplay-btn-box {
+    position: absolute;
+    bottom: 53px;
+    left: 330px;
+    cursor: pointer;
+}
+
+.main-slider-box > .slider-k .autoplay-btn-box > div {
+    width: 17px;
+    height: 17px;
+    background-color: ;
+    border-radius: 100%;
+    transition: background-color .5s;
+}
+
+.main-slider-box > .slider-k .autoplay-btn-box > div > i {
+    color: #000;
+    display: block;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translatex(-50%) translatey(-50%);
+}
+
+.main-slider-box > .slider-k .autoplay-btn-box:hover > div {
+    background-color: #000;
+}
+
+.main-slider-box > .slider-k .autoplay-btn-box:hover > div > i {
+    color: #fff;
+}
+
+.main-slider-box > .slider-k .autoplay-btn-box > .btn-stop-play > i {
+    font-size: 10px;
+}
+
+.main-slider-box > .slider-k .autoplay-btn-box > .btn-start-play > i {
+    font-size: 22px;
+    left: 55%;
+}
+
+.main-slider-box > .slider-k[data-autoplay-now-work="Y"] .autoplay-btn-box > .btn-start-play {
+    display: none;
+}
+
+.main-slider-box > .slider-k[data-autoplay-now-work="N"] .autoplay-btn-box > .btn-stop-play {
+    display: none;
+}
+
+/* 페이지 공통 스크롤 다운 버튼 시작 */
+.page > .scroll-down-btn {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 50%;
+    bottom: 20px;
+    transform: translatex(-50%);
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.page > .scroll-down-btn > img {
+    animation-duration: 1s;
+    animation-name: up-down;
+    animation-iteration-count: infinite;
+    display: block;
+    position: absolute;
+    width: 50px;
+    left: 0 !important;
+    transition: opacity 1s !important;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, .5));
+}
+
+.page > .scroll-down-btn > img:nth-of-type(2) {
+    opacity: 0;
+}
+
+.page > .scroll-down-btn:hover > img:nth-of-type(2) {
+    opacity: 1;
+}
+
+.page > .scroll-down-btn:hover > img:nth-of-type(1) {
+    opacity: 0;
+}
+
+.page > .scroll-down-btn > img:nth-of-type(1) {
+    opacity: 1;
+}
+
+@keyframes up-down {
+    0% {
+        border-color: #fff;
+        top: 0px;
+    }
+
+    100% {
+        border-color: #333;
+        top: 10px;
+    }
+}
+
+@media (max-width:1000px) {
+    .page > .scroll-down-btn > img:nth-of-type(1) {
+        display: none;
+    }
+
+    .page > .scroll-down-btn > img:nth-of-type(2) {
+        display: block;
+        opacity: .8;
+    }
+
+}
+
+/* 페이지 공통 스크롤 다운 버튼 끝 */
+
+
+/*탑바*/
+
 .top-bar {
     background-color: rgba(0, 0, 0, .9);
     padding: 20px 0;
@@ -460,9 +751,113 @@ body {
     width: calc(100% / 5 * 2);
     height: 100%;
     top: 0;
-    left: 0;
-    transition: transform 3.5s;
+/*    left: 0;*/
+    
 }
+
+
+.page > .left-dore {
+    left:0;
+    transform:translatex(0);
+    transition:transform 1s;
+}
+
+.page.active > .left-dore {
+    left:0;
+    transform:translatex(-80%);
+    transition:transform .1s 1.2s ;
+}  
+
+.page > .right-dore {
+    right:0;
+    transform:translatex(0);
+    transition:transform 1s;
+}
+
+/* .page.active > .right-dore {
+    right:0;
+    transform:translatex(80%);
+}   */
+
+.page > .left-dore > img:nth-of-type(1) {
+    left:0;
+    transform:translatex(-50%)
+}
+
+.page.active > .left-dore > img:nth-of-type(1) {
+    left:80%;
+    transform:translatex(-50%);
+    transition:transform 1.8s, left .1s 1.2s;
+}
+
+.page > .left-dore > img:nth-of-type(2) {
+    left:0;
+    transform:translatex(50%)
+}
+
+.page.active > .left-dore > img:nth-of-type(2) {
+    left:80%;
+    transform:translatex(-50%);
+    transition:transform 1.2s .4s, left .1s 1.2s;
+}
+
+.page > .left-dore > img:nth-of-type(3) {
+    left:0;
+    transform:translatex(150%)
+}
+
+.page.active > .left-dore > img:nth-of-type(3) {
+    transform:translatex(-50%);
+    transition:transform 1.8s, left .1s 1.2s;
+    left:80%;
+}
+
+
+.page.active > .right-dore {
+    right:0;
+    transform:translatex(80%);
+    transition:transform .1s 1.2s ;
+} 
+
+.page > .right-dore > img:nth-of-type(1) {
+    right:0;
+    transform:translatex(50%);
+/*     background-color:red; */
+}
+
+.page.active > .right-dore > img:nth-of-type(1) {
+    right:80%;
+    transform:translatex(50%);
+    transition:transform 1.8s, right .1s 1.2s;
+}
+
+.page > .right-dore > img:nth-of-type(2) {
+    right:0;
+    transform:translatex(-50%);
+    
+}
+
+.page.active > .right-dore > img:nth-of-type(2) {
+    right:80%;
+    transform:translatex(50%);
+    transition:transform 1.2s .4s, right .1s 1.2s;
+}
+
+.page > .right-dore > img:nth-of-type(3) {
+    right:0;
+    transform:translatex(-150%);
+}
+
+.page.active > .right-dore > img:nth-of-type(3) {
+    transform:translatex(50%);
+    transition:transform 1.8s, right .1s 1.2s;
+    right:80%;
+}
+
+
+
+
+/*
 
 .page > div > img:nth-of-type(2) {
     left: 40%;
@@ -506,6 +901,7 @@ body {
 .page > .left-dore > img:nth-of-type(3) {
     z-index: -2;
 }
+*/
 
 @media (max-width:1000px) {
 
@@ -1120,291 +1516,3 @@ html[data-current-index="6"] .pagination-box {
     } */
 
 }
-
-.page-0 > .main-slider-box {
-    position: relative;
-    height: 100vh;
-}
-
-.page-0 > .main-slider-box > .mobile-text {
-    position: absolute;
-    width: 70vw;
-    height: 40vw;
-    background-color: rgba(0, 0, 0, .8);
-    border-radius: 30px;
-    top: 50%;
-    left: 50%;
-    z-index: 100;
-    text-align: center;
-    transform: translatex(-50%) translatey(-50%);
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
-    display: none;
-}
-
-.page-0 > .main-slider-box > .mobile-text > div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: white;
-    text-shadow: 3px 3px 5px rgba(255, 255, 255, .5);
-    font-size: 7vw;
-    display: block;
-    transform: translatex(-50%) translatey(-50%);
-    white-space: nowrap;
-    letter-spacing: -2px;
-
-}
-
-@media (max-width:1000px) {
-    .page-0 > .main-slider-box > .mobile-text {
-        display: block;
-    }
-}
-
-.page-0 > .main-slider-box > .main-slider > .slides > .slide {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translatex(-50%) translatey(-50%);
-    min-width: 1000px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.main-slider-box > .slider-k {
-    position: relative;
-    user-select: none;
-}
-
-.main-slider-box > .slider-k .side-btns > div {
-    width: 20%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.main-slider-box > .slider-k .side-btns > div:hover {
-    opacity: .9;
-}
-
-.main-slider-box > .slider-k .side-btns > div > span {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 40px;
-    transition: left .5s, right .5s;
-    transform: translateY(-50%) rotate(-90deg);
-    width: 80px;
-    height: 50px;
-    background-repeat: no-repeat;
-    background-image: url(https://github.com/a45474/bin-s/blob/master/sungmu/index.img/ico-dragon-fly-02.png?raw=true);
-    background-size: contain;
-    background-position: center center;
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, .4);
-    border-radius: 10%;
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, .5);
-}
-
-.main-slider-box > .slider-k .side-btns > div:last-child > span {
-    transform: translateY(-50%) rotate(90deg);
-    right: 40px;
-    left: auto;
-    box-shadow: 5px -5px 5px rgba(0, 0, 0, .5);
-}
-
-.main-slider-box > .slider-k .side-btns > div:active > span {
-    left: inherit;
-}
-
-.main-slider-box > .slider-k .side-btns > div:last-child:active > span {
-    left: auto;
-    right: inherit;
-}
-
-.main-slider-box > .slider-k .side-btns > div:last-child {
-    left: auto;
-    right: 0;
-}
-
-@media (max-width:1000px) {
-    .main-slider-box > .slider-k .side-btns {
-        display: none;
-    }
-}
-
-.main-slider-box > .slider-k.height-full {
-    height: 100%;
-}
-
-.main-slider-box > .slider-k .slides > div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.5s, visibility 0.5s;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "Malgun Gothic";
-    background-position: 50% 0;
-}
-
-.main-slider-box > .slider-k .slides > div.active {
-    visibility: visible;
-    opacity: 1;
-}
-
-.main-slider-box > .slider-k .page-nav {
-    position: absolute;
-    bottom: 40px;
-    left: 55px;
-    padding: 10px 0;
-}
-
-.main-slider-box > .slider-k .page-nav > div {
-    display: inline-block;
-    color: transparent;
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    background-color: #fff;
-    white-space: nowrap;
-    overflow: hidden;
-    margin: 0 4px;
-}
-
-.main-slider-box > .slider-k .page-nav > div.active {
-    background-color: red;
-}
-
-@media (max-width:1000px) {
-    .main-slider-box > .slider-k .page-nav {
-        display: none;
-    }
-
-    .main-slider-box > .slider-k .autoplay-btn-box {
-        display: none;
-    }
-}
-
-.main-slider-box > .slider-k .autoplay-btn-box {
-    position: absolute;
-    bottom: 53px;
-    left: 330px;
-    cursor: pointer;
-}
-
-.main-slider-box > .slider-k .autoplay-btn-box > div {
-    width: 17px;
-    height: 17px;
-    background-color: ;
-    border-radius: 100%;
-    transition: background-color .5s;
-}
-
-.main-slider-box > .slider-k .autoplay-btn-box > div > i {
-    color: #000;
-    display: block;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translatex(-50%) translatey(-50%);
-}
-
-.main-slider-box > .slider-k .autoplay-btn-box:hover > div {
-    background-color: #000;
-}
-
-.main-slider-box > .slider-k .autoplay-btn-box:hover > div > i {
-    color: #fff;
-}
-
-.main-slider-box > .slider-k .autoplay-btn-box > .btn-stop-play > i {
-    font-size: 10px;
-}
-
-.main-slider-box > .slider-k .autoplay-btn-box > .btn-start-play > i {
-    font-size: 22px;
-    left: 55%;
-}
-
-.main-slider-box > .slider-k[data-autoplay-now-work="Y"] .autoplay-btn-box > .btn-start-play {
-    display: none;
-}
-
-.main-slider-box > .slider-k[data-autoplay-now-work="N"] .autoplay-btn-box > .btn-stop-play {
-    display: none;
-}
-
-/* 페이지 공통 스크롤 다운 버튼 시작 */
-.page > .scroll-down-btn {
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    left: 50%;
-    bottom: 20px;
-    transform: translatex(-50%);
-    cursor: pointer;
-    box-sizing: border-box;
-}
-
-.page > .scroll-down-btn > img {
-    animation-duration: 1s;
-    animation-name: up-down;
-    animation-iteration-count: infinite;
-    display: block;
-    position: absolute;
-    width: 50px;
-    left: 0 !important;
-    transition: opacity 1s !important;
-    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, .5));
-}
-
-.page > .scroll-down-btn > img:nth-of-type(2) {
-    opacity: 0;
-}
-
-.page > .scroll-down-btn:hover > img:nth-of-type(2) {
-    opacity: 1;
-}
-
-.page > .scroll-down-btn:hover > img:nth-of-type(1) {
-    opacity: 0;
-}
-
-.page > .scroll-down-btn > img:nth-of-type(1) {
-    opacity: 1;
-}
-
-@keyframes up-down {
-    0% {
-        border-color: #fff;
-        top: 0px;
-    }
-
-    100% {
-        border-color: #333;
-        top: 10px;
-    }
-}
-
-@media (max-width:1000px) {
-    .page > .scroll-down-btn > img:nth-of-type(1) {
-        display: none;
-    }
-
-    .page > .scroll-down-btn > img:nth-of-type(2) {
-        display: block;
-        opacity: .8;
-    }
-
-}
-
-/* 페이지 공통 스크롤 다운 버튼 끝 */
