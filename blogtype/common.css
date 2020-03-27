@@ -450,6 +450,8 @@ body {
     text-align:right;
     padding-right:50px;
     padding-top:18px;
+    z-index: 10;
+    position: relative;
 }
 
 .side-bar > .menu-box > .list-1 > .first-menu-2 > ul > li > a {
