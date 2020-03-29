@@ -1,6 +1,7 @@
 $('.top-bar > .inner > .right-menu-list > .cell').click(function () {
-
+    
     $(this).toggleClass('active');
+    
 
 });
 
