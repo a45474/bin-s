@@ -30,6 +30,7 @@
     line-height:80x;
 }
 
+
 /* 배경 만들기 */
 .bg {
     position:fixed;
@@ -40,55 +41,56 @@
     height:100%;
     background-image:linear-gradient(to bottom, 
         darkblue 0%,
-        #021B79 .1%, 
+/*         #021B79 .1%, 
         #207cca 1.2%, 
-        #2b88d9 1.6%, 
+        #2b88d9 1.6%,  */
         #2575fc 1.8%, 
         
         #801515 7.5%,
-        #f77062 8%,  
-        #6C1239 9.5%,
+/*         #f77062 8%,  
+        #6C1239 9.5%, */
         #fe5196 12%,
         
-        #0B25B2 15%, 
-        #00F260 17.6%, 
-        #0B25B2 19.5%,
+/*         #0B25B2 15%,  */
+        #00F260 15%, 
+/*         #0B25B2 19.5%, */
         
-        #cbb4d4 23.5%, 
-        #20002c 24%,
+        #207cca 27%,
+/*         #20002c 27.5%,  */
+/*         24%,
         #cbb4d4 25.5%,
         #fff 25.8%,
-        #cbb4d4 26%,
-        #20002c 27.5%,
+         26%,
+         */
         
-        #1E9600 32.5%, 
-        #FFF200 33.6%, 
-        #ED213A 34.5%,
-        #93291E 35.5%,
+/*         #1E9600 32.5%,  */
+/*         #FFF200 36.6%,  */
+/*         #ED213A 29%, */
+/*         #93291E 35.5%, */
         
-        #d9a7c7 41%, 
-        #89fffd 42%, 
-        #fffcdc 42.6%,
+        #d9a7c7 35%, 
+/*         #89fffd 42%, 
+        #fffcdc 42.6%, */
         
-        #007991 48.5%, 
-        #78ffd6 49.5%,
+/*         #007991 48.5%, 
+        #78ffd6 49.5%, */
         #007991 50%,
        
-       gold 55%,
+/*        gold 55%,
         #C33764 57%,
-        gold 58%,
+        gold 58%, */
         #C33764 59%,
         
-        #43C6AC 66%,
+/*         #43C6AC 66%,
         #DD5E89 68%,
-        #C6426E 70%,
+        #C6426E 70%, */
         #F7BB97 74%,
     
-        #56CCF2 89%,
-        #2F80ED 90%,
+        #56CCF2 80%,
+        #2F80ED 88%,
         
-        #f7b733 91.333%,
-        #fc4a1a 93%,
+        #f7b733 89%,
+        #fc4a1a 90%,
         
 
         #fff 100%
@@ -96,7 +98,7 @@
          
     background-size:100% 3000%;
     background-position:0 0;
-    transition:background-position 2s;
+    transition:background-position 3s;
 }
 
 html[data-current-index="0"] body:hover .bg {
@@ -135,8 +137,8 @@ html[data-current-index="3"] body:hover .bg {
 
 html[data-current-index="4"] body:hover .bg {
     background-position:0 33.3332%;
-    transform:translatex(-50%) rotate(1670deg) scale(2);
-    transition:background-position 2s, transform 1s;
+
+
 }
 
 html[data-current-index="5"] body:hover .bg {
@@ -185,7 +187,7 @@ html[data-current-index="6"] body:hover .bg {
 
 html[data-current-index="7"] body:hover .bg {
     background-position:0 49.9999%;
-    transform:translatex(-50%) rotate(45deg) scale(2);
+    transform:translatex(-50%) rotate(45deg) scale(3);
     transition:background-position 2s, transform 1s;
 }
 
@@ -193,7 +195,7 @@ html[data-current-index="8"] body:hover .bg {
     background-position:0 58.3331%;
     width:200%;
     
-    transform:translatex(-50%) rotate(-45deg) scale(2);
+    transform:translatex(-50%) rotate(-45deg) scale(3);
     transition:background-position 2s, transform 1s;
 }
 /* 
@@ -243,6 +245,3 @@ html[data-current-index="11"] body:hover .bg {
 html[data-current-index="12"] body:hover .bg {
     background-position:0 91.666%;
 }
-
-
-
