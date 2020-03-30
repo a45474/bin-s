@@ -223,19 +223,19 @@ body.paper-hover > .paper {
 }
 
 .paper > .inner > .header > div:nth-of-type(1) {
-    opacity:0;
+    opacity:1;
 }
 
 .paper > .inner > .header > div:nth-of-type(2) {
-    opacity:1;
+    opacity:0;
 }
 
 body.paper-hover > .paper > .inner > .header > div:nth-of-type(1) {
-    opacity:1;
+    opacity:0;
 }
 
 body.paper-hover > .paper > .inner > .header > div:nth-of-type(2) {
-    opacity:0;
+    opacity:1;
 }
 
 .paper > .inner > .header > div > .title {
@@ -277,7 +277,7 @@ body.paper-hover > .paper > .inner > .header > div:nth-of-type(2) {
 /* 헤더 끝 */
 
 .paper > .inner > .body {
-    height:1600px;
+    height:1630px;
     box-sizing:border-box; 
 }
 
@@ -330,6 +330,29 @@ body.paper-hover > .paper > .inner > .header > div:nth-of-type(2) {
     height:280px;
     border:1px solid;
     margin:22px 20px 5px 0;
+    position: relative;
+}
+
+.paper > .inner > .body > .cell:nth-of-type(1) > .cell-inner > .profile > .body > .img-box > img {
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    
+    transition: opacity .5s;
+}
+
+.paper > .inner > .body > .cell:nth-of-type(1) > .cell-inner > .profile > .body > .img-box > img:nth-of-type(2) {
+    opacity: 0;
+}
+
+.paper > .inner > .body > .cell:nth-of-type(1) > .cell-inner > .profile > .body > .img-box:hover > img:nth-of-type(2) {
+    opacity: 1;
+}
+
+.paper > .inner > .body > .cell:nth-of-type(1) > .cell-inner > .profile > .body > .img-box:hover > img:nth-of-type(1) {
+    opacity: 0;
 }
 
 .paper > .inner > .body > .cell:nth-of-type(1) > .cell-inner > .profile > .body > .text-box {
