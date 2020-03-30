@@ -73,11 +73,15 @@
     background-image:url(https://github.com/a45474/LeeDoBin/blob/master/portfolio/index.img/pink-2832485_1920.jpg?raw=true);
 }
 
+.page-1 > .inner {
+    overflow: hidden;
+}
+
 .page-1 > .inner > div {
     width:50%;
     height:100%;
     position:relative;
-    overflow: hidden;
+    
 }
 
 .page-1 > .inner > .img-box > img {
@@ -87,32 +91,41 @@
     top:0;
     left:50%;
     transform: translateX(-50%);
-    transition: opacity .3s;
+    transition: opacity .5s;
 }
 
 .page-1 > .inner > .img-box > .pop > span {
     position: absolute;
-    font-size:18px;
+    font-size:20px;
     color:#fff;
     border-radius: 100%;
     text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border:5px solid;
 }
 
 .page-1 > .inner > .img-box > .pop > span:nth-of-type(1) {
-    background-color:goldenrod;
-    top:30%;
-    right:15%;
-    padding:40px;
+/*    background-color:goldenrod;*/
+    top:15%;
+    right:12%;
+    padding:40px; 
+    text-shadow: 3px 3px 3px rgba(255,255,0,.5);
+    box-shadow: 3px 3px 3px rgba(255,255,0,.5);
+    background-color: rgba(255,255,0,.2);
 }
 
 
 .page-1 > .inner > .img-box > .pop > span:nth-of-type(2) {
     display: none;
-    background-color: hotpink;
-    top:25%;
-    right:8%;
+    color: hotpink;
+    top:18%;
+    right:5%;
     transform: rotate(25deg);
     padding:25px;
+    text-shadow: 4px 4px 5px rgba(255,255,255,1);
+    box-shadow: 4px 4px 5px rgba(255,255,255,1);
+    background-color: rgba(255,255,255,.5);
 }
 
 .page-1 > .inner > .img-box:hover > .pop > span:nth-of-type(2) {
