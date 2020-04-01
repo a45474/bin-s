@@ -837,12 +837,8 @@ body {
 
 /* 페이지네이션 시작 */
 .pagination-box {
-    position: fixed;
-    top: 50%;
-    transform: translatey(-50%);
-    right: 12%;
-    z-index: 10;
-    transition: opacity .5s;
+    right: 12% !important;
+    z-index: 5 !important;
 }
 
 .pagination-box > .pagination > li {
@@ -950,10 +946,10 @@ html[data-current-index="6"] .pagination-box {
 }
 
 .page-1 > .inner > .contents > .text {
-    font-size: 16px;
-    line-height: 35px;
+    font-size: 16px !important;
+    line-height: 35px !important;
     font-weight: 500;
-    letter-spacing: -1px;
+    letter-spacing: -1px !important;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1437,3 +1433,4 @@ html[data-current-index="6"] .pagination-box {
     } */
 
 }
+

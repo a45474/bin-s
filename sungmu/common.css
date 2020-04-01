@@ -348,7 +348,7 @@ body {
 .page >.inner > .contents > .text {
     font-size:14px;
     letter-spacing: -1px;
-    line-height: 22px;
+    line-height: 25px;
 }
 
 .bottom-wave {
@@ -420,6 +420,7 @@ body {
     z-index:1;
     transition:opacity .5s;
 }
+
 
 .pagination-box > .pagination > li {
     margin:10px 0;

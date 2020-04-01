@@ -133,6 +133,12 @@
     transition: height .5s;
 }
 
+.page > .inner > .contents > .tab-box > .text-box > .text-box-inner {
+
+    box-sizing:border-box;
+    padding:15px;
+}
+
 .page > .inner > .contents > .tab-box > .text-box.active {
     height:calc(100% / 5 *4);
     overflow-y: scroll;
@@ -145,11 +151,12 @@
 .page > .inner > .contents > .video-box {
     width:60%;
     height:100%;
+    position: relative;
 }
 
 .page > .inner > .contents > .video-box > div > iframe {
     width:100%;
     height:100%;
-    border:10px solid red;
+
     box-sizing: border-box;
 }

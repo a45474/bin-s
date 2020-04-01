@@ -124,6 +124,7 @@
     border-radius: 15px;
     margin:0 auto;
     margin-top:80px;
+    cursor:pointer;
 }
 
 .page-4 > .inner {
