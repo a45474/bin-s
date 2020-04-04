@@ -111,6 +111,46 @@ body {
 
 
 /* 사이드바 시작 */
+.side-bar-info {
+    position: fixed;
+    background-color: rgba(255,255,255,.9);
+    color:#000;
+    top:50%;
+    left:100px;
+    z-index: 10;
+    transform: translateY(-50%);
+    font-size:12px;
+    padding:7px;
+    border-radius: 10px;
+    text-align: center;
+    letter-spacing: -.3px;
+}
+
+.side-bar-info::before {
+    content: "";
+    display: block;
+    width:10px;
+    height:10px;
+    position: absolute;
+    top:50%;
+    left:-25px;
+    border-left:2px solid #fff;
+    border-top:2px solid #fff;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.side-bar-info::after {
+    content: "";
+    display: block;
+    width:20px;
+    height:2px;
+    position: absolute;
+    top:50%;
+    left:-24px;
+    background-color: #fff;
+    transform: translateY(-50%);
+}
+
 .side-bar-bg {
     position:fixed;
     width:100%;
@@ -158,6 +198,7 @@ body {
     transition:background-color .5s, border-right .5s;
     border-right:1px solid rgba(0, 0, 0, .1);
     z-index:100;
+    cursor: pointer;
 }
 
 .side-bar:hover {
@@ -288,6 +329,7 @@ body {
     display:block;
     position:relative;
     padding-right:80px;
+    white-space: nowrap;
 }
 
 .side-bar > .menu-box > .list-1 > div > .title > i {
@@ -300,14 +342,14 @@ body {
 .side-bar > .menu-box > .list-1 > div > .title.left-ico {
     color:#558B2F;
     box-sizing:border-box;
-    width:117px;
+    width:133px;
     padding-left:20px;
    
 }
 
-.side-bar > .menu-box > .list-1 > .first-menu-5 > .title.left-ico  {
-    padding-left:25px;
-    width:114px
+.side-bar > .menu-box > .list-1 > .first-menu-6 > .title.left-ico  {
+    padding-left:21px;
+    width:123px
 }
 
 .side-bar > .menu-box > .list-1 > div > .title.left-ico > i:nth-of-type(2) {
