@@ -493,7 +493,7 @@ html[data-current-index="5"] .page-4 > .text-box {
 
 /* 페이지13 시작 */
 .page-13 {
-    background-color:#eee;
+    background-color:#fff;
 }
 
 .page-13 > .text-box {
@@ -502,7 +502,7 @@ html[data-current-index="5"] .page-4 > .text-box {
     width:100%;
     height:40%;
     transform:translatex(-50%) translatey(-50%);
-    background-color:#ccc;
+    background-color:#eee;
 }
 
 .page-13 > .text-box > div {
