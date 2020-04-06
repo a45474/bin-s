@@ -92,6 +92,7 @@
     left:50%;
     transform: translateX(-50%);
     transition: opacity .5s;
+    z-index: 5;
 }
 
 .page-1 > .inner > .img-box > .pop > span {

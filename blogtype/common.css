@@ -207,7 +207,6 @@ body {
     border-radius: 10px;
     text-align: center;
     letter-spacing: -.3px;
-    display: none;
 }
 
 .side-bar-info::before {
@@ -280,8 +279,8 @@ body {
     top:0;
     left:0;
     transition:background-color .5s, border-right .5s;
-    border-right:1.5px solid rgba(0, 0, 0, .2);
-    z-index:100;
+    border-right:1px solid rgba(0, 0, 0, .2);
+    z-index:2;
     cursor: pointer;
 }
 
@@ -512,7 +511,7 @@ body {
     width:calc(100%);
     box-sizing:border-box;
     height:35px;
-    z-index: 98;
+    z-index: 1;
 }
 
 .top-bar > .slider > .slides > .slide {

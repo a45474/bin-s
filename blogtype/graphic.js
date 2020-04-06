@@ -32,5 +32,11 @@ $(function () {
     });
 });
 
+$('.page > .inner >div > .img-box').click(function (){
+    
+    $(this).toggleClass('active');
+    
+});
+
 
 
