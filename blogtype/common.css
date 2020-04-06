@@ -243,7 +243,7 @@ body {
     left:0;
     display:none;
     cursor:pointer;
-    z-index:99;
+    z-index:2;
 }
 
 .side-bar-bg.active {
@@ -280,7 +280,7 @@ body {
     left:0;
     transition:background-color .5s, border-right .5s;
     border-right:1px solid rgba(0, 0, 0, .2);
-    z-index:2;
+    z-index:3;
     cursor: pointer;
 }
 
