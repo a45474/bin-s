@@ -32,7 +32,7 @@ $(function () {
     });
 });
 
-$('.page > .inner >div > .img-box').click(function (){
+$('.page > .inner >div > .img-box:not(.title)').click(function (){
     
     $(this).toggleClass('active');
     

@@ -4,6 +4,22 @@
     background-color: #ddd;
 }
 
+.page-1 {
+    background-image: url(./graphic.img/sunrise-1756274_1280.jpg);
+}
+
+.page-2 {
+    background-image: url(./graphic.img/galaxy-3607885_1280.jpg);
+}
+
+.page-3 {
+    background-image: url(./graphic.img/milky-way-2675322_1280.jpg);
+}
+
+.page-4 {
+    background-image: url(./graphic.img/milky-way-923738_1280.jpg);
+}
+
 .page > .inner {
     position: absolute;
     top:50%;
