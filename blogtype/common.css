@@ -200,7 +200,7 @@ body {
     color:#000;
     top:50%;
     left:100px;
-    z-index: 10;
+    z-index: 1;
     transform: translateY(-50%);
     font-size:12px;
     padding:7px;
@@ -425,14 +425,14 @@ body {
 .side-bar > .menu-box > .list-1 > div > .title.left-ico {
     color:#558B2F;
     box-sizing:border-box;
-    width:133px;
+    width:85px;
     padding-left:20px;
-   
+    padding-right:0;
 }
 
 .side-bar > .menu-box > .list-1 > .first-menu-6 > .title.left-ico  {
     padding-left:21px;
-    width:123px
+    width:70px
 }
 
 .side-bar > .menu-box > .list-1 > div > .title.left-ico > i:nth-of-type(2) {
