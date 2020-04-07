@@ -281,6 +281,47 @@ $('.side-btns > div').click(function () {
     
 });
 
+
+$('.bn-box-8 > .inner > .head > .tab > .cell').click(function () {
+    
+    $(this).siblings('.active').removeClass('active');
+    $(this).addClass('active');
+    
+    var index = $(this).index();
+    var $contents = $(this).closest('.inner').find(".body >.contents");
+    
+    $contents.removeClass('active');
+    $contents.eq(index).addClass('active');
+    
+    $('.bn-box-8 > .inner > .mobile-head > .tab').removeClass('active');
+    $('.bn-box-8 > .inner > .mobile-head > .tab').eq(index).addClass('active');
+});
+
+$('.bn-box-8 > .inner > .mobile-head > .tab').click(function () {
+    
+    $(this).parent().toggleClass('active');
+    
+});
+
+$('.bn-box-8 > .inner > .mobile-head > .tab-menu > div').click(function () {
+    
+    var $mobileHead = $(this).parent().parent();
+    var $tab = $mobileHead.find('>.tab');
+    var $currentTab = $mobileHead.find('> .tab.active');
+    var index = $(this).index();
+   
+    $mobileHead.removeClass('active');
+    $currentTab.removeClass('active');
+    $tab.eq(index).addClass('active');
+    
+    var $contents = $(this).closest('.inner').find(".body >.contents");
+    
+    $contents.removeClass('active');
+    $contents.eq(index).addClass('active');
+    
+});
+
+
 // 푸터
 $('.footer > .mobile-info-bar > .inner > div:nth-of-type(1) > .cell-right > .lang-btn').click(function () {
     
