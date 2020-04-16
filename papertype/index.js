@@ -14,5 +14,21 @@ lightbox.option({
     resizeDuration: 300,
     wrapAround: true,
     disableScrolling: false,
-    fitImagesInViewport:true
+    fitImagesInViewport:false
 })
+
+$('.paper > .inner > .body > .cell:nth-of-type(1) > .cell-inner > .graphic-design > .body > .cell > .img-box').click(function () {
+    
+    
+    $(this).siblings('.active').removeClass('active');
+    $(this).toggleClass('active');
+    $('.popup-bg').toggleClass('active');
+    
+});
+
+$('.popup-bg').click(function () {
+    
+    $('.paper > .inner > .body > .cell:nth-of-type(1) > .cell-inner > .graphic-design > .body > .cell > .img-box').removeClass('active');
+    $(this).removeClass('active');
+    
+});
