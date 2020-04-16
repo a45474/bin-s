@@ -459,6 +459,10 @@ body.paper-hover > .paper > .inner > .body > .cell:nth-of-type(1) > .cell-inner 
 .paper > .inner > .body > .cell:nth-of-type(1) > .cell-inner > .graphic-design > .body > .cell > .img-box.active > img {
     width:100%;
     height:auto !important;
+    top:0  !important;
+    left:0  !important;
+    transform: translateX(0) translateY(0) !important;
+    )
 }
 
 .popup-bg {
