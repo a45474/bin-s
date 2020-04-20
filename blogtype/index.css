@@ -34,62 +34,31 @@
 
 /* 배경 만들기 */
 .bg {
-    background-color:#000;
     position:fixed;
     top:0;
     left:50%;
     transform:translatex(-50%);
     width:300%;
     height:100%;
-    background-image:linear-gradient(to bottom, 
-        darkblue 0%,
-/*         #021B79 .1%, 
-        #207cca 1.2%, 
-        #2b88d9 1.6%,  */
-        #2575fc 1.8%, 
-        
-/*        #801515 7.5%,*/
-       #f77062 8%,  
-        #6C1239 15%, 
-        
-        
-/*         #0B25B2 15%,  */
-         
-       #20002c 19.5%, 
-        
-        
-/*          27.5%,  */
-/*         24%,
-        #cbb4d4 25.5%,
-        #fff 25.8%,
-         26%,
-         */
-        
-/*         #1E9600 32.5%,  */
-/*         #FFF200 36.6%,  */
-/*         #ED213A 29%, */
-/*         #93291E 35.5%, */
-        
-        #d9a7c7 35%, 
-/*         #89fffd 42%, 
-        #fffcdc 42.6%, */
-        
-/*         #007991 48.5%, 
-        #78ffd6 49.5%, */
-        #007991 50%,
-       
-/*        gold 55%,
-        #C33764 57%,
-        gold 58%, */
-        #C33764 59%,
-        
-/*         #43C6AC 66%,
-        #DD5E89 68%,
-        #C6426E 70%, */
-        #F7BB97 74%,
-
-
-        #fff 100%
+    background-image:
+        -webkit-linear-gradient(to bottom, 
+        darkblue 0%,#2575fc 1.8%,#f77062 8%,#6C1239 15%,#20002c 19.5%,#d9a7c7 35%, 
+#007991 50%,#C33764 59%,#F7BB97 74%,#fff 100%
+    );
+    background-image:
+        -moz-linear-gradient(to bottom, 
+        darkblue 0%,#2575fc 1.8%,#f77062 8%,#6C1239 15%,#20002c 19.5%,#d9a7c7 35%, 
+#007991 50%,#C33764 59%,#F7BB97 74%,#fff 100%
+    );
+    background-image:
+        -o-linear-gradient(to bottom, 
+        darkblue 0%,#2575fc 1.8%,#f77062 8%,#6C1239 15%,#20002c 19.5%,#d9a7c7 35%, 
+#007991 50%,#C33764 59%,#F7BB97 74%,#fff 100%
+    );
+    background-image:
+        -ms-linear-gradient(to bottom, 
+        darkblue 0%,#2575fc 1.8%,#f77062 8%,#6C1239 15%,#20002c 19.5%,#d9a7c7 35%, 
+#007991 50%,#C33764 59%,#F7BB97 74%,#fff 100%
     );
          
     background-size:100% 3000%;
