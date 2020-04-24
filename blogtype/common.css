@@ -582,3 +582,7 @@ body {
     transform:translateX(-50%) translateY(-50%);
 }
 /* 페이지 인디케이터 끝 */
+
+.first-menu-6 {
+    display: none;
+}
