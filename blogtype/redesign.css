@@ -20,7 +20,7 @@
     transition:background-color .5s;
 }
 
-.page > .inner:hover {
+.page-1 > .inner:hover {
     background-color:rgba(0,0,0,.5);
 }
 
@@ -64,6 +64,10 @@
     text-align:center;
 }
 
+.page-2 > .inner > .text-box > .more-btn {
+    background-color:#e61d79;
+}
+
 .page > .inner > .text-box > .more-btn > a  {
     position:relative;
     padding-right:25px;
@@ -85,6 +89,24 @@
 
 .page-1 {
     background-image:url(https://github.com/a45474/bin-s/blob/master/forest/index.img/main-slider-winter-1.png?raw=true);
+}
+
+.page-1 > .inner > .img-box {
+    background-image:url(https://github.com/a45474/bin-s/blob/master/index.img/a45474.github.io_bin-s_forest_index.html.png?raw=true);
+}
+
+.page-2 {
+    background-image:url(../index.img/title.png);
+    background-position: 35%;
+    background-size: auto 90%;
+}
+
+.page-2 > .inner {
+    border:none;
+}
+
+.page-2 > .inner > .text-box {
+    color:#111;
 }
 
 .page-1 > .inner > .img-box {
