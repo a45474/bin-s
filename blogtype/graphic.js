@@ -20,8 +20,8 @@ $(function () {
         afterRender: function () {
             $(".pagination-box a").on("click", $.scrollify.move);
             
-            $('.first-menu-1 .second-menu a').on("click", $.scrollify.move);
-            $('.first-menu-1 .second-menu a').on("click", function() {
+            $('.first-menu-5 .second-menu a').on("click", $.scrollify.move);
+            $('.first-menu-5 .second-menu a').on("click", function() {
                 $('.side-bar-bg').click();
             });
             

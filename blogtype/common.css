@@ -584,5 +584,5 @@ body {
 /* 페이지 인디케이터 끝 */
 
 .first-menu-6 {
-    display: none;
+    display: block;
 }

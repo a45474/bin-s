@@ -3,7 +3,7 @@ $(function () {
         section: ".page",
         updateHash: true,
         touchScroll: true,
-        scrollbars:false,
+        scrollbars: false,
         setHeights: false,
         interstitialSection: ".footer",
         before: function (i, page) {
@@ -22,8 +22,11 @@ $(function () {
             $('html').attr('data-current-index', 1);
             $('.page-1').addClass('active');
             $('.page-1').addClass('visited');
+
+            $('.first-menu-4 .second-menu a').on("click", $.scrollify.move);
+            $('.first-menu-4 .second-menu a').on("click", function () {
+                $('.side-bar-bg').click();
+            });
         }
     });
 });
-
-
